@@ -1,0 +1,94 @@
+# baseurl = '/'
+# baseurl = "https://kahnwong.gitlab.io/blog/"
+baseurl = "/"
+languageCode = "en-us"
+theme = "hello-friend-ng"
+
+
+disableRSS = false
+
+[permalinks]
+  posts = "/posts/:year-:month-:day-:title/"
+
+[author]
+  name = "Karn Wong"
+ 
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Metadata mostly used in document's head
+  description = "Homepage and blog by Karn Wong"
+  keywords = "homepage, blog, programming, machine learning, data wrangling"
+  images = [""]
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+ 
+#   homeSubtitle = ""
+
+
+   # Social icons
+  [[params.social]]
+    name = "email"
+    url  = "mailto:kahnwong@gmail.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/kahnwong/"
+
+[languages]
+  [languages.en]
+    title = "Karn Wong"
+    subtitle = "Homepage"
+    keywords = ""
+    copyright = ""
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "$ cd /home/"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+# And you can even create generic menu
+[menu]
+    [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "/posts"
+
+    [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+
+    [[menu.main]]
+    identifier = "tags"
+    name       = "Tags"
+    url        = "/tags"
+
+    [[menu.main]]
+    identifier = "resume"
+    name       = "Resume"
+    url        = "/resume"
+
+    [[menu.main]]
+    identifier = "faq"
+    name       = "FAQ"
+    url        = "/faq"
+
+# [taxonomies]
+#   tag      = "tags"
+#   category = "categories"
