@@ -7,14 +7,14 @@ printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
 # Build the project.
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
-####### commit changes to blog repo
-git add .
-msg0="add new commit $(date)"
-if [ -n "$*" ]; then
-	msg0="$*"
-fi
-git commit -m "$msg0"
-git push origin master
+# ####### commit changes to blog repo
+# git add .
+# msg0="add new commit $(date)"
+# if [ -n "$*" ]; then
+# 	msg0="$*"
+# fi
+# git commit -m "$msg0"
+# git push origin master
 
 #######
 # Go To Public folder
