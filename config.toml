@@ -7,8 +7,8 @@ theme = "hello-friend-ng"
 
 disableRSS = false
 
-[permalinks]
-  posts = "/posts/:year-:month-:day-:title/"
+#[permalinks]
+#  posts = "/posts/:year-:month-:day-:title/"
 
 [author]
   name = "Karn Wong"
@@ -88,6 +88,12 @@ disableRSS = false
     identifier = "faq"
     name       = "FAQ"
     url        = "/faq"
+
+    [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "https://blog.karnwong.me/"
+
 
 # [taxonomies]
 #   tag      = "tags"
