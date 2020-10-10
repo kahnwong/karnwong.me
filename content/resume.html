@@ -1,191 +1,229 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Resume</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  </head>
+
+<head>
+  <title>Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
 
 
-  <style>
-    html {
-  width: 100%;
-  font-size: 14px;
-}
-body {
-  text-align: center;
-  width: 100%;
-  font-family: "Noto Sans", "Segoe UI", Roboto, Helvetica, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  font-size: 1rem;
-  margin: 0;
-  color: #555;
-  background-color: #fbfbfb;
-}
-a {
-  text-decoration: none;
-  color: #08c;
-  /* color: #555; */
-}
-a:hover {
-  text-decoration: underline;
-}
-.container {
-  max-width: 48rem;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  margin-bottom: 1rem;
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: .1rem solid #bbbbbb;
-  padding-top: 2.2rem;
-  padding-bottom: 2.2rem;
-}
-#name-wrapper {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-#fullname {
-  font-size: 2.2rem;
-}
-#jobtitle {
-  font-size: 1.2rem;
-  margin-top: .8rem;
-}
-#contact {
-  font-size: 1rem;
-  padding-top: 1rem;
-}
-.contact-item:nth-child(1) {
-  margin-top: 0;
-}
-.contact-item {
-  margin-top: .4rem;
-}
-section {
-  display: flex;
-  padding-top: 2.4rem;
-  padding-bottom: 2.4rem;
-  padding-left: .2rem;
-  border-bottom: .1rem solid #bbbbbb;
-  hyphens: auto;
-}
-.section-title {
-  font-size: 1.6rem;
-  text-align: left;
-  min-width: 10rem;
-}
-.section-content {
-}
-.section-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-.block {
-  margin-bottom: 2rem;
-}
-.block-square {
-  width: 18rem;
-}
-.block-square:nth-last-child(2) {
-  margin-bottom: 0;
-}
-.block:last-child {
-  margin-bottom: 0;
-}
-.block-title {
-  font-size: 1.2rem;
-  margin-bottom: .4rem;
-  font-weight: bold;
-}
-.block-subtitle {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  color: #bbbbbb;
-}
-.block-content {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-footer {
-  color: #bbbbbb;
-  font-size: 1rem;
-  min-height: 3rem;
-  line-height: 3rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-@media print {
+<style>
   html {
-    font-size: 12px;
+    width: 100%;
+    font-size: 14px;
   }
-  .print {
-    display: none;
+
+  ul {
+    padding-left: 1.2em;
   }
-}
-@media screen and (max-width: 48rem) {
-  html {
-    font-size: 12px;
+
+  body {
+    text-align: center;
+    width: 100%;
+    font-family: "Noto Sans", "Segoe UI", Roboto, Helvetica, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1rem;
+    margin: 0;
+    color: #555;
+    background-color: #fbfbfb;
   }
+
+  a {
+    text-decoration: none;
+    color: #08c;
+    /* color: #555; */
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
   .container {
-    padding-left: .4rem;
-    padding-right: .4rem;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-bottom: 1rem;
   }
+
   header {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .1rem solid #bbbbbb;
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+  }
+
+  #name-wrapper {
+    padding-top: 1rem;
     padding-bottom: 1rem;
   }
-  #name-wrapper {
-    text-align: center;
-    padding-bottom: 2rem;
+
+  #fullname {
+    font-size: 2.2rem;
   }
+
+  #jobtitle {
+    font-size: 1.2rem;
+    margin-top: .8rem;
+  }
+
   #contact {
+    font-size: 1rem;
     padding-top: 1rem;
-    border-top: .1rem solid #bbbbbb;
   }
+
+  .contact-item:nth-child(1) {
+    margin-top: 0;
+  }
+
   .contact-item {
-    padding-top: .2rem;
-    padding-left: .4rem;
+    margin-top: .4rem;
   }
+
   section {
-    display: block;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    display: flex;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    padding-left: .2rem;
+    border-bottom: .1rem solid #bbbbbb;
+    hyphens: auto;
   }
+
   .section-title {
-    text-align: center;
-    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    text-align: left;
+    min-width: 10rem;
   }
+
+  .section-content {}
+
   .section-flex {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
   }
-  .block-square {
-  }
-  .block-square:nth-last-child(2) {
+
+  .block {
     margin-bottom: 2rem;
   }
-}
 
+  .block-square {
+    width: 18rem;
+  }
 
-  </style>
-  <body>
-    <div class="container">
-      <header>
-        <div id="name-wrapper">
-          <div id="fullname">
-            Karn Wong
-            <!-- Karnsiree Wongkolkitsilp -->
-          </div>
-          <div id="jobtitle">
-            Data Engineer
-          </div>
+  .block-square:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+
+  .block:last-child {
+    margin-bottom: 0;
+  }
+
+  .block-title {
+    font-size: 1.2rem;
+    margin-bottom: .4rem;
+    font-weight: bold;
+  }
+
+  .block-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #bbbbbb;
+  }
+
+  .block-content {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  footer {
+    color: #bbbbbb;
+    font-size: 1rem;
+    min-height: 3rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  @media print {
+    html {
+      font-size: 12px;
+    }
+
+    .print {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 48rem) {
+    html {
+      font-size: 12px;
+    }
+
+    .container {
+      padding-left: .4rem;
+      padding-right: .4rem;
+    }
+
+    header {
+      display: block;
+      padding-bottom: 1rem;
+    }
+
+    #name-wrapper {
+      text-align: center;
+      padding-bottom: 2rem;
+    }
+
+    #contact {
+      padding-top: 1rem;
+      border-top: .1rem solid #bbbbbb;
+    }
+
+    .contact-item {
+      padding-top: .2rem;
+      padding-left: .4rem;
+    }
+
+    section {
+      display: block;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .section-flex {
+      display: block;
+    }
+
+    .block-square {}
+
+    .block-square:nth-last-child(2) {
+      margin-bottom: 2rem;
+    }
+  }
+</style>
+
+<body>
+  <div class="container">
+    <header>
+      <div id="name-wrapper">
+        <div id="fullname">
+          Karn Wong
+          <!-- Karnsiree Wongkolkitsilp -->
         </div>
-        <div id="contact">
+        <div id="jobtitle">
+          Data Engineer
+        </div>
+      </div>
+      <div id="contact">
 
         <div class="contact-item">
           <i class="fa fa-envelope aria-hidden=" true></i> kahn.wong[at]gmail.com
@@ -197,169 +235,217 @@ footer {
           <i class="fa fa-github aria-hidden=" true></i> github.com/kahnwong
         </div>
 
-        </div>
-      </header>
+      </div>
+    </header>
 
-      <section id="education">
-        <div class="section-title">
-          Education
-        </div>
-        <div class="section-content">
-          <div class="block">
-            <div class="block-title">
-               Rangsit University
-            </div>
-            <div class="block-subtitle">
-              Aug 2015 - May 2018 | Pathum Thani, Thailand
-            </div>
-            <div class="block-content">
-              Information and Communication Technology
-            </div>
+    <section id="education">
+      <div class="section-title">
+        Education
+      </div>
+      <div class="section-content">
+        <div class="block">
+          <div class="block-title">
+            Rangsit University
+          </div>
+          <div class="block-subtitle">
+            Aug 2015 - May 2018 | Pathum Thani, Thailand
+          </div>
+          <div class="block-content">
+            Information and Communication Technology
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="skills">
-        <div class="section-title">
-          Skills
-        </div>
-        <div class="section-content">
-          <div class="block">
-            <div class="block-title">
-              Programming
-            </div>
-            <div class="block-content">
-              Python, Bash
-            </div>
-          </div>
+    <section id="skills">
+      <div class="section-title">
+        Skills
+      </div>
 
-          <div class="block">
-            <div class="block-title">
-              Frameworks
-            </div>
-            <div class="block-content">
-              Selenium, BeautifulSoup, Scrapy, Pandas, Matplotlib / Seaborn, Scikit-learn, Hadoop, Hive, Spark, Dagster
-            </div>
-          </div>
-
-          <div class="block">
-            <div class="block-title">
-               Databases
-            </div>
-            <div class="block-content">
-              MariaDB / MySQL, SQLite, PostgreSQL / PostGIS, MongoDB
-            </div>
-          </div>
+      <div class="section-content">
 
         <div class="block">
-            <div class="block-title">
-                Cloud
-            </div>
-            <div class="block-content">
-                AWS (Lambda, S3, EMR)
-            </div>
+          <div class="block-title">
+            Data Science
+          </div>
+          <div class="block-content">
+            Hadoop, Hive, Spark, Dagster, Pandas, Sklearn, Matplotlib, Seaborn
+          </div>
         </div>
-        
+
         <div class="block">
-            <div class="block-title">
-                Misc
-            </div>
-            <div class="block-content">
-                Docker
-            </div>
-        </div>
-        
-
-          <div class="block">
-            <div class="block-title">
-               Other Skills
-            </div>
-            <div class="block-content">
-              DevOps, Linguistics, NLP, Machine Learning, GIS, Linux
-            </div>
+          <div class="block-title">
+            Cloud
           </div>
-
-        </div>
-      </section>
-
-      <section id="experience">
-        <div class="section-title">
-          Experience
-        </div>
-        <div class="section-content">
-          <div class="block">
-            <div class="block-title">
-               Data Engineer
-            </div>
-            <div class="block-subtitle">
-              April 2018 - Present | Baania
-            </div>
-            <div class="block-content">
-              - Obtain third-party data sources<br>
-              - Create and optimize machine learning models<br>
-              - Develop database schema for in-house data<br>
-              - Create and maintain ETL pipelines via Dagster<br>
-              - Deploy and maintain ML via AWS Lambda + API Gateway<br>
-              - Mentor junior data scientists<br>
-
-            </div>
+          <div class="block-content">
+            AWS, Digital Ocean
           </div>
         </div>
-      </section>
 
-      <section id="publications">
-        <div class="section-title">
-          Publications
+        <div class="block">
+          <div class="block-title">
+            Databases
+          </div>
+          <div class="block-content">
+            MariaDB / MySQL, SQLite, PostgreSQL / PostGIS, MongoDB
+          </div>
         </div>
-        <div class="section-content">
-                <div class="block">
-                    <div class="block-title">
-                    Using Classification Technique for Customer Relationship Management based on Thai Social Media Data, ICCAE
-                    </div>
-                    <div class="block-subtitle">
-                    2019
-                    </div>
-                    <div class="block-content">
-                    <!-- Oversees data gathering via third-party sources and optimize processes involved. -->
-                    Co-authored with Todsanai Chumwatana
-                    </div>
-                </div>
-                </div>
-            </section>
-      
-      
-      <section id="languages">
-        <div class="section-title">
-          Languages
+        <div class="block">
+          <div class="block-title">
+            DevOps
+          </div>
+          <div class="block-content">
+            Docker, Kubernetes, Terraform
+          </div>
         </div>
-        <div class="section-content section-flex">
+
+        <div class="block">
+          <div class="block-title">
+            Programming
+          </div>
+          <div class="block-content">
+            Python, Bash
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="block-title">
+            Web Scraping
+          </div>
+          <div class="block-content">
+            Selenium, BeautifulSoup, Scrapy
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="block-title">
+            Other Skills
+          </div>
+          <div class="block-content">
+            Linguistics, NLP, GIS, Linux
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="section-title">
+        Experience
+      </div>
+      <div class="section-content">
+        <div class="block">
+          <div class="block-title">
+            Data Engineer
+          </div>
+          <div class="block-subtitle">
+            April 2018 - Present | Baania
+          </div>
+          <div class="block-content">
 
 
 
-          <div class="block block-square">
-            <div class="block-title">
-              English
-            </div>
-            <div class="block-content">
-               Native or bilingual proficiency
-            </div>
+            <ul>
+              <li>Obtain third-party data sources</li>
+              <li>Create and optimize machine learning models</li>
+              <li>Develop database schema for in-house data</li>
+              <li>Create and maintain ETL pipelines via Dagster</li>
+              <li>Deploy and maintain ML via AWS Lambda + API Gateway</li>
+              <li>Mentor junior data scientists</li>
+              <li>Project manager for data pipelines automation</li>
+              <li>Consulting on infrastructure planning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-title">
+        Projects
+      </div>
+      <div class="section-content">
+        <div class="block">
+          <div class="block-title">
+            Self-Hosting
           </div>
 
-          <div class="block block-square">
-            <div class="block-title">
-              Thai
-            </div>
-            <div class="block-content">
-               Native or bilingual proficiency
-            </div>
+
+          <div class="block-content">
+            Self-hosting services on my home server / VPS via docker-compose and rever-proxy via apache.
+
+            <ul>
+              <li>Bitwarden</li>
+              <li>Ghost</li>
+              <li>Gonic</li>
+              <li>Miniflux</li>
+              <li>Nextcloud</li>
+              <li>OpenVPN & Pi-Hole</li>
+              <li>RSS-Bridge</li>
+              <li>Syncthing</li>
+              <li>Wallabag</li>
+            </ul>
+
           </div>
-
         </div>
-      </section>
+      </div>
+    </section>
 
-    </div>
-    <footer>
-      Made with <i class="fa fa-heart aria-hidden="true></i> by <a href="https://github.com/crispgm/resume">David Zhang</a> <span class="print">( <a href="javascript:window.print()">PDF</a> )</span>
-    </footer>
-  </body>
+    <section id="publications">
+      <div class="section-title">
+        Publications
+      </div>
+      <div class="section-content">
+        <div class="block">
+          <div class="block-title">
+            Using Classification Technique for Customer Relationship Management based on Thai Social Media Data, ICCAE
+          </div>
+          <div class="block-subtitle">
+            2019
+          </div>
+          <div class="block-content">
+            <!-- Oversees data gathering via third-party sources and optimize processes involved. -->
+            Co-authored with Todsanai Chumwatana
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="languages">
+      <div class="section-title">
+        Languages
+      </div>
+      <div class="section-content section-flex">
+
+
+
+        <div class="block block-square">
+          <div class="block-title">
+            English
+          </div>
+          <div class="block-content">
+            Native or bilingual proficiency
+          </div>
+        </div>
+
+        <div class="block block-square">
+          <div class="block-title">
+            Thai
+          </div>
+          <div class="block-content">
+            Native or bilingual proficiency
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+  <footer>
+    Made with <i class="fa fa-heart aria-hidden=" true></i> by <a href="https://github.com/crispgm/resume">David
+      Zhang</a> <span class="print">( <a href="javascript:window.print()">PDF</a> )</span>
+  </footer>
+</body>
+
 </html>
