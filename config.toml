@@ -40,7 +40,7 @@ disableRSS = false
    # Social icons
   [[params.social]]
     name = "email"
-    url  = "mailto:kahnwong@gmail.com"
+    url  = "mailto:contact@karnwong.me"
 
   [[params.social]]
     name = "github"
