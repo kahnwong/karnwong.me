@@ -1,518 +1,1107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"
+        />
+        <title>Karn Wong</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <style>
+            /********************************************
+            * 	reset from
+            * 	http://meyerweb.com/eric/tools/css/reset/
+            *******************************************/
+            
+            html,
+            body,
+            div,
+            span,
+            applet,
+            object,
+            iframe,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            blockquote,
+            pre,
+            a,
+            abbr,
+            acronym,
+            address,
+            big,
+            cite,
+            code,
+            del,
+            dfn,
+            em,
+            img,
+            ins,
+            kbd,
+            q,
+            s,
+            samp,
+            small,
+            strike,
+            strong,
+            sub,
+            sup,
+            tt,
+            var,
+            b,
+            u,
+            i,
+            center,
+            dl,
+            dt,
+            dd,
+            ol,
+            ul,
+            li,
+            fieldset,
+            form,
+            label,
+            legend,
+            table,
+            caption,
+            tbody,
+            tfoot,
+            thead,
+            tr,
+            th,
+            td,
+            article,
+            aside,
+            canvas,
+            details,
+            embed,
+            figure,
+            figcaption,
+            footer,
+            header,
+            hgroup,
+            menu,
+            nav,
+            output,
+            ruby,
+            section,
+            summary,
+            time,
+            mark,
+            audio,
+            video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                vertical-align: baseline;
+            }
+            
+            article,
+            aside,
+            details,
+            figcaption,
+            figure,
+            footer,
+            header,
+            hgroup,
+            menu,
+            nav,
+            section {
+                display: block;
+            }
+            
+            body {
+                line-height: 1;
+            }
+            
+            ol,
+            ul {
+                list-style: none;
+            }
+            
+            blockquote,
+            q {
+                quotes: none;
+            }
+            
+            blockquote:before,
+            blockquote:after,
+            q:before,
+            q:after {
+                content: none;
+            }
+            
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+            
+            
+            /****************
+            *	COMMONS
+            ****************/
+            
+            body,
+            html {
+                font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+                font-size: 13px;
+                color: #40484f;
+                font-weight: 400;
+                letter-spacing: 0;
+                line-height: 1.46153846;
+                text-align: left;
+                -webkit-text-size-adjust: 100%;
+            }
+            
+            p {
+                display: block;
+                margin-bottom: 1.3em;
+            }
+            
+            a {
+                color: #0095ff;
+                text-decoration: none;
+            }
+            
+            a:hover {
+                color: #0c65a5;
+                text-decoration: underline;
+            }
+            
+            ul {
+                margin-top: 1rem;
+            }
+            
+            li {
+                list-style-type: square;
+                list-style-position: outside;
+                margin-left: 1.3em;
+            }
+            
+            .highlights>li>p {
+                margin-bottom: 0.5em;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.67rem;
+            }
+            
+            h3 {
+                font-size: 1.27rem;
+            }
+            
+            em {
+                color: #757575;
+            }
+            
+            blockquote {
+                margin-bottom: 1em;
+            }
+            
+            strong {
+                font-weight: 700;
+            }
+            
+            
+            /* main container */
+            
+            #resume {
+                padding: 1rem;
+                margin-top: 2rem;
+            }
+            
+            
+            /* every section wrapper */
+            
+            .section {
+                margin-bottom: 1rem;
+            }
+            
+            section .location {
+                margin-right: .5em;
+                color: #606d76;
+                font-weight: 700;
+            }
+            
+            #contact {
+                margin-top: .5rem;
+            }
+            
+            #profiles .item {
+                padding: 0;
+            }
+            
+            #header>#profiles,
+            #header>#contact,
+            #skills,
+            #languages,
+            #interests {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-flow: row wrap;
+                flex-flow: row wrap;
+                -webkit-justify-content: flex-start;
+                justify-content: flex-start;
+            }
+            
+            #header>div {
+                line-height: 1.5;
+            }
+            
+            #header>div>div {
+                margin-right: 1.2em;
+            }
+            
+            #header h1.name {
+                font-size: 2.8rem;
+                font-weight: 100;
+                line-height: 100%;
+            }
+            
+            #header h2.label {
+                color: #202931;
+                font-size: 1.47rem;
+                font-weight: 300;
+            }
+            
+            #header .picture {
+                width: 11em;
+                float: right;
+                border-radius: 4px;
+            }
+            
+            .main-summary {
+                background: #f1f8ff;
+                padding: 1.2em 1em;
+                margin-top: 1rem;
+            }
+            
+            .main-summary p {
+                margin: .15em 0 0;
+            }
+            
+            h2.section-title {
+                display: inline-block;
+                background: #fff;
+                padding: 0 1em 0.3em 0;
+                color: #ff6d1f;
+                text-transform: uppercase;
+                font-weight: 600;
+                border: none;
+                font-size: .9rem;
+            }
+            
+            .section>header {
+                position: relative;
+            }
+            
+            .fa {
+                margin-right: 0.25em;
+            }
+            
+            .section>header::after {
+                position: absolute;
+                left: 0;
+                top: .7em;
+                height: 1px;
+                background: #ccc;
+                content: "";
+                width: 100%;
+                z-index: -100;
+                display: block;
+            }
+            
+            .section.main-summary>section {
+                margin: 0;
+            }
+            
+            .section>section>header {
+                font-size: 1.38rem;
+                position: relative;
+                margin-top: .7em;
+            }
+            
+            .section>section>header:first-of-type {
+                margin: 0;
+            }
+            
+            .section>section>header .space-left {
+                position: absolute;
+                left: -1.56rem;
+                top: 5px;
+                color: #aaa;
+                line-height: 1;
+                opacity: 0;
+            }
+            
+            .position,
+            .company,
+            .organization,
+            .institution,
+            .date,
+            .area,
+            .studyType,
+            .title,
+            .awarder {
+                display: inline;
+            }
+            
+            .position,
+            .studyType,
+            .area,
+            .title,
+            .language,
+            .name {
+                font-weight: 600;
+            }
+            
+            .company::before,
+            .institution::before,
+            .organization::before,
+            .awarder::before {
+                content: "at "
+            }
+            
+            .company,
+            .institution,
+            .organization,
+            .awarder {
+                color: #606d76;
+                font-weight: 400;
+            }
+            
+            .section header .date {
+                font-size: 1rem;
+                display: inline-table;
+                padding: .1em 0;
+                font-weight: 600;
+            }
+            
+            ul.keywords,
+            ul.courses {
+                margin-top: .5em;
+            }
+            
+            ul.keywords li,
+            ul.courses li {
+                display: inline-block;
+                margin: 2px 2px 2px 0;
+                padding: 4px 5px 5px;
+                font-size: .9rem;
+                line-height: 1;
+                text-transform: lowercase;
+                color: #3e6d8e;
+                background-color: #dfeaf1;
+                border: 0 solid #dfeaf1;
+                white-space: nowrap;
+            }
+            
+            ul.keywords li:hover,
+            ul.courses li:hover {
+                background: #dfeaf0;
+            }
+            
+            .item {
+                padding: .5em 0;
+            }
+            
+            .gpa {
+                padding-bottom: .5em;
+            }
+            
+            .fa.social {
+                font-size: 1.1em;
+            }
+            
+            
+            /* Social Media Brand Colors */
+            
+            .google-plus {
+                color: #dd4b39;
+            }
+            
+            .tumblr {
+                color: #32506d;
+            }
+            
+            .foursquare {
+                color: #0072b1;
+            }
+            
+            .facebook {
+                color: #3b5998;
+            }
+            
+            .linkedin {
+                color: #007bb6;
+            }
+            
+            .pinterest {
+                color: #cb2027;
+            }
+            
+            .dribbble {
+                color: #ea4c89;
+            }
+            
+            .instagram {
+                color: #517fa4;
+            }
+            
+            .twitter {
+                color: #00aced;
+            }
+            
+            .soundcloud {
+                color: #ff3a00;
+            }
+            
+            .wordpress {
+                color: #21759b;
+            }
+            
+            .youtube {
+                color: #bb0000;
+            }
+            
+            .github {
+                color: #171515;
+            }
+            
+            .stack-overflow {
+                color: #828386;
+                position: relative;
+            }
+            
+            .flickr {
+                color: #ff0084;
+            }
+            
+            .stack-overflow::after {
+                position: absolute;
+                left: 0;
+                content: '\f16c';
+                color: #f68a1f;
+                overflow: hidden;
+                height: 100%;
+            }
+            
+            .telegram {
+                color: #2291c3;
+            }
+            
+            #languages .item,
+            #skills .item,
+            #interests .item {
+                width: 15em;
+                padding: 0 .5em .5em 0;
+                border-bottom: none;
+            }
+            
+            #skills .item {
+                width: 16em;
+            }
+            
+            #skills .item .keywords {
+                width: 15em;
+            }
+            
+            
+            /* Skill chart */
+            
+            .level {
+                margin-bottom: .5em;
+            }
+            
+            .level .bar {
+                border: 1px solid #ddd;
+                display: block;
+                width: 10em;
+                height: 5px;
+                position: relative;
+            }
+            
+            .level .bar::after {
+                position: absolute;
+                content: " ";
+                top: 0;
+                left: 0;
+                background: black;
+                height: 5px;
+            }
+            
+            .level.beginner .bar::after {
+                background: #EB5F51;
+                width: 2.5em;
+            }
+            
+            .level.intermediate .bar::after {
+                background: #ffdf1f;
+                width: 5em;
+            }
+            
+            .level.advanced .bar::after,
+            .level.fluent .bar::after {
+                background: #5CB85C;
+                width: 7.5em;
+            }
+            
+            .level.master .bar::after,
+            .level.native.speaker .bar::after {
+                background: #59C596;
+                width: 10em;
+            }
+            
+            #references .item {
+                padding-left: .5em;
+                border-left: 5px solid #ff6d1f;
+            }
+            
+            .toggle-item {
+              visibility: hidden;
+            }
+            
+            /******************
+            *	HELPER CLASSES
+            ******************/
+            
+            .clear::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+            .display {
+                display: block;
+                opacity: 1 !important;
+            }
+            
+            .margin1 {
+                margin-bottom: .5rem;
+            }
+            
+            
+            /****************
+            *		TABLET
+            ****************/
+            
+            @media screen and (min-width: 602px) {
+                #resume {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
+            
+            
+            /****************
+            *		LAPTOP
+            ****************/
+            
+            @media screen and (min-width: 1025px) {
+                li {
+                    margin-left: 1.5em;
+                }
+                #resume {
+                    width: 820px;
+                    margin: 2rem auto;      
+                }
+                .section>section>header .space-left {
+                    opacity: 1;
+                    cursor: pointer;
+                }
+                .section>section {
+                    margin-left: 1.67rem;
+                }
+                .toggle-item {
+                    transform: translate(-9999px);
+                }
+                .toggle-item+label {
+                    display: block;
+                    margin-top: -16px;
+                }
+                .toggle-item:checked+label:after {
+                    content: '\f0d7';
+                }
+                .toggle-item+label:after {
+                    float: left;
+                    cursor: pointer;
+                    margin-left: -20px;
+                    color: #aaa;
+                    font-size: 16px;
+                    content: '\f0da';
+                    font-family: Fontawesome;
+                }
+                .toggle-item~.item {
+                    height: 0;
+                    opacity: 0;
+                }
+                .toggle-item:checked~.item {
+                    height: auto;
+                    opacity: 1;
+                    transition: all .5s linear;
+                }
+                .company::before,
+                .institution::before,
+                .organization::before,
+                .awarder::before {
+                    content: "| ";
+                }
+                .header-left {
+                    float: left;
+                    width: 70%;
+                    word-break: normal;
+                }
+                .section header .date {
+                    float: right;
+                    padding: .2em;
+                }
+                .display {
+                    display: none;
+                }
+                .display:not(.none) {
+                    display: block;
+                }
+            }
+            
+            @media print {
+                #resume {
+                    margin: 0;
+                    padding: 0;
+                    -ms-word-wrap: break-word;
+                    word-wrap: break-word;
+                    line-height: 1.3;
+                    /*font-family: Arial, Georgia, "Lucida Grande", sans-serif;*/
+                }
+                @page {
+                    margin: 1cm 1.4cm;
+                }
+                .item-count {
+                    display: none;
+                }
+                .company::before,
+                .institution::before,
+                .organization::before,
+                .awarder::before {
+                    content: "at ";
+                }
+                .main-summary {
+                    padding: 2rem 0;
+                }
+                .section {
+                    margin: .8rem 0;
+                    padding: 0;
+                }
+                .section header {
+                    padding-bottom: .15rem;
+                }
+                .section .location {
+                    padding-bottom: .15rem;
+                }
+                .stack-overflow::after {
+                    content: "";
+                }
+                .fa.social {
+                    color: #828386;
+                }
+                ul {
+                    margin-top: .4em;
+                }
+                ul,
+                li {
+                    padding: 0;
+                }
+                ul.keywords li,
+                ul.courses li {
+                    margin: 0;
+                    padding: 0;
+                    font-size: .8rem;
+                    text-transform: lowercase;
+                }
+                ul.keywords li::after,
+                ul.courses li::after {
+                    padding: 0 0 0 .1rem;
+                    content: " |";
+                }
+                ul.keywords::before,
+                ul.courses::before {
+                    font-size: .8rem;
+                    font-weight: 600;
+                }
+                ul.keywords::before {
+                    content: "Skills acquired: ";
+                }
+                #skills .keywords::before {
+                    content: '';
+                }
+                .section p {
+                    margin: 0;
+                    padding: 0;
+                }
+                ul.courses::before {
+                    content: "Major courses: ";
+                }
+                ul.keywords li:last-of-type::after,
+                ul.courses li:last-of-type::after {
+                    content: "";
+                }
+                .level em {
+                    font-style: normal;
+                    padding: .1em 0;
+                }
+                .level .bar {
+                    display: none;
+                }
+                #profiles .item {
+                    padding: 0;
+                }
+                .item.display {
+                    display: block;
+                    opacity: 1 !important;
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="resume">
+            <header id="header" class="clear">
+                <div>
+                    	<h1 class="name">Karn Wong</h1>
 
-<head>
-  <title>Resume</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-</head>
+                    	<h2 class="label">Senior Data Engineer</h2>
 
+                </div>	<span class="location">
+    			<span class="city">Bangkok,</span> 	<span class="countryCode">Thailand</span> </span>
+                <div
+                id="contact">
+                    <div class="website">	<span class="fa fa-external-link"></span>
+	<a target="_blank" target="_blank"
+                        href="https://www.karnwong.me">https://www.karnwong.me</a>
 
-<style>
-  html {
-    width: 100%;
-    font-size: 14px;
-  }
+                    </div>
+                    <div class="email">	<span class="fa fa-envelope-o"></span>
+	<a href="mailto:contact@karnwong.me">contact@karnwong.me</a>
 
-  ul {
-    padding-left: 1.2em;
-  }
-
-  body {
-    text-align: center;
-    width: 100%;
-    font-family: "Noto Sans", "Segoe UI", Roboto, Helvetica, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    font-size: 1rem;
-    margin: 0;
-    color: #555;
-    background-color: #fbfbfb;
-  }
-
-  a {
-    text-decoration: none;
-    color: #08c;
-    /* color: #555; */
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  .container {
-    max-width: 48rem;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    margin-bottom: 1rem;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: .1rem solid #bbbbbb;
-    padding-top: 2.2rem;
-    padding-bottom: 2.2rem;
-  }
-
-  #name-wrapper {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  #fullname {
-    font-size: 2.2rem;
-  }
-
-  #jobtitle {
-    font-size: 1.2rem;
-    margin-top: .8rem;
-  }
-
-  #contact {
-    font-size: 1rem;
-    padding-top: 1rem;
-  }
-
-  .contact-item:nth-child(1) {
-    margin-top: 0;
-  }
-
-  .contact-item {
-    margin-top: .4rem;
-  }
-
-  section {
-    display: flex;
-    padding-top: 2.4rem;
-    padding-bottom: 2.4rem;
-    padding-left: .2rem;
-    border-bottom: .1rem solid #bbbbbb;
-    hyphens: auto;
-  }
-
-  .section-title {
-    font-size: 1.6rem;
-    text-align: left;
-    min-width: 10rem;
-  }
-
-  .section-content {}
-
-  .section-flex {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .block {
-    margin-bottom: 2rem;
-  }
-
-  .block-square {
-    width: 18rem;
-  }
-
-  .block-square:nth-last-child(2) {
-    margin-bottom: 0;
-  }
-
-  .block:last-child {
-    margin-bottom: 0;
-  }
-
-  .block-title {
-    font-size: 1.2rem;
-    margin-bottom: .4rem;
-    font-weight: bold;
-  }
-
-  .block-subtitle {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: #bbbbbb;
-  }
-
-  .block-content {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
-  footer {
-    color: #bbbbbb;
-    font-size: 1rem;
-    min-height: 3rem;
-    line-height: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  @media print {
-    html {
-      font-size: 12px;
-    }
-
-    .print {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width: 48rem) {
-    html {
-      font-size: 12px;
-    }
-
-    .container {
-      padding-left: .4rem;
-      padding-right: .4rem;
-    }
-
-    header {
-      display: block;
-      padding-bottom: 1rem;
-    }
-
-    #name-wrapper {
-      text-align: center;
-      padding-bottom: 2rem;
-    }
-
-    #contact {
-      padding-top: 1rem;
-      border-top: .1rem solid #bbbbbb;
-    }
-
-    .contact-item {
-      padding-top: .2rem;
-      padding-left: .4rem;
-    }
-
-    section {
-      display: block;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    .section-flex {
-      display: block;
-    }
-
-    .block-square {}
-
-    .block-square:nth-last-child(2) {
-      margin-bottom: 2rem;
-    }
-  }
-</style>
-
-<body>
-  <div class="container">
-    <header>
-      <div id="name-wrapper">
-        <div id="fullname">
-          Karn Wong
-          <!-- Karnsiree Wongkolkitsilp -->
+                    </div>
         </div>
-        <div id="jobtitle">
-          Data Engineer
+        <div id="profiles">
+            <div class="item">
+                <div class="username">	<span class="fa fa-github github social"></span>
+	<span class="url">
+    						<a target="_blank" href="https://github.com/kahnwong">kahnwong</a>
+    					</span> 
+                </div>
+            </div>
         </div>
-      </div>
-      <div id="contact">
+        </header>
+        <section class="section margin1">
+            <header>
+                	<h2 class='section-title'>Skills</h2>
 
-        <div class="contact-item">
-          <i class="fa fa-envelope aria-hidden=" true></i> <a href="mailto:contact@karnwong.me">contact@karnwong.me</a>
-        </div>
-        <div class="contact-item">
-          <i class="fa fa-globe aria-hidden=" true></i> <a href="https://www.karnwong.me">karnwong.me</a>
-        </div>
-        <div class="contact-item">
-          <i class="fa fa-github aria-hidden=" true></i> <a href="https://github.com/kahnwong">github.com/kahnwong</a>
-        </div>
+            </header>
+            <section id="skills">
+                <div class="item">
+                    	<h3 class="name">
+    				Data Science &amp; Machine Learning
+    			</h3>
 
-      </div>
-    </header>
+                    <ul class="keywords">
+                        <li>Pandas</li>
+                        <li>Sklearn</li>
+                        <li>Matplotlib</li>
+                        <li>Seaborn</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    	<h3 class="name">
+    				Big Data
+    			</h3>
 
-    <section id="experience">
-      <div class="section-title">
-        Experience
-      </div>
-      <div class="section-content">
-        <div class="block">
-          <div class="block-title">
-            Data Engineer
-          </div>
-          <div class="block-subtitle">
-            April 2018 - Present | Baania
-          </div>
-          <div class="block-content">
-            <ul>
-              <li>Create and maintain data gathering infrastructure for daily ingestion and processing to be stored in data lake (S3)</li>
-              <li>Create and optimize machine learning models to achieve near-realtime performance</li>
-              <li>Create and maintain ETL pipelines via Dagster to reduce data update frequency from once a month to
-                daily</li>
-              <li>Deploy and maintain ML via cloud services to reduce ML deployment time from a day to within minutes
-              </li>
-              <li>Mentor junior data scientists</li>
-              <li>Infrastructure planning</li>
-              <li>Automate infrastructure and governance using Terraform</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+                    <ul class="keywords">
+                        <li>Hadoop</li>
+                        <li>Hive</li>
+                        <li>Spark</li>
+                        <li>Dagster</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    	<h3 class="name">
+    				Cloud
+    			</h3>
 
+                    <ul class="keywords">
+                        <li>AWS</li>
+                        <li>Digital Ocean</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    	<h3 class="name">
+    				DevOps
+    			</h3>
 
-    <section id="skills">
-      <div class="section-title">
-        Skills
-      </div>
+                    <ul class="keywords">
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Terraform</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    	<h3 class="name">
+    				Other Skills
+    			</h3>
 
-      <div class="section-content">
+                    <ul class="keywords">
+                        <li>Linguistics</li>
+                        <li>NLP</li>
+                        <li>GIS</li>
+                        <li>Web Scraping</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <section class="section">
+            <header>
+                 <h2 class='section-title'>Work Experience <span class="item-count">(2)</span></h2>
 
-        <div class="block">
-          <div class="block-title">
-            Data Science
-          </div>
-          <div class="block-content">
-            Hadoop, Hive, Spark, Dagster, Pandas, Sklearn, Matplotlib, Seaborn
-          </div>
-        </div>
+            </header>
+            <section id="work">
+                <section class="work-item">
+                    <header>
+                        <div class="position">Senior Data Engineer</div>
+                        <div class="company">Baania</div>
+                        <div class="date"> <span class="startDate">January 2021</span> 	<span class="endDate">- Current</span>
 
-        <div class="block">
-          <div class="block-title">
-            Cloud
-          </div>
-          <div class="block-content">
-            AWS, Digital Ocean
-          </div>
-        </div>
+                        </div>
+                    </header>	<span class="website">
+        		<a target="_blank" href="https://www.baania.com">https://www.baania.com</a>
+        	</span> 
+                    <div class="item" id="work-item">
+                        <ul class="highlights">
+                            <li>
+                                <p>Oversee implemention of a 5-year-plan for data team</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="work-item">
+                    <header>
+                        <div class="position">Data Engineer</div>
+                        <div class="company">Baania</div>
+                        <div class="date"> <span class="startDate">April 2018</span> 	<span class="endDate">- January 2021</span> 
+                        </div>
+                    </header>	<span class="website">
+        		<a target="_blank" href="https://www.baania.com">https://www.baania.com</a>
+        	</span> 
+                    <div class="item" id="work-item">
+                        <ul class="highlights">
+                            <li>
+                                <p>Create and maintain data gathering infrastructure for daily ingestion
+                                    and processing to be stored in data lake (S3)</p>
+                            </li>
+                            <li>
+                                <p>Create and optimize machine learning models to achieve near-realtime performance</p>
+                            </li>
+                            <li>
+                                <p>Create and maintain ETL pipelines via Dagster to reduce data update frequency
+                                    from once a month to daily</p>
+                            </li>
+                            <li>
+                                <p>Deploy and maintain ML via cloud services to reduce ML deployment time
+                                    from a day to within minutes</p>
+                            </li>
+                            <li>
+                                <p>Mentor junior data scientists</p>
+                            </li>
+                            <li>
+                                <p>Infrastructure planning</p>
+                            </li>
+                            <li>
+                                <p>Automate infrastructure and governance using Terraform</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <section class="section">
+            <header>
+                 <h2 class='section-title'>Projects <span class="item-count">(2)</span></h2>
 
-        <div class="block">
-          <div class="block-title">
-            Databases
-          </div>
-          <div class="block-content">
-            MariaDB / MySQL, SQLite, PostgreSQL / PostGIS, MongoDB
-          </div>
-        </div>
-        <div class="block">
-          <div class="block-title">
-            DevOps
-          </div>
-          <div class="block-content">
-            Docker, Kubernetes, Terraform
-          </div>
-        </div>
+            </header>
+            <section id="projects">
+                <section class="project-item">
+                    <header>
+                        <div class="position">Self-hosting</div>
+                        <div class="date"> <span class="startDate">December 2017</span>
+ <span class="endDate">- Current</span>
 
-        <div class="block">
-          <div class="block-title">
-            Programming
-          </div>
-          <div class="block-content">
-            Python, Bash
-          </div>
-        </div>
+                        </div>
+                    </header>
+                    <ul class="keywords">
+                        <li>Docker</li>
+                        <li>Reverse-proxy</li>
+                        <li>DevOps</li>
+                    </ul>
+                    <div class="item">
+                        <ul class="highlights">
+                            <li>
+                                <p>Hosted on a laptop from 2015 with 16GB RAM</p>
+                            </li>
+                            <li>
+                                <p>Alternative / self-hosted version for popular subscription services: Netflix,
+                                    Spotify, LastPass, Trello, Dropbox, NordVPN, etc.</p>
+                            </li>
+                            <li>
+                                <p>Managed via docker-compose</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="project-item">
+                    <header>
+                        <div class="position">gcal-agenda</div>
+                        <div class="date"> <span class="startDate">October 2020</span>
+ <span class="endDate">- November 2020</span>
 
-        <div class="block">
-          <div class="block-title">
-            Web Scraping
-          </div>
-          <div class="block-content">
-            Selenium, BeautifulSoup, Scrapy
-          </div>
-        </div>
+                        </div>
+                    </header> <span class="website">
+            <a target="_blank" href="https://github.com/kahnwong/gcal-agenda">https://github.com/kahnwong/gcal-agenda</a>
+          </span>
 
-        <div class="block">
-          <div class="block-title">
-            Other Skills
-          </div>
-          <div class="block-content">
-            Linguistics, NLP, GIS, Linux
-          </div>
-        </div>
+                    <ul class="keywords">
+                        <li>google-api</li>
+                        <li>dashboard</li>
+                        <li>calendar</li>
+                    </ul>
+                    <div class="item">
+                        <ul class="highlights">
+                            <li>
+                                <p>Lightweight with only python and webserver</p>
+                            </li>
+                            <li>
+                                <p>Webpage refreshes every 30 minutes</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <section class="section">
+            <header>
+                 <h2 class='section-title'>Education <span class="item-count">(1)</span></h2>
 
-      </div>
-    </section>
+            </header>
+            <section id="education">
+                <section class="education-item">
+                    <header>
+                        <div class="header-left">
+                            <div class="studyType">Bachelor</div>
+                            <div class="area">Information and Communication Technology</div>
+                            <div class="institution">Rangsit University</div>
+                        </div>
+                        <div class="date"> <span class="startDate">
+              2015
+              </span>
+ <span class="endDate">
+              - 2018
+              </span>
 
+                        </div>
+                    </header>
+                    <div class="item"></div>
+                </section>
+            </section>
+        </section>
+        <section class="section">
+            <header>
+                 <h2 class='section-title'>Publications</h2>
 
-    <section id="projects">
-      <div class="section-title">
-        Projects
-      </div>
-      <div class="section-content">
-        <div class="block">
-          <div class="block-title">
-            Self-Hosting
-          </div>
+            </header>
+            <section id="publications">
+                <section class="publication-item">
+                    <header>
+                        <div class="header-left"> <span class="name">
+              <span class="website">
+              <a target="_blank" href="https://doi.org/10.1145/3313991.3314010">Using Classification Technique for Customer Relationship Management based on Thai Social Media Data</a>
+              </span>
+</span> <span class="publisher">
+              in ICCAE
+              </span>
 
-          <div class="block-content">
-            Self-hosting services on my home server / VPS via docker-compose and reverse-proxy via apache.
-          
-            <br>
-            <br>
-          <table>
-            <thead>
-              <tr>
-                <th>Service</th>
-                <th>Usage</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Bitwarden</td>
-                <td>password manager</td>
-              </tr>
-              <tr>
-                <td>Booksonic</td>
-                <td>audiobooks streaming</td>
-              </tr>
-              <tr>
-                <td>Bookstack</td>
-                <td>wiki</td>
-              </tr>
-              <tr>
-                <td>Ghost</td>
-                <td><a href="https://blog.karnwong.me">personal blog</a></td>
-              </tr>
-              <tr>
-                <td>Kanboard</td>
-                <td>kanban board</td>
-              </tr>
-              <tr>
-                <td>Komga</td>
-                <td>comics server</td>
-              </tr>
-              <tr>
-                <td>Miniflux</td>
-                <td>RSS feed reader</td>
-              </tr>
-              <tr>
-                <td>Navidrome</td>
-                <td>music streaming</td>
-              </tr>
-              <tr>
-                <td>Nextcloud</td>
-                <td>cloud storage</td>
-              </tr>
-              <tr>
-                <td>OpenVPN &amp; Pi-Hole</td>
-                <td>block ads via VPN</td>
-              </tr>
-              <tr>
-                <td>Syncthing</td>
-                <td>file syncing server</td>
-              </tr>
-              <tr>
-                <td>Wallabag</td>
-                <td>Pocket clone for read-it-later</td>
-              </tr>
-            </tbody>
-          </table>
+                        </div> <span class="date">
+            1 January 2019
+            </span>
 
+                    </header>
+                    <div class="item"></div>
+                </section>
+            </section>
+        </section>
+        <section class="section margin1">
+            <header>
+                 <h2 class='section-title'>Languages</h2>
 
-          </div>
-        </div>
-
-        <div class="block">
-          <div class="block-title">
-            <a href="https://github.com/kahnwong/gcal-agenda">gcal-agenda</a>
-          </div>
-          <div class="block-content">
-            Generate a kindle dashboard view of today's calendar agenda and weather forecast using REST APIs for data and python for
-            html generation.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="education">
-      <div class="section-title">
-        Education
-      </div>
-      <div class="section-content">
-        <div class="block">
-          <div class="block-title">
-            Rangsit University
-          </div>
-          <div class="block-subtitle">
-            Aug 2015 - May 2018 | Pathum Thani, Thailand
-          </div>
-          <div class="block-content">
-            <b>Information and Communication Technology</b>
-            <br>
-            - Outstanding thesis award<br>
-            - Teaching assistant for Introduction to Data Mining
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <section id="publications">
-      <div class="section-title">
-        Publications
-      </div>
-      <div class="section-content">
-        <div class="block">
-          <div class="block-title">
-            Using Classification Technique for Customer Relationship Management based on Thai Social Media Data, ICCAE
-          </div>
-          <div class="block-subtitle">
-            2019
-          </div>
-          <div class="block-content">
-            <!-- Oversees data gathering via third-party sources and optimize processes involved. -->
-            <a href=https://doi.org/10.1145/3313991.3314010>Chumwatana, T., & Wongkolkitsilp, K. (2019). Using Classification Technique for Customer Relationship Management based
-            on Thai Social Media Data. Proceedings of the 2019 11th International Conference on Computer and Automation Engineering
-            - ICCAE 2019. the 2019 11th International Conference.</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="languages">
-      <div class="section-title">
-        Languages
-      </div>
-      <div class="section-content section-flex">
-
-
-
-        <div class="block block-square">
-          <div class="block-title">
+            </header>
+            <section id="languages">
+                <div class="display">
+                     <h3 class="language">
             English
-          </div>
-          <div class="block-content">
-            Native or bilingual proficiency
-          </div>
-        </div>
+          </h3>
 
-        <div class="block block-square">
-          <div class="block-title">
+                    <div class="item">
+                        <div class="level fluency native speaker"> <em>Native speaker</em>
+
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="display">
+                     <h3 class="language">
             Thai
-          </div>
-          <div class="block-content">
-            Native or bilingual proficiency
-          </div>
-        </div>
+          </h3>
 
-      </div>
-    </section>
+                    <div class="item">
+                        <div class="level fluency native speaker"> <em>Native speaker</em>
 
-  </div>
-  <footer>
-    Made with <i class="fa fa-heart aria-hidden=" true></i> by <a href="https://github.com/crispgm/resume">David
-      Zhang</a> <span class="print">( <a href="javascript:window.print()">PDF</a> )</span>
-  </footer>
-</body>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="section margin1">
+            <header>
+                 <h2 class='section-title' class='section-title'>Interests</h2>
+
+            </header>
+            <section id="interests">
+                <div class="item">
+                     <h3 class="name">
+            Music
+          </h3>
+
+                    <ul class="keywords">
+                        <li>Symphonic Heavy Metal</li>
+                        <li>Turkish Pop</li>
+                        <li>Folk Metal</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </body>
 
 </html>
