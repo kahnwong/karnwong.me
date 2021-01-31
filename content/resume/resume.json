@@ -1,0 +1,244 @@
+{
+    "basics": {
+        "name": "Karn Wong",
+        "label": "Senior Data Engineer",
+        "email": "contact@karnwong.me",
+        "phone": "",
+        "website": "https://www.karnwong.me",
+        "summary": null,
+        "location": {
+            "city": "Bangkok",
+            "countryCode": "Thailand"
+        },
+        "profiles": [
+            {
+                "network": "Github",
+                "username": "kahnwong",
+                "url": "https://github.com/kahnwong"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "Baania",
+            "position": "Data Engineer",
+            "website": "https://www.baania.com",
+            "startDate": "2018-04-02",
+            "endDate": "2021-01-29",
+            "highlights": [
+                "Create and maintain data gathering infrastructure for daily ingestion and processing to be stored in data lake (S3)",
+                "Create and optimize machine learning models to achieve near-realtime performance",
+                "Create and maintain ETL pipelines via Dagster to reduce data update frequency from once a month to daily",
+                "Deploy and maintain ML via cloud services to reduce ML deployment time from a day to within minutes",
+                "Mentor junior data scientists",
+                "Infrastructure planning",
+                "Automate infrastructure and governance using Terraform",
+                "Package cron services to AWS ECS and invoke via AWS ECS Task to cut down cost from 50 USD / year to 0.1 USD / year"
+            ]
+        },
+        {
+            "company": "Baania",
+            "position": "Senior Data Engineer",
+            "website": "https://www.baania.com",
+            "startDate": "2021-01-29",
+            "endDate": null,
+            "highlights": [
+                "Oversee implementation of a 5-year-plan for data team"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Rangsit University",
+            "area": "Information and Communication Technology",
+            "studyType": "Bachelor",
+            "startDate": "2015-08-01",
+            "endDate": "2018-05-01"
+        }
+    ],
+    "publications": [
+        {
+            "name": "Using Classification Technique for Customer Relationship Management based on Thai Social Media Data",
+            "publisher": "ICCAE",
+            "releaseDate": "2019-02-01",
+            "website": "https://doi.org/10.1145/3313991.3314010"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Data Science & Machine Learning",
+            "keywords": [
+                "Pandas",
+                "Sklearn",
+                "Matplotlib",
+                "Seaborn"
+            ]
+        },
+        {
+            "name": "Big Data",
+            "keywords": [
+                "Hadoop",
+                "Hive",
+                "Spark",
+                "Dagster",
+                "ETL",
+                "Data modeling"
+            ]
+        },
+        {
+            "name": "Cloud",
+            "keywords": [
+                "AWS",
+                "Digital Ocean"
+            ]
+        },
+        {
+            "name": "DevOps",
+            "keywords": [
+                "Docker",
+                "Kubernetes",
+                "Terraform",
+                "ML deployment"
+            ]
+        },
+        {
+            "name": "Other Skills",
+            "keywords": [
+                "Linguistics",
+                "NLP",
+                "GIS",
+                "Web Scraping",
+                "Linux"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "Thai",
+            "fluency": "Native speaker"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Music",
+            "keywords": [
+                "Symphonic Heavy Metal",
+                "Turkish Pop",
+                "Folk Metal"
+            ]
+        },
+        {
+            "name": "Tea",
+            "keywords": [
+                "Chai",
+                "Ceylon",
+                "Peppermint"
+            ]
+        },
+        {
+            "name": "Video Games",
+            "keywords": [
+                "FPS",
+                "Simulation",
+                "Action"
+            ]
+        },
+        {
+            "name": "Books",
+            "keywords": [
+                "History",
+                "Nordic Noir",
+                "Medicine",
+                "Linguistics"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Self-hosting",
+            "highlights": [
+                "Hosted on a laptop from 2015 with 16GB RAM",
+                "Alternative / self-hosted version for popular subscription services: Netflix, Spotify, LastPass, Trello, Dropbox, NordVPN, etc.",
+                "Managed via docker-compose",
+                "Use certbot for SSL"
+            ],
+            "keywords": [
+                "Docker",
+                "Reverse-proxy",
+                "DevOps"
+            ],
+            "startDate": "2017-12-01",
+            "type": "service"
+        },
+        {
+            "name": "gcal-agenda",
+            "highlights": [
+                "Lightweight with only python and webserver",
+                "Webpage refreshes every 30 minutes"
+            ],
+            "keywords": [
+                "google-api",
+                "dashboard",
+                "calendar"
+            ],
+            "startDate": "2020-10-11",
+            "endDate": "2020-11-11",
+            "url": "https://github.com/kahnwong/gcal-agenda",
+            "type": "service"
+        },
+        {
+            "name": "Visualizing Map Region Prefix/Suffix",
+            "highlights": [
+                "Utilize NLP to group region name prefix/suffix",
+                "GIS visualization"
+            ],
+            "keywords": [
+                "data science",
+                "gis",
+                "visualization",
+                "nlp"
+            ],
+            "startDate": "2020-09-02",
+            "endDate": "2020-09-03",
+            "url": "https://blog.karnwong.me/visualizing-map-region-prefix-suffix",
+            "type": "data"
+        },
+        {
+            "name": "Word-Based Analysis With Song Lyrics",
+            "highlights": [
+                "Visualize lyrics trend using NLP",
+                "Use topic modeling to find common words per specified clusters"
+            ],
+            "keywords": [
+                "machine learning",
+                "data science",
+                "nlp",
+                "visualization"
+            ],
+            "startDate": "2020-04",
+            "endDate": "2020-04",
+            "url": "https://blog.karnwong.me/word-based-analysis-with-song-lyrics",
+            "type": "data"
+        },
+        {
+            "name": "Impute Pipelines",
+            "highlights": [
+                "Use machine learning to fill in missing data",
+                "Utilize hyperparameter tuning to find the optimum parameters"
+            ],
+            "keywords": [
+                "machine learning",
+                "data science",
+                "hyperparameter tuning"
+            ],
+            "startDate": "2019-11-28",
+            "endDate": "2019-12-23",
+            "url": "https://blog.karnwong.me/impute-pipelines",
+            "type": "data"
+        }
+    ]
+}
