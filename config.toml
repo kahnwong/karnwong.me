@@ -5,7 +5,10 @@ languageCode = "en-us"
 theme = "hello-friend-ng"
 
 
-disableRSS = false
+disableRSS = true
+
+disableKinds = ["RSS"]
+
 
 #[permalinks]
 #  posts = "/posts/:year-:month-:day-:title/"
