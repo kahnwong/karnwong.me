@@ -6,4 +6,4 @@ aliases = ["about-us","about-hugo","contact"]
   name = "Karn Wong"
 +++
 
-Data engineer at a local startup. Usually works with godzilla-level data and machine learning infrastructure. Is a designated debugger at my office. Have a crush on Middle Eastern fiction and Turkish music. Language and history nerd. Symphonic metal is my jam.
+Data engineer at a local startup. Usually work with godzilla-level data and machine learning infrastructure. Is a designated unf*cker at my office. Have a crush on Nordic noir. Language and history nerd. Symphonic metal is my jam.
