@@ -13,10 +13,10 @@ Until the day I die. Or when I decide I want to die.
 In my case it's an autoimmune disease, not allergy. Repeat after me: it's not an allergy.
 
 ## But you react to food? So how's that not an allergy?
-Because I don't get anaphylactic shock, and epi-pen can do nothing for me. And I shit blood.
+Because I don't get anaphylactic shock, and epi-pen can do nothing for me. And I sh*t blood.
 
 ## But some people get diarrhea when they drink milk. Isn't it the same?
-That's food intolerance, and they don't shit blood.
+That's food intolerance, and they don't sh*t blood.
 
 ## Can you eat x?
 Two factors: what it is and what it came into contact with. If it doesn't have gluten in itself but has contact with gluten by any means, it's cross-contaminated, which means I can't eat it.
