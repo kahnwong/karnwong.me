@@ -16,10 +16,29 @@ jobs:
       uses: actions/checkout@v2
       with:
         submodules: true
-    - name: 'Building...'
-      uses: reuixiy/hugo-deploy@v1
-      env:
-        DEPLOY_REPO: kahnwong/kahnwong.github.io
-        DEPLOY_BRANCH: master
-        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
-        TZ: Asia/Bangkok
+
+    - name: Install hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'
+
+    - name: Setup git & SSH key
+      run: |
+        git config --global user.name "${GITHUB_ACTOR}"
+        git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        mkdir /root/.ssh
+        ssh-keyscan -t rsa github.com > /root/.ssh/known_hosts && \
+        echo "${DEPLOY_KEY}" > /root/.ssh/id_rsa && \
+        chmod 400 /root/.ssh/id_rsa
+
+    - name: Deploy
+      run: |
+        hugo --gc --minify --cleanDestinationDir
+        pushd public
+        git init
+        git remote add origin git@github.com:kahnwong/kahnwong.github.io.git
+        git add -A
+        git checkout -b master
+        git commit -m "Automated deployment @ $(date '+%Y-%m-%d %H:%M:%S') ${TZ}"
+        git push -f origin master
+        popd
