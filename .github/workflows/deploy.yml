@@ -12,6 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: 'Checkout Repository'
+      uses: actions/checkout@v2
+      with:
+        submodules: true
     - name: 'Building...'
       uses: reuixiy/hugo-deploy@v1
       env:
