@@ -4,11 +4,8 @@ baseurl = "/"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
-
 disableRSS = true
-
 disableKinds = ["RSS"]
-
 
 #[permalinks]
 #  posts = "/posts/:year-:month-:day-:title/"
@@ -33,12 +30,10 @@ disableKinds = ["RSS"]
   # Directory name of your blog content (default is `content/posts`)
   contentTypeName = "posts"
 
-  # Default theme "light" or "dark"
   defaultTheme = "dark"
-
+  enableThemeToggle = true
  
 #   homeSubtitle = ""
-
 
    # Social icons
   [[params.social]]
@@ -48,6 +43,10 @@ disableKinds = ["RSS"]
   [[params.social]]
     name = "github"
     url  = "https://github.com/kahnwong/"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/karn-w-7b535b202"
 
 [languages]
   [languages.en]
@@ -60,6 +59,14 @@ disableKinds = ["RSS"]
     [languages.en.params.logo]
       logoText = "$ cd /home/"
       logoHomeLink = "/"
+
+    # Set true to remove the logo cursor entirely.
+    # logoCursorDisabled = false
+    # Set to a valid CSS color to change the cursor in the logo.
+    logoCursorColor    = "#046DD6"
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    # logoCursorAnimate  = "2s"
+
     # or
     #
     # path = "/img/your-example-logo.svg"
@@ -68,19 +75,9 @@ disableKinds = ["RSS"]
 # And you can even create generic menu
 [menu]
     [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "/posts"
-
-    [[menu.main]]
     identifier = "about"
     name       = "About"
     url        = "/about"
-
-    #[[menu.main]]
-    #identifier = "tags"
-    #name       = "Tags"
-    #url        = "/tags"
 
     [[menu.main]]
     identifier = "resume"
