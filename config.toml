@@ -84,10 +84,10 @@ disableKinds = ["RSS"]
     name       = "Resume"
     url        = "/resume"
 
-    [[menu.main]]
-    identifier = "faq"
-    name       = "FAQ"
-    url        = "/faq"
+    # [[menu.main]]
+    # identifier = "faq"
+    # name       = "FAQ"
+    # url        = "/faq"
 
     [[menu.main]]
     identifier = "posts"
