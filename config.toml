@@ -80,6 +80,17 @@ disableKinds = ["RSS"]
     url        = "/about"
 
     [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+#    url        = "https://blog.karnwong.me/"
+    url        = "/posts"
+
+    [[menu.main]]
+    identifier = "tags"
+    name       = "Tags"
+    url        = "/tags"
+
+    [[menu.main]]
     identifier = "resume"
     name       = "Resume"
     url        = "/resume"
@@ -89,12 +100,14 @@ disableKinds = ["RSS"]
     # name       = "FAQ"
     # url        = "/faq"
 
-    [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "https://blog.karnwong.me/"
 
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
 
-# [taxonomies]
-#   tag      = "tags"
-#   category = "categories"
+[markup]
+    defaultMarkdownHandler = "goldmark"
+	
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
