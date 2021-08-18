@@ -2,7 +2,7 @@
 title: Word-based analysis with song lyrics
 date: 2020-04-15T17:00:00.000Z
 draft: false
-toc: false
+toc: true
 images:
 tags:
   - data analysis
@@ -10,12 +10,12 @@ tags:
 
 I listen to a lot of music, mostly symphonic heavy metal. What's interesting is that in this genre, each album often has different themes, also each band focus on different topics in terms of lyrics. For instance, Nightwish focuses on nature, and their Imaginaerum album focuses on evolution. So I thought it would be interesting if I apply various text analysis methods to the lyrics, which resulted in this article. Github link [here](https://github.com/kahnwong/lyrics_visualization)!
 
-## Techniques used:
+## Techniques used
 - tokenization
 - stemming and lemming
 - topic modeling
 
-# Import modules
+## Import modules
 
 
 ```python
@@ -27,7 +27,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 from nltk import word_tokenize
-# from nltk.corpus import stopwords
+## from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from sklearn.decomposition import NMF, LatentDirichletAllocation
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
@@ -35,7 +35,7 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 sns.set()
 ```
 
-# Import data generated from 01_get_data.py
+## Import data generated from 01_get_data.py
 
 In this step, I import raw data and convert raw year into a decade, for instance 1993 is in 1990s. I won't be doing analysis by decades, because in heavy metal it doesn't follow the trend much. But I include it here in case you are working on pop artists. In addition, the differences by year may not be that large, so it makes sense to see it in terms of decades.
 
@@ -43,11 +43,11 @@ In this step, I import raw data and convert raw year into a decade, for instance
 ```python
 df = pd.read_csv('lyrics.csv')
 
-# dop song duplicates from the same artist
+## dop song duplicates from the same artist
 df.drop_duplicates(subset=['artist', 'title'], inplace=True)
 
-# tokenize, remove stopwords, stemming and lemming
-# stop_words = set(stopwords.words('english'))
+## tokenize, remove stopwords, stemming and lemming
+## stop_words = set(stopwords.words('english'))
 with open('english.txt', 'r') as f:
     stop_words = [i.strip() for i in f.readlines()]
     
@@ -61,16 +61,16 @@ df['tokens'] = df.lyrics.apply(
          (len(w) > 1)
     ])
 
-# count words
+## count words
 df['word_count'] = df.tokens.apply(lambda x: len(x))
 
-# count unique words
+## count unique words
 df['unique_word_count'] = df.tokens.apply(lambda x: len(set(x)))
 
-# remove outliers
+## remove outliers
 df = df[df.word_count>10]
 
-# set decade
+## set decade
 df['year'] = df.year.astype(int)
 df['1990s'] = np.where(
                 ((1990<=df.year) & (df.year <=1999)),
@@ -98,7 +98,7 @@ df['2020s'] = np.where(
 
 df['decade'] = df['1990s'].combine_first(df['2000s']).combine_first(df['2010s']).combine_first(df['2020s'])
 
-# drop unused columns
+## drop unused columns
 df = df.drop(columns=['1990s', '2000s', '2010s', '2020s'])
 
 df
@@ -122,7 +122,7 @@ df
 
 
 
-# Explore relationship
+## Explore relationship
 
 From this plot, I can see that there is a correlation between ```word_count``` and ```unique_word_count```, that is, they go in the same direction. The higher the word_count, the higher unique_word_count and vice versa.
 
@@ -134,7 +134,7 @@ g.map(plt.scatter)
 
 ![](/images/2021-08-18-19-02-25.png)
 
-# Boxplot
+## Boxplot
 
 We can use either ```word_count``` or ```unique_word_count```, since they go in the same direction, except the values from ```unique_word_count``` will be higher, but it is proportional to ```word_count```
 
@@ -151,7 +151,7 @@ sns.boxplot(x="word_count", y="artist", data=df, orient='h')
 ![](/images/2021-08-18-19-02-38.png)
 
 
-# Most common words
+## Most common words
 
 In this step, I count how many times a word occur per dataset, then plot a bar graph for each. For the bands I usually listen to, each album has a theme, so it's very probable that each album would have different set of most common words.
 
@@ -182,12 +182,12 @@ def word_vector(df):
 
     return wordcount_sum.head(10)
 
-# get wordcount for each group, this way the word_vector function is not getting messy
+## get wordcount for each group, this way the word_vector function is not getting messy
 wordcount_group = []
-################# adjust filters here
+################## adjust filters here
 artist = 'Epica'
 group = 'album' # album, decade
-#################
+##################
 df_temp = df[df.artist==artist]
 for i in df_temp[group].unique():
     chunk = word_vector(df_temp[df[group]==i])
@@ -196,7 +196,7 @@ for i in df_temp[group].unique():
 
 wordcount_group = pd.concat(wordcount_group)
 
-# plot
+## plot
 fig, axs = plt.subplots(len(wordcount_group[group].unique()), figsize=(13,53)) # adjust figure size here if it's too cramped
 for index, i in enumerate(wordcount_group[group].unique()):
     temp = wordcount_group[wordcount_group[group]==i]
@@ -235,7 +235,7 @@ for index, i in enumerate(wordcount_group[group].unique()):
 
 Whoops. Still more or less the same. But if you look carefully, Powerwolf stands out because their lyrical themes are werewolves and myths. 
 
-# Topic modeling
+## Topic modeling
 
 So I change the tactics a bit by using topic modeling instead of seeing just the top words count. This way, the model and extract group of words that said to be the essence belonging to each cluster. I use both NMF and LDA here for comparison. Here, I tell the model to read lyrics from four artists, then try to group into clusters and finding main words from each, but I'm not telling it which document belongs to which artist.
 
@@ -251,18 +251,18 @@ def display_topics(model, feature_names, no_top_words):
         
     return topic_words
 
-# define temp dataframe here
+## define temp dataframe here
 temp = df.query('artist == "Visions of Atlantis" or\
                 artist == "Lacuna Coil" or\
                 artist == "Epica" or\
                 artist == "Nightwish"')
 
-# define parameters
+## define parameters
 no_features = 1000
 no_topics = len(temp.artist.unique()) # set album count as number of topics
 no_top_words = 15
 
-# create word matrix
+## create word matrix
 tfidf_vectorizer = TfidfVectorizer(max_df=0.95, min_df=2, max_features=no_features, stop_words='english')
 tfidf = tfidf_vectorizer.fit_transform(temp.lyrics)
 tfidf_feature_names = tfidf_vectorizer.get_feature_names()

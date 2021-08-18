@@ -2,7 +2,7 @@
 title: Visualizing map region prefix/suffix
 date: 2020-09-03T12:04:42.000Z
 draft: false
-toc: false
+toc: true
 images:
 tags:
   - data analysis
@@ -19,17 +19,17 @@ from geoplot import polyplot
 from pythainlp.tokenize import word_tokenize, syllable_tokenize
 ```
 
-# Data structure
+## Data structure
 
 - **name**: target region name
 - geometry: spatial column
 - *: parent region name, e.g. in "district" dataset it would have a "province" column
 
-# Dissolving dataset in case you have multiple region level in the same file
+## Dissolving dataset in case you have multiple region level in the same file
 
 
 ```python
-# assuming you have a district dataset and want to dissolve to province only
+## assuming you have a district dataset and want to dissolve to province only
 district_filename = "FILE_PATH_HERE"
 
 gdf = gpd.read_file(district_filename)
@@ -42,7 +42,7 @@ gdf = gdf.rename(columns={'prov_namt'.upper(): 'province', # change to dummy
 
 gdf = gdf[used_columns+['geometry']]
 
-# desired data 🛎🛎🛎 please do create a datasest with outermost region, so we can use it as boundary for visualization
+## desired data 🛎🛎🛎 please do create a datasest with outermost region, so we can use it as boundary for visualization
 province = gdf.dissolve(by='province')
 province = province.reset_index()\
                 .rename(columns={'province': 'name'})\
@@ -140,11 +140,11 @@ province
 
 
 ```python
-# declare dummy variable so it can be reused with other region type
+## declare dummy variable so it can be reused with other region type
 df = province
 ```
 
-# EDA: tokenize region name. Use other tokenizer for your target language
+## EDA: tokenize region name. Use other tokenizer for your target language
 
 
 ```python
@@ -339,16 +339,16 @@ tokenize(df.name.unique())
 
 
 
-# Tokenize with selected slugs
+## Tokenize with selected slugs
 
 
 ```python
-# replace with your slugs here
+## replace with your slugs here
 slugs = ['นคร', 'สุ', 'สมุทร', 'ธานี', 'นคร']
 slugs = sorted(list(set(slugs)))
 slugs = slugs[::-1] # for longest matching
 
-# get prefix and suffix
+## get prefix and suffix
 def get_slug_1(x):
     for i in slugs:
         if (x.startswith(i)):
@@ -492,13 +492,13 @@ df
 
 
 
-# Viz prep
+## Viz prep
 
 
 ```python
-# make total_bound (background outline)
-# and extend (so the canvas would center at the same point)
-# also, remember the PROVINCE dataset from the start? we're going to use that
+## make total_bound (background outline)
+## and extend (so the canvas would center at the same point)
+## also, remember the PROVINCE dataset from the start? we're going to use that
 
 province['class'] = 'class' # a dummy column so it would dissolve the whole dataset
 boundary = province.dissolve(by='class')
@@ -507,23 +507,23 @@ extent = boundary.total_bounds
 
 
 ```python
-# set font (default matplotlib font can't render Thai)
+## set font (default matplotlib font can't render Thai)
 plt.rcParams["font.family"] = "Tahoma"
 ```
 
-# Cleaning it up
+## Cleaning it up
 
 There are some degree of Pali-Sanskrit influence in Thai, in which the word order is different, so it is possible for a certain \*fix to appear as either prefix or suffix. it's like **re**peat and do**re** (for redo)
 
 
 ```python
-# ⛩⛩⛩ rerun from this cell onward if you want to change *fix ⛩⛩⛩
-# filter null *fix
+## ⛩⛩⛩ rerun from this cell onward if you want to change *fix ⛩⛩⛩
+## filter null *fix
 _fix_column = 'suffix' # ⛩⛩⛩ change here ⛩⛩⛩
 df_temp = df
 df_temp = df_temp[df_temp[_fix_column].notnull()]
 
-# get count
+## get count
 df_temp['{}_count'.format(_fix_column)] = df_temp[_fix_column].map(df_temp[_fix_column]\
                                             .value_counts()\
                                             .to_dict())
@@ -532,15 +532,15 @@ df_temp['{}_count'.format(_fix_column)] = df_temp[_fix_column].map(df_temp[_fix_
 
 
 ```python
-# at the largest region level it won't be much, but at a smaller level like subdistrict
-# having a single *fix for the entire dataset can happen, hence we should filter it out
+## at the largest region level it won't be much, but at a smaller level like subdistrict
+## having a single *fix for the entire dataset can happen, hence we should filter it out
 
-# filter for a *fix you want to visualize
+## filter for a *fix you want to visualize
 viz_categ_count_column = '{}_count'.format(_fix_column)
 
-# ⛩⛩⛩ use the second line if you want to set the threshold with median ⛩⛩⛩
+## ⛩⛩⛩ use the second line if you want to set the threshold with median ⛩⛩⛩
 threshold = 0
-# threshold = df_temp[viz_categ_count_column].median()
+## threshold = df_temp[viz_categ_count_column].median()
 
 df_temp = df_temp[df_temp[viz_categ_count_column] >= threshold]
 ```
@@ -649,7 +649,7 @@ df_temp
 
 
 
-# Viz
+## Viz
 
 
 ```python
@@ -675,26 +675,26 @@ for key in gdf[key_column].unique():
     plt.title('{}: {} records'.format(key, total_records))
     
     plt.savefig('{}/{}_{}.png'.format(out_dir, str(total_records).zfill(3), key))
-#     break
+##     break
 ```
 
 
-# Output structure
+## Output structure
 ![](/images/2021-08-18-19-12-14.png)
 
-# Some interesting outputs (at subdistrict level)
+## Some interesting outputs (at subdistrict level)
 
-## Northern region
+### Northern region
 
 You can see that the prefix "แม่" concentrates around the northern region.
 ![](/images/2021-08-18-19-12-05.png)
 
-## Eastern region
+### Eastern region
 
 "โนน" seems to be specific to the eastern seeing it's clustered around the eastern part of the country.
 ![](/images/2021-08-18-19-12-22.png)
 
-## Multi-region
+### Multi-region
 
 As expected, "บาง" is clustered around the central region, no surprise here since the old name of Thailand's capital (it's located in the central region) is "บางกอก." But you can see that it's clustered around the southern parts as well.
 

@@ -16,26 +16,30 @@ You can set it up using a Caddy docker container, but some containers I use also
 
 For multiple sites config setup:
 
-    # /etc/caddy/Caddyfile
-    
-    SUBDOMAIN1.DOMAIN.com {
-        reverse_proxy 127.0.0.1:${PORT}
-    }
-    SUBDOMAIN2.DOMAIN.com {
-        reverse_proxy 127.0.0.1:${PORT}
-    }
+```caddyfile
+# /etc/caddy/Caddyfile
+
+SUBDOMAIN1.DOMAIN.com {
+    reverse_proxy 127.0.0.1:${PORT}
+}
+SUBDOMAIN2.DOMAIN.com {
+    reverse_proxy 127.0.0.1:${PORT}
+}
+```
 
 For basic authentication, it's very, very simple (to the point I regret time researching it in apache2):
 
-    # generate password hash
-    caddy hash-password --algorithm bcrypt
-    
-    # add basicauth to Caddyfile
-    SUBDOMAIN1.DOMAIN.com {
-        basicauth * {
-            ${USERNAME} ${CADDY_PASSWORD_HASH}
-        }
-        reverse_proxy 127.0.0.1:${PORT}
+```caddyfile
+# generate password hash
+caddy hash-password --algorithm bcrypt
+
+# add basicauth to Caddyfile
+SUBDOMAIN1.DOMAIN.com {
+    basicauth * {
+        ${USERNAME} ${CADDY_PASSWORD_HASH}
     }
+    reverse_proxy 127.0.0.1:${PORT}
+}
+```
 
 And run `systemctl reload caddy`. You're all set!

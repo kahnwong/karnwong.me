@@ -21,13 +21,15 @@ The recommended way to export is using `mongoexport` utility, but you have to sp
 
 But you can interact with mongodb from python, and if you read from it it'll return a dict, which is perfect for this because you don't have to specify the required attributes beforehand. So what I do is:
 
-    cursor = collection.find({})
-    total_records = collection.estimated_document_count()
-    
-    with open(filename, 'w') as f:
-        for i in tqdm(cursor, total=total_records):
-            f.write(json.dumps(i, default=myconverter, ensure_ascii=False))
-            f.write('\n')
+```python
+cursor = collection.find({})
+total_records = collection.estimated_document_count()
+
+with open(filename, 'w') as f:
+    for i in tqdm(cursor, total=total_records):
+        f.write(json.dumps(i, default=myconverter, ensure_ascii=False))
+        f.write('\n')
+```
 
 The cons for this solution is it needs a lot of hdd space since it's uncompressed. But it **works best if you need to export a collection with mismatched schema**.
 

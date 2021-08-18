@@ -17,23 +17,25 @@ To set up password auth with apache2 via reverse-proxy:
 1. `echo "${PASSWORD}" | htpasswd -c -i /etc/apache2/.htpasswd ${USER}` on your host machine which has apache2 installed.
 2. create a vhost config:
 
-    <VirtualHost *:80>
-        ProxyPreserveHost On
-    
-        ProxyPass / http://localhost:${EXPOSED_CONTAINER_PORT}/
-        ProxyPassReverse / http://localhost:${EXPOSED_CONTAINER_PORT}/
-    
-        ServerName ${YOUR_DOMAIN}
-    
-        <Proxy *>
-            Order deny,allow
-            Allow from all
-            Authtype Basic
-            Authname "Password Required"
-            AuthUserFile /etc/apache2/.htpasswd
-            Require valid-user
-        </Proxy>
-    </virtualhost>
+```xml
+<VirtualHost *:80>
+    ProxyPreserveHost On
+
+    ProxyPass / http://localhost:${EXPOSED_CONTAINER_PORT}/
+    ProxyPassReverse / http://localhost:${EXPOSED_CONTAINER_PORT}/
+
+    ServerName ${YOUR_DOMAIN}
+
+    <Proxy *>
+        Order deny,allow
+        Allow from all
+        Authtype Basic
+        Authname "Password Required"
+        AuthUserFile /etc/apache2/.htpasswd
+        Require valid-user
+    </Proxy>
+</virtualhost>
+```
     
 
 That's it!

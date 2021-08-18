@@ -30,7 +30,7 @@ The next step is to clean up the dataframe for further analysis. The steps are:
 
 
 ```python
-# data prep
+## data prep
 df = pd.read_csv('unhcr_resettlement_residence_swe.csv')[1:]
 df = df.groupby(['Origin', 'Year'], as_index=False).sum() # group by two columns
 df = df.drop('Country / territory of asylum/residence', axis=1) # drop destination country column
@@ -118,7 +118,7 @@ Since I want to plot a multiple line graph, I need to supply one dataframe per e
 
 
 ```python
-# create one dataframe per one origin country
+## create one dataframe per one origin country
 UniqueNames = df.Origin.unique()
 DataFrameDict = {elem : pd.DataFrame for elem in UniqueNames}
 
@@ -145,23 +145,23 @@ And because Syria is in the Middle East, I want to focus in the MENA region (Mid
 
 
 ```python
-# orginal MENA, too big
+## orginal MENA, too big
 UniqueNames_og_mena = ['Algeria', 'Bahrain', 'Djibouti', 'Egypt', 'Iran', 'Iraq', 'Israel', 'Jordan',
 'Kuwait', 'Lebanon', 'Libya', 'Mauritania', 'Morocco', 'Oman', 'Palestine', 'Qatar',
 'Sahrawi Arab Democratic Republic', 'Saudi Arabia', 'Somalia', 'Sudan', 'Syria', 'Tunisia',
 'United Arab Emirates', 'Yemen', 'Afghanistan', 'Armenia', 'Azerbaijan', 'Chad', 'Comoros',
 'Cyprus', 'Eritrea', 'Georgia', 'Mali', 'Niger', 'Pakistan', 'Turkey']
 
-# MENA
+## MENA
 UniqueNames_mena = ['Algeria', 'Bahrain', 'Djibouti', 'Egypt', 'Iran (Islamic Rep. of)', 'Iraq', 'Jordan',
                'Kuwait', 'Lebanon', 'Libya', 'Mauritania', 'Saudi Arabia', 'Somalia', 'Sudan',
                'Syrian Arab Rep.', 'Tunisia', 'Yemen', 'Afghanistan',
                'Armenia', 'Azerbaijan', 'Chad', 'Eritrea', 'Georgia', 'Pakistan', 'Turkey']   
 
-# LEVANT  
+## LEVANT  
 UniqueNames_levant = [ 'Iraq', 'Jordan', 'Lebanon', 'Syrian Arab Rep.']  
 
-# NORTH AFRICA
+## NORTH AFRICA
 UniqueNames_north_africa = ['Algeria', 'Djibouti', 'Egypt', 'Libya', 'Mauritania',  'Somalia', 'Sudan',
                 'Tunisia', 'Chad', 'Eritrea']
 
@@ -180,7 +180,7 @@ def plot(region_name, region_list):
 
     plt.show()
 
-# plot('All MENA', UniqueNames_og_mena) # list is too big
+## plot('All MENA', UniqueNames_og_mena) # list is too big
 ```
 
 

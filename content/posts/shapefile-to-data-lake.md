@@ -5,7 +5,8 @@ draft: false
 toc: false
 images:
 tags:
-  - data engineering, gis
+  - data engineering
+  - gis
 ---
 
 
