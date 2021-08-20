@@ -33,6 +33,13 @@ jobs:
         git config --global user.name "gh actions"
         git config --global user.email "gh-actions@users.noreply.github.com"
 
+    - name: Set timezone
+      uses: szenius/set-timezone@v1.0
+      with:
+        timezoneLinux: "Asia/Bangkok"
+        timezoneMacos: "Asia/Bangkok"
+        timezoneWindows: "SE Asia Standard Time"
+
     - name: Deploy
       run: |
         hugo --gc --minify --cleanDestinationDir
