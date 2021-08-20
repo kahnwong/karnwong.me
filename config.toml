@@ -93,7 +93,12 @@ disableKinds = ["RSS"]
     [[menu.main]]
     identifier = "resume"
     name       = "Resume"
-    url        = "/resume"
+    url        = "resume.html"
+
+    [[menu.main]]
+    identifier = "projects"
+    name       = "Projects"
+    url        = "/projects"
 
     # [[menu.main]]
     # identifier = "faq"
