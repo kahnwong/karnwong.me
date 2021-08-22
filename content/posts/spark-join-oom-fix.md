@@ -5,7 +5,7 @@ draft: false
 toc: false
 images:
 tags:
-  - big data
+  - data
 ---
 I have a big pipelines where one step performs crossjoin on `130K x 7K`. It fails quite often, and I have to pray to the Rice God for it to pass. Today I found the solution: `repartition` before crossjoin.
 

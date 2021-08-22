@@ -5,7 +5,7 @@ draft: false
 toc: false
 images:
 tags:
-  - infra
+  - devops
 ---
 
 Ghost CMS is very easy to use, but the deployment overhead (maintaining db, ghost version, updates and etc) might be too much for some. Luckily, there's a way to convert a Ghost site to static pages, which you can later host on Github pages or something similar.

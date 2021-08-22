@@ -5,7 +5,7 @@ draft: false
 toc: false
 images:
 tags:
-  - infra
+  - devops
 ---
 
 Since starting self-hosting back in 2017, I've always used apache2 since it's the first webserver I came across. Over time adding more services and managing separate vhost config is a bit tiresome.

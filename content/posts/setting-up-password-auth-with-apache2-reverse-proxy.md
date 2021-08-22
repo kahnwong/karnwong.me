@@ -5,7 +5,7 @@ draft: false
 toc: false
 images:
 tags:
-  - infra
+  - devops
 ---
 
 EDIT: see [here]({{< ref "/posts/hello-caddy" >}}) for Caddy, also easier to set up too.
