@@ -21,6 +21,7 @@ Self-hosting is a practice for running and managing websites / services using yo
 4. Go to your domain name registrar, under DNS, add a CNAME record for your desired subdomain, and set the value to your duckdns.org domain.
 5. On your server, install a webserver for reverse-proxy. I recommend nginx or Caddy.
 6. Create a virtual host config for your website in your webserver of choice.
-7. Wait for a few minutes for the DNS to be updated, and you should be able to access your website from the specified domain.
+7. On your router configuration page, under port forwarding, create two entries for port 80 and 443.
+8. Wait for a few minutes for the DNS to be updated, and you should be able to access your website from the specified domain.
 
 As for actual implementation, I suggest you read a few articles for each step, so you can get the overall idea of what's to be done. Generally, the common steps should be the same across all articles, since that's the "baseline" for each process.
