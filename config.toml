@@ -4,8 +4,9 @@ baseurl = "/"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
-disableRSS = true
-disableKinds = ["RSS"]
+disableRSS = false
+rssLimit  = 20
+# disableKinds = ["RSS"]
 
 #[permalinks]
 #  posts = "/posts/:year-:month-:day-:title/"
@@ -33,7 +34,7 @@ disableKinds = ["RSS"]
   defaultTheme = "dark"
   enableThemeToggle = true
  
-#   homeSubtitle = ""
+  homeSubtitle = "Data Engineer // DevOps // Platform Engineer // Tech Lead"
 
    # Social icons
   [[params.social]]
@@ -47,6 +48,13 @@ disableKinds = ["RSS"]
   [[params.social]]
     name = "linkedin"
     url  = "https://www.linkedin.com/in/karn-w-7b535b202"
+
+  [params.footer]
+    trademark = true
+    rss = true
+    author = true
+
+    topText = []
 
 [languages]
   [languages.en]
@@ -82,7 +90,7 @@ disableKinds = ["RSS"]
     [[menu.main]]
     identifier = "posts"
     name       = "Posts"
-#    url        = "https://blog.karnwong.me/"
+  #  url        = "https://blog.karnwong.me/"
     url        = "/posts"
 
     [[menu.main]]
