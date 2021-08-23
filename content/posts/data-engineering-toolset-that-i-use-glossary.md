@@ -16,7 +16,7 @@ tags:
 - AWS Fargate: A task launch mode for `ECS task`, where it automatically shuts down once a container exits. With EC2 launch mode, you'll have to turn off the machine yourself.
 - AWS Lambda: Serverless function, can be used with docker image too. Can also hook this with API gateway to make it act as API endpoint.
 - AWS RDS: Managed databases from AWS.
-- ECS Task: Cron-like schedule for a task. Essentially at specified time, it runs a predefined docker image (you should configure your `entrypoint.sh` accordingly).        
+- ECS Task: Launch a task in ECS cluster. For long-running services, launch via EC2. For small periodical tasks, trigger via Cloudwatch. For the latter, think of cron-like schedule for a task. Essentially at specified time, it runs a predefined docker image (you should configure your `entrypoint.sh` accordingly).        
 
 # Data
 - Parquet: Columnar data blob format, very efficient due to column-based compression with schema definition baked in.
