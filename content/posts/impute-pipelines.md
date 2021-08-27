@@ -43,7 +43,7 @@ def generate_array_with_random_nan(lower_bound, upper_bound, size):
     a = np.random.randint(lower_bound, upper_bound+1, size=size).astype(float)
     mask = np.random.choice([1, 0], a.shape, p=[.1, .9]).astype(bool)
     a[mask] = np.nan
-    
+
     return a
 
 size = 6000
@@ -96,16 +96,16 @@ def report_missing(df):
         })
 
     cnts_df = pd.DataFrame(cnts)
-    sns.barplot(x=cnts_df.missing, 
-                y=cnts_df.column, 
+    sns.barplot(x=cnts_df.missing,
+                y=cnts_df.column,
     #             palette=['r','b'],
     #             data=cnts_df
                 )
-    
+
     return sns
 
 report_missing(df)
-```    
+```
 
 ```
 col: bed, missing: 10.266666666666667%
@@ -200,7 +200,7 @@ df.bath.value_counts()
 
 
 
-## Remove outliers 
+## Remove outliers
 (wouldn't want your model to have a sub-par performance from skewed data :-P)
 
 
@@ -237,7 +237,7 @@ for column, groupby_levels in synth_columns.items():
         mean_impute = 'mean|{}|{}'.format(groupby_level_name,column)
         print("calculating -- {}".format(mean_impute))
         df[mean_impute] = df.groupby(groupby_columns)[column].transform('mean')
-        
+
         # bed/bath rank
         rank_impute = column_name = 'rank|{}|{}'.format(groupby_level_name,column)
         print("calculating -- {}".format(rank_impute))
@@ -268,17 +268,17 @@ In this step we fill in values obtained from the previous step -- impute time!!
 def coalesce(df, columns):
     '''
     Implement coalesce of function in colunms.
-    
+
     Inputs:
     df: reference dataframe
     columns: columns to perform coalesce
-    
+
     Returns:
     df_tmp: pd.Series that is coalesced
-    
+
     Example:
-    df_tmp = pd.DataFrame({'a': [1,2,None,None,None,None], 
-                            'b': [None,6,None,8,9,None], 
+    df_tmp = pd.DataFrame({'a': [1,2,None,None,None,None],
+                            'b': [None,6,None,8,9,None],
                             'c': [None,10,None,12,None,13]})
     df_tmp['new'] = coalesce(df_tmp, ['a','b','c'])
     print(df_tmp)
@@ -286,7 +286,7 @@ def coalesce(df, columns):
     df_tmp = df[columns[0]]
     for c in columns[1:]:
         df_tmp = df_tmp.fillna(df[c])
-    
+
     return df_tmp
 
 
@@ -377,14 +377,14 @@ categ_columns = ['region']
 numer_columns = [
     'bed_imputed',
     'bath_imputed',
-    
+
     'p20|region_bath|bed',
     'p50|region_bath|bed',
     'p80|region_bath|bed',
     'p90|region_bath|bed',
     'mean|region_bath|bed',
     'rank|region_bath|bed',
-    
+
     'p20|region_bed|bath',
     'p50|region_bed|bath',
     'p80|region_bed|bath',
@@ -502,26 +502,26 @@ def objective(params):
     elif regressor_type == 'decision_tree_regression':
         estimator = DecisionTreeRegressor(**params)
     else:
-        return 0    
-    
+        return 0
+
     estimator.fit(X_train, y_train)
-    
-    # mae    
+
+    # mae
     y_dev_hat = estimator.predict(X_dev)
     mae = median_absolute_error(y_dev, y_dev_hat)
-    
+
     # logging
     with mlflow.start_run():
         mlflow.log_param("regressor", estimator.__class__.__name__)
         # mlflow.log_param("params", params)
         mlflow.log_param('n_estimators', params.get('n_estimators'))
         mlflow.log_param('max_depth', params.get('max_depth'))
-        
-        mlflow.log_metric("median_absolute_error", mae)  
-    
+
+        mlflow.log_metric("median_absolute_error", mae)
+
     return {'loss': mae, 'status': STATUS_OK}
 
-space = hp.choice('regressor_type', [    
+space = hp.choice('regressor_type', [
     {
         'type': 'gradient_boosting_regression',
         'n_estimators': hp.choice('n_estimators1', range(100,200,50)),
@@ -532,7 +532,7 @@ space = hp.choice('regressor_type', [
         'n_estimators': hp.choice('n_estimators2', range(100,200,50)),
         'max_depth': hp.choice('max_depth2', range(3,25,1)),
         'n_jobs': -1
-        
+
     },
     {
         'type': 'extra_trees_regression',
@@ -549,7 +549,7 @@ trials = Trials()
 max_evals = 40
 
 best = fmin(
-fn=objective, 
+fn=objective,
 space=space,
 algo=tpe.suggest,
 max_evals=max_evals,
@@ -574,7 +574,7 @@ Run "mlflow server" to see the loggin dashboard. There, we can see that RandomFo
 ## use best params on TEST set
 estimator = RandomForestRegressor(max_depth=4, n_estimators=150)
 estimator.fit(X_train, y_train)
-    
+
 y_train_hat = estimator.predict(X_train)
 train_mae = median_absolute_error(y_train, y_train_hat)
 

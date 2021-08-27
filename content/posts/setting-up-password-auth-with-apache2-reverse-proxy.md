@@ -36,6 +36,6 @@ To set up password auth with apache2 via reverse-proxy:
     </Proxy>
 </virtualhost>
 ```
-    
+
 
 That's it!

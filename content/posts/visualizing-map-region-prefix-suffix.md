@@ -34,7 +34,7 @@ district_filename = "FILE_PATH_HERE"
 
 gdf = gpd.read_file(district_filename)
 
-used_columns = ['province', 
+used_columns = ['province',
                 'district',]
 
 gdf = gdf.rename(columns={'prov_namt'.upper(): 'province', # change to dummy
@@ -153,13 +153,13 @@ def tokenize(unique_region_values):
     input: unique values of region type
     return: dataframe with token columns
     """
-    
+
     temp = pd.DataFrame()
     temp['name'] = pd.Series(unique_region_values)
     temp['token'] = temp['name'].apply(lambda x: syllable_tokenize(x))
-    
-    # Thai doesn't use space to separate words, so it's a bit wonky 
-    # when I tell it to do such, that's why I need to see the results 
+
+    # Thai doesn't use space to separate words, so it's a bit wonky
+    # when I tell it to do such, that's why I need to see the results
     # manually, and in some cases it may "clip" a token
     temp['token_1-1'] = temp.token.str[0]
     temp['token_1-2'] = temp.token.str[1]
@@ -168,7 +168,7 @@ def tokenize(unique_region_values):
     temp['token_2-1'] = temp.token.str[-2]
     temp['token_2-2'] = temp.token.str[-1]
     temp['token_2_full'] = temp['token_2-1'] + temp['token_2-2']
-    
+
     return temp
 ```
 
@@ -353,7 +353,7 @@ def get_slug_1(x):
     for i in slugs:
         if (x.startswith(i)):
             return i
-        
+
 def get_slug_2(x):
     for i in slugs:
         if (x.endswith(i)):
@@ -663,17 +663,17 @@ out_dir = 'plot/{}_{}'.format(key_name, key_column)
 os.makedirs(out_dir, exist_ok=True)
 
 gdf = df_temp
-for key in gdf[key_column].unique():    
+for key in gdf[key_column].unique():
     ax = gplt.polyplot(boundary, figsize=(10, 15))
-    
+
     query = gdf[gdf[key_column]==key]
     total_records = str(int(query[key_count_column].tolist()[0]))
 
     gplt.polyplot(query, ax=ax, extent=extent,edgecolor='black',
-                        facecolor='green')   
+                        facecolor='green')
 
     plt.title('{}: {} records'.format(key, total_records))
-    
+
     plt.savefig('{}/{}_{}.png'.format(out_dir, str(total_records).zfill(3), key))
 ##     break
 ```

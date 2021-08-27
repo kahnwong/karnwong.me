@@ -50,12 +50,12 @@ df.drop_duplicates(subset=['artist', 'title'], inplace=True)
 ## stop_words = set(stopwords.words('english'))
 with open('english.txt', 'r') as f:
     stop_words = [i.strip() for i in f.readlines()]
-    
+
 ps = PorterStemmer()
 df['tokens'] = df.lyrics.apply(
-    lambda x: [ps.stem(w) 
-    for w in word_tokenize(x.lower()) 
-    if 
+    lambda x: [ps.stem(w)
+    for w in word_tokenize(x.lower())
+    if
          (not w in stop_words) and
          (not "'" in w) and
          (len(w) > 1)
@@ -233,7 +233,7 @@ for index, i in enumerate(wordcount_group[group].unique()):
 ![](/images/2021-08-18-19-03-11.png)
 
 
-Whoops. Still more or less the same. But if you look carefully, Powerwolf stands out because their lyrical themes are werewolves and myths. 
+Whoops. Still more or less the same. But if you look carefully, Powerwolf stands out because their lyrical themes are werewolves and myths.
 
 ## Topic modeling
 
@@ -248,7 +248,7 @@ def display_topics(model, feature_names, no_top_words):
         topic = (" ".join([feature_names[i] for i in topic.argsort()[:-no_top_words - 1:-1]]))
         print('\t' + topic)
         topic_words.append(topic)
-        
+
     return topic_words
 
 ## define temp dataframe here

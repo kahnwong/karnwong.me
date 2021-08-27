@@ -156,10 +156,10 @@ UniqueNames_og_mena = ['Algeria', 'Bahrain', 'Djibouti', 'Egypt', 'Iran', 'Iraq'
 UniqueNames_mena = ['Algeria', 'Bahrain', 'Djibouti', 'Egypt', 'Iran (Islamic Rep. of)', 'Iraq', 'Jordan',
                'Kuwait', 'Lebanon', 'Libya', 'Mauritania', 'Saudi Arabia', 'Somalia', 'Sudan',
                'Syrian Arab Rep.', 'Tunisia', 'Yemen', 'Afghanistan',
-               'Armenia', 'Azerbaijan', 'Chad', 'Eritrea', 'Georgia', 'Pakistan', 'Turkey']   
+               'Armenia', 'Azerbaijan', 'Chad', 'Eritrea', 'Georgia', 'Pakistan', 'Turkey']
 
-## LEVANT  
-UniqueNames_levant = [ 'Iraq', 'Jordan', 'Lebanon', 'Syrian Arab Rep.']  
+## LEVANT
+UniqueNames_levant = [ 'Iraq', 'Jordan', 'Lebanon', 'Syrian Arab Rep.']
 
 ## NORTH AFRICA
 UniqueNames_north_africa = ['Algeria', 'Djibouti', 'Egypt', 'Libya', 'Mauritania',  'Somalia', 'Sudan',
@@ -197,7 +197,7 @@ plot('Levant', UniqueNames_levant)
 ```
 
 ![](/images/2021-08-18-18-51-31.png)
-    
+
 This graph shows only refugees from the Levant region. As expected, a lot of Iraqis sought asylum during the 90's, but Syrian refugees spiked up after 2010, which coincides with Arab Spring (2010-2).
 
 ```python

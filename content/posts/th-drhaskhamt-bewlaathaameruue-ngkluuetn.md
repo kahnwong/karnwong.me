@@ -57,12 +57,12 @@ tags:
 
 [^2]: อาจจะรอด ถ้ามีการทำความสะอาดไลน์ผลิต แต่ก็ต้องถามหาผลตรวจกลูเตนตกค้างด้วยว่าต่ำกว่า 20 PPM (mg/L -> 1 ส่วนในล้าน) มั้ย
 
-[^3]: นมรสมอลต์ โกโก้ผสมมอลต์ และอื่นๆ อีกมากมาย 
+[^3]: นมรสมอลต์ โกโก้ผสมมอลต์ และอื่นๆ อีกมากมาย
 
 [^4]: [https://topclassactions.com/lawsuit-settlements/consumer-products/329574-general-mills-faces-new-class-action-over-gluten-free-cheerios/](https://topclassactions.com/lawsuit-settlements/consumer-products/329574-general-mills-faces-new-class-action-over-gluten-free-cheerios/)
 
-[^5]: มนุดที่กินกลูเตนไม่ได้มีสามจำพวก: celiac disease, gluten intolerance, wheat allergy มนุด celiac disease จะกลูเตนน้อยแค่ไหนก็ไม่ได้ (อ่ะ ยอมได้แค่ 20 PPM ต่อวัน) ส่วนอีกสองพวกที่เหลืออาจจะทนกินได้บ้างเล็กน้อย 
+[^5]: มนุดที่กินกลูเตนไม่ได้มีสามจำพวก: celiac disease, gluten intolerance, wheat allergy มนุด celiac disease จะกลูเตนน้อยแค่ไหนก็ไม่ได้ (อ่ะ ยอมได้แค่ 20 PPM ต่อวัน) ส่วนอีกสองพวกที่เหลืออาจจะทนกินได้บ้างเล็กน้อย
 
 [^6]: EU กำหนดไว้ว่า สินค้าใดๆ ที่ปริมาณกลูเตนสูงกว่า 20 PPM **ไม่สามารถแปะได้ว่า กลูเตนฟรี**
 
-[^7]: เขาตอบเรางี้จริงๆ นะ 
+[^7]: เขาตอบเรางี้จริงๆ นะ
