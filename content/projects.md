@@ -13,6 +13,7 @@ aliases = ["projects"]
 
 ## Tools
 - [podcast-archiver](https://github.com/kahnwong/podcast-archiver) - Download podcasts with options for last n episodes or explicit range.
+- [pydantic-swagger](https://github.com/kahnwong/pydantic-swagger) - Convert pydantic definitions from multiple sources into a single swagger docs.
 - [todotxt-to-calendar](https://github.com/kahnwong/todotxt-to-calendar) - Convert todo.txt entries to calendar all-day event.
 
 ## Misc
