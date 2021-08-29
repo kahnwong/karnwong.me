@@ -383,3 +383,122 @@ _Cliff Kuang & Robert Fabricant_
 [The Best Interface Is No Interface: The simple path to brilliant technology](https://www.goodreads.com/book/show/22758923-the-best-interface-is-no-interface)
 
 _Golden Krishna_
+
+
+## Fiction
+
+[Condor Trilogy](https://www.goodreads.com/series/44467-condor-trilogy)
+
+_Jin Yong_
+
+---------------
+
+[The Smiling Proud Wanderer Series](https://www.goodreads.com/series/88706-the-smiling-proud-wanderer)
+
+_Jin Yong_
+
+---------------
+
+
+[The Witcher](https://www.goodreads.com/series/40911-the-witcher)
+
+_Andrzej Sapkowski_
+
+---------------
+
+[Vik & Stubø](https://www.goodreads.com/series/54401-vik-stub)
+
+_Anne Holt_
+
+---------------
+
+[Millennium Trilogy](https://www.goodreads.com/series/44598-millennium)
+
+_Stieg Larsson_
+
+---------------
+
+[Little Brother](https://www.goodreads.com/series/81824-little-brother)
+
+_Cory Doctorow_
+
+
+---------------
+
+[Joe Pitt](https://www.goodreads.com/series/40444-joe-pitt)
+
+_Charlie Huston_
+
+
+---------------
+
+[A Thousand Splendid Suns](https://www.goodreads.com/book/show/128029.A_Thousand_Splendid_Suns)
+
+_Khaled Hosseini_
+
+---------------
+
+[The Kite Runner](https://www.goodreads.com/book/show/77203.The_Kite_Runner)
+
+_Khaled Hosseini_
+
+---------------
+
+
+[Repo Men](https://www.goodreads.com/book/show/7153019)
+
+_Eric Garcia_
+
+---------------
+
+[The Red Notebook](https://www.goodreads.com/book/show/23129712-the-red-notebook)
+
+_Antoine Laurain_
+
+---------------
+
+[Perfume: The Story of a Murderer](https://www.goodreads.com/book/show/343)
+
+_Patrick Süskind_
+
+---------------
+
+[A Man Called Ove](https://www.goodreads.com/book/show/18774964)
+
+_Fredrik Backman_
+
+---------------
+
+[Iraq + 100: stories from a century after the invasion](https://www.goodreads.com/book/show/28592595-iraq-100)
+
+_Hassan Blasim_
+
+----------------------------------------------------------------
+
+[Exit West](https://www.goodreads.com/book/show/34501666)
+
+_Mohsin Hamid_
+
+---------------
+
+[Cinnamon and Gunpowder](https://www.goodreads.com/book/show/17139514)
+
+_Eli Brown_
+
+---------------
+
+[The Bastard of Istanbul](https://www.goodreads.com/book/show/98920)
+
+_Elif Shafak_
+
+---------------
+
+[Autonomous](https://www.goodreads.com/book/show/28209634-autonomous)
+
+_Annalee Newitz_
+
+---------------
+
+[All You Need Is Kill](https://www.goodreads.com/book/show/6255949)
+
+_Hiroshi Sakurazaka_
