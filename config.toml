@@ -82,31 +82,44 @@ rssLimit  = 20
 
 # And you can even create generic menu
 [menu]
-    [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "/about"
+
 
     [[menu.main]]
     identifier = "posts"
     name       = "Posts"
-  #  url        = "https://blog.karnwong.me/"
     url        = "/posts"
+    weight = 1
 
     [[menu.main]]
     identifier = "tags"
     name       = "Tags"
     url        = "/tags"
+    weight = 2
+
 
     [[menu.main]]
-    identifier = "resume"
-    name       = "Resume"
-    url        = "resume.html"
+    identifier = "books"
+    name       = "Favorite 📗"
+    url        = "/books"
+    weight = 3
 
     [[menu.main]]
     identifier = "projects"
     name       = "Projects"
     url        = "/projects"
+    weight = 4
+
+    [[menu.main]]
+    identifier = "resume"
+    name       = "Resume"
+    url        = "resume.html"
+    weight = 5
+
+    [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+    weight = 6
 
     # [[menu.main]]
     # identifier = "faq"
