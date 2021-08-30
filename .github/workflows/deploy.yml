@@ -17,21 +17,10 @@ jobs:
       with:
         submodules: true
 
-    - name: Install SSH key
-      uses: shimataro/ssh-key-action@v2
-      with:
-        key: ${{ secrets.DEPLOY_KEY }}
-        known_hosts: unnecessary
-
     - name: Install hugo
       uses: peaceiris/actions-hugo@v2
       with:
         hugo-version: 'latest'
-
-    - name: Setup git
-      run: |
-        git config --global user.name "gh actions"
-        git config --global user.email "gh-actions@users.noreply.github.com"
 
     - name: Set timezone
       uses: szenius/set-timezone@v1.0
@@ -40,11 +29,12 @@ jobs:
         timezoneMacos: "Asia/Bangkok"
         timezoneWindows: "SE Asia Standard Time"
 
-    - name: Deploy
+    - name: Build site
       run: |
-        git clone git@github.com:kahnwong/kahnwong.github.io.git public
         hugo --gc --minify --cleanDestinationDir
-        cd public
-        git add -A
-        git commit -m "Automated deployment @ $(date '+%Y-%m-%d %H:%M:%S') ${TZ}"
-        git push
+
+    - name: Deploy site
+      with:
+        build-dir: public
+        deploy-branch: gh-pages
+      uses:  NickSchimek/deploy_jamstack_action@main
