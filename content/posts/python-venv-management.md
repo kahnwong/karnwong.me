@@ -49,7 +49,7 @@ pyenv local my-data-project
 
 # Installing [pipenv](https://github.com/pypa/pipenv)
 
-Notes: make sue `pyenv` is installed, and remove `anaconda / miconda` & `python3` installed via official installer from your system. Then run:
+Notes: make sure `pyenv` is installed, and remove `anaconda / miconda` & `python3` installed via official installer from your system. Then run:
 
 ```bash
 $ pip install pipenv
