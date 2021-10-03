@@ -8,61 +8,32 @@ toc = "true"
   name = "Karn Wong"
 +++
 
+Updated 2021-10-03
+
 
 ## Nonfiction
 
-[Lab Girl](https://www.goodreads.com/book/show/25733983-lab-girl)
 
-_Hope Jahren_
+### Architecture
+[Soft City: Building Density for Everyday Life](https://www.goodreads.com/book/show/42480560-soft-city)
 
-----------------------------------------------------------------
-[A Brief History of Everyone Who Ever Lived: The Human Story Retold Through Our Genes](https://www.goodreads.com/book/show/36764512)
-
-_Adam Rutherford_
-
----------------
-
-[An Outsider's Guide to Humans: What Science Taught Me about What We Do and Who We Are](https://www.goodreads.com/book/show/52559342-an-outsider-s-guide-to-humans)
-
-_Camilla Pang_
+_David Sim_
 
 
+### Business
 
---------------------------------
+[ALIEN Thinking: The Unconventional Path to Breakthrough Ideas](https://www.goodreads.com/book/show/54503525-alien-thinking)
 
-
-
-[The Art of Logic in an Illogical World](https://www.goodreads.com/book/show/38400400-the-art-of-logic-in-an-illogical-world)
-
-_Eugenia Cheng_
+_Cyril Bouquet, Jean-Louis Barsoux, Michael Wade_
 
 
-
-
----------------
+------------------
 
 [Trust Me, I'm Lying: Confessions of a Media Manipulator](https://www.goodreads.com/book/show/13542853-trust-me-i-m-lying)
 
 _Ryan Holiday_
 
 ---------------
-
-[Sapiens: A Brief History of Humankind](https://www.goodreads.com/book/show/23692271-sapiens)
-
-_Yuval Noah Harari_
-
----------------
-
-
-[The Angry Chef: Bad Science and the Truth about Healthy Eating](https://www.goodreads.com/book/show/34638306-the-angry-chef)
-
-_Anthony Warner_
-
-
-
-
-## Business
-
 
 [The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers](https://www.goodreads.com/book/show/18176747-the-hard-thing-about-hard-things)
 
@@ -88,7 +59,7 @@ _Patty McCord_
 
 
 
-## Cultural / History / Politics
+### Cultural / History / Politics
 
 
 [Sweden’s Dark Soul: The Unravelling of a Utopia](https://www.goodreads.com/book/show/42779500-sweden-s-dark-soul)
@@ -164,7 +135,14 @@ _Edward S. Herman & Noam Chomsky_
 
 
 
-### History
+#### History
+
+[Sapiens: A Brief History of Humankind](https://www.goodreads.com/book/show/23692271-sapiens)
+
+_Yuval Noah Harari_
+
+---------------
+
 [Istanbul: A Tale of Three Cities](https://www.goodreads.com/book/show/22711736-istanbul)
 
 _Bettany Hughes_
@@ -189,7 +167,7 @@ _Xinran_
 
 
 
-### MENA
+#### MENA
 
 [Discontent and Its Civilizations: Dispatches from Lahore, New York, and London](https://www.goodreads.com/book/show/22571794-discontent-and-its-civilizations)
 
@@ -216,7 +194,7 @@ _Zahra Hankir_
 
 
 
-## Data Science
+### Data Science
 
 
 [Hello World: Being Human in the Age of Algorithms](https://www.goodreads.com/book/show/43726517-hello-world)
@@ -236,7 +214,18 @@ _Paul Goodwin_
 
 
 
-## Linguistics
+
+
+### Food
+
+
+[The Angry Chef: Bad Science and the Truth about Healthy Eating](https://www.goodreads.com/book/show/34638306-the-angry-chef)
+
+_Anthony Warner_
+
+
+
+### Linguistics
 
 [The Stories of English](https://www.goodreads.com/book/show/17246331)
 
@@ -286,7 +275,7 @@ _Emma Byrne_
 
 
 
-## Medicine
+### Medicine
 
 [This is Going to Hurt: Secret Diaries of a Junior Doctor](https://www.goodreads.com/book/show/https://www.goodreads.com/book/show/40951628)
 
@@ -305,11 +294,26 @@ _Molly Case_
 
 _James Hamblin_
 
---------------------------------
+
+### Philosophy
 
 
 
-## Psychology
+
+[The Art of Logic in an Illogical World](https://www.goodreads.com/book/show/38400400-the-art-of-logic-in-an-illogical-world)
+
+_Eugenia Cheng_
+
+---------------
+
+[Ego is the Enemy](https://www.goodreads.com/book/show/27036528-ego-is-the-enemy)
+
+_Ryan Holiday_
+
+
+
+
+### Psychology
 
 [Beyond Measure: The Big Impact of Small Changes](https://www.goodreads.com/book/show/23604558-beyond-measure)
 
@@ -323,6 +327,13 @@ _Kio Stark_
 
 ---------------
 
+[An Outsider's Guide to Humans: What Science Taught Me about What We Do and Who We Are](https://www.goodreads.com/book/show/52559342-an-outsider-s-guide-to-humans)
+
+_Camilla Pang_
+
+
+
+--------------------------------
 
 [Maybe You Should Talk to Someone: A Therapist, Her Therapist, and Our Lives Revealed](https://www.goodreads.com/book/show/37570546-maybe-you-should-talk-to-someone)
 
@@ -349,8 +360,21 @@ _Philippa Perry_
 _Craig Malkin_
 
 
+### Science
 
-## Technology
+[Lab Girl](https://www.goodreads.com/book/show/25733983-lab-girl)
+
+_Hope Jahren_
+
+----------------------------------------------------------------
+
+[A Brief History of Everyone Who Ever Lived: The Human Story Retold Through Our Genes](https://www.goodreads.com/book/show/36764512)
+
+_Adam Rutherford_
+
+
+
+### Technology
 
 [Close to the Machine: Technophilia and Its Discontents](https://www.goodreads.com/book/show/486625)
 
@@ -362,9 +386,11 @@ _Ellen Ullman_
 _Ellen Ullman_
 
 
-
-
 ---------------
+
+[The Psychology of Computer Programming](https://www.goodreads.com/book/show/1660754.The_Psychology_of_Computer_Programming)
+
+_Gerald M. Weinberg_
 
 
 [Algorithms to Live By: The Computer Science of Human Decisions](https://www.goodreads.com/book/show/25666050-algorithms-to-live-by)
@@ -386,24 +412,32 @@ _Golden Krishna_
 
 ## Fiction
 
-[Condor Trilogy](https://www.goodreads.com/series/44467-condor-trilogy)
 
-_Jin Yong_
+
+
+
+### Contemporary
+
+[A Man Called Ove](https://www.goodreads.com/book/show/18774964)
+
+_Fredrik Backman_
+
 
 ---------------
 
-[The Smiling Proud Wanderer Series](https://www.goodreads.com/series/88706-the-smiling-proud-wanderer)
+[The Red Notebook](https://www.goodreads.com/book/show/23129712-the-red-notebook)
 
-_Jin Yong_
+_Antoine Laurain_
+
 
 ---------------
 
+[The Love Hypothesis](https://www.goodreads.com/book/show/56732449-the-love-hypothesis)
 
-[The Witcher](https://www.goodreads.com/series/40911-the-witcher)
+_Ali Hazelwood_
 
-_Andrzej Sapkowski_
 
----------------
+### Crime
 
 [Vik & Stubø](https://www.goodreads.com/series/54401-vik-stub)
 
@@ -415,19 +449,53 @@ _Anne Holt_
 
 _Stieg Larsson_
 
+
+
+### Fantasy
+
+
+
+[The Witcher](https://www.goodreads.com/series/40911-the-witcher)
+
+_Andrzej Sapkowski_
+
+----------------------------------------------------------------
+
+[Exit West](https://www.goodreads.com/book/show/34501666)
+
+_Mohsin Hamid_
+
 ---------------
 
-[Little Brother](https://www.goodreads.com/series/81824-little-brother)
-
-_Cory Doctorow_
-
-
----------------
 
 [Joe Pitt](https://www.goodreads.com/series/40444-joe-pitt)
 
 _Charlie Huston_
 
+
+
+
+
+### Historical
+
+
+[The Bastard of Istanbul](https://www.goodreads.com/book/show/98920)
+
+_Elif Shafak_
+
+---------------
+
+
+
+[Cinnamon and Gunpowder](https://www.goodreads.com/book/show/17139514)
+
+_Eli Brown_
+
+---------------
+
+[Perfume: The Story of a Murderer](https://www.goodreads.com/book/show/343)
+
+_Patrick Süskind_
 
 ---------------
 
@@ -441,56 +509,10 @@ _Khaled Hosseini_
 
 _Khaled Hosseini_
 
----------------
 
 
-[Repo Men](https://www.goodreads.com/book/show/7153019)
 
-_Eric Garcia_
-
----------------
-
-[The Red Notebook](https://www.goodreads.com/book/show/23129712-the-red-notebook)
-
-_Antoine Laurain_
-
----------------
-
-[Perfume: The Story of a Murderer](https://www.goodreads.com/book/show/343)
-
-_Patrick Süskind_
-
----------------
-
-[A Man Called Ove](https://www.goodreads.com/book/show/18774964)
-
-_Fredrik Backman_
-
----------------
-
-[Iraq + 100: stories from a century after the invasion](https://www.goodreads.com/book/show/28592595-iraq-100)
-
-_Hassan Blasim_
-
-----------------------------------------------------------------
-
-[Exit West](https://www.goodreads.com/book/show/34501666)
-
-_Mohsin Hamid_
-
----------------
-
-[Cinnamon and Gunpowder](https://www.goodreads.com/book/show/17139514)
-
-_Eli Brown_
-
----------------
-
-[The Bastard of Istanbul](https://www.goodreads.com/book/show/98920)
-
-_Elif Shafak_
-
----------------
+### Sci-Fi
 
 [Autonomous](https://www.goodreads.com/book/show/28209634-autonomous)
 
@@ -501,3 +523,45 @@ _Annalee Newitz_
 [All You Need Is Kill](https://www.goodreads.com/book/show/6255949)
 
 _Hiroshi Sakurazaka_
+
+---------------
+
+
+[Repo Men](https://www.goodreads.com/book/show/7153019)
+
+_Eric Garcia_
+
+
+---------------
+
+
+[Iraq + 100: stories from a century after the invasion](https://www.goodreads.com/book/show/28592595-iraq-100)
+
+_Hassan Blasim_
+
+
+
+### Thriller
+
+
+
+
+[Little Brother](https://www.goodreads.com/series/81824-little-brother)
+
+_Cory Doctorow_
+
+
+
+
+### Wuxia
+
+[Condor Trilogy](https://www.goodreads.com/series/44467-condor-trilogy)
+
+_Jin Yong_
+
+---------------
+
+[The Smiling Proud Wanderer Series](https://www.goodreads.com/series/88706-the-smiling-proud-wanderer)
+
+_Jin Yong_
+
