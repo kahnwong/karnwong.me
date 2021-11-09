@@ -10,3 +10,8 @@ git submodule update --init --recursive
 ```
 git submodule foreach git pull origin master
 ```
+
+## Create a new post
+```
+./create-post.sh -n hello -t test
+```

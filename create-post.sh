@@ -1,12 +1,17 @@
 #!/bin/bash
 
-title="ecs-cli snippets"
+while getopts n:t: flag
+do
+    case "${flag}" in
+        n) title=${OPTARG};;
+        t) tag=${OPTARG};;
+    esac
+done
 
 slug=$(echo "$title" | awk '{print tolower($0)}')
 slug=$(echo "$slug" | tr " " -)
 
 date=$(date "+%Y-%m-%dT%H:%M:%S%Z:00")
-tag="sample-tag"
 
 echo "---
 title: "$title"
