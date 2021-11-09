@@ -561,7 +561,7 @@ _Jin Yong_
 
 ---------------
 
-[The Smiling Proud Wanderer Series](https://www.goodreads.com/series/88706-the-smiling-proud-wanderer)
+[The Smiling Proud Wanderer](https://www.goodreads.com/series/88706-the-smiling-proud-wanderer)
 
 _Jin Yong_
 

@@ -122,10 +122,16 @@ rssLimit  = 20
     weight = 6
 
     [[menu.main]]
+    identifier = "music"
+    name       = "🎶"
+    url        = "/music"
+    weight = 7
+
+    [[menu.main]]
     identifier = "talks"
     name       = "🎙️"
     url        = "/talks"
-    weight = 7
+    weight = 8
 
 
     # [[menu.main]]

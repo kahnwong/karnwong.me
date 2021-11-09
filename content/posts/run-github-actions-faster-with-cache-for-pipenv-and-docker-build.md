@@ -5,7 +5,8 @@ draft: false
 toc: false
 images:
 tags:
-  - devops, github
+  - devops
+  - github
 ---
 
 Recently we create more PRs, notice that there are a lot of redundant steps (env setup before triggering checks, etc). Found out you can cache steps in GitHub Actions, so I did some research. Got it working and turns out I reduce at least 60% actions time for a large docker image build (since only the later `RUN` directives are changed more frequently). For pipenv it shaved off 1 minute 18 seconds. Pretty neat!
