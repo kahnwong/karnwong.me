@@ -13,6 +13,13 @@ Recently we create more PRs, notice that there are a lot of redundant steps (env
 
 ### pipenv cache
 ```yaml
+# set global env
+env:
+  PIPENV_VENV_IN_PROJECT: enabled
+.
+.
+.
+
 ##################
 # python
 ##################
@@ -28,11 +35,14 @@ Recently we create more PRs, notice that there are a lot of redundant steps (env
   run: |
     python -m pip install --upgrade pip
     pip install pipenv
+
 - name: Cache dependencies
   uses: actions/cache@v2
   with:
-    path: ~/.local/share/virtualenvs
+    path: ./.venv
     key: ${{ runner.os }}-python-${{ steps.setup-python.outputs.python-version }}-pipenv-${{ hashFiles('Pipfile.lock') }}
+    restore-keys: |
+      ${{ runner.os }}-pipenv
 
 - name: Install requirements
   if: steps.cache-dependencies.outputs.cache-hit != 'true'
