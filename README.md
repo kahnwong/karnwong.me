@@ -13,5 +13,5 @@ git submodule foreach git pull origin master
 
 ## Create a new post
 ```
-./create-post.sh -n hello -t test
+./create-post.sh -n $TITLE -t $TAG
 ```
