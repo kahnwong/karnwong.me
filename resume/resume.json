@@ -21,7 +21,7 @@
     },
     "work": [
         {
-            "company": "Baania",
+            "name": "Baania",
             "position": "Senior Data Engineer",
             "website": "https://www.baania.com",
             "startDate": "2021-01-29",
@@ -42,7 +42,7 @@
             ]
         },
         {
-            "company": "Baania",
+            "name": "Baania",
             "position": "Data Engineer",
             "website": "https://www.baania.com",
             "startDate": "2018-04-02",
