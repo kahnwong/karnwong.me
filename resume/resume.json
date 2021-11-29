@@ -37,7 +37,8 @@
                 "Perform internal infra & cloud cost audit",
                 "Reduce runtime for PR code quality checks by 90% to reduce feedback loop cycle",
                 "Cache docker build in CI/CD to reduce build time from 20 minutes to 3 minutes",
-                "Reduce docker image size by 46%, in turn reducing turnaround time for CI checks / deployment"
+                "Reduce docker image size by 46%, in turn reducing turnaround time for CI checks / deployment",
+                "Set up secrets management using SOPS/Terraform/AWS SSM, for improved security and secrets rotation"
             ]
         },
         {
