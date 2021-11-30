@@ -179,6 +179,22 @@
     ],
     "projects": [
         {
+            "name": " terraform-sops-ssm",
+            "highlights": [
+                "Create SSM secrets from SOPS-encrypted secrets.",
+                "Create github-ci+lambda roles and users with access to SSM."
+            ],
+            "keywords": [
+                "Terraform",
+                "AWS",
+                "GitHub"
+            ],
+            "startDate": "2021-11-24",
+            "endDate": "2021-11-30",
+            "type": "devops",
+            "url": "https://github.com/kahnwong/terraform-sops-ssm"
+        },
+        {
             "name": "pydantic-swagger",
             "highlights": [
                 "Convert pydantic definitions from multiple sources into a single swagger docs."

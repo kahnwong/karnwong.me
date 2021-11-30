@@ -19,3 +19,4 @@ aliases = ["projects"]
 ## Misc
 - [gcal-agenda](https://github.com/kahnwong/gcal-agenda) - google-api dashboard calendar.
 - [Self-hosting](https://github.com/kahnwong/self-hosted) - Self-hosting open-source alternatives for popular services. Managed via docker-compose.
+- [terraform-sops-ssm](https://github.com/kahnwong/terraform-sops-ssm) - Create SSM secrets from SOPS-encrypted secrets, with IAM roles & users creation for SSM access.
