@@ -1,5 +1,5 @@
-# baseURL: "https://adityatelange.github.io/hugo-PaperMod/"
-baseURL: "/"
+baseURL: "https://www.karnwong.me/"
+# baseURL: "/"
 title: Karn Wong
 paginate: 5
 theme: PaperMod

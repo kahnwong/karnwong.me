@@ -1,12 +1,9 @@
-+++
-title = "Music"
-date = "2021-10-14"
-aliases = ["books"]
-toc = "true"
-
-[ author ]
-  name = "Karn Wong"
-+++
+---
+title: "Music"
+layout: "music"
+url: "/music"
+summary: "music"
+---
 
 Updated 2021-10-14
 
