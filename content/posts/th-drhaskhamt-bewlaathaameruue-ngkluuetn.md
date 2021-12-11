@@ -2,7 +2,7 @@
 title: ถอดรหัสคำตอบเวลาถามเรื่องกลูเตน
 date: 2021-03-31T13:35:55.000Z
 draft: false
-toc: false
+ShowToc: false
 images:
 tags:
   - celiac

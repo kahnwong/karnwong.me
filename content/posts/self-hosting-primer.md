@@ -2,7 +2,7 @@
 title: Self-hosting primer
 date: 2021-08-22T18:08:31+07:00
 draft: false
-toc: false
+ShowToc: false
 images:
 tags:
   - devops

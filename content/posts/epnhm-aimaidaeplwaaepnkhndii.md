@@ -2,7 +2,7 @@
 title: เป็นหมอไม่ได้แปลว่าเป็นคนดี
 date: 2020-12-05T15:18:17.000Z
 draft: false
-toc: false
+ShowToc: false
 images:
 tags:
   - life

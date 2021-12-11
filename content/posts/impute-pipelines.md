@@ -2,7 +2,7 @@
 title: Impute pipelines
 date: 2020-05-22T17:00:00.000Z
 draft: false
-toc: true
+ShowToc: true
 images:
 tags:
   - data science

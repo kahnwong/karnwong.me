@@ -2,7 +2,7 @@
 title: "Data engineering toolset (that I use) glossary"
 date: 2021-06-04T23:57:58+07:00
 draft: false
-toc: false
+ShowToc: false
 images:
 tags:
   - data engineering

@@ -2,7 +2,7 @@
 title: Add Ghost content to Hugo
 date: 2021-03-31T04:05:02.000Z
 draft: false
-toc: false
+ShowToc: false
 images:
 tags:
   - devops

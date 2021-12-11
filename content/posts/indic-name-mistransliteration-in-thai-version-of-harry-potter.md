@@ -2,7 +2,7 @@
 title: "Indic name mistransliteration in Thai version of Harry Potter"
 date: 2018-10-10T17:00:00.000Z
 draft: false
-toc: false
+ShowToc: false
 images:
 tags:
   - languages

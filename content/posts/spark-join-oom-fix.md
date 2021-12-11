@@ -2,7 +2,7 @@
 title: Spark join OOM fix
 date: 2021-04-11T16:20:23.000Z
 draft: false
-toc: false
+ShowToc: false
 images:
 tags:
   - data

@@ -2,7 +2,7 @@
 title: "Elasticsearch with custom dictionary"
 date: 2021-05-03T14:04:05+07:00
 draft: false
-toc: false
+ShowToc: false
 images:
 tags:
   - backend

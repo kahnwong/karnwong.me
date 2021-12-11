@@ -2,7 +2,7 @@
 title: Workarounds for archiving large shapefile in data lake
 date: 2021-01-31T17:40:53.000Z
 draft: false
-toc: false
+ShowToc: false
 images:
 tags:
   - data engineering

@@ -2,7 +2,7 @@
 title: "Definition of 'a Word'"
 date: 2018-07-30T17:00:00.000Z
 draft: false
-toc: false
+ShowToc: false
 images:
 tags:
   - languages

@@ -2,7 +2,7 @@
 title: Buying tea when you have Celiac
 date: 2021-02-14T05:20:54.000Z
 draft: false
-toc: false
+ShowToc: false
 images:
 tags:
   - celiac

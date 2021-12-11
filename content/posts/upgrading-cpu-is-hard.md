@@ -2,7 +2,7 @@
 title: CPU upgrade is a breeze, only if you know how
 date: 2020-12-20T19:12:38.000Z
 draft: false
-toc: false
+ShowToc: false
 images:
 tags:
   - life

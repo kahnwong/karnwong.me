@@ -2,7 +2,7 @@
 title: There are caveats behind every statement
 date: 2020-12-01T10:28:01.000Z
 draft: false
-toc: false
+ShowToc: false
 images:
 tags:
   - life

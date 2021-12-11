@@ -2,7 +2,7 @@
 title: Word-based analysis with song lyrics
 date: 2020-04-15T17:00:00.000Z
 draft: false
-toc: true
+ShowToc: true
 images:
 tags:
   - data analysis

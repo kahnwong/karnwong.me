@@ -3,7 +3,7 @@
 ## Initial setup
 ```bash
 git clone $REPO
-git submodule add git@github.com:kahnwong/hugo-theme-hello-friend-ng.git themes/
+git submodule add git@github.com:adityatelange/hugo-PaperMod.git themes/PaperMod
 git submodule update --init --recursive
 ```
 

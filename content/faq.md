@@ -1,10 +1,10 @@
-+++
-title = "FAQ"
-date = "2019-12-25"
-aliases = ["faq"]
-[ author ]
-  name = "Karn Wong"
-+++
+---
+title: "FAQ"
+layout: "faq"
+url: "/faq"
+summary: "faq"
+ShowToc: false
+---
 
 ## How long do you have to eat gluten-free?
 Until the day I die. Or when I decide I want to die.

@@ -2,7 +2,7 @@
 title: My diet is not for you to market it as healthy
 date: 2020-01-11T17:00:00.000Z
 draft: false
-toc: false
+ShowToc: false
 images:
 tags:
   - celiac

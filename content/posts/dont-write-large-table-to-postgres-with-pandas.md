@@ -2,7 +2,7 @@
 title: "Don't write large table to postgres with pandas"
 date: 2021-06-27T20:19:58+07:00
 draft: false
-toc: false
+ShowToc: false
 images:
 tags:
   - data engineering

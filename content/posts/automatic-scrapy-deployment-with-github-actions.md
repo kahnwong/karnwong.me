@@ -2,7 +2,7 @@
 title: "Automatic scrapy deployment with GitHub actions"
 date: 2021-06-02T21:48:12+07:00
 draft: false
-toc: false
+ShowToc: false
 images:
 tags:
   - devops

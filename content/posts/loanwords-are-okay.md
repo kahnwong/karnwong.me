@@ -2,7 +2,7 @@
 title: Loanwords are okay
 date: 2019-11-06T17:00:00.000Z
 draft: false
-toc: false
+ShowToc: false
 images:
 tags:
   - languages

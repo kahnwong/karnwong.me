@@ -17,7 +17,7 @@ echo "---
 title: "$title"
 date: "$date"
 draft: false
-toc: false
+ShowToc: false
 images:
 tags:
   - "$tag"

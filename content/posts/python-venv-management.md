@@ -2,7 +2,7 @@
 title: "Python venv management"
 date: 2021-07-02T14:59:12+07:00
 draft: false
-toc: false
+ShowToc: false
 images:
 tags:
   - python

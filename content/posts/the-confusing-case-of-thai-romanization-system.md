@@ -2,7 +2,7 @@
 title: "The confusing case of Thai romanization system"
 date: 2017-09-14T17:00:00.000Z
 draft: false
-toc: false
+ShowToc: false
 images:
 tags:
   - languages

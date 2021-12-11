@@ -2,7 +2,7 @@
 title: Run GitHub Actions faster with cache for pipenv and docker build
 date: 2021-11-09T23:54:23+07:00
 draft: false
-toc: false
+ShowToc: false
 images:
 tags:
   - devops

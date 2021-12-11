@@ -1,10 +1,10 @@
-+++
-title = "Projects"
-date = "2021-08-20"
-aliases = ["projects"]
-[ author ]
-  name = "Karn Wong"
-+++
+---
+title: "Projects"
+layout: "projects"
+url: "/projects"
+summary: "projects"
+ShowToc: false
+---
 
 ## Data Science
 - [Impute Pipelines](https://www.karnwong.me/posts/impute-pipelines/) - Use machine learning to fill in missing data. Utilize hyperparameter tuning to find the optimum parameters.

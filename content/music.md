@@ -1,5 +1,5 @@
 +++
-title = "Favorite 🎶"
+title = "Music"
 date = "2021-10-14"
 aliases = ["books"]
 toc = "true"
