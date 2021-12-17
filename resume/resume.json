@@ -38,7 +38,9 @@
                 "Reduce runtime for PR code quality checks by 90% to reduce feedback loop cycle",
                 "Cache docker build in CI/CD to reduce build time from 20 minutes to 3 minutes",
                 "Reduce docker image size by 46%, in turn reducing turnaround time for CI checks / deployment",
-                "Set up secrets management using SOPS/Terraform/AWS SSM, for improved security and secrets rotation"
+                "Set up secrets management using SOPS/Terraform/AWS SSM, for improved security and secrets rotation",
+                "Launched Baania Engineering Blog, a platform to showcase how Baania does things behind the scenes",
+                "Reduce employee onboarding time per employee by a few days via an install script to setup necessary tools, applications and environment for development."
             ]
         },
         {
@@ -179,6 +181,20 @@
     ],
     "projects": [
         {
+            "name": "water-cut-notify",
+            "highlights": [
+                "Send water cut alert as LINE notifications."
+            ],
+            "keywords": [
+                "Docker",
+                "API"
+            ],
+            "startDate": "2021-12-16",
+            "endDate": "2021-12-17",
+            "type": "api",
+            "url": "https://github.com/kahnwong/water-cut-notify"
+        },
+        {
             "name": " terraform-sops-ssm",
             "highlights": [
                 "Create SSM secrets from SOPS-encrypted secrets.",
@@ -193,32 +209,6 @@
             "endDate": "2021-11-30",
             "type": "devops",
             "url": "https://github.com/kahnwong/terraform-sops-ssm"
-        },
-        {
-            "name": "pydantic-swagger",
-            "highlights": [
-                "Convert pydantic definitions from multiple sources into a single swagger docs."
-            ],
-            "keywords": [
-                "API", "Documentation"
-            ],
-            "startDate": "2021-08-20",
-            "endDate": "2021-08-26",
-            "type": "service",
-            "url": "https://github.com/kahnwong/pydantic-swagger"
-        },
-        {
-            "name": "podcast-archiver",
-            "highlights": [
-                "Download podcasts with options for last n episodes or explicit range."
-            ],
-            "keywords": [
-                "CLI"
-            ],
-            "startDate": "2021-06-16",
-            "endDate": "2021-06-16",
-            "type": "cli",
-            "url": "https://github.com/kahnwong/podcast-archiver"
         },
         {
             "name": "todotxt-to-calendar",
@@ -252,23 +242,6 @@
             "startDate": "2017-12-01",
             "type": "service",
             "url": "https://github.com/kahnwong/self-hosted"
-        },
-        {
-            "name": "gcal-agenda",
-            "highlights": [
-                "Lightweight with only python and webserver",
-                "Webpage refreshes every 30 minutes"
-            ],
-            "keywords": [
-                "google-api",
-                "dashboard",
-                "calendar",
-                "docker"
-            ],
-            "startDate": "2020-10-11",
-            "endDate": "2020-11-11",
-            "url": "https://github.com/kahnwong/gcal-agenda",
-            "type": "service"
         },
         {
             "name": "Visualizing Map Region Prefix/Suffix",
