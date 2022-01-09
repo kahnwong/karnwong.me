@@ -224,10 +224,10 @@
         {
             "name": "Self-hosting",
             "highlights": [
-                "Hosted on a laptop from 2015 with 16GB RAM",
                 "Alternative / self-hosted version for popular subscription services: Netflix, Spotify, LastPass, Trello, Dropbox, NordVPN, etc.",
                 "Managed via docker-compose",
-                "Use Caddy for reverse-proxy"
+                "Use Caddy for reverse-proxy",
+		"Use terraform to manage DNS via Cloudflare"
             ],
             "keywords": [
                 "Docker",
