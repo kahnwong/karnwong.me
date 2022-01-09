@@ -28,19 +28,15 @@
             "endDate": null,
             "highlights": [
                 "Reduce development time for ETL pipelines from a week to 1 day via workflow redesign + codebase refactoring",
-                "Mentor junior data engineers",
+                "Mentor data engineers",
                 "Consult other teams as a platform engineer",
-                "Set up alerts & monitoring to automatically notify task failures",
+                "Set up alerts & monitoring to automatically notify task failures (ChatOps)",
                 "Create a script to automatically grant postgres access permission based on user groups, with option for special permissions per-user basis",
-                "Deploy internal services via ECS, routed to public internet via ELB & Route 53",
-                "Deploy internal data catalog for data platform",
-                "Perform internal infra & cloud cost audit",
+                "Optimize a large spark pipeline that fails often due to OOM with divide-and-conquer method for unlimited scaling",
                 "Reduce runtime for PR code quality checks by 90% to reduce feedback loop cycle",
-                "Cache docker build in CI/CD to reduce build time from 20 minutes to 3 minutes",
-                "Reduce docker image size by 46%, in turn reducing turnaround time for CI checks / deployment",
                 "Set up secrets management using SOPS/Terraform/AWS SSM, for improved security and secrets rotation",
                 "Launched Baania Engineering Blog, a platform to showcase how Baania does things behind the scenes",
-                "Reduce employee onboarding time per employee by a few days via an install script to setup necessary tools, applications and environment for development."
+                "Reduce employee onboarding time per employee by a few days via a setup script to setup necessary tools, applications and environment for development."
             ]
         },
         {
@@ -52,10 +48,9 @@
             "highlights": [
                 "Create and maintain data gathering infrastructure for daily ingestion and processing to be stored in data lake (S3)",
                 "Create and optimize machine learning models to achieve near-realtime performance",
-                "Create and maintain ETL pipelines via Dagster to reduce data update frequency from once a month to daily",
+                "Create and maintain ETL pipelines via task orchestrator to reduce data update frequency from once a month to daily",
                 "Deploy and maintain ML via cloud services to reduce ML deployment time from a day to within minutes",
-                "Mentor junior data scientists",
-                "Infrastructure planning",
+                "Mentor data scientists",
                 "Automate infrastructure and governance using Terraform",
                 "Package cron services to AWS ECS and invoke via AWS ECS Task to cut down cost from 50 USD / year to 0.1 USD / year"
             ]
