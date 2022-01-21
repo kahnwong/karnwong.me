@@ -235,8 +235,7 @@
                 "DevOps"
             ],
             "startDate": "2017-12-01",
-            "type": "service",
-            "url": "https://github.com/kahnwong/self-hosted"
+            "type": "service"
         },
         {
             "name": "Visualizing Map Region Prefix/Suffix",

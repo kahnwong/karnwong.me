@@ -19,5 +19,5 @@ ShowToc: false
 - [water-cut-notify](https://github.com/kahnwong/water-cut-notify) - Send water cut alert as LINE notifications.
 
 ## Misc
-- [Self-hosting](https://github.com/kahnwong/self-hosted) - Self-hosting open-source alternatives for popular services. Managed via docker-compose.
+- Self-hosting - Self-hosting open-source alternatives for popular services. Managed via docker-compose.
 - [terraform-sops-ssm](https://github.com/kahnwong/terraform-sops-ssm) - Create SSM secrets from SOPS-encrypted secrets, with IAM roles & users creation for SSM access.
