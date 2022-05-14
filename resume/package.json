@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "jsonresume-theme-business-card": "^0.0.2",
+    "jsonresume-theme-even": "^0.16.1",
+    "jsonresume-theme-onepage-updated": "^1.0.3"
+  }
+}

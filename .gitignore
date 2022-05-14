@@ -1,0 +1,5 @@
+public
+resources
+resume/node_modules
+.hugo_build.lock
+**/.ipynb_checkpoints
