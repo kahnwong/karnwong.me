@@ -29,7 +29,8 @@
         "highlights": [
             "Enable backend team to perform auto-deployment to ECR with Terraform and GitHub Actions",
             "Manage repo permissions / secrets / webhooks with Terraform",
-            "Research BI solution to consolidate fragmented dashboard platforms into a single one"
+            "Research BI solution to consolidate fragmented dashboard platforms into a single one",
+	    "Setup Grafana for centralized metrics and logs monitoring"
         ]
       },
       {
