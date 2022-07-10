@@ -1,4 +1,5 @@
-baseURL: "https://www.karnwong.me/"
+---
+baseURL: https://www.karnwong.me/
 # baseURL: "/"
 title: Karn Wong
 paginate: 5
@@ -13,92 +14,92 @@ enableEmoji: false
 googleAnalytics: G-5HEXXSFG5J
 
 minify:
-    disableXML: true
+  disableXML: true
     # minifyOutput: true
 
 languages:
-    en:
-        languageName: "English"
+  en:
+    languageName: English
+    weight: 1
+    menu:
+      main:
+      - name: About
+        url: about/
         weight: 1
-        menu:
-            main:
-                - name: About
-                  url: about/
-                  weight: 1
-                - name: Posts
-                  url: posts
-                  weight: 2
-                - name: Projects
-                  url: projects/
-                  weight: 3
-                - name: Books
-                  url: books/
-                  weight: 4
-                - name: Music
-                  url: music/
-                  weight: 5
-                - name: Talks
-                  url: talks/
-                  weight: 6
-                - name: Tags
-                  url: tags/
-                  weight: 7
-                - name: Search
-                  url: search/
-                  weight: 8
+      - name: Posts
+        url: posts
+        weight: 2
+      - name: Projects
+        url: projects/
+        weight: 3
+      - name: Books
+        url: books/
+        weight: 4
+      - name: Music
+        url: music/
+        weight: 5
+      - name: Talks
+        url: talks/
+        weight: 6
+      - name: Tags
+        url: tags/
+        weight: 7
+      - name: Search
+        url: search/
+        weight: 8
 
 
 outputs:
-    home:
-        - HTML
-        - RSS
-        - JSON
+  home:
+  - HTML
+  - RSS
+  - JSON
 
 params:
-    env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Homepage and blog by Karn Wong"
-    author: Karn Wong
+  env: production   # to enable google analytics, opengraph, twitter-cards and schema.
+  description: Homepage and blog by Karn Wong
+  author: Karn Wong
     # author: ["Me", "You"] # multiple authors
 
-    defaultTheme: auto
+  defaultTheme: auto
     # disableThemeToggle: true
     # ShowShareButtons: true
-    ShowReadingTime: true
+  ShowReadingTime: true
     # disableSpecial1stPost: true
-    displayFullLangName: true
-    ShowPostNavLinks: true
-    ShowBreadCrumbs: true
-    ShowCodeCopyButtons: true
-    ShowToc: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
     # comments: false
 
     # homeInfoParams:
     #     Title: Karn Wong
     #     Content: Data Engineer // DevOps // SRE // Platform Engineer // Tech Lead
 
-    profileMode:
-        enabled: true
-        title: Karn Wong
-        subtitle: Data Engineer // DevOps // SRE // Platform Engineer // Tech Lead
+  profileMode:
+    enabled: true
+    title: Karn Wong
+    subtitle: Data Engineer // DevOps // SRE // Platform Engineer // Tech Lead
 
-    socialIcons:
-        - name: github
-          url: "https://github.com/kahnwong"
-        - name: linkedin
-          url: "https://www.linkedin.com/in/karn-w-7b535b202"
-        - name: email
-          url: mailto:contact@karnwong.me
-        - name: "cv"
-          url: "/resume.html"
-        - name: RsS
-          url: "index.xml"
+  socialIcons:
+  - name: github
+    url: https://github.com/kahnwong
+  - name: linkedin
+    url: https://www.linkedin.com/in/karn-w-7b535b202
+  - name: email
+    url: mailto:contact@karnwong.me
+  - name: cv
+    url: /resume.html
+  - name: RsS
+    url: index.xml
 
     # label:
     #     text: "Home"
     #     icon: icon.png
     #     iconHeight: 35
 
-    assets:
+  assets:
         # favicon: "<link / abs url>"
         # favicon16x16: "<link / abs url>"
         # favicon32x32: "<link / abs url>"
@@ -115,14 +116,14 @@ params:
     #     keys: ["title", "permalink", "summary", "content"]
 
 taxonomies:
-    category: categories
-    tag: tags
-    series: series
+  category: categories
+  tag: tags
+  series: series
 
 markup:
-    goldmark:
-        renderer:
-            unsafe: true
+  goldmark:
+    renderer:
+      unsafe: true
 #     highlight:
 #         # anchorLineNos: true
 #         codeFences: true
@@ -132,25 +133,25 @@ markup:
 #         style: monokai
 
 privacy:
-    vimeo:
-        disabled: false
-        simple: true
+  vimeo:
+    disabled: false
+    simple: true
 
-    twitter:
-        disabled: false
-        enableDNT: true
-        simple: true
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
 
-    instagram:
-        disabled: false
-        simple: true
+  instagram:
+    disabled: false
+    simple: true
 
-    youtube:
-        disabled: false
-        privacyEnhanced: true
+  youtube:
+    disabled: false
+    privacyEnhanced: true
 
 services:
-    instagram:
-        disableInlineCSS: true
-    twitter:
-        disableInlineCSS: true
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
