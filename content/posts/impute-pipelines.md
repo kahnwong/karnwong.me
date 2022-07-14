@@ -64,19 +64,18 @@ df = pd.concat([df_cbd, df_suburb])
 df
 ```
 
-|    |   bed |   bath |   area_usable | region   |
-|---:|------:|-------:|--------------:|:---------|
-|  0 |     2 |      1 |            33 | cbd      |
-|  1 |     1 |      2 |            23 | cbd      |
-|  2 |     1 |      2 |            33 | cbd      |
-|  3 |     2 |      1 |            26 | cbd      |
-|  4 |     2 |      1 |            28 | cbd      |
-|  5 |     2 |      2 |            36 | cbd      |
-|  6 |     1 |      2 |            38 | cbd      |
-|  7 |     2 |      1 |            23 | cbd      |
-|  8 |     2 |      1 |            36 | cbd      |
-|  9 |   nan |      2 |            29 | cbd      |
-
+|     | bed | bath | area_usable | region |
+| --: | --: | ---: | ----------: | :----- |
+|   0 |   2 |    1 |          33 | cbd    |
+|   1 |   1 |    2 |          23 | cbd    |
+|   2 |   1 |    2 |          33 | cbd    |
+|   3 |   2 |    1 |          26 | cbd    |
+|   4 |   2 |    1 |          28 | cbd    |
+|   5 |   2 |    2 |          36 | cbd    |
+|   6 |   1 |    2 |          38 | cbd    |
+|   7 |   2 |    1 |          23 | cbd    |
+|   8 |   2 |    1 |          36 | cbd    |
+|   9 | nan |    2 |          29 | cbd    |
 
 ## Report missing values
 
@@ -116,64 +115,41 @@ col: region, missing: 0.0%
 
 ![](/images/2021-08-18-19-05-52.png)
 
-
 ## Data exploration
 
 Knowing the missing rate isn't everything, thus it is also a good idea to explore data in other areas too.
-
 
 ```python
 ## missing bed per region
 df[df.bed.isna()]["region"].value_counts(dropna=False)
 ```
 
-
-
-
     cbd       634
     suburb    598
     Name: region, dtype: int64
-
-
-
 
 ```python
 ## missing bath per region
 df[df.bath.isna()]["region"].value_counts(dropna=False)
 ```
 
-
-
-
     suburb    588
     cbd       566
     Name: region, dtype: int64
-
-
-
 
 ```python
 ## explore region
 df.region.value_counts()
 ```
 
-
-
-
     suburb    6000
     cbd       6000
     Name: region, dtype: int64
-
-
-
 
 ```python
 ## explore bed
 df.bed.value_counts()
 ```
-
-
-
 
     2.0    4050
     1.0    4009
@@ -181,16 +157,10 @@ df.bed.value_counts()
     3.0    1316
     Name: bed, dtype: int64
 
-
-
-
 ```python
 ## explore bath
 df.bath.value_counts()
 ```
-
-
-
 
     1.0    4142
     2.0    4022
@@ -198,11 +168,9 @@ df.bath.value_counts()
     4.0    1289
     Name: bath, dtype: int64
 
-
-
 ## Remove outliers
-(wouldn't want your model to have a sub-par performance from skewed data :-P)
 
+(wouldn't want your model to have a sub-par performance from skewed data :-P)
 
 ```python
 ## remove outliers here
@@ -213,7 +181,6 @@ df.bath.value_counts()
 In this step, we create percentile, mean and rank columns to add more data points, so the model can perform better :D
 
 First, we find aggregate percentiles for each groupby set, then add mean and rank columns.
-
 
 ```python
 synth_columns = {
@@ -258,11 +225,9 @@ for column, groupby_levels in synth_columns.items():
     calculating -- mean|region_bed|bath
     calculating -- rank|region_bed|bath
 
-
 ## Coalesce values
 
 In this step we fill in values obtained from the previous step -- impute time!!
-
 
 ```python
 def coalesce(df, columns):
@@ -307,13 +272,9 @@ coalesce_columns = [
 df["bath_imputed"] = coalesce(df, coalesce_columns)
 ```
 
-
-
-
 ## Report missing values (again)
 
 After we impute the values, let's see how much we are doing better!
-
 
 ```python
 report_missing(df)
@@ -340,12 +301,11 @@ report_missing(df)
 
 ![](/images/2021-08-18-19-08-00.png)
 
-
 Notice that the imputed columns there are no missing values. Yay!
 
 ## Assign partition
-In this step, we partition the data into three sets: train, dev and test. Normally we only split into train and test set, but the additional "dev" set is there so we can make sure it's not too overfit or underfit.
 
+In this step, we partition the data into three sets: train, dev and test. Normally we only split into train and test set, but the additional "dev" set is there so we can make sure it's not too overfit or underfit.
 
 ```python
 ## assign partition
@@ -366,7 +326,6 @@ df["hash_id"] = df["listing_id"].apply(lambda x: x % 10)
 ## assign partition
 df["partition_id"] = df["hash_id"].apply(lambda x: assign_partition(x))
 ```
-
 
 ```python
 ## define columns group
@@ -400,7 +359,6 @@ id_columns = [
 ]
 ```
 
-
 ```python
 ## remove missing y
 df = df.dropna(subset=[y_column])
@@ -410,7 +368,6 @@ df_train = df[df["partition_id"] == 0]
 df_dev = df[df["partition_id"] == 1]
 df_test = df[df["partition_id"] == 2]
 ```
-
 
 ```python
 ## split each set into x and y
@@ -424,11 +381,9 @@ y_test = df_test[y_column].values
 df_test = df_test[numer_columns+categ_columns]
 ```
 
-
 ## Create sklearn pipelines
 
 In this step, we chain a few pipelines together to process the dataset for the final time. In this example, we use median followed by standard scalar for numeric columns, and mode followed by encoding labels for categorical columns.
-
 
 ```python
 ## define pipelines
@@ -451,7 +406,6 @@ full_pipeline = ColumnTransformer([
     ])
 ```
 
-
 ```python
 ## fit and transform
 X_train = full_pipeline.fit_transform(df_train)
@@ -459,13 +413,9 @@ X_dev = full_pipeline.transform(df_dev)
 X_test = full_pipeline.transform(df_test)
 ```
 
-
 ```python
 X_train
 ```
-
-
-
 
     array([[ 0.04673184,  0.06391404,  0.        , ..., -0.16000115,
              1.        ,  0.        ],
@@ -481,12 +431,9 @@ X_train
            [ 1.06347297,  2.13701589,  0.        , ...,  1.54130432,
              0.        ,  1.        ]])
 
-
-
 ## Hyperparameter tuning
 
 In this step, we try to use different models and parameters to see which performs the best. We utilize mlflow for logging and hyperopt to help with tuning. In this example, we run the trials for 40 iterations, each using a different combination of model and parameters.
-
 
 ```python
 ## mlflow + hyperopt combo
@@ -564,11 +511,9 @@ pprint(best)
     Found minimum after 40 trials:
     {'max_depth2': 1, 'n_estimators2': 1, 'regressor_type': 1}
 
-
 ## Evaluate performance
 
-Run "mlflow server" to see the loggin dashboard. There, we can see that RandomForestRegressor has the best performance (the less MAE the better) when using max_depth=4  and n_estimators=150, to test the model's performance against another test set:
-
+Run "mlflow server" to see the loggin dashboard. There, we can see that RandomForestRegressor has the best performance (the less MAE the better) when using max_depth=4 and n_estimators=150, to test the model's performance against another test set:
 
 ```python
 ## use best params on TEST set
@@ -596,10 +541,12 @@ mae = pd.DataFrame([mae]).set_index('name')
 mae
 ```
 
-| name                  |   train_mae |   dev_mae |   test_mae |
-|:----------------------|------------:|----------:|-----------:|
-| DecisionTreeRegressor |   8.930245 	|8.592484 	|8.729826 |
-
-
+| name                  | train_mae |  dev_mae | test_mae |
+| :-------------------- | --------: | -------: | -------: |
+| DecisionTreeRegressor |  8.930245 | 8.592484 | 8.729826 |
 
 You'll notice that we use "median absolute error" to measure performance. There are other metrics available, such as mean squared error, but in some cases it's more meaningful to use a metric that measure the performance in actual data's unit, in this case the error on dev and test set are around 8 units away from its correct value. Since normally we use square meter for area, it means the prediction will be off by about 8 square meters in most cases.
+
+PS: We applied the same process to data from https://baania.com/ and it was a success!
+
+Update 2022-07-14: Baania how has opendata! Check it out at https://gobestimate.com/data.
