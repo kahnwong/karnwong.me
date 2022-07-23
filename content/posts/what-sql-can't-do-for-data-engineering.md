@@ -17,7 +17,7 @@ Let's circle back at bit.
 
 I think we all can agree that: there's a point in time where there's no data in the data warehouse (which DE-who-use-SQL's use as base of operation). The source data could be anything from hard CSV/Excel or API endpoints. No data in datawarehouse, DE can't use SQL to do stuff with the data.
 
-So who put the data into the data warehouse? Data enineers of course! But not the kind that use SQL. These data engineers are known as "data _platform_ engineers," where their main focus is data ingestion, platform and scalability.
+So who put the data into the data warehouse? Data engineers of course! But not the kind that use SQL. These data engineers are known as "data _platform_ engineers," where their main focus is data ingestion, platform and scalability.
 
 The confusion lies in the fact that, there seems to be different tools and skillset required for platform or analytics type for data engineers, but some places still refer to both roles as data engineer.
 
