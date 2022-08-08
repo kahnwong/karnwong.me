@@ -80,7 +80,7 @@ params:
   profileMode:
     enabled: true
     title: Karn Wong
-    subtitle: Data Engineer // DevOps // SRE // Platform Engineer // Tech Lead
+    subtitle: Data Engineer // Site Reliability Engineer // Platform Engineer // Tech Lead
 
   socialIcons:
   - name: github
