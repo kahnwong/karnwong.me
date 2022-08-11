@@ -29,7 +29,7 @@ What if you need to perform complex data cleaning processes for your data? You m
 Some people say "but you can also create functions in SQL." Yes, you can, but it's clunky and very fragile, and not very readable.
 
 ## Optimization
-When you're writing SQL for data transformation, the actual execution logic is being translated by the database's engine. As with all forms of translations, some information is lost, and can reduce in non-optimized instructions. For instance, if you need to perform longest matching against a list of string, one way to optimize this is to set a `break` condition after you found a match. In SQL, this most likely results in instructions to compare every string from the list, instead of stopping the matching process and move onto the next operation after a match is found.
+When you're writing SQL for data transformation, the actual execution logic is being translated by the database's engine. As with all forms of translations, some information is lost, and can result in non-optimized instructions. For instance, if you need to perform longest matching against a list of string, one way to optimize this is to set a `break` condition after you found a match. In SQL, this most likely results in instructions to compare every string from the list, instead of stopping the matching process and move onto the next operation after a match is found.
 
 ---------------
 
