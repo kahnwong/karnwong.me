@@ -14,9 +14,7 @@ ShowToc: false
 
 ## Tools
 
-- [gcal-agenda](https://github.com/kahnwong/gcal-agenda) - google-api dashboard calendar.
-- [pydantic-swagger](https://github.com/kahnwong/pydantic-swagger) - Convert pydantic definitions from multiple sources into a single swagger docs.
-- [setup-new-computer-script](https://github.com/kahnwong/setup-new-computer-script) - An Ansible playbook to set up a new Mac with required software and configurations. WIP Linux version [here](https://github.com/kahnwong/ansible-playground).
+- [setup-new-computer-script](https://github.com/devbaygroup/setup-new-computer-script) - An Ansible playbook to set up a new Mac with required software and configurations. WIP Linux version [here](https://github.com/kahnwong/ansible-playground).
 - [subsonic-github-readme](https://github.com/kahnwong/subsonic-github-readme) - Now playing and random tracks widget via subsonic API. Golang port [here](https://github.com/kahnwong/subsonic-github-readme-golang).
 - [todotxt-to-calendar](https://github.com/kahnwong/todotxt-to-calendar) - Convert todo.txt entries to calendar all-day event.
 - [water-cut-notify](https://github.com/kahnwong/water-cut-notify) - Send water cut alert as LINE notifications.

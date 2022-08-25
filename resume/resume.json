@@ -152,7 +152,7 @@
       "startDate": "2022-03-21",
       "endDate": "2022-08-13",
       "type": "devops",
-      "url": "https://github.com/kahnwong/setup-new-computer-script"
+      "url": "https://github.com/devbaygroup/setup-new-computer-script"
     },
     {
       "name": " terraform-sops-ssm",
