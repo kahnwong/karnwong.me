@@ -7,6 +7,7 @@ images:
 tags:
   - devops
   - github
+  - terraform
 ---
 
 At my organization we use sops to check in encrypted secrets into git repos. This solves plaintext credentials in version control. However, say, you have 5 repos using the same database credentials, rotating secrets means you have to go into each repo and update the SOPS credentials manually.
@@ -14,13 +15,16 @@ At my organization we use sops to check in encrypted secrets into git repos. Thi
 Also worth nothing that, for GitHub actions, authenticating AWS means you have to add repo secrets. This means for all the repos you have CI enabled, you have to populate the repo secrets with AWS credentials. When time comes for rotating the creds, you'll encounter the same situation as above.
 
 I did some research and consensus for AWS / Terraform setup is to: encrypt secrets via SOPS, and use Terraform to create AWS SSM secret entries. That way, you have a trail for credentials. This setup means:
+
 1. You don't have to populate repos with AWS creds, instead supplying an ARN role instead.
 2. You don't have to change credentials in projects, since they all get the secrets from AWS SSM.
 
 ## Implementation
+
 Repo here: https://github.com/kahnwong/terraform-sops-ssm
 
 ### 1. Bootstrap Terraform
+
 ```hcl
 terraform {
   required_providers {
@@ -44,6 +48,7 @@ terraform {
 ```
 
 ### 2. Create KMS key for SOPS
+
 https://github.com/mozilla/sops/#kms-aws-profiles
 
 ```hcl
@@ -57,6 +62,7 @@ resource "aws_kms_alias" "sops" {
 ```
 
 ### 3. Create SSM secrets
+
 Create a folder named `secrets`, inside it create JSON files and encrypt each with sops.
 
 ```hcl
@@ -83,6 +89,7 @@ resource "aws_secretsmanager_secret_version" "ssm_secrets" {
 ```
 
 ### 4. Create IAM policy for SSM access
+
 ```hcl
 data "aws_iam_policy_document" "secrets_ro" {
   statement {
@@ -111,6 +118,7 @@ resource "aws_iam_policy" "secrets_ro" {
 ```
 
 ### 5. Create IAM user for local dev
+
 You shouldn't supply AWS credentials for deployment, since you can grant access via IAM roles instead.
 
 ```hcl
@@ -124,6 +132,7 @@ resource "aws_iam_access_key" "playground-prod-dev" {
 ```
 
 #### Grant IAM user access to SSM
+
 ```hcl
 resource "aws_iam_user_policy_attachment" "playground-prod-dev" {
   user = aws_iam_user.playground-prod-dev.name
@@ -136,6 +145,7 @@ resource "aws_iam_user_policy_attachment" "playground-prod-dev" {
 ```
 
 ### 6. Create IAM role for Lambda
+
 ```hcl
 resource "aws_iam_role" "lambda_role" {
   name = "lambda_role"
@@ -179,6 +189,7 @@ resource "aws_iam_role" "lambda_role" {
 ```
 
 ### 7. Create IAM role for GitHub actions
+
 Need to create OIDC so GitHub can assume AWS roles
 
 ```hcl
@@ -190,6 +201,7 @@ resource "aws_iam_openid_connect_provider" "github" {
 ```
 
 Assume role policy is on per-repo basis
+
 ```hcl
 locals {
   repositories = [
@@ -213,6 +225,7 @@ data "aws_iam_policy_document" "github_actions_assume_role" {
 ```
 
 Finally attach the above policy to role
+
 ```hcl
 resource "aws_iam_role" "playground-prod-github" {
   name = "playground-prod-github"
@@ -228,7 +241,7 @@ resource "aws_iam_role" "playground-prod-github" {
 
 The end 🎉
 
-
 ## Bonus
+
 - [GitHub actions with AWS login](https://github.com/kahnwong/terraform-sops-ssm/blob/master/.github/workflows/deploy.yml)
 - [AWS Lambda with SSM template](https://github.com/kahnwong/terraform-sops-ssm/tree/master/app)
