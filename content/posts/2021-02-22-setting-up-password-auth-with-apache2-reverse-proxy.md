@@ -8,7 +8,7 @@ tags:
   - devops
 ---
 
-EDIT: see [here]({{< ref "/posts/hello-caddy" >}}) for Caddy, also easier to set up too.
+EDIT: see [here]({{< ref "/posts/2021-03-07-hello-caddy" >}}) for Caddy, also easier to set up too.
 
 Sometimes you found an interesting project to self-hosted, but it doesn't have password authentication built-in. Luckily, we need to reverse-proxy them anyway and apache2/ nginx / httpd happen to provide password auth with reverse-proxy by default.
 
@@ -36,6 +36,5 @@ To set up password auth with apache2 via reverse-proxy:
     </Proxy>
 </virtualhost>
 ```
-
 
 That's it!

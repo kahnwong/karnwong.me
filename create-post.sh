@@ -12,6 +12,7 @@ slug=$(echo "$title" | awk '{print tolower($0)}')
 slug=$(echo "$slug" | tr " " -)
 
 date=$(date "+%Y-%m-%dT%H:%M:%S%Z:00")
+date_str=$(date "+%Y-%m-%d")
 
 echo "---
 title: "$title"
@@ -21,4 +22,4 @@ ShowToc: false
 images:
 tags:
   - "$tag"
----" > "content/posts/$slug.md"
+---" > "content/posts/$date_str-$slug.md"
