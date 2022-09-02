@@ -46,7 +46,15 @@ I have been working in the data industry since almost half a decade ago. Over ti
 - Using task orchestrators to run pipelines on a regular basis, the application logic is written in python. Inside can be anything from pure python to pyspark. Or you can use bash and use any unix tools.
 - People who fall under this category often have software engineering background.
 
-  ## Platform engineering (setting up data infrastructure, etc)
+## Platform engineering (setting up data infrastructure, etc)
 
 - These are people that set up database, infrastructure, networking, and everything required to allow engineers/users to create data pipelines and consume data at downstream.
 - Usually they are DevOps who transitioned from working with app infra to data infra.
+
+---
+
+_Updated 2022-09-02_
+
+## GUI-based solutions
+
+- Using GUI-based tools to create data pipelines, such as Talend, AWS Glue, Azure Data Factory, etc. May or may not use in conjunction with SQL / python / pyspark.
