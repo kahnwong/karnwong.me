@@ -15,9 +15,9 @@ ShowToc: false
 ## Tools
 
 - [setup-new-computer-script](https://github.com/devbaygroup/setup-new-computer-script) - An Ansible playbook to set up a new Mac with required software and configurations. WIP Linux version [here](https://github.com/kahnwong/ansible-playground).
-- [subsonic-github-readme](https://github.com/kahnwong/subsonic-github-readme) - Now playing and random tracks widget via subsonic API. Golang port [here](https://github.com/kahnwong/subsonic-github-readme-golang).
-- [todotxt-to-calendar](https://github.com/kahnwong/todotxt-to-calendar) - Convert todo.txt entries to calendar all-day event.
-- [water-cut-notify](https://github.com/kahnwong/water-cut-notify) - Send water cut alert as LINE notifications.
+- [subsonic-github-readme](https://github.com/devbaygroup/subsonic-github-readme) - Now playing and random tracks widget via subsonic API. Golang port [here](https://github.com/kahnwong/subsonic-github-readme-golang).
+- [todotxt-to-calendar](https://github.com/devbaygroup/todotxt-to-calendar) - Convert todo.txt entries to calendar all-day event.
+- [water-cut-notify](https://github.com/devbaygroup/water-cut-notify) - Send water cut alert as LINE notifications.
 
 ## Misc
 
