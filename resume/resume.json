@@ -5,12 +5,6 @@
     "email": "contact@karnwong.me",
     "phone": "",
     "website": "https://www.karnwong.me",
-    "location": {
-      "postalCode": "10120",
-      "city": "Bangkholam",
-      "countryCode": "TH",
-      "region": "Bangkok"
-    },
     "profiles": [
       {
         "network": "Github",
@@ -24,21 +18,22 @@
       "name": "Baania",
       "position": "Lead Data Engineer | Machine Learning Engineer | SRE",
       "website": "https://www.baania.com",
-      "startDate": "2022-01-10",
+      "startDate": "2022",
       "endDate": null,
       "highlights": [
         "Enable backend team to perform auto-deployment to ECS with Terraform and GitHub Actions",
         "Manage repo permissions / secrets / webhooks with Terraform",
         "Research BI solution to consolidate fragmented dashboard platforms into a single one",
-        "Setup Grafana for centralized metrics and logs monitoring"
+        "Setup Grafana for centralized metrics and logs monitoring",
+        "Introduce Sourcegraph to help with code search and refactoring"
       ]
     },
     {
       "name": "Baania",
       "position": "Senior Data Engineer",
       "website": "https://www.baania.com",
-      "startDate": "2021-01-29",
-      "endDate": "2022-01-10",
+      "startDate": "2021",
+      "endDate": "2022",
       "highlights": [
         "Reduce development time for ETL pipelines from a week to 1 day via workflow redesign + codebase refactoring",
         "Mentor data engineers",
@@ -56,8 +51,8 @@
       "name": "Baania",
       "position": "Data Engineer",
       "website": "https://www.baania.com",
-      "startDate": "2018-04-02",
-      "endDate": "2021-01-29",
+      "startDate": "April 2018",
+      "endDate": "Jan 2021",
       "highlights": [
         "Create and maintain data gathering infrastructure for daily ingestion and processing to be stored in data lake (S3)",
         "Create and optimize machine learning models to achieve near-realtime performance",
@@ -74,8 +69,8 @@
       "institution": "Rangsit University",
       "area": "Information and Communication Technology",
       "studyType": "Bachelor",
-      "startDate": "2015-08-01",
-      "endDate": "2018-05-01"
+      "startDate": "2015",
+      "endDate": "2018"
     }
   ],
   "publications": [
@@ -86,34 +81,6 @@
       "website": "https://doi.org/10.1145/3313991.3314010"
     }
   ],
-  "skills": [
-    {
-      "name": "Data Engineering",
-      "keywords": [
-        "Data lake",
-        "Data modeling",
-        "Task orchestrator",
-        "Dagster",
-        "Spark"
-      ]
-    },
-    {
-      "name": "Data Science & Machine Learning",
-      "keywords": ["Pandas", "Sklearn", "Matplotlib", "Seaborn", "Spark MLib"]
-    },
-    {
-      "name": "Cloud",
-      "keywords": ["AWS", "Digital Ocean"]
-    },
-    {
-      "name": "DevOps/SRE",
-      "keywords": ["Docker", "GitHub Actions", "Terraform"]
-    },
-    {
-      "name": "Other Skills",
-      "keywords": ["Linguistics", "NLP", "GIS", "Web Scraping", "Linux"]
-    }
-  ],
   "languages": [
     {
       "language": "English",
@@ -122,24 +89,6 @@
     {
       "language": "Thai",
       "fluency": "Native speaker"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Music",
-      "keywords": ["Symphonic Heavy Metal", "Folk Metal"]
-    },
-    {
-      "name": "Tea",
-      "keywords": ["Jin Xuan oolong", "Pu'er", "Peppermint"]
-    },
-    {
-      "name": "Video Games",
-      "keywords": ["FPS", "Simulation", "Action"]
-    },
-    {
-      "name": "Books",
-      "keywords": ["History", "Nordic Noir", "Medicine", "Linguistics"]
     }
   ],
   "projects": [
