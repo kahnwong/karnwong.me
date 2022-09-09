@@ -48,7 +48,6 @@ languages:
         url: search/
         weight: 8
 
-
 outputs:
   home:
   - HTML
@@ -56,7 +55,7 @@ outputs:
   - JSON
 
 params:
-  env: production   # to enable google analytics, opengraph, twitter-cards and schema.
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: Homepage and blog by Karn Wong
   author: Karn Wong
     # author: ["Me", "You"] # multiple authors
@@ -86,7 +85,7 @@ params:
   - name: github
     url: https://github.com/kahnwong
   - name: linkedin
-    url: https://www.linkedin.com/in/karn-w-7b535b202
+    url: https://www.linkedin.com/in/karnsiree-w-7b535b202/
   - name: email
     url: mailto:contact@karnwong.me
   - name: cv
@@ -94,17 +93,17 @@ params:
   - name: RsS
     url: index.xml
 
-    # label:
-    #     text: "Home"
-    #     icon: icon.png
-    #     iconHeight: 35
+      # label:
+      #     text: "Home"
+      #     icon: icon.png
+      #     iconHeight: 35
 
   assets:
-        # favicon: "<link / abs url>"
-        # favicon16x16: "<link / abs url>"
-        # favicon32x32: "<link / abs url>"
-        # apple_touch_icon: "<link / abs url>"
-        # safari_pinned_tab: "<link / abs url>"
+    # favicon: "<link / abs url>"
+    # favicon16x16: "<link / abs url>"
+    # favicon32x32: "<link / abs url>"
+    # apple_touch_icon: "<link / abs url>"
+    # safari_pinned_tab: "<link / abs url>"
 
     # fuseOpts:
     #     isCaseSensitive: false
