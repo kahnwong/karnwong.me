@@ -87,7 +87,7 @@ params:
   - name: linkedin
     url: https://www.linkedin.com/in/karnsiree-w-7b535b202/
   - name: email
-    url: mailto:contact@karnwong.me
+    url: mailto:karn@karnwong.me
   - name: cv
     url: /resume.html
   - name: RsS
