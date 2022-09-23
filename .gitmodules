@@ -1,6 +1,6 @@
 [submodule "themes"]
 	path = themes
 	url = git@github.com:adityatelange/hugo-PaperMod.git
-[submodule "themes/PaperMod"]
-	path = themes/PaperMod
-	url = git@github.com:adityatelange/hugo-PaperMod.git
+[submodule "themes/WonderMod"]
+	path = themes/WonderMod
+	url = git@github.com:Wonderfall/hugo-WonderMod.git
