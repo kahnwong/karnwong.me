@@ -4,7 +4,7 @@
 
 ```bash
 git clone $REPO
-git submodule add git@github.com:Wonderfall/hugo-WonderMod.git themes/WonderMod/
+git submodule add git@github.com:kahnwong/hugo-WonderMod.git themes/WonderMod/
 git submodule update --init --recursive
 ```
 

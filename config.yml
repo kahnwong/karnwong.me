@@ -121,7 +121,7 @@ taxonomies:
 
 markup:
   highlight:
-    style: dracula
+    style: paraiso-dark
     noClasses: false
     guessSyntax: true
 
