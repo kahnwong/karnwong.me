@@ -11,10 +11,12 @@ tags:
 Self-hosting is a practice for running and managing websites / services using your own server. Some people do this because they are concerned about their privacy, or some services are free if they host it themselves. Below are instructions for how to do self-hosting (also applies to hosting your own website too).
 
 ## Requirements
+
 - Domain name
 - Server (can be your own computer at home or VPS)
 
 ## Instructions
+
 1. Set up and secure the server (set up password, disable password login (which means you can only login via SSH key), etc.)
 2. Deploy a website on your server (follow instructions for each service. I recommend deploy via Docker).
 3. If you are using a server at home which has dynamic IP, setup DDNS (I recommend duckdns.org, since it has very fast TTL).

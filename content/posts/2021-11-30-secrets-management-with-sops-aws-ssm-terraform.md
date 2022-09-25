@@ -6,6 +6,7 @@ ShowToc: true
 images:
 tags:
   - devops
+  - aws
   - github
   - terraform
 ---

@@ -7,6 +7,7 @@ images:
 tags:
   - devops
   - terraform
+  - aws
 ---
 
 To deploy a web application, there are many ways to go about it. I could spin up a bare VM and set up the environment manually. To make things easier, I could have package the app into docker image. But this still means I have to "update" the app manually if I add changes to it.

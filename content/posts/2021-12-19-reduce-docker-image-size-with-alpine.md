@@ -6,6 +6,7 @@ ShowToc: false
 images:
 tags:
   - devops
+  - docker
 ---
 
 Creating scripts are easy. But creating a small docker image is not 😅.
@@ -13,7 +14,9 @@ Creating scripts are easy. But creating a small docker image is not 😅.
 Not all Linux flavors are created equal, some are bigger than others, etc. But this difference is very crucial when it comes to reducing docker image size.
 
 ## A simple bash script docker image
+
 Given a Dockerfile (change `apk` to `apt` for `ubuntu`):
+
 ```dockerfile
 FROM alpine:3
 
@@ -34,6 +37,7 @@ ENTRYPOINT ["sh", "/app/water-cut-notify.sh"]
 Ubuntu imag size is `1099%` larger!!!!!!
 
 ## What about a light python image?
+
 ```dockerfile
 FROM python:3.9-alpine
 
@@ -49,9 +53,8 @@ RUN pip install requests
 
 Ubuntu imag size is `1716%` larger!!!!!!
 
-
-
 ## Should you use alpine image for everything?
+
 From above two experiments, we get:
 
 ![](/images/2021-12-19-21-21-35.png)

@@ -8,15 +8,18 @@ tags:
   - devops
   - data science
   - data engineering
+  - docker
 ---
 
 For data that doesn't fit into memory, spark is often a recommened solution, since it can utilize map-reduce to work with data in a distributed manner. However, setting up local spark development from scratch involves multiple steps, and definitely not for a faint of heart. Thankfully using docker means you can skip a lot of steps 😃
 
 ## Instructions
+
 1. Install [Docker Desktop](https://www.docker.com/get-started)
 2. Create `docker-compose.yml` in a directory somewhere
+
 ```yml
-version: '3.3'
+version: "3.3"
 
 services:
   pyspark:
@@ -26,10 +29,11 @@ services:
       - "8888:8888"
     volumes:
       - ./:/home/jovyan/work
-
 ```
+
 3. Run `docker-compose up` from the same folder where the above file is located.
 4. You should see something like this. It's the same from running `jupyter notebook` locally. Click the link at the end to access jupyter notebook.
+
 ```log
 Creating pyspark ... done
 Attaching to pyspark
@@ -59,13 +63,16 @@ pyspark    |     Or copy and paste one of these URLs:
 pyspark    |         http://bd20652c22d3:8888/?token=408f2020435dfb489c8d2710736a83f7a3c7cd969b3a1629
 pyspark    |      or http://127.0.0.1:8888/?token=408f2020435dfb489c8d2710736a83f7a3c7cd969b3a1629
 ```
-----------------------------------------------------------------
+
+---
 
 This snippet
+
 ```yml
-    volumes:
-      - ./:/home/jovyan/work
+volumes:
+  - ./:/home/jovyan/work
 ```
+
 means that anything you put in [the folder where `docker-compose.yml` is] can be accessed by [jupyter notebook running inside docker], and what you do from inside jupyter notebook can be seen on the host system too.
 
 See? Easy as a 🥧.

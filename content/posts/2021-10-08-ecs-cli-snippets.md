@@ -5,6 +5,7 @@ draft: false
 ShowToc: false
 images:
 tags:
+  - aws
   - devops
 ---
 

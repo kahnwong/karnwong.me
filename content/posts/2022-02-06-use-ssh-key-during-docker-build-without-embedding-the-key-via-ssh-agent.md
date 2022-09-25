@@ -6,6 +6,7 @@ ShowToc: false
 images:
 tags:
   - devops
+  - docker
   - github
 ---
 
@@ -18,8 +19,10 @@ A very simple solution would just be bundling the SSH key into the docker image 
 So what's the solution? Luckily there's a thing called ssh-agent forwarding. Think of it as passing an SSH key into docker during build, then poof! It's gone.
 
 ## Instructions
+
 1. Set up SSH key on your host machine. This essentially means you should be able to perform `git clone $REPO` on the module repo.
 2. In your Dockerfile, add something like the following:
+
 ```dockerfile
 # Authorize SSH Host
 RUN mkdir -p -m 700 /root/.ssh && \
@@ -28,32 +31,35 @@ RUN mkdir -p -m 700 /root/.ssh && \
 
 RUN --mount=type=ssh,id=github $SOME_COMMAND_THAT_NEEDS_SSH_KEY
 ```
+
 3. Build docker image with `docker build --ssh github=$SSH_PRIVATE_KEY_PATH -t $IMAGE_NAME .`
 
 ## GitHub Actions
-In GitHub actions, #1 is translated as:
-```yaml
-    - name: Setup SSH Keys and known_hosts
-      run: |
-        mkdir -p ~/.ssh
-        ssh-keyscan github.com >> ~/.ssh/known_hosts
-        ssh-agent -a $SSH_AUTH_SOCK > /dev/null
-        ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
-      env:
-          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
 
-    - name: Build, tag, and push image to Amazon ECR
-      uses: docker/build-push-action@v2
-      env:
-        SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-      with:
-        context: .
-        push: true
-        tags: ${{ steps.meta.outputs.tags }}
-        cache-from: type=gha
-        cache-to: type=gha,mode=max
-        ssh: |
-          github=${{ env.SSH_AUTH_SOCK }}
+In GitHub actions, #1 is translated as:
+
+```yaml
+- name: Setup SSH Keys and known_hosts
+  run: |
+    mkdir -p ~/.ssh
+    ssh-keyscan github.com >> ~/.ssh/known_hosts
+    ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+    ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
+  env:
+    SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+
+- name: Build, tag, and push image to Amazon ECR
+  uses: docker/build-push-action@v2
+  env:
+    SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+  with:
+    context: .
+    push: true
+    tags: ${{ steps.meta.outputs.tags }}
+    cache-from: type=gha
+    cache-to: type=gha,mode=max
+    ssh: |
+      github=${{ env.SSH_AUTH_SOCK }}
 ```
 
 Voila 🎉
