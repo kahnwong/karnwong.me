@@ -3,7 +3,7 @@ baseURL: https://www.karnwong.me/
 # baseURL: "/"
 title: Karn Wong
 paginate: 5
-theme: WonderMod
+theme: PaperMod
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -75,6 +75,7 @@ params:
     # homeInfoParams:
     #     Title: Karn Wong
     #     Content: Data Engineer // DevOps // SRE // Platform Engineer // Tech Lead
+  TocSide: left # or 'right'
 
   profileMode:
     enabled: true
@@ -121,7 +122,7 @@ taxonomies:
 
 markup:
   highlight:
-    style: paraiso-dark
+    style: monokai
     noClasses: false
     guessSyntax: true
 
