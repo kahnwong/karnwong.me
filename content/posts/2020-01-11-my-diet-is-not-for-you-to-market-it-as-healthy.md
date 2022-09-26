@@ -8,9 +8,9 @@ tags:
   - celiac
 ---
 
-Assuming you're from the Anglosphere or live in trendy neighborhoods, you will see a lot of places offering gluten-free options and slapping "healthy" label on it. The problem arises when restauraners see the opportunity to cash in the gluten-free wave and start offering gluten-free options. This is an issue because, gluten-free is not just eliminating wheat, barley, rye or oat. It's more than that.
+Assuming you're from the Anglosphere or live in trendy neighborhoods, you will see a lot of places offering gluten-free options and slapping "healthy" label on it. The problem arises when restauranters see the opportunity to cash in the gluten-free wave and start offering gluten-free options. This is an issue because, gluten-free is not just eliminating wheat, barley, rye or oat. It's more than that.
 
-If you bake pizza using gluten-free flour in the **same** oven as regular pizza, it is considered *cross-contaminated* from floating flour dust in the air and some flour bits sticking to the oven, meaning it would contain gluten even if you use gluten-free flour.
+If you bake pizza using gluten-free flour in the **same** oven as regular pizza, it is considered _cross-contaminated_ from floating flour dust in the air and some flour bits sticking to the oven, meaning it would contain gluten even if you use gluten-free flour.
 
 Cross-contamination can happen a lot, and is hard to keep track of. A rule of thumb is to use separate set of cookwares when making gluten-free dishes. This is why people who cannot eat gluten rarely eat out - because it's very hard to find truly gluten-free places.
 
@@ -20,6 +20,6 @@ And think about it: to parade a diet for life-threatening illness as healthy, th
 
 If you ask me who's to blame, I would say the marketers. They need to cash in the fad, that's fine for me. But they did it in a very half-assed way, completely throwing people who really need to eat gluten-free under the bus.
 
-Note that I make a distinction between promoting a bakery as "made from rice flour" or "made from gluten-free flour." The former may contain gluten due to cross-contamination, the latter has to be truly gluten-free. But I'm hoping too much, seeing these marketing terms are interchangable these days.
+Note that I make a distinction between promoting a bakery as "made from rice flour" or "made from gluten-free flour." The former may contain gluten due to cross-contamination, the latter has to be truly gluten-free. But I'm hoping too much, seeing these marketing terms are interchangeable these days.
 
 So what am I going to do about this? Nothing. I can't do anything except writing about this so people might know what gluten fad is like from our perspective. On the plus side, there are more gluten-free grocery options, and luckily the labels are mostly trustworthy. You win some, you lose some, such is how life works.

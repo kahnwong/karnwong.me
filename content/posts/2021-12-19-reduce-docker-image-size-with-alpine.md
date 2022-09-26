@@ -34,7 +34,7 @@ ENTRYPOINT ["sh", "/app/water-cut-notify.sh"]
 | alpine     | 11.1MB            |
 | ubuntu     | 122MB             |
 
-Ubuntu imag size is `1099%` larger!!!!!!
+Ubuntu image size is `1099%` larger!!!!!!
 
 ## What about a light python image?
 
@@ -51,7 +51,7 @@ RUN pip install requests
 | alpine     | 53.6MB            |
 | ubuntu     | 920MB             |
 
-Ubuntu imag size is `1716%` larger!!!!!!
+Ubuntu image size is `1716%` larger!!!!!!
 
 ## Should you use alpine image for everything?
 

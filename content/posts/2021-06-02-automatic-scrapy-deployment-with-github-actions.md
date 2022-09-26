@@ -19,6 +19,7 @@ You can set auto deployment from github via the UI in zyte, but it only works wi
 **Note**: I would assume that you have your scrapy project set up already.
 
 ## Create scrapinghub.yml + add repo secrets
+
 ```yaml
 project: ${PROJECT_ID}
 
@@ -29,36 +30,38 @@ stack: scrapy:${YOUR_SCRAPY_VERSION_IN_PIPFILE}
 apikey: null
 ```
 
-Notice that `apikey` is left blank. This is because it's considered a good practice to not checkin sensitive information & credentials in version control. Instead `apikey` will be added to github secrets, so it can be called as environment variable.
+Notice that `apikey` is left blank. This is because it's considered a good practice to not check in sensitive information & credentials in version control. Instead `apikey` will be added to github secrets, so it can be called as environment variable.
 
 ## Create github workflow file
+
 ```yaml
 name: Deploy
 
 on:
   push:
-    branches: [ master, main ]
+    branches: [master, main]
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.9
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.9
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install pyyaml shub
-    - name: Deploy to zyte
-      if: github.ref == 'refs/heads/master'
-      run: python3 utils/edit_deploy_config.py && shub deploy
-      env:
-        APIKEY: ${{ secrets.APIKEY }}
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml shub
+      - name: Deploy to zyte
+        if: github.ref == 'refs/heads/master'
+        run: python3 utils/edit_deploy_config.py && shub deploy
+        env:
+          APIKEY: ${{ secrets.APIKEY }}
 ```
 
 Translation:
+
 - On push to this repo (this doesn't work for PRs)
 - Download this repo
 - Setup python3.9

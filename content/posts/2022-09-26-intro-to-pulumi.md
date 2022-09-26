@@ -19,7 +19,7 @@ Challenge url: <https://www.pulumi.com/challenge/startup-in-a-box/>
 - [Pulumi](https://app.pulumi.com/signup) account
 - [Checkly](https://www.checklyhq.com/) account
 - AWS acount
-- Install pulumi cli: `brew install pulumi/tap/pulumi`
+- Install Pulumi cli: `brew install pulumi/tap/pulumi`
 
 ## Steps
 
@@ -426,7 +426,7 @@ export class CdnWebsite extends pulumi.ComponentResource {
 }
 ```
 
-3. In`index.ts` modify the file so that it looks liks this:
+3. In`index.ts` modify the file so that it looks like this:
 
 ```typescript
 // Deploy Website to S3 with CloudFront
@@ -489,7 +489,7 @@ expect(await page.title()).toBe("Pulumi Challenge");
 await browser.close();
 ```
 
-### Chery on top (who wants swags?)
+### Cherry on top (who wants swags?)
 
 Kindly provided by folks at Pulumi, we can get cool swags by calling an API endpoint as follows:
 
@@ -577,7 +577,7 @@ const swag = new Swag("your-startup", {
 pulumi up
 ```
 
-If everything works correctly, your terminal should display somethingn like this:
+If everything works correctly, your terminal should display something like this:
 
 ```bash
 Previewing update (dev)
