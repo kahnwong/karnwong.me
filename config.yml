@@ -23,36 +23,36 @@ languages:
     weight: 1
     menu:
       main:
-      - name: About
-        url: about/
-        weight: 1
-      - name: Posts
-        url: posts
-        weight: 2
-      - name: Projects
-        url: projects/
-        weight: 3
-      - name: Books
-        url: books/
-        weight: 4
-      - name: Music
-        url: music/
-        weight: 5
-      - name: Talks
-        url: talks/
-        weight: 6
-      - name: Tags
-        url: tags/
-        weight: 7
-      - name: Search
-        url: search/
-        weight: 8
+        - name: About
+          url: about/
+          weight: 1
+        - name: Posts
+          url: posts
+          weight: 2
+        - name: Projects
+          url: projects/
+          weight: 3
+        - name: Books
+          url: books/
+          weight: 4
+        - name: Music
+          url: music/
+          weight: 5
+        - name: Talks
+          url: talks/
+          weight: 6
+        - name: Tags
+          url: tags/
+          weight: 7
+        - name: Search
+          url: search/
+          weight: 8
 
 outputs:
   home:
-  - HTML
-  - RSS
-  - JSON
+    - HTML
+    - RSS
+    - JSON
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -83,16 +83,16 @@ params:
     subtitle: Data Engineer // Site Reliability Engineer // Platform Engineer // Tech Lead
 
   socialIcons:
-  - name: github
-    url: https://github.com/kahnwong
-  - name: linkedin
-    url: https://www.linkedin.com/in/karnsiree-w-7b535b202/
-  - name: email
-    url: mailto:karn@karnwong.me
-  - name: cv
-    url: /resume.html
-  - name: RsS
-    url: index.xml
+    - name: github
+      url: https://github.com/kahnwong
+    - name: linkedin
+      url: https://www.linkedin.com/in/karnsiree-w-7b535b202/
+    - name: email
+      url: mailto:karn@karnwong.me
+    - name: cv
+      url: /resume.html
+    - name: RsS
+      url: index.xml
 
         # label:
         #     text: "Home"
