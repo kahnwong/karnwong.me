@@ -93,6 +93,8 @@ params:
       url: /resume.html
     - name: RsS
       url: index.xml
+    - name: webring
+      url: https://webring.wonderful.software#karnwong.me
 
         # label:
         #     text: "Home"
