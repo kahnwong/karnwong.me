@@ -5,4 +5,4 @@ url: "/about"
 summary: "about"
 ---
 
-Data engineer at a local startup. Usually work with godzilla-level data and infrastructure. Is a designated tech lead for the data team. Have a crush on Nordic Noir. Language and history nerd. Symphonic metal is my jam.
+I started out as an IT support, then pick up DevOps through self-hosting and software engineering during school years. I have been involved in every step in a machine learning project workflow from r&d to production. Currently I am a platform engineer at [Baania](https://baaniathailand.com). If you are in Bangkok, you might see me at a local meetup 😎.
