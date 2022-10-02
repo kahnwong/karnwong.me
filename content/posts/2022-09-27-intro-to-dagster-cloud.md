@@ -56,7 +56,7 @@ Notice each code location has attached git hash. Yay tracing!
 
 ## Table lineage
 
-Running multiple pipelines are cool. But if you update this pipeline, do you also need to update its dependent pipelines? I'm sure you can have a list of pipelines dependency somewhere, but it's so much more convenient to see it right from dagster.
+Running multiple pipelines are cool. But if you update this pipeline, do you also need to update downstream pipelines? I'm sure you can have a list of pipelines dependency somewhere, but it's so much more convenient to see it right from dagster.
 
 ![dagster table lineage](/images/2022-09-27-19-45-20.png)
 
