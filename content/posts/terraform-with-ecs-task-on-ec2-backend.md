@@ -10,7 +10,7 @@ tags:
   - aws
 ---
 
-[Previously]({{< ref "/posts/2022-08-26-minimal-ecs-task-with-fargate-backend" >}}) I wrote about setting up ECS task on fargate backend. But we can also use EC2 as backend too, in some cases where the workload is consistent, ie scaling is not required, since EC2 would be cheaper than fargate backend, even more so if you have reserved instance on top. There's a few modifications from the fargate version to make it work with EC2 backend, if you are curious you can try to hunt those down 😎. Repo [here](https://github.com/devbaygroup/terraform-aws-ecs-ec2-example).
+[Previously]({{< ref "/posts/minimal-ecs-task-with-fargate-backend" >}}) I wrote about setting up ECS task on fargate backend. But we can also use EC2 as backend too, in some cases where the workload is consistent, ie scaling is not required, since EC2 would be cheaper than fargate backend, even more so if you have reserved instance on top. There's a few modifications from the fargate version to make it work with EC2 backend, if you are curious you can try to hunt those down 😎. Repo [here](https://github.com/devbaygroup/terraform-aws-ecs-ec2-example).
 
 ## Task definition
 

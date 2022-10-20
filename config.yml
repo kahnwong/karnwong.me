@@ -45,6 +45,9 @@ outputs:
     - RSS
     - JSON
 
+permalinks:
+  posts: /:section/:year/:month/:slugorfilename
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: Homepage and blog by Karn Wong
