@@ -32,18 +32,12 @@ languages:
         - name: Projects
           url: projects/
           weight: 3
-        - name: Books
-          url: books/
-          weight: 4
-        - name: Music
-          url: music/
-          weight: 5
         - name: Tags
           url: tags/
-          weight: 6
+          weight: 4
         - name: Search
           url: search/
-          weight: 7
+          weight: 5
 
 outputs:
   home:
