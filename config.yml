@@ -74,7 +74,7 @@ params:
   profileMode:
     enabled: true
     title: Karn Wong
-    subtitle: Data Engineer // Site Reliability Engineer // Platform Engineer // Tech Lead
+    subtitle: Head of platform engineering
 
   socialIcons:
     - name: github

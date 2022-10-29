@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Karn Wong",
-    "label": "Lead Data Engineer | Machine Learning Engineer | SRE",
+    "label": "Head of platform engineering",
     "email": "karn@karnwong.me",
     "phone": "",
     "website": "https://www.karnwong.me",
@@ -16,10 +16,18 @@
   "work": [
     {
       "name": "Baania",
+      "position": "Head of platform engineering",
+      "website": "https://www.baania.com",
+      "startDate": "Oct 2022",
+      "endDate": null,
+      "highlights": []
+    },
+    {
+      "name": "Baania",
       "position": "Lead Data Engineer | Machine Learning Engineer | SRE",
       "website": "https://www.baania.com",
-      "startDate": "2022",
-      "endDate": null,
+      "startDate": "Jan 2022",
+      "endDate": "Oct 2022",
       "highlights": [
         "Enable backend team to perform auto-deployment to ECS with Terraform and GitHub Actions",
         "Manage repo permissions / secrets / webhooks with Terraform",
