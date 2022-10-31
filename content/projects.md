@@ -8,7 +8,7 @@ ShowToc: false
 
 ## Data Science
 
-- [Impute Pipelines](https://www.karnwong.me/posts/2020-05-22-impute-pipelines/) - Use machine learning to fill in missing data. Utilize hyperparameter tuning to find the optimum parameters.
+- [Impute Pipelines](https://www.karnwong.me/posts/2020/05/impute-pipelines/) - Use machine learning to fill in missing data. Utilize hyperparameter tuning to find the optimum parameters.
 - [Visualizing Map Region Prefix/Suffix](https://www.karnwong.me/posts/2020/09/visualizing-map-region-prefix-suffix/) - Utilize NLP to group region name prefix/suffix.
 - [Word-Based Analysis With Song Lyrics](https://www.karnwong.me/posts/2020/04/word-based-analysis-with-song-lyrics/) - Visualize lyrics trend using NLP and use topic modeling to find common words per specified clusters.
 
