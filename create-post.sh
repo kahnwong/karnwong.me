@@ -22,4 +22,4 @@ ShowToc: false
 images:
 tags:
   - "$tag"
----" > "content/posts/$date_str-$slug.md"
+---" > "content/posts/$slug.md"
