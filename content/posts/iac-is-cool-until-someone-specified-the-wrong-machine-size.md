@@ -6,7 +6,6 @@ ShowToc: false
 images:
 tags:
   - devops
-  - pulumi
 ---
 
 Back in the day, there was no cloud. If you want a lot of computing power, you need to build your own data center, and this is very expensive. Then cloud happened, and suddenly you can work with a lot of flexibility like you couldn't before. Want to try out a small deployment? Sure! If your workload is heavier you can always increase the VM specs.
