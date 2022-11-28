@@ -1,59 +1,57 @@
 name: Deploy
 
 on:
-  push:
-    branches: [ master ]
-
-  # Allows you to run this workflow manually from the Actions tab
+  # push:
+  pull_request:
   workflow_dispatch:
 
+concurrency:
+  group: environment-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: read
+      deployments: write
+    name: Publish to Cloudflare Pages
     steps:
-    - name: 'Checkout Repository'
-      uses: actions/checkout@v2
-      with:
-        submodules: true
+      - name: Checkout
+        uses: actions/checkout@v3
+      # ---------- build resume ----------
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 15
+      - name: build resume
+        run: |
+          cd resume
+          npm install -g resume-cli
+          npm install
+          resume export ../static/resume.html --theme onepage-updated
+      # ---------- build ----------
+      - name: Install hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+      - name: Set timezone
+        uses: szenius/set-timezone@v1.0
+        with:
+          timezoneLinux: "Asia/Bangkok"
+          timezoneMacos: "Asia/Bangkok"
+          timezoneWindows: "SE Asia Standard Time"
+      - name: Build site
+        run: |
+          hugo --gc --minify --cleanDestinationDir
+      # ---------- publish ----------
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID}}
+          projectName: karnwong-me
+          directory: public
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
 
-    ########################
-    # build resume
-    ########################
-    - name: Setup node
-      uses: actions/setup-node@v2
-      with:
-        node-version: 15
-
-    - name: build resume
-      run: |
-        cd resume
-        npm install -g resume-cli
-        npm install
-        resume export ../static/resume.html --theme onepage-updated
-
-    ########################
-    # build hugo
-    ########################
-    - name: Install hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: 'latest'
-        extended: true
-
-    - name: Set timezone
-      uses: szenius/set-timezone@v1.0
-      with:
-        timezoneLinux: "Asia/Bangkok"
-        timezoneMacos: "Asia/Bangkok"
-        timezoneWindows: "SE Asia Standard Time"
-
-    - name: Build site
-      run: |
-        hugo --gc --minify --cleanDestinationDir
-
-    - name: Deploy site
-      with:
-        build-dir: public
-        deploy-branch: gh-pages
-      uses:  NickSchimek/deploy_jamstack_action@main
