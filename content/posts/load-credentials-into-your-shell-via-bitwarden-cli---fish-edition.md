@@ -8,9 +8,9 @@ tags:
   - devops
 ---
 
-Recently I work with GitHub CLI a lot, and having to constantly fire up Bitwarden app to retrieve GITHUB_TOKEN gets old real fast...
+Recently I work with GitHub CLI a lot, and having to constantly fire up Bitwarden app to retrieve `GITHUB_TOKEN` gets old real fast...
 
-I was thinking of storing it in a gist in a password manager, luckily someone had the same idea and [implemented it](https://blog.gruntwork.io/how-to-securely-store-secrets-in-bitwarden-cli-and-load-them-into-your-zsh-shell-when-needed-f12d4d040df). The only issue is that I use fish shell. But we live in a world where there are many ways to interact with the shell, so it follows that you can translate zsh syntax to fish syntax. 
+I was thinking of storing it in a gist in a password manager, luckily someone had the same idea and [implemented it](https://blog.gruntwork.io/how-to-securely-store-secrets-in-bitwarden-cli-and-load-them-into-your-zsh-shell-when-needed-f12d4d040df). The only issue is that I use fish shell. But we live in a world where there are many ways to interact with the shell, so it follows that you can translate zsh syntax to fish syntax.
 
 For the original snippet in zsh, translated as fish:
 
