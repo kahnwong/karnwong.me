@@ -1,8 +1,16 @@
 {
   "dependencies": {
     "jsonresume-theme-business-card": "^0.0.2",
-    "jsonresume-theme-even": "^0.16.1",
+    "jsonresume-theme-jdambron": "^1.0.3",
+    "jsonresume-theme-monoblue": "^1.0.2",
+    "jsonresume-theme-one": "^0.0.1",
+    "jsonresume-theme-onepage-plus": "^1.0.1",
     "jsonresume-theme-onepage-updated": "^1.0.3",
-    "jsonresume-theme-paper": "^0.5.0"
+    "jsonresume-theme-paper": "^0.5.0",
+    "jsonresume-theme-srt-wide": "^0.1.4",
+    "jsonresume-theme-stackoverflow-mats": "^2.1.0",
+    "jsonresume-theme-stackoverflowed": "^1.1.2",
+    "jsonresume-theme-standard-resume": "^2.1.0",
+    "resume-cli": "^3.0.8"
   }
 }

@@ -1,8 +1,9 @@
+---
 name: Deploy
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -12,48 +13,46 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: 'Checkout Repository'
-      uses: actions/checkout@v2
-      with:
-        submodules: true
+      - name: "Checkout Repository"
+        uses: actions/checkout@v2
+        with:
+          submodules: true
 
-    ########################
-    # build resume
-    ########################
-    - name: Setup node
-      uses: actions/setup-node@v2
-      with:
-        node-version: 15
+      ########################
+      # build resume
+      ########################
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: build resume
+        run: |
+          cd resume
+          yarn install
+          yarn resume export ../static/resume.html --theme stackoverflow-mats
 
-    - name: build resume
-      run: |
-        cd resume
-        npm install -g resume-cli
-        npm install
-        resume export ../static/resume.html --theme onepage-updated
+      ########################
+      # build hugo
+      ########################
+      - name: Install hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "latest"
+          extended: true
 
-    ########################
-    # build hugo
-    ########################
-    - name: Install hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: 'latest'
-        extended: true
+      - name: Set timezone
+        uses: szenius/set-timezone@v1.0
+        with:
+          timezoneLinux: "Asia/Bangkok"
+          timezoneMacos: "Asia/Bangkok"
+          timezoneWindows: "SE Asia Standard Time"
 
-    - name: Set timezone
-      uses: szenius/set-timezone@v1.0
-      with:
-        timezoneLinux: "Asia/Bangkok"
-        timezoneMacos: "Asia/Bangkok"
-        timezoneWindows: "SE Asia Standard Time"
+      - name: Build site
+        run: |
+          hugo --gc --minify --cleanDestinationDir
 
-    - name: Build site
-      run: |
-        hugo --gc --minify --cleanDestinationDir
-
-    - name: Deploy site
-      with:
-        build-dir: public
-        deploy-branch: gh-pages
-      uses:  NickSchimek/deploy_jamstack_action@main
+      - name: Deploy site
+        with:
+          build-dir: public
+          deploy-branch: gh-pages
+        uses: NickSchimek/deploy_jamstack_action@main
