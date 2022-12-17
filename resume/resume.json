@@ -20,7 +20,9 @@
       "website": "https://www.baania.com",
       "startDate": "2022-10-01",
       "endDate": null,
-      "highlights": []
+      "highlights": [
+        "Research and implement internal data platform v2, with CI/CD for integration and unit tests, dependencies and code changes"
+      ]
     },
     {
       "name": "Baania",
@@ -33,7 +35,8 @@
         "Manage repo permissions / secrets / webhooks with Terraform",
         "Research BI solution to consolidate fragmented dashboard platforms into a single one",
         "Setup Grafana for centralized metrics and logs monitoring",
-        "Introduce Sourcegraph to help with code search and refactoring"
+        "Introduce Sourcegraph to help with code search and refactoring",
+        "Setup GitOps for Terraform to enable collaboration between different teams, in turn reducing configuration drift"
       ]
     },
     {
