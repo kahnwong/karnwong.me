@@ -18,7 +18,7 @@
       "name": "Baania",
       "position": "Head of platform engineering",
       "website": "https://www.baania.com",
-      "startDate": "Oct 2022",
+      "startDate": "2022-10-01",
       "endDate": null,
       "highlights": []
     },
@@ -26,8 +26,8 @@
       "name": "Baania",
       "position": "Lead Data Engineer | Machine Learning Engineer | SRE",
       "website": "https://www.baania.com",
-      "startDate": "Jan 2022",
-      "endDate": "Oct 2022",
+      "startDate": "2022-01-10",
+      "endDate": "2022-09-30",
       "highlights": [
         "Enable backend team to perform auto-deployment to ECS with Terraform and GitHub Actions",
         "Manage repo permissions / secrets / webhooks with Terraform",
@@ -40,8 +40,8 @@
       "name": "Baania",
       "position": "Senior Data Engineer",
       "website": "https://www.baania.com",
-      "startDate": "2021",
-      "endDate": "2022",
+      "startDate": "2021-01-29",
+      "endDate": "2022-01-10",
       "highlights": [
         "Reduce development time for ETL pipelines from a week to 1 day via workflow redesign + codebase refactoring",
         "Mentor data engineers",
@@ -59,8 +59,8 @@
       "name": "Baania",
       "position": "Data Engineer",
       "website": "https://www.baania.com",
-      "startDate": "April 2018",
-      "endDate": "Jan 2021",
+      "startDate": "2018-04-02",
+      "endDate": "2021-01-29",
       "highlights": [
         "Create and maintain data gathering infrastructure for daily ingestion and processing to be stored in data lake (S3)",
         "Create and optimize machine learning models to achieve near-realtime performance",
@@ -106,7 +106,7 @@
         "A cross-platform setup script that works with both Linux and Mac."
       ],
       "keywords": ["Nix", "Environment", "Dotfiles", "Package Manager"],
-      "startDate": "Dec 2022",
+      "startDate": "2022-11-30",
       "type": "devops",
       "url": "https://github.com/kahnwong/nix"
     },
@@ -117,8 +117,8 @@
         "Create github-ci+lambda roles and users with access to SSM."
       ],
       "keywords": ["Terraform", "AWS", "GitHub", "Security"],
-      "startDate": "Nov 2021",
-      "endDate": "Nov 2021",
+      "startDate": "2021-11-24",
+      "endDate": "2021-11-30",
       "type": "devops",
       "url": "https://github.com/kahnwong/terraform-sops-ssm"
     },
@@ -137,7 +137,7 @@
         "DevOps",
         "Infrastructure as Code"
       ],
-      "startDate": "2017",
+      "startDate": "2017-12-01",
       "type": "service"
     },
     {
@@ -147,8 +147,8 @@
         "Utilize hyperparameter tuning to find the optimum parameters"
       ],
       "keywords": ["Machine Learning", "Data Science", "Hyperparameter Tuning"],
-      "startDate": "Nov 2019",
-      "endDate": "Dec 2019",
+      "startDate": "2019-11-28",
+      "endDate": "2019-12-23",
       "url": "https://www.karnwong.me/posts/2020/05/impute-pipelines/",
       "type": "data"
     }
