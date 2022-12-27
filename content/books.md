@@ -5,7 +5,7 @@ url: "/books"
 summary: "books"
 ---
 
-Updated 2022-07-10
+Updated 2022-12-27
 
 ## Nonfiction
 
@@ -17,13 +17,9 @@ Updated 2022-07-10
 
 - [ALIEN Thinking: The Unconventional Path to Breakthrough Ideas](https://www.goodreads.com/book/show/54503525-alien-thinking) - Cyril Bouquet, Jean-Louis Barsoux, Michael Wade
 - [Platform Revolution: How Networked Markets Are Transforming the Economy and How to Make Them Work for You](https://www.goodreads.com/book/show/25623202) - Geoffrey G. Parker & - Marshall W. Van Alstyne & Sangeet Paul Choudary
-- [Powerful: Building a Culture of Freedom and Responsibility](https://www.goodreads.com/book/show/36417234-powerful) - Patty McCord
 - [The Culture Map: Breaking Through the Invisible Boundaries of Global Business](https://www.goodreads.com/book/show/23089268) - Erin Meyer
 - [The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers](https://www.goodreads.com/book/show/18176747-the-hard-thing-about-hard-things) - Ben Horowitz
 - [Trust Me, I'm Lying: Confessions of a Media Manipulator](https://www.goodreads.com/book/show/13542853-trust-me-i-m-lying) - Ryan Holiday
-- [The Ideal Team Player: How to Recognize and Cultivate The Three Essential Virtues](https://www.goodreads.com/book/show/28930640-the-ideal-team-player) - Patrick Lencioni
-- [The Five Dysfunctions of a Team: A Leadership Fable](https://www.goodreads.com/book/show/21343.The_Five_Dysfunctions_of_a_Team) - Patrick Lencioni
-- [HBR's 10 Must Reads on Managing Yourself](https://www.goodreads.com/book/show/8308501-hbr-s-10-must-reads-on-managing-yourself) - Harvard Business Review
 
 ### Cultural / History / Politics
 
@@ -53,12 +49,21 @@ Updated 2022-07-10
 - [Honeymoon in Tehran: Two Years of Love and Danger in Iran](https://www.goodreads.com/book/show/7013523) - Azadeh Moaveni
 - [Our Women on the Ground: Essays by Arab Women Reporting from the Arab World](https://www.goodreads.com/book/show/42853221-our-women-on-the-ground) - Zahra Hankir
 
-### Data Science
+### Data
 
+- [Data Science for Business](https://www.goodreads.com/book/show/17912916-data-science-for-business) - Foster Provost & Tom Fawcett
+- [Data Teams: A Unified Management Model for Successful Data-Focused Teams](https://www.goodreads.com/en/book/show/55445638-data-teams) - Jesse Anderson
+- [Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](https://www.goodreads.com/book/show/23463279-designing-data-intensive-applications) - Martin Kleppmann
+- [Designing Machine Learning Systems](https://www.goodreads.com/book/show/60715378-designing-machine-learning-systems) - Chip Huyen
+- [Fundamentals of Data Engineering](https://www.goodreads.com/book/show/61218623-fundamentals-of-data-engineering) - Joe Reis & Matt Housley
 - [Hello World: Being Human in the Age of Algorithms](https://www.goodreads.com/book/show/43726517-hello-world) - Hannah Fry
+- [Machine Learning Design Patterns](https://www.goodreads.com/book/show/55275019-machine-learning-design-patterns) - Valliappa Lakshmanan & Sara Robinson & Michael Munn
+- [Machine Learning Engineering](https://www.goodreads.com/book/show/55275944-machine-learning-engineering) - Andriy Burkov
+- [Practical DataOps: Delivering Agile Data Science at Scale](https://www.goodreads.com/book/show/50204197-practical-dataops) - Harvinder Atwal
 - [Something Doesn’t Add Up: Surviving Statistics in a Post-Truth World](https://www.goodreads.com/book/show/51736604-something-doesn-t-add-up) - Paul Goodwin
+- [The Data Warehouse Toolkit: The Complete Guide to Dimensional Modeling](https://www.goodreads.com/book/show/748203.The_Data_Warehouse_Toolkit) - Ralph Kimball & Margy Ross
+- [The Hundred-Page Machine Learning Book](https://www.goodreads.com/book/show/43190851-the-hundred-page-machine-learning-book) - Andriy Burkov
 - [Zillow Talk: Rewriting the Rules of Real Estate](https://www.goodreads.com/book/show/26384795) - Spencer Rascoff & Stan Humphries
-- [Data Engineering Teams](https://www.goodreads.com/book/show/34912765-data-engineering-teams) - Jesse Anderson
 
 ### Food
 
@@ -74,6 +79,13 @@ Updated 2022-07-10
 - [That's Not What I Meant!](https://www.goodreads.com/book/show/771526.That_s_Not_What_I_Meant_) - Deborah Tannen
 - [The Prodigal Tongue: The Love-Hate Relationship Between American and British English](https://www.goodreads.com/book/show/35787525-the-prodigal-tongue) - Lynne Murphy
 - [The Stories of English](https://www.goodreads.com/book/show/17246331) - David Crystal
+
+### Management
+
+- [Powerful: Building a Culture of Freedom and Responsibility](https://www.goodreads.com/book/show/36417234-powerful) - Patty McCord
+- [The Ideal Team Player: How to Recognize and Cultivate The Three Essential Virtues](https://www.goodreads.com/book/show/28930640-the-ideal-team-player) - Patrick Lencioni
+- [The Five Dysfunctions of a Team: A Leadership Fable](https://www.goodreads.com/book/show/21343.The_Five_Dysfunctions_of_a_Team) - Patrick Lencioni
+- [HBR's 10 Must Reads on Managing Yourself](https://www.goodreads.com/book/show/8308501-hbr-s-10-must-reads-on-managing-yourself) - Harvard Business Review
 
 ### Medicine
 
@@ -108,12 +120,36 @@ Updated 2022-07-10
 - [Algorithms to Live By: The Computer Science of Human Decisions](https://www.goodreads.com/book/show/25666050-algorithms-to-live-by) - Brian Christian & Tom Griffiths
 - [Close to the Machine: Technophilia and Its Discontents](https://www.goodreads.com/book/show/486625) - Ellen Ullman
 - [Life in Code: A Personal History of Technology](https://www.goodreads.com/book/show/31450584) - Ellen Ullman
-- [The Best Interface Is No Interface: The simple path to brilliant technology](https://www.goodreads.com/book/show/22758923-the-best-interface-is-no-interface) - Golden Krishna
-- [The Psychology of Computer Programming](https://www.goodreads.com/book/show/1660754.The_Psychology_of_Computer_Programming) - Gerald M. Weinberg
-- [User Friendly: How the Hidden Rules of Design are Changing the Way We Live, Work Play](https://www.goodreads.com/book/show/30815777) - Cliff Kuang & Robert Fabricant
+- [Mythical Man-Month, The: Essays on Software Engineering, Anniversary Edition](https://www.goodreads.com/book/show/13629.The_Mythical_Man_Month) - Frederick Brooks Jr.
+- [The Business Value of Developer Relations: How and Why Technical Communities Are Key To Your Success](https://www.goodreads.com/en/book/show/40167835-the-business-value-of-developer-relations) - Mary Thengvall
 - [The Missing Readme: A Guide for the New Software Engineer](https://www.goodreads.com/book/show/57271519-the-missing-readme) - Chris Riccomini
 - [The Pragmatic Programmer: From Journeyman to Master](https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer) - Andy Hunt
+- [The Programmer's Brain: What Every Programmer Needs to Know About Cognition](https://www.goodreads.com/book/show/57196550-the-programmer-s-brain) - Felienne Hermans
+- [The Psychology of Computer Programming](https://www.goodreads.com/book/show/1660754.The_Psychology_of_Computer_Programming) - Gerald M. Weinberg
+- [The Software Architect Elevator](https://www.goodreads.com/en/book/show/49828197-the-software-architect-elevator) - Gregor Hohpe
+
+#### UX/UI
+
+- [Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability](https://www.goodreads.com/book/show/18197267-don-t-make-me-think-revisited) - Steve Krug
+- [The Best Interface Is No Interface: The simple path to brilliant technology](https://www.goodreads.com/book/show/22758923-the-best-interface-is-no-interface) - Golden Krishna
+- [The Design of Everyday Things](https://www.goodreads.com/book/show/840.The_Design_of_Everyday_Things) - Donald A. Norman
+- [User Friendly: How the Hidden Rules of Design are Changing the Way We Live, Work Play](https://www.goodreads.com/book/show/30815777) - Cliff Kuang & Robert Fabricant
+
+#### DevOps / SRE
+
+- [Continuous Delivery Pipelines: How to Build Better Software Faster](https://www.goodreads.com/book/show/56771495-continuous-delivery-pipelines---how-to-build-better-software-faster) - Dave Farley
+- [Docs for Developers: An Engineer’s Field Guide to Technical Writing](https://www.goodreads.com/book/show/58278048-docs-for-developers) - Jared Bhatti & Zachary Sarah Corleissen & Jen Lambourne & David Nunez & Heidi Waterhouse
+- [Site Reliability Engineering](https://www.goodreads.com/book/show/27968891-site-reliability-engineering) - Betsy Beyer & Chris Jones & Jennifer Petoff & Niall Richard Murphy
+- [The Phoenix Project](https://www.goodreads.com/book/show/17255186-the-phoenix-project) - Gene Kim
+
+#### Management & Leadership
+
 - [Managing Humans: More Biting and Humorous Tales of a Software Engineering Manager](https://www.goodreads.com/book/show/60015819-managing-humans) - Michael Lopp
+- [Peopleware: Productive Projects and Teams](https://www.goodreads.com/book/show/67825.Peopleware) - Tom Demarco & Tim Lister
+- [Staff Engineer: Leadership Beyond the Management Track](https://www.goodreads.com/book/show/56481725-staff-engineer) - Will Larson
+- [Talking With Tech Leads](https://www.goodreads.com/book/show/23270194-talking-with-tech-leads) - Patrick Kua
+- [Team Topologies: Organizing Business and Technology Teams for Fast Flow](https://www.goodreads.com/book/show/44135420-team-topologies) - Matthew Skelton & Manuel Pais
+- [The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change](https://www.goodreads.com/book/show/33369254-the-manager-s-path) - Camille Fournier
 
 ## Fiction
 
