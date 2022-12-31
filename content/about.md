@@ -8,7 +8,7 @@ ShowToc: false
 
 ![me-at-grill-the-data](/about/me-at-grill-the-data.jpg)
 
-I started out as an IT support, then pick up DevOps through self-hosting and software engineering during school years. I have been involved in every step in a machine learning project workflow from r&d to production. Currently I am a head of platform engineering at [Baania](https://baaniathailand.com). If you are in Bangkok, you might see me at a local meetup 😎.
+I started out as an IT support, then pick up DevOps through self-hosting and software engineering during school years. I have been involved in every step in machine learning project workflow from r&d to production. Used to moonlight as a sysadmin, data engineer, machine learning engineer, DevOps and site reliability engineer. Currently I am a head of platform engineering at [Baania](https://baaniathailand.com). If you are in Bangkok, you might see me at a local meetup 😎.
 
 
 ### Active Communities
