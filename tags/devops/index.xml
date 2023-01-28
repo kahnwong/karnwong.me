@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>devops on Karn Wong</title>
+    <link>https://www.karnwong.me/tags/devops/</link>
+    <description>Recent content in devops on Karn Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 10 Dec 2022 19:17:18 +0700</lastBuildDate><atom:link href="https://www.karnwong.me/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Load balancer 101, thou shalt not be alone</title>
+      <link>https://www.karnwong.me/posts/2022/12/load-balancers-101-thou-shalt-not-be-alone/</link>
+      <pubDate>Sat, 10 Dec 2022 19:17:18 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/12/load-balancers-101-thou-shalt-not-be-alone/</guid>
+      <description>Scaling, the dreaded word among developers, because this means more complexity. But why do we need scaling?
+Imagine a super busy corner store. During early mornings, there might not be a lot of customers, so one cashier might be enough to handle all customers. But during afternoons or evenings, more customers would flock to the store, and our only cashier couldn&amp;rsquo;t checkout fast enough, and this means losing potential customers.</description>
+    </item>
+    
+    <item>
+      <title>Cross-platform package (&#43;env) management with Nix</title>
+      <link>https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/</link>
+      <pubDate>Sat, 03 Dec 2022 19:45:36 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/</guid>
+      <description>For many years, installing a package on linux means either:
+Compiling a binary from source, then install it. -&amp;gt; I think we know why this didn&amp;rsquo;t catch on for the mass. Downloading a compiled binary for your system&amp;rsquo;s architecture and platform. -&amp;gt; This requires you to also move the executable to something like /usr/local/bin otherwise it won&amp;rsquo;t be discoverable throughout the system. Using system&amp;rsquo;s package manager: apt, apk, yum, brew, etc.</description>
+    </item>
+    
+    <item>
+      <title>Load credentials into your shell via Bitwarden CLI - Fish edition</title>
+      <link>https://www.karnwong.me/posts/2022/11/load-credentials-into-your-shell-via-bitwarden-cli---fish-edition/</link>
+      <pubDate>Tue, 29 Nov 2022 05:59:29 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/11/load-credentials-into-your-shell-via-bitwarden-cli---fish-edition/</guid>
+      <description>Recently I work with GitHub CLI a lot, and having to constantly fire up Bitwarden app to retrieve GITHUB_TOKEN gets old real fast&amp;hellip;
+I was thinking of storing it in a gist in a password manager, luckily someone had the same idea and implemented it. The only issue is that I use fish shell. But we live in a world where there are many ways to interact with the shell, so it follows that you can translate zsh syntax to fish syntax.</description>
+    </item>
+    
+    <item>
+      <title>Cloudflare DNS management with Terraform</title>
+      <link>https://www.karnwong.me/posts/2022/11/cloudflare-dns-management-with-terraform/</link>
+      <pubDate>Sun, 20 Nov 2022 17:06:17 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/11/cloudflare-dns-management-with-terraform/</guid>
+      <description>I self hosted a lot of services, sometimes I try out a few apps that would get deleted within the same day. All this requires setting up CNAME for reverse-proxy (because I want to make sure there&amp;rsquo;s no funny reverse-proxy shenanigans going on, for future reference).
+I can always log into Cloudflare console and manually add CNAME entries, but this is getting too tiresome since all I really need is another CNAME with the same config as the rest of the CNAMEs - pointing to the same DNS for my homelab.</description>
+    </item>
+    
+    <item>
+      <title>Deploy more efficiently with templating</title>
+      <link>https://www.karnwong.me/posts/2022/11/deploy-more-efficiently-with-templating/</link>
+      <pubDate>Sat, 05 Nov 2022 17:35:52 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/11/deploy-more-efficiently-with-templating/</guid>
+      <description>You are building a website, it&amp;rsquo;s a simple frontend that needs to call the database for [total lead drops this week]. Your website is still at an infancy stage, with only a few features. At this point, you contemplate whether you need a proper backend or not. But to deploy a backend properly, it would involve docker, backend database, persistence storage, DNS, load balancer, among other things. But it looks like you don&amp;rsquo;t have enough time, so you decide to go with serverless, since it takes less time to implement and you don&amp;rsquo;t have to worry about scaling.</description>
+    </item>
+    
+    <item>
+      <title>IaC is cool, until someone specified the wrong machine size 💸</title>
+      <link>https://www.karnwong.me/posts/2022/11/iac-is-cool-until-someone-specified-the-wrong-machine-size/</link>
+      <pubDate>Thu, 03 Nov 2022 00:55:31 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/11/iac-is-cool-until-someone-specified-the-wrong-machine-size/</guid>
+      <description>Back in the day, there was no cloud. If you want a lot of computing power, you need to build your own data center, and this is very expensive. Then cloud happened, and suddenly you can work with a lot of flexibility like you couldn&amp;rsquo;t before. Want to try out a small deployment? Sure! If your workload is heavier you can always increase the VM specs.
+It would almost be the end of the story, until someone realize &amp;ldquo;oh my God how did I set up VPC peering with another VPC, and which route table did I choose?</description>
+    </item>
+    
+    <item>
+      <title>Deploy static site with branch preview via Cloudflare Pages</title>
+      <link>https://www.karnwong.me/posts/2022/10/deploy-static-site-with-branch-preview-via-cloudflare-pages/</link>
+      <pubDate>Wed, 05 Oct 2022 02:23:06 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/10/deploy-static-site-with-branch-preview-via-cloudflare-pages/</guid>
+      <description>For frontends, if no server-side rendering is required, we can deploy it as a static site. If you already use GitHub, you might be familiar with GitHub Pages. One common use case is to deploy your personal landing page / blog via GitHub Actions.
+Interestingly enough, this might cause problems if you are working in a team. For example, if you are working on a UI change, and you need to have someone else approve the changes, they would need to build the site locally to do so.</description>
+    </item>
+    
+    <item>
+      <title>Terraform with ECS task on EC2 backend</title>
+      <link>https://www.karnwong.me/posts/2022/10/terraform-with-ecs-task-on-ec2-backend/</link>
+      <pubDate>Tue, 04 Oct 2022 22:04:34 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/10/terraform-with-ecs-task-on-ec2-backend/</guid>
+      <description>Previously I wrote about setting up ECS task on fargate backend. But we can also use EC2 as backend too, in some cases where the workload is consistent, ie scaling is not required, since EC2 would be cheaper than fargate backend, even more so if you have reserved instance on top. There&amp;rsquo;s a few modifications from the fargate version to make it work with EC2 backend, if you are curious you can try to hunt those down 😎.</description>
+    </item>
+    
+    <item>
+      <title>Intro to Pulumi</title>
+      <link>https://www.karnwong.me/posts/2022/09/intro-to-pulumi/</link>
+      <pubDate>Mon, 26 Sep 2022 15:06:11 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/09/intro-to-pulumi/</guid>
+      <description>For IaC, no doubt that Terraform is the leader. But there are other alternatives too, one of them is Pulumi. Currently Pulumi provides fun challenges to get started with their services. Best of all, they give you swags too! We are going to create a simple Pulumi project for hosting a static site through Cloudfront CDN.
+Challenge url: https://www.pulumi.com/challenge/startup-in-a-box/
+Pre-requisites Pulumi account Checkly account AWS acount Install Pulumi cli: brew install pulumi/tap/pulumi Steps Init Init pulumi project</description>
+    </item>
+    
+    <item>
+      <title>Minimal ECS task with fargate backend</title>
+      <link>https://www.karnwong.me/posts/2022/08/minimal-ecs-task-with-fargate-backend/</link>
+      <pubDate>Fri, 26 Aug 2022 21:10:58 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/08/minimal-ecs-task-with-fargate-backend/</guid>
+      <description>To deploy a web application, there are many ways to go about it. I could spin up a bare VM and set up the environment manually. To make things easier, I could have package the app into docker image. But this still means I have to &amp;ldquo;update&amp;rdquo; the app manually if I add changes to it.
+Things would be super cool if: after I push the changes to master branch, the app would be deployed automatically.</description>
+    </item>
+    
+    <item>
+      <title>Use SSH key during docker build without embedding the key via ssh-agent</title>
+      <link>https://www.karnwong.me/posts/2022/02/use-ssh-key-during-docker-build-without-embedding-the-key-via-ssh-agent/</link>
+      <pubDate>Sun, 06 Feb 2022 15:06:16 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/02/use-ssh-key-during-docker-build-without-embedding-the-key-via-ssh-agent/</guid>
+      <description>Imagine working in a company, and they have a super cool internal module! The module works great, except that it is a private module, which means you need to install it by cloning the source repo and install it from source.
+That shouldn&amp;rsquo;t be an issue if you work on your local machine. But for production usually this means you somehow need to bundle this awesome module into your docker image.</description>
+    </item>
+    
+    <item>
+      <title>Use pyspark locally with docker</title>
+      <link>https://www.karnwong.me/posts/2021/12/use-pyspark-locally-with-docker/</link>
+      <pubDate>Tue, 21 Dec 2021 19:26:32 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/12/use-pyspark-locally-with-docker/</guid>
+      <description>For data that doesn&amp;rsquo;t fit into memory, spark is often a recommended solution, since it can utilize map-reduce to work with data in a distributed manner. However, setting up local spark development from scratch involves multiple steps, and definitely not for a faint of heart. Thankfully using docker means you can skip a lot of steps 😃
+Instructions Install Docker Desktop Create docker-compose.yml in a directory somewhere version: &amp;#34;3.3&amp;#34; services: pyspark: container_name: pyspark image: jupyter/pyspark-notebook:latest ports: - &amp;#34;8888:8888&amp;#34; volumes: - .</description>
+    </item>
+    
+    <item>
+      <title>Reduce docker image size with alpine</title>
+      <link>https://www.karnwong.me/posts/2021/12/reduce-docker-image-size-with-alpine/</link>
+      <pubDate>Sun, 19 Dec 2021 20:50:07 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/12/reduce-docker-image-size-with-alpine/</guid>
+      <description>Creating scripts are easy. But creating a small docker image is not 😅.
+Not all Linux flavors are created equal, some are bigger than others, etc. But this difference is very crucial when it comes to reducing docker image size.
+A simple bash script docker image Given a Dockerfile (change apk to apt for ubuntu):
+FROM alpine:3 WORKDIR /app RUN apk update &amp;amp;&amp;amp; apk add jq curl COPY water-cut-notify.sh ./ ENTRYPOINT [&amp;#34;sh&amp;#34;, &amp;#34;/app/water-cut-notify.</description>
+    </item>
+    
+    <item>
+      <title>Secrets management with SOPS, AWS SSM and Terraform</title>
+      <link>https://www.karnwong.me/posts/2021/11/secrets-management-with-sops-aws-ssm-terraform/</link>
+      <pubDate>Tue, 30 Nov 2021 20:11:12 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/11/secrets-management-with-sops-aws-ssm-terraform/</guid>
+      <description>At my organization we use sops to check in encrypted secrets into git repos. This solves plaintext credentials in version control. However, say, you have 5 repos using the same database credentials, rotating secrets means you have to go into each repo and update the SOPS credentials manually.
+Also worth nothing that, for GitHub actions, authenticating AWS means you have to add repo secrets. This means for all the repos you have CI enabled, you have to populate the repo secrets with AWS credentials.</description>
+    </item>
+    
+    <item>
+      <title>Run GitHub Actions faster with cache for pipenv and docker build</title>
+      <link>https://www.karnwong.me/posts/2021/11/run-github-actions-faster-with-cache-for-pipenv-and-docker-build/</link>
+      <pubDate>Tue, 09 Nov 2021 23:54:23 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/11/run-github-actions-faster-with-cache-for-pipenv-and-docker-build/</guid>
+      <description>Update 2021-11-29
+Recently we create more PRs, notice that there are a lot of redundant steps (env setup before triggering checks, etc). Found out you can cache steps in GitHub Actions, so I did some research. Got it working and turns out I reduce at least 60% actions time for a large docker image build (since only the later RUN directives are changed more frequently). For pipenv it shaved off 1 minute 18 seconds.</description>
+    </item>
+    
+    <item>
+      <title>ecs-cli snippets</title>
+      <link>https://www.karnwong.me/posts/2021/10/ecs-cli-snippets/</link>
+      <pubDate>Fri, 08 Oct 2021 17:18:29 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/10/ecs-cli-snippets/</guid>
+      <description>ecs-cli configure profile \ --access-key $KEY \ --secret-key $SECRET \ --profile-name $PROFILE ### launch mode: fargate ecs-cli configure \ --cluster $CLUSTER \ --default-launch-type FARGATE \ --config-name $NAME \ --region ap-southeast-1 ecs-cli up \ --cluster-config $NAME \ --vpc $VPCID\ --subnets $SUBNETID1, $SUBNETID2 ### launch mode: ec2 ecs-cli configure \ --cluster $CLUSTER \ --region ap-southeast-1 \ --default-launch-type EC2 \ --config-name $NAME ecs-cli up --keypair $KEYPAIR \ --extra-user-data userData.sh \ --capability-iam --size 1 \ --instance-type t2.</description>
+    </item>
+    
+    <item>
+      <title>Self-hosting primer</title>
+      <link>https://www.karnwong.me/posts/2021/08/self-hosting-primer/</link>
+      <pubDate>Sun, 22 Aug 2021 18:08:31 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/08/self-hosting-primer/</guid>
+      <description>Self-hosting is a practice for running and managing websites / services using your own server. Some people do this because they are concerned about their privacy, or some services are free if they host it themselves. Below are instructions for how to do self-hosting (also applies to hosting your own website too).
+Requirements Domain name Server (can be your own computer at home or VPS) Instructions Set up and secure the server (set up password, disable password login (which means you can only login via SSH key), etc.</description>
+    </item>
+    
+    <item>
+      <title>Automatic scrapy deployment with GitHub actions</title>
+      <link>https://www.karnwong.me/posts/2021/06/automatic-scrapy-deployment-with-github-actions/</link>
+      <pubDate>Wed, 02 Jun 2021 21:48:12 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/06/automatic-scrapy-deployment-with-github-actions/</guid>
+      <description>Repo here
+Scrapy is a nice framework for web scraping. But like all local development processes, some settings / configs are disabled.
+This wouldn&amp;rsquo;t pose an issue, but to deploy a scrapy project to zyte (a hosted scrapy platform) you need to run shub deploy, and if you run it and forget to reset the config back to prod settings, a Titan may devour your home.
+You can set auto deployment from github via the UI in zyte, but it only works with github only.</description>
+    </item>
+    
+    <item>
+      <title>Add Ghost content to Hugo</title>
+      <link>https://www.karnwong.me/posts/2021/03/create-static-site-from-ghost-blog/</link>
+      <pubDate>Wed, 31 Mar 2021 04:05:02 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/03/create-static-site-from-ghost-blog/</guid>
+      <description>Ghost CMS is very easy to use, but the deployment overhead (maintaining db, ghost version, updates and etc) might be too much for some. Luckily, there&amp;rsquo;s a way to convert a Ghost site to static pages, which you can later host on Github pages or something similar.
+Setup static site engine: Hugo a Ghost instance Usage Install https://github.com/Fried-Chicken/ghost-static-site-generator cd to static directory in your Hugo folder run gssg --domain ${YOUR_GHOST_INSTANCE_URL} --dest posts --url ${YOUR_STATIC_SITE_DOMAIN_WITHOUT_TRAILING_SLASH} --subDir posts Update your hugo config to link to the above folder: [[menu.</description>
+    </item>
+    
+    <item>
+      <title>Hello Caddy</title>
+      <link>https://www.karnwong.me/posts/2021/03/hello-caddy/</link>
+      <pubDate>Sun, 07 Mar 2021 08:32:19 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/03/hello-caddy/</guid>
+      <description>Since starting self-hosting back in 2017, I&amp;rsquo;ve always used apache2 since it&amp;rsquo;s the first webserver I came across. Over time adding more services and managing separate vhost config is a bit tiresome.
+Enters Caddy. It&amp;rsquo;s very simple to set up and configure. Some services where I have trouble setting up in apache2 do not need extra config at all, even TLS is set up by default. Starting from Caddy2 it works with CNAME by default without extra setups.</description>
+    </item>
+    
+    <item>
+      <title>Password auth with apache2 reverse-proxy</title>
+      <link>https://www.karnwong.me/posts/2021/02/setting-up-password-auth-with-apache2-reverse-proxy/</link>
+      <pubDate>Mon, 22 Feb 2021 07:38:07 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/02/setting-up-password-auth-with-apache2-reverse-proxy/</guid>
+      <description>EDIT: see here for Caddy, also easier to set up too.
+Sometimes you found an interesting project to self-hosted, but it doesn&amp;rsquo;t have password authentication built-in. Luckily, we need to reverse-proxy them anyway and apache2/ nginx / httpd happen to provide password auth with reverse-proxy by default.
+To set up password auth with apache2 via reverse-proxy:
+echo &amp;quot;${PASSWORD}&amp;quot; | htpasswd -c -i /etc/apache2/.htpasswd ${USER} on your host machine which has apache2 installed.</description>
+    </item>
+    
+  </channel>
+</rss>

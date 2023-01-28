@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>data analysis on Karn Wong</title>
+    <link>https://www.karnwong.me/tags/data-analysis/</link>
+    <description>Recent content in data analysis on Karn Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 03 Sep 2020 12:04:42 +0000</lastBuildDate><atom:link href="https://www.karnwong.me/tags/data-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Visualizing map region prefix/suffix</title>
+      <link>https://www.karnwong.me/posts/2020/09/visualizing-map-region-prefix-suffix/</link>
+      <pubDate>Thu, 03 Sep 2020 12:04:42 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2020/09/visualizing-map-region-prefix-suffix/</guid>
+      <description>import pandas as pd import numpy as np import geopandas as gpd import geoplot as gplt import matplotlib.pyplot as plt from geoplot import polyplot from pythainlp.tokenize import word_tokenize, syllable_tokenize Data structure name: target region name geometry: spatial column *: parent region name, e.g. in &amp;ldquo;district&amp;rdquo; dataset it would have a &amp;ldquo;province&amp;rdquo; column Dissolving dataset in case you have multiple region level in the same file ## assuming you have a district dataset and want to dissolve to province only district_filename = &amp;#34;FILE_PATH_HERE&amp;#34; gdf = gpd.</description>
+    </item>
+    
+    <item>
+      <title>Word-based analysis with song lyrics</title>
+      <link>https://www.karnwong.me/posts/2020/04/word-based-analysis-with-song-lyrics/</link>
+      <pubDate>Wed, 15 Apr 2020 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2020/04/word-based-analysis-with-song-lyrics/</guid>
+      <description>I listen to a lot of music, mostly symphonic heavy metal. What&amp;rsquo;s interesting is that in this genre, each album often has different themes, also each band focus on different topics in terms of lyrics. For instance, Nightwish focuses on nature, and their Imaginaerum album focuses on evolution. So I thought it would be interesting if I apply various text analysis methods to the lyrics, which resulted in this article. Github link here!</description>
+    </item>
+    
+    <item>
+      <title>Resettled refugees in Sweden</title>
+      <link>https://www.karnwong.me/posts/2018/07/resettled-refugees-in-sweden/</link>
+      <pubDate>Mon, 30 Jul 2018 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2018/07/resettled-refugees-in-sweden/</guid>
+      <description>One of my friends is a Syrian refugee, who was granted asylum in Sweden last year. I also want to try data analysis, so it fits that I should analyze something that&amp;rsquo;s relevant to my friend. This is my first ever analysis in pandas, apologies for code abomination in advance.
+In this analysis, I use pandas for dataframe, numpy for dealing with numbers (because I need to count and do some math with it) and matplotlib for plotting graphs.</description>
+    </item>
+    
+  </channel>
+</rss>

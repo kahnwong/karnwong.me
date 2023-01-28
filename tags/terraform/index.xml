@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>terraform on Karn Wong</title>
+    <link>https://www.karnwong.me/tags/terraform/</link>
+    <description>Recent content in terraform on Karn Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 20 Nov 2022 17:06:17 +0700</lastBuildDate><atom:link href="https://www.karnwong.me/tags/terraform/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloudflare DNS management with Terraform</title>
+      <link>https://www.karnwong.me/posts/2022/11/cloudflare-dns-management-with-terraform/</link>
+      <pubDate>Sun, 20 Nov 2022 17:06:17 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/11/cloudflare-dns-management-with-terraform/</guid>
+      <description>I self hosted a lot of services, sometimes I try out a few apps that would get deleted within the same day. All this requires setting up CNAME for reverse-proxy (because I want to make sure there&amp;rsquo;s no funny reverse-proxy shenanigans going on, for future reference).
+I can always log into Cloudflare console and manually add CNAME entries, but this is getting too tiresome since all I really need is another CNAME with the same config as the rest of the CNAMEs - pointing to the same DNS for my homelab.</description>
+    </item>
+    
+    <item>
+      <title>Deploy static site with branch preview via Cloudflare Pages</title>
+      <link>https://www.karnwong.me/posts/2022/10/deploy-static-site-with-branch-preview-via-cloudflare-pages/</link>
+      <pubDate>Wed, 05 Oct 2022 02:23:06 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/10/deploy-static-site-with-branch-preview-via-cloudflare-pages/</guid>
+      <description>For frontends, if no server-side rendering is required, we can deploy it as a static site. If you already use GitHub, you might be familiar with GitHub Pages. One common use case is to deploy your personal landing page / blog via GitHub Actions.
+Interestingly enough, this might cause problems if you are working in a team. For example, if you are working on a UI change, and you need to have someone else approve the changes, they would need to build the site locally to do so.</description>
+    </item>
+    
+    <item>
+      <title>Terraform with ECS task on EC2 backend</title>
+      <link>https://www.karnwong.me/posts/2022/10/terraform-with-ecs-task-on-ec2-backend/</link>
+      <pubDate>Tue, 04 Oct 2022 22:04:34 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/10/terraform-with-ecs-task-on-ec2-backend/</guid>
+      <description>Previously I wrote about setting up ECS task on fargate backend. But we can also use EC2 as backend too, in some cases where the workload is consistent, ie scaling is not required, since EC2 would be cheaper than fargate backend, even more so if you have reserved instance on top. There&amp;rsquo;s a few modifications from the fargate version to make it work with EC2 backend, if you are curious you can try to hunt those down 😎.</description>
+    </item>
+    
+    <item>
+      <title>Minimal ECS task with fargate backend</title>
+      <link>https://www.karnwong.me/posts/2022/08/minimal-ecs-task-with-fargate-backend/</link>
+      <pubDate>Fri, 26 Aug 2022 21:10:58 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/08/minimal-ecs-task-with-fargate-backend/</guid>
+      <description>To deploy a web application, there are many ways to go about it. I could spin up a bare VM and set up the environment manually. To make things easier, I could have package the app into docker image. But this still means I have to &amp;ldquo;update&amp;rdquo; the app manually if I add changes to it.
+Things would be super cool if: after I push the changes to master branch, the app would be deployed automatically.</description>
+    </item>
+    
+    <item>
+      <title>Secrets management with SOPS, AWS SSM and Terraform</title>
+      <link>https://www.karnwong.me/posts/2021/11/secrets-management-with-sops-aws-ssm-terraform/</link>
+      <pubDate>Tue, 30 Nov 2021 20:11:12 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/11/secrets-management-with-sops-aws-ssm-terraform/</guid>
+      <description>At my organization we use sops to check in encrypted secrets into git repos. This solves plaintext credentials in version control. However, say, you have 5 repos using the same database credentials, rotating secrets means you have to go into each repo and update the SOPS credentials manually.
+Also worth nothing that, for GitHub actions, authenticating AWS means you have to add repo secrets. This means for all the repos you have CI enabled, you have to populate the repo secrets with AWS credentials.</description>
+    </item>
+    
+  </channel>
+</rss>

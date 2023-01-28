@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>cloudflare on Karn Wong</title>
+    <link>https://www.karnwong.me/tags/cloudflare/</link>
+    <description>Recent content in cloudflare on Karn Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 20 Nov 2022 17:06:17 +0700</lastBuildDate><atom:link href="https://www.karnwong.me/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloudflare DNS management with Terraform</title>
+      <link>https://www.karnwong.me/posts/2022/11/cloudflare-dns-management-with-terraform/</link>
+      <pubDate>Sun, 20 Nov 2022 17:06:17 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/11/cloudflare-dns-management-with-terraform/</guid>
+      <description>I self hosted a lot of services, sometimes I try out a few apps that would get deleted within the same day. All this requires setting up CNAME for reverse-proxy (because I want to make sure there&amp;rsquo;s no funny reverse-proxy shenanigans going on, for future reference).
+I can always log into Cloudflare console and manually add CNAME entries, but this is getting too tiresome since all I really need is another CNAME with the same config as the rest of the CNAMEs - pointing to the same DNS for my homelab.</description>
+    </item>
+    
+    <item>
+      <title>Deploy static site with branch preview via Cloudflare Pages</title>
+      <link>https://www.karnwong.me/posts/2022/10/deploy-static-site-with-branch-preview-via-cloudflare-pages/</link>
+      <pubDate>Wed, 05 Oct 2022 02:23:06 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/10/deploy-static-site-with-branch-preview-via-cloudflare-pages/</guid>
+      <description>For frontends, if no server-side rendering is required, we can deploy it as a static site. If you already use GitHub, you might be familiar with GitHub Pages. One common use case is to deploy your personal landing page / blog via GitHub Actions.
+Interestingly enough, this might cause problems if you are working in a team. For example, if you are working on a UI change, and you need to have someone else approve the changes, they would need to build the site locally to do so.</description>
+    </item>
+    
+  </channel>
+</rss>

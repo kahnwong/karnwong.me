@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>data engineering on Karn Wong</title>
+    <link>https://www.karnwong.me/tags/data-engineering/</link>
+    <description>Recent content in data engineering on Karn Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 27 Sep 2022 17:19:45 +0700</lastBuildDate><atom:link href="https://www.karnwong.me/tags/data-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro to Dagster Cloud</title>
+      <link>https://www.karnwong.me/posts/2022/09/intro-to-dagster-cloud/</link>
+      <pubDate>Tue, 27 Sep 2022 17:19:45 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/09/intro-to-dagster-cloud/</guid>
+      <description>Imagine you have a few data pipelines to schedule. Simplest solution would be cronjob. Time goes by and next thing you know, you have around 50 pipelines to manage. The fun starts when you have to hunt down which pipeline doesn&amp;rsquo;t run normally. And by then it would be super hard to do tracing if you haven&amp;rsquo;t set up logging and monitoring.
+Luckily there are tools we can use to improve the situation.</description>
+    </item>
+    
+    <item>
+      <title>Data engineer archtypes</title>
+      <link>https://www.karnwong.me/posts/2022/08/data-engineer-archtypes/</link>
+      <pubDate>Fri, 26 Aug 2022 10:06:36 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/08/data-engineer-archtypes/</guid>
+      <description>I have been working in the data industry since almost half a decade ago. Over time I have noticed so-called archetypes within various data engineering roles. Below are main skills and combinations I have seen over the years. This is by no means an exhaustive list, rather what I often see.
+SQL + SSIS Using SQL to manipulate data via SSIS, in which data engine is Microsoft SQL Server. Commonly found in enterprise organizations that use Microsoft stack.</description>
+    </item>
+    
+    <item>
+      <title>What SQL can&#39;t do for data engineering</title>
+      <link>https://www.karnwong.me/posts/2022/05/what-sql-cant-do-for-data-engineering/</link>
+      <pubDate>Sun, 15 May 2022 22:38:45 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/05/what-sql-cant-do-for-data-engineering/</guid>
+      <description>I often hear people ask &amp;ldquo;if you can do data engineering with SQL, then what&amp;rsquo;s the point of learning spark or python?&amp;rdquo;
+Data ingestion Let&amp;rsquo;s circle back at bit.
+I think we all can agree that: there&amp;rsquo;s a point in time where there&amp;rsquo;s no data in the data warehouse (which DE-who-use-SQL&amp;rsquo;s use as base of operation). The source data could be anything from hard CSV/Excel or API endpoints. No data in data warehouse, DE can&amp;rsquo;t use SQL to do stuff with the data.</description>
+    </item>
+    
+    <item>
+      <title>Use pyspark locally with docker</title>
+      <link>https://www.karnwong.me/posts/2021/12/use-pyspark-locally-with-docker/</link>
+      <pubDate>Tue, 21 Dec 2021 19:26:32 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/12/use-pyspark-locally-with-docker/</guid>
+      <description>For data that doesn&amp;rsquo;t fit into memory, spark is often a recommended solution, since it can utilize map-reduce to work with data in a distributed manner. However, setting up local spark development from scratch involves multiple steps, and definitely not for a faint of heart. Thankfully using docker means you can skip a lot of steps 😃
+Instructions Install Docker Desktop Create docker-compose.yml in a directory somewhere version: &amp;#34;3.3&amp;#34; services: pyspark: container_name: pyspark image: jupyter/pyspark-notebook:latest ports: - &amp;#34;8888:8888&amp;#34; volumes: - .</description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t write large table to postgres with pandas</title>
+      <link>https://www.karnwong.me/posts/2021/06/dont-write-large-table-to-postgres-with-pandas/</link>
+      <pubDate>Sun, 27 Jun 2021 20:19:58 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/06/dont-write-large-table-to-postgres-with-pandas/</guid>
+      <description>We have a few tables where the data size is &amp;gt; 3GB (in parquet, so around 10 GB uncompressed). Loading it into postgres takes an hour. (Most of our tables are pretty small, hence the reason why we don&amp;rsquo;t use columnar database).
+I want to explore whether there&amp;rsquo;s a faster way or not. The conclusion is writing to postgres with spark seems to be fastest, given we can&amp;rsquo;t use COPY since our data contain free text, which means it would make CSV parsing impossible.</description>
+    </item>
+    
+    <item>
+      <title>Data engineering toolset (that I use) glossary</title>
+      <link>https://www.karnwong.me/posts/2021/06/data-engineering-toolset-that-i-use-glossary/</link>
+      <pubDate>Fri, 04 Jun 2021 23:57:58 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/06/data-engineering-toolset-that-i-use-glossary/</guid>
+      <description>Big data Spark: Map-reduce framework for dealing with big data, especially for data that doesn&amp;rsquo;t fit into memory. Utilizes parallelization. Cloud AWS: Cloud platform for many tools used in software engineering. AWS Fargate: A task launch mode for ECS task, where it automatically shuts down once a container exits. With EC2 launch mode, you&amp;rsquo;ll have to turn off the machine yourself. AWS Lambda: Serverless function, can be used with docker image too.</description>
+    </item>
+    
+    <item>
+      <title>Shapefile to data lake</title>
+      <link>https://www.karnwong.me/posts/2021/04/shapefile-to-data-lake/</link>
+      <pubDate>Fri, 23 Apr 2021 18:25:13 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/04/shapefile-to-data-lake/</guid>
+      <description>Background: we use spark to read/write to data lake. For dealing with spatial data &amp;amp; analysis, we use sedona. Shapefile is converted to TSV then read by spark for further processing &amp;amp; archival.
+Recently I had to archive shapefiles in our data lake. It wasn&amp;rsquo;t rosy for the following reasons:
+Invalid geometries Sedona (and geopandas too) whines if it encounters invalid geometry during geometry casting. The invalid geometries could be from many reasons, one of them being unclean polygon clipping.</description>
+    </item>
+    
+    <item>
+      <title>Spark join OOM fix</title>
+      <link>https://www.karnwong.me/posts/2021/04/spark-join-oom-fix/</link>
+      <pubDate>Sun, 11 Apr 2021 16:20:23 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/04/spark-join-oom-fix/</guid>
+      <description>I have a big pipelines where one step performs crossjoin on 130K x 7K. It fails quite often, and I have to pray to the Rice God for it to pass. Today I found the solution: repartition before crossjoin.
+The root cause is that the dataframe with 130K records has 6 partitions, so when I perform crossjoin (one-to-many) it&amp;rsquo;s working against those 6 partitions. Total output in parquet is around 350MB, which means my computer (8 cores, 10GB RAM provisioned for spark) needs to be able to hold all uncompressed data in memory.</description>
+    </item>
+    
+    <item>
+      <title>Workarounds for archiving large shapefile in data lake</title>
+      <link>https://www.karnwong.me/posts/2021/01/workarounds-for-archiving-large-shapefile-in-data-lake/</link>
+      <pubDate>Sun, 31 Jan 2021 17:40:53 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/01/workarounds-for-archiving-large-shapefile-in-data-lake/</guid>
+      <description>If you work with spatial data, chances are you are familiar with shapefile, a file format for viewing / editing spatial data.
+Essentially, shapefile is just a tabular data like csv, but it does thingamajig with geometry data type, where any gis tools like qgis or arcgis can understand right away. If you have a csv file with geometry column in wkt format (something like POLYGON ((30 10, 40 40, 20 40, 10 20, 30 10))), you&amp;rsquo;ll have to specify which column is to be used for geometry.</description>
+    </item>
+    
+    <item>
+      <title>Mongodb export woes</title>
+      <link>https://www.karnwong.me/posts/2021/01/mongodb-export-woes/</link>
+      <pubDate>Wed, 27 Jan 2021 04:51:41 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/01/mongodb-export-woes/</guid>
+      <description>There&amp;rsquo;s a task where I need to export 4M+ records out of mongodb, total uncompressed size is 17GB+ 26GB
+export methods mongoexport The recommended way to export is using mongoexport utility, but you have to specify the output attributes, which doesn&amp;rsquo;t work for me because the schema from older set of records are less than the newer set
+DIY python script the vanilla way But you can interact with mongodb from python, and if you read from it it&amp;rsquo;ll return a dict, which is perfect for this because you don&amp;rsquo;t have to specify the required attributes beforehand.</description>
+    </item>
+    
+  </channel>
+</rss>

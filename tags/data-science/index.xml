@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>data science on Karn Wong</title>
+    <link>https://www.karnwong.me/tags/data-science/</link>
+    <description>Recent content in data science on Karn Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 21 Dec 2021 19:26:32 +0700</lastBuildDate><atom:link href="https://www.karnwong.me/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use pyspark locally with docker</title>
+      <link>https://www.karnwong.me/posts/2021/12/use-pyspark-locally-with-docker/</link>
+      <pubDate>Tue, 21 Dec 2021 19:26:32 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/12/use-pyspark-locally-with-docker/</guid>
+      <description>For data that doesn&amp;rsquo;t fit into memory, spark is often a recommended solution, since it can utilize map-reduce to work with data in a distributed manner. However, setting up local spark development from scratch involves multiple steps, and definitely not for a faint of heart. Thankfully using docker means you can skip a lot of steps 😃
+Instructions Install Docker Desktop Create docker-compose.yml in a directory somewhere version: &amp;#34;3.3&amp;#34; services: pyspark: container_name: pyspark image: jupyter/pyspark-notebook:latest ports: - &amp;#34;8888:8888&amp;#34; volumes: - .</description>
+    </item>
+    
+    <item>
+      <title>Impute pipelines</title>
+      <link>https://www.karnwong.me/posts/2020/05/impute-pipelines/</link>
+      <pubDate>Fri, 22 May 2020 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2020/05/impute-pipelines/</guid>
+      <description>Imagine having a dataset that you need to use for training a prediction model, but some of the features are missing. The good news is you don&amp;rsquo;t need to throw some data away, just have to impute them. Below are steps you can take in order to create an imputation pipeline. Github link here!
+from random import randint import pandas as pd import numpy as np from sklearn.preprocessing import OneHotEncoder from sklearn.</description>
+    </item>
+    
+  </channel>
+</rss>

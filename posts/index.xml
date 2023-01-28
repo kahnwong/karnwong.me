@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Karn Wong</title>
+    <link>https://www.karnwong.me/posts/</link>
+    <description>Recent content in Posts on Karn Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 10 Dec 2022 19:17:18 +0700</lastBuildDate><atom:link href="https://www.karnwong.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Load balancer 101, thou shalt not be alone</title>
+      <link>https://www.karnwong.me/posts/2022/12/load-balancers-101-thou-shalt-not-be-alone/</link>
+      <pubDate>Sat, 10 Dec 2022 19:17:18 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/12/load-balancers-101-thou-shalt-not-be-alone/</guid>
+      <description>Scaling, the dreaded word among developers, because this means more complexity. But why do we need scaling?
+Imagine a super busy corner store. During early mornings, there might not be a lot of customers, so one cashier might be enough to handle all customers. But during afternoons or evenings, more customers would flock to the store, and our only cashier couldn&amp;rsquo;t checkout fast enough, and this means losing potential customers.</description>
+    </item>
+    
+    <item>
+      <title>Cross-platform package (&#43;env) management with Nix</title>
+      <link>https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/</link>
+      <pubDate>Sat, 03 Dec 2022 19:45:36 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/</guid>
+      <description>For many years, installing a package on linux means either:
+Compiling a binary from source, then install it. -&amp;gt; I think we know why this didn&amp;rsquo;t catch on for the mass. Downloading a compiled binary for your system&amp;rsquo;s architecture and platform. -&amp;gt; This requires you to also move the executable to something like /usr/local/bin otherwise it won&amp;rsquo;t be discoverable throughout the system. Using system&amp;rsquo;s package manager: apt, apk, yum, brew, etc.</description>
+    </item>
+    
+    <item>
+      <title>Load credentials into your shell via Bitwarden CLI - Fish edition</title>
+      <link>https://www.karnwong.me/posts/2022/11/load-credentials-into-your-shell-via-bitwarden-cli---fish-edition/</link>
+      <pubDate>Tue, 29 Nov 2022 05:59:29 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/11/load-credentials-into-your-shell-via-bitwarden-cli---fish-edition/</guid>
+      <description>Recently I work with GitHub CLI a lot, and having to constantly fire up Bitwarden app to retrieve GITHUB_TOKEN gets old real fast&amp;hellip;
+I was thinking of storing it in a gist in a password manager, luckily someone had the same idea and implemented it. The only issue is that I use fish shell. But we live in a world where there are many ways to interact with the shell, so it follows that you can translate zsh syntax to fish syntax.</description>
+    </item>
+    
+    <item>
+      <title>Cloudflare DNS management with Terraform</title>
+      <link>https://www.karnwong.me/posts/2022/11/cloudflare-dns-management-with-terraform/</link>
+      <pubDate>Sun, 20 Nov 2022 17:06:17 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/11/cloudflare-dns-management-with-terraform/</guid>
+      <description>I self hosted a lot of services, sometimes I try out a few apps that would get deleted within the same day. All this requires setting up CNAME for reverse-proxy (because I want to make sure there&amp;rsquo;s no funny reverse-proxy shenanigans going on, for future reference).
+I can always log into Cloudflare console and manually add CNAME entries, but this is getting too tiresome since all I really need is another CNAME with the same config as the rest of the CNAMEs - pointing to the same DNS for my homelab.</description>
+    </item>
+    
+    <item>
+      <title>Deploy more efficiently with templating</title>
+      <link>https://www.karnwong.me/posts/2022/11/deploy-more-efficiently-with-templating/</link>
+      <pubDate>Sat, 05 Nov 2022 17:35:52 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/11/deploy-more-efficiently-with-templating/</guid>
+      <description>You are building a website, it&amp;rsquo;s a simple frontend that needs to call the database for [total lead drops this week]. Your website is still at an infancy stage, with only a few features. At this point, you contemplate whether you need a proper backend or not. But to deploy a backend properly, it would involve docker, backend database, persistence storage, DNS, load balancer, among other things. But it looks like you don&amp;rsquo;t have enough time, so you decide to go with serverless, since it takes less time to implement and you don&amp;rsquo;t have to worry about scaling.</description>
+    </item>
+    
+    <item>
+      <title>IaC is cool, until someone specified the wrong machine size 💸</title>
+      <link>https://www.karnwong.me/posts/2022/11/iac-is-cool-until-someone-specified-the-wrong-machine-size/</link>
+      <pubDate>Thu, 03 Nov 2022 00:55:31 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/11/iac-is-cool-until-someone-specified-the-wrong-machine-size/</guid>
+      <description>Back in the day, there was no cloud. If you want a lot of computing power, you need to build your own data center, and this is very expensive. Then cloud happened, and suddenly you can work with a lot of flexibility like you couldn&amp;rsquo;t before. Want to try out a small deployment? Sure! If your workload is heavier you can always increase the VM specs.
+It would almost be the end of the story, until someone realize &amp;ldquo;oh my God how did I set up VPC peering with another VPC, and which route table did I choose?</description>
+    </item>
+    
+    <item>
+      <title>Deploy static site with branch preview via Cloudflare Pages</title>
+      <link>https://www.karnwong.me/posts/2022/10/deploy-static-site-with-branch-preview-via-cloudflare-pages/</link>
+      <pubDate>Wed, 05 Oct 2022 02:23:06 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/10/deploy-static-site-with-branch-preview-via-cloudflare-pages/</guid>
+      <description>For frontends, if no server-side rendering is required, we can deploy it as a static site. If you already use GitHub, you might be familiar with GitHub Pages. One common use case is to deploy your personal landing page / blog via GitHub Actions.
+Interestingly enough, this might cause problems if you are working in a team. For example, if you are working on a UI change, and you need to have someone else approve the changes, they would need to build the site locally to do so.</description>
+    </item>
+    
+    <item>
+      <title>Terraform with ECS task on EC2 backend</title>
+      <link>https://www.karnwong.me/posts/2022/10/terraform-with-ecs-task-on-ec2-backend/</link>
+      <pubDate>Tue, 04 Oct 2022 22:04:34 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/10/terraform-with-ecs-task-on-ec2-backend/</guid>
+      <description>Previously I wrote about setting up ECS task on fargate backend. But we can also use EC2 as backend too, in some cases where the workload is consistent, ie scaling is not required, since EC2 would be cheaper than fargate backend, even more so if you have reserved instance on top. There&amp;rsquo;s a few modifications from the fargate version to make it work with EC2 backend, if you are curious you can try to hunt those down 😎.</description>
+    </item>
+    
+    <item>
+      <title>Intro to Dagster Cloud</title>
+      <link>https://www.karnwong.me/posts/2022/09/intro-to-dagster-cloud/</link>
+      <pubDate>Tue, 27 Sep 2022 17:19:45 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/09/intro-to-dagster-cloud/</guid>
+      <description>Imagine you have a few data pipelines to schedule. Simplest solution would be cronjob. Time goes by and next thing you know, you have around 50 pipelines to manage. The fun starts when you have to hunt down which pipeline doesn&amp;rsquo;t run normally. And by then it would be super hard to do tracing if you haven&amp;rsquo;t set up logging and monitoring.
+Luckily there are tools we can use to improve the situation.</description>
+    </item>
+    
+    <item>
+      <title>Intro to Pulumi</title>
+      <link>https://www.karnwong.me/posts/2022/09/intro-to-pulumi/</link>
+      <pubDate>Mon, 26 Sep 2022 15:06:11 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/09/intro-to-pulumi/</guid>
+      <description>For IaC, no doubt that Terraform is the leader. But there are other alternatives too, one of them is Pulumi. Currently Pulumi provides fun challenges to get started with their services. Best of all, they give you swags too! We are going to create a simple Pulumi project for hosting a static site through Cloudfront CDN.
+Challenge url: https://www.pulumi.com/challenge/startup-in-a-box/
+Pre-requisites Pulumi account Checkly account AWS acount Install Pulumi cli: brew install pulumi/tap/pulumi Steps Init Init pulumi project</description>
+    </item>
+    
+    <item>
+      <title>Minimal ECS task with fargate backend</title>
+      <link>https://www.karnwong.me/posts/2022/08/minimal-ecs-task-with-fargate-backend/</link>
+      <pubDate>Fri, 26 Aug 2022 21:10:58 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/08/minimal-ecs-task-with-fargate-backend/</guid>
+      <description>To deploy a web application, there are many ways to go about it. I could spin up a bare VM and set up the environment manually. To make things easier, I could have package the app into docker image. But this still means I have to &amp;ldquo;update&amp;rdquo; the app manually if I add changes to it.
+Things would be super cool if: after I push the changes to master branch, the app would be deployed automatically.</description>
+    </item>
+    
+    <item>
+      <title>Data engineer archtypes</title>
+      <link>https://www.karnwong.me/posts/2022/08/data-engineer-archtypes/</link>
+      <pubDate>Fri, 26 Aug 2022 10:06:36 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/08/data-engineer-archtypes/</guid>
+      <description>I have been working in the data industry since almost half a decade ago. Over time I have noticed so-called archetypes within various data engineering roles. Below are main skills and combinations I have seen over the years. This is by no means an exhaustive list, rather what I often see.
+SQL + SSIS Using SQL to manipulate data via SSIS, in which data engine is Microsoft SQL Server. Commonly found in enterprise organizations that use Microsoft stack.</description>
+    </item>
+    
+    <item>
+      <title>What SQL can&#39;t do for data engineering</title>
+      <link>https://www.karnwong.me/posts/2022/05/what-sql-cant-do-for-data-engineering/</link>
+      <pubDate>Sun, 15 May 2022 22:38:45 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/05/what-sql-cant-do-for-data-engineering/</guid>
+      <description>I often hear people ask &amp;ldquo;if you can do data engineering with SQL, then what&amp;rsquo;s the point of learning spark or python?&amp;rdquo;
+Data ingestion Let&amp;rsquo;s circle back at bit.
+I think we all can agree that: there&amp;rsquo;s a point in time where there&amp;rsquo;s no data in the data warehouse (which DE-who-use-SQL&amp;rsquo;s use as base of operation). The source data could be anything from hard CSV/Excel or API endpoints. No data in data warehouse, DE can&amp;rsquo;t use SQL to do stuff with the data.</description>
+    </item>
+    
+    <item>
+      <title>Use SSH key during docker build without embedding the key via ssh-agent</title>
+      <link>https://www.karnwong.me/posts/2022/02/use-ssh-key-during-docker-build-without-embedding-the-key-via-ssh-agent/</link>
+      <pubDate>Sun, 06 Feb 2022 15:06:16 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/02/use-ssh-key-during-docker-build-without-embedding-the-key-via-ssh-agent/</guid>
+      <description>Imagine working in a company, and they have a super cool internal module! The module works great, except that it is a private module, which means you need to install it by cloning the source repo and install it from source.
+That shouldn&amp;rsquo;t be an issue if you work on your local machine. But for production usually this means you somehow need to bundle this awesome module into your docker image.</description>
+    </item>
+    
+    <item>
+      <title>Use pyspark locally with docker</title>
+      <link>https://www.karnwong.me/posts/2021/12/use-pyspark-locally-with-docker/</link>
+      <pubDate>Tue, 21 Dec 2021 19:26:32 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/12/use-pyspark-locally-with-docker/</guid>
+      <description>For data that doesn&amp;rsquo;t fit into memory, spark is often a recommended solution, since it can utilize map-reduce to work with data in a distributed manner. However, setting up local spark development from scratch involves multiple steps, and definitely not for a faint of heart. Thankfully using docker means you can skip a lot of steps 😃
+Instructions Install Docker Desktop Create docker-compose.yml in a directory somewhere version: &amp;#34;3.3&amp;#34; services: pyspark: container_name: pyspark image: jupyter/pyspark-notebook:latest ports: - &amp;#34;8888:8888&amp;#34; volumes: - .</description>
+    </item>
+    
+    <item>
+      <title>Reduce docker image size with alpine</title>
+      <link>https://www.karnwong.me/posts/2021/12/reduce-docker-image-size-with-alpine/</link>
+      <pubDate>Sun, 19 Dec 2021 20:50:07 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/12/reduce-docker-image-size-with-alpine/</guid>
+      <description>Creating scripts are easy. But creating a small docker image is not 😅.
+Not all Linux flavors are created equal, some are bigger than others, etc. But this difference is very crucial when it comes to reducing docker image size.
+A simple bash script docker image Given a Dockerfile (change apk to apt for ubuntu):
+FROM alpine:3 WORKDIR /app RUN apk update &amp;amp;&amp;amp; apk add jq curl COPY water-cut-notify.sh ./ ENTRYPOINT [&amp;#34;sh&amp;#34;, &amp;#34;/app/water-cut-notify.</description>
+    </item>
+    
+    <item>
+      <title>Secrets management with SOPS, AWS SSM and Terraform</title>
+      <link>https://www.karnwong.me/posts/2021/11/secrets-management-with-sops-aws-ssm-terraform/</link>
+      <pubDate>Tue, 30 Nov 2021 20:11:12 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/11/secrets-management-with-sops-aws-ssm-terraform/</guid>
+      <description>At my organization we use sops to check in encrypted secrets into git repos. This solves plaintext credentials in version control. However, say, you have 5 repos using the same database credentials, rotating secrets means you have to go into each repo and update the SOPS credentials manually.
+Also worth nothing that, for GitHub actions, authenticating AWS means you have to add repo secrets. This means for all the repos you have CI enabled, you have to populate the repo secrets with AWS credentials.</description>
+    </item>
+    
+    <item>
+      <title>Run GitHub Actions faster with cache for pipenv and docker build</title>
+      <link>https://www.karnwong.me/posts/2021/11/run-github-actions-faster-with-cache-for-pipenv-and-docker-build/</link>
+      <pubDate>Tue, 09 Nov 2021 23:54:23 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/11/run-github-actions-faster-with-cache-for-pipenv-and-docker-build/</guid>
+      <description>Update 2021-11-29
+Recently we create more PRs, notice that there are a lot of redundant steps (env setup before triggering checks, etc). Found out you can cache steps in GitHub Actions, so I did some research. Got it working and turns out I reduce at least 60% actions time for a large docker image build (since only the later RUN directives are changed more frequently). For pipenv it shaved off 1 minute 18 seconds.</description>
+    </item>
+    
+    <item>
+      <title>ecs-cli snippets</title>
+      <link>https://www.karnwong.me/posts/2021/10/ecs-cli-snippets/</link>
+      <pubDate>Fri, 08 Oct 2021 17:18:29 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/10/ecs-cli-snippets/</guid>
+      <description>ecs-cli configure profile \ --access-key $KEY \ --secret-key $SECRET \ --profile-name $PROFILE ### launch mode: fargate ecs-cli configure \ --cluster $CLUSTER \ --default-launch-type FARGATE \ --config-name $NAME \ --region ap-southeast-1 ecs-cli up \ --cluster-config $NAME \ --vpc $VPCID\ --subnets $SUBNETID1, $SUBNETID2 ### launch mode: ec2 ecs-cli configure \ --cluster $CLUSTER \ --region ap-southeast-1 \ --default-launch-type EC2 \ --config-name $NAME ecs-cli up --keypair $KEYPAIR \ --extra-user-data userData.sh \ --capability-iam --size 1 \ --instance-type t2.</description>
+    </item>
+    
+    <item>
+      <title>Self-hosting primer</title>
+      <link>https://www.karnwong.me/posts/2021/08/self-hosting-primer/</link>
+      <pubDate>Sun, 22 Aug 2021 18:08:31 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/08/self-hosting-primer/</guid>
+      <description>Self-hosting is a practice for running and managing websites / services using your own server. Some people do this because they are concerned about their privacy, or some services are free if they host it themselves. Below are instructions for how to do self-hosting (also applies to hosting your own website too).
+Requirements Domain name Server (can be your own computer at home or VPS) Instructions Set up and secure the server (set up password, disable password login (which means you can only login via SSH key), etc.</description>
+    </item>
+    
+    <item>
+      <title>Python venv management</title>
+      <link>https://www.karnwong.me/posts/2021/07/python-venv-management/</link>
+      <pubDate>Fri, 02 Jul 2021 14:59:12 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/07/python-venv-management/</guid>
+      <description>When you create a project in python, you should create requirements.txt to specify dependencies, so other people can have the same environment when using your project.
+However, if you don’t specify module versions in requirements.txt, you could end up with people using the wrong module version, where some APIs can be deprecated or have different behaviors than older versions.
+Another issue is that maybe you’re working on a few python projects, each uses different python versions (eg.</description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t write large table to postgres with pandas</title>
+      <link>https://www.karnwong.me/posts/2021/06/dont-write-large-table-to-postgres-with-pandas/</link>
+      <pubDate>Sun, 27 Jun 2021 20:19:58 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/06/dont-write-large-table-to-postgres-with-pandas/</guid>
+      <description>We have a few tables where the data size is &amp;gt; 3GB (in parquet, so around 10 GB uncompressed). Loading it into postgres takes an hour. (Most of our tables are pretty small, hence the reason why we don&amp;rsquo;t use columnar database).
+I want to explore whether there&amp;rsquo;s a faster way or not. The conclusion is writing to postgres with spark seems to be fastest, given we can&amp;rsquo;t use COPY since our data contain free text, which means it would make CSV parsing impossible.</description>
+    </item>
+    
+    <item>
+      <title>Data engineering toolset (that I use) glossary</title>
+      <link>https://www.karnwong.me/posts/2021/06/data-engineering-toolset-that-i-use-glossary/</link>
+      <pubDate>Fri, 04 Jun 2021 23:57:58 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/06/data-engineering-toolset-that-i-use-glossary/</guid>
+      <description>Big data Spark: Map-reduce framework for dealing with big data, especially for data that doesn&amp;rsquo;t fit into memory. Utilizes parallelization. Cloud AWS: Cloud platform for many tools used in software engineering. AWS Fargate: A task launch mode for ECS task, where it automatically shuts down once a container exits. With EC2 launch mode, you&amp;rsquo;ll have to turn off the machine yourself. AWS Lambda: Serverless function, can be used with docker image too.</description>
+    </item>
+    
+    <item>
+      <title>Automatic scrapy deployment with GitHub actions</title>
+      <link>https://www.karnwong.me/posts/2021/06/automatic-scrapy-deployment-with-github-actions/</link>
+      <pubDate>Wed, 02 Jun 2021 21:48:12 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/06/automatic-scrapy-deployment-with-github-actions/</guid>
+      <description>Repo here
+Scrapy is a nice framework for web scraping. But like all local development processes, some settings / configs are disabled.
+This wouldn&amp;rsquo;t pose an issue, but to deploy a scrapy project to zyte (a hosted scrapy platform) you need to run shub deploy, and if you run it and forget to reset the config back to prod settings, a Titan may devour your home.
+You can set auto deployment from github via the UI in zyte, but it only works with github only.</description>
+    </item>
+    
+    <item>
+      <title>Elasticsearch with custom dictionary</title>
+      <link>https://www.karnwong.me/posts/2021/05/elasticsearch-with-custom-dictionary/</link>
+      <pubDate>Mon, 03 May 2021 14:04:05 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/05/elasticsearch-with-custom-dictionary/</guid>
+      <description>Elasticsearch is a search engine with built-in analyzers (combination of tokenizer and filters), which makes it easier to set it up and get it running, seeing you don’t have to implement NLP logic from scratch. However, for some languages such as Thai, the built-in Thai analyzer may not be working quite as expected.
+For instance, for region name search autocomplete, it doesn’t recommend anything when I type เชียง, but it should be showing เชียงใหม่ or เชียงราย.</description>
+    </item>
+    
+    <item>
+      <title>Shapefile to data lake</title>
+      <link>https://www.karnwong.me/posts/2021/04/shapefile-to-data-lake/</link>
+      <pubDate>Fri, 23 Apr 2021 18:25:13 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/04/shapefile-to-data-lake/</guid>
+      <description>Background: we use spark to read/write to data lake. For dealing with spatial data &amp;amp; analysis, we use sedona. Shapefile is converted to TSV then read by spark for further processing &amp;amp; archival.
+Recently I had to archive shapefiles in our data lake. It wasn&amp;rsquo;t rosy for the following reasons:
+Invalid geometries Sedona (and geopandas too) whines if it encounters invalid geometry during geometry casting. The invalid geometries could be from many reasons, one of them being unclean polygon clipping.</description>
+    </item>
+    
+    <item>
+      <title>Spark join OOM fix</title>
+      <link>https://www.karnwong.me/posts/2021/04/spark-join-oom-fix/</link>
+      <pubDate>Sun, 11 Apr 2021 16:20:23 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/04/spark-join-oom-fix/</guid>
+      <description>I have a big pipelines where one step performs crossjoin on 130K x 7K. It fails quite often, and I have to pray to the Rice God for it to pass. Today I found the solution: repartition before crossjoin.
+The root cause is that the dataframe with 130K records has 6 partitions, so when I perform crossjoin (one-to-many) it&amp;rsquo;s working against those 6 partitions. Total output in parquet is around 350MB, which means my computer (8 cores, 10GB RAM provisioned for spark) needs to be able to hold all uncompressed data in memory.</description>
+    </item>
+    
+    <item>
+      <title>ถอดรหัสคำตอบเวลาถามเรื่องกลูเตน</title>
+      <link>https://www.karnwong.me/posts/2021/03/th-drhaskhamt-bewlaathaameruue-ngkluuetn/</link>
+      <pubDate>Wed, 31 Mar 2021 13:35:55 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/03/th-drhaskhamt-bewlaathaameruue-ngkluuetn/</guid>
+      <description>อ่านตรงนี้ อย่าข้าม!!!!! กลูเตนไม่ใช่ผู้ร้าย ขนมปังที่เด้งดึ๋งนี่ก็เพราะฝีมือกลูเตน อะไรที่ทำมาจากแป้ง กินแล้วมีความหนึบหนับ ฟันธงได้เลยว่าฝีมือกลูเตน แป้งสาลีก็มีสารอาหารเยอะกว่าแป้งกลูเตนฟรี แต่มนุดบางจำพวกกินกลูเตนไม่ได้ แล้วบางคนหัวใสเอาไปโปรโมทว่า กลูเตนฟรีมันเฮลตี้ คนเลยแห่กันไปทำอาหารกับขนมกลูเตนฟรีออกมา แต่เกือบหมดนั้นคนที่แพ้กลูเตนจริงๆ กินไม่ได้!
+เข้าเรื่อง ส่วนนี้จะเป็นคำตอบที่ตัวแทนจากผู้ผลิต (คนที่รับสายน่ะแหละ) ตอบ ซึ่งจะอธิบายหมายเหตุ++ ว่าต้องแปลแต่ละคำตอบยังไง
+เดี๋ยวติดต่อกลับนะครับ ขอไปหาข้อมูลก่อน
+เกือบทั้งหมดที่ตอบแบบนี้ จะไม่ติดต่อกลับมาอีกเลย ☁️☁️☁️
+สินค้าของเราไม่มีกลูเตนเลยค่ะ วัตถุดิบก็มีแค่ A, B C ซึ่งทั้งหมดนี้ไม่มีกลูเตนอยู่แล้วตามธรรมชาติ
+อันว่า cross-contamination นั้นก็เหมือน 💩 ก็คือ อะไรที่มันไปโดน ก็จะ 🤮 ตามไปด้วย ต่อให้จริงๆ แล้วมันสะอาดก็ตาม
+ซึ่งก็แปลว่า ต่อให้วัตถุดิบ1 จะปลอดกลูเตนแค่ไหนก็ตาม แต่ถ้ามันทำบนไลน์ผลิตเดียวกับสินค้าอื่นที่มีกลูเตน ก็ไม่รอดอยู่ดี2
+สำหรับสินค้าพวก homemade ทั้งหลายแหล่ ต่อให้จะ gluten free เบอร์ไหน ถ้าเขาบอกว่าใช้เตาอบอันเดียวกันกับสินค้าปกติ(ที่มีกลูเตน) ก็จงใส่เกียร์หมาซะ เหตุผลเดียวกับข้างบน
+ทางเราไม่แนะนำให้ลูกค้าทานสินค้าเราค่ะ เพื่อความปลอดภัย
+พีคตรงที่ฉลากไม่เขียนว่า(อาจจะมีส่วนผสมของ)มีกลูเตน -&amp;gt; ก็เขียนแปะสิว่าอาจจะมีส่วนผสมของกลูเตน ไม่ใช่ให้คนกินมาลุ้นยังกะจับใบดำใบแดง คนตอบเองนั่นแหละที่ไม่กล้ารับปากอะไรทั้งนั้น เพราะไม่รู้ข้อมูล เลยพยายามปัดให้พ้นตัว ฉลากของเราผ่านอ.ย. ค่ะ อิงตามกฎหมายไทย
+ถ้าได้คำตอบแบบนี้มา จงวิ่งหนีสุดชีวิต เพราะอ.</description>
+    </item>
+    
+    <item>
+      <title>Add Ghost content to Hugo</title>
+      <link>https://www.karnwong.me/posts/2021/03/create-static-site-from-ghost-blog/</link>
+      <pubDate>Wed, 31 Mar 2021 04:05:02 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/03/create-static-site-from-ghost-blog/</guid>
+      <description>Ghost CMS is very easy to use, but the deployment overhead (maintaining db, ghost version, updates and etc) might be too much for some. Luckily, there&amp;rsquo;s a way to convert a Ghost site to static pages, which you can later host on Github pages or something similar.
+Setup static site engine: Hugo a Ghost instance Usage Install https://github.com/Fried-Chicken/ghost-static-site-generator cd to static directory in your Hugo folder run gssg --domain ${YOUR_GHOST_INSTANCE_URL} --dest posts --url ${YOUR_STATIC_SITE_DOMAIN_WITHOUT_TRAILING_SLASH} --subDir posts Update your hugo config to link to the above folder: [[menu.</description>
+    </item>
+    
+    <item>
+      <title>Hello Caddy</title>
+      <link>https://www.karnwong.me/posts/2021/03/hello-caddy/</link>
+      <pubDate>Sun, 07 Mar 2021 08:32:19 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/03/hello-caddy/</guid>
+      <description>Since starting self-hosting back in 2017, I&amp;rsquo;ve always used apache2 since it&amp;rsquo;s the first webserver I came across. Over time adding more services and managing separate vhost config is a bit tiresome.
+Enters Caddy. It&amp;rsquo;s very simple to set up and configure. Some services where I have trouble setting up in apache2 do not need extra config at all, even TLS is set up by default. Starting from Caddy2 it works with CNAME by default without extra setups.</description>
+    </item>
+    
+    <item>
+      <title>Password auth with apache2 reverse-proxy</title>
+      <link>https://www.karnwong.me/posts/2021/02/setting-up-password-auth-with-apache2-reverse-proxy/</link>
+      <pubDate>Mon, 22 Feb 2021 07:38:07 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/02/setting-up-password-auth-with-apache2-reverse-proxy/</guid>
+      <description>EDIT: see here for Caddy, also easier to set up too.
+Sometimes you found an interesting project to self-hosted, but it doesn&amp;rsquo;t have password authentication built-in. Luckily, we need to reverse-proxy them anyway and apache2/ nginx / httpd happen to provide password auth with reverse-proxy by default.
+To set up password auth with apache2 via reverse-proxy:
+echo &amp;quot;${PASSWORD}&amp;quot; | htpasswd -c -i /etc/apache2/.htpasswd ${USER} on your host machine which has apache2 installed.</description>
+    </item>
+    
+    <item>
+      <title>Buying tea when you have Celiac</title>
+      <link>https://www.karnwong.me/posts/2021/02/buying-tea-when-you-have-celiac/</link>
+      <pubDate>Sun, 14 Feb 2021 05:20:54 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/02/buying-tea-when-you-have-celiac/</guid>
+      <description>Might come as a surprise to some of you, but tea can contain gluten from additives &amp;amp; cross-contamination, in which barley or malt is added for flavorings. Teavana is known for adding such additives in their tea (and I got glutented from it one time).
+Say, I&amp;rsquo;m interested in some tea. I first need to look up its country of origin, because that tells me about how good the food labeling laws is.</description>
+    </item>
+    
+    <item>
+      <title>Workarounds for archiving large shapefile in data lake</title>
+      <link>https://www.karnwong.me/posts/2021/01/workarounds-for-archiving-large-shapefile-in-data-lake/</link>
+      <pubDate>Sun, 31 Jan 2021 17:40:53 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/01/workarounds-for-archiving-large-shapefile-in-data-lake/</guid>
+      <description>If you work with spatial data, chances are you are familiar with shapefile, a file format for viewing / editing spatial data.
+Essentially, shapefile is just a tabular data like csv, but it does thingamajig with geometry data type, where any gis tools like qgis or arcgis can understand right away. If you have a csv file with geometry column in wkt format (something like POLYGON ((30 10, 40 40, 20 40, 10 20, 30 10))), you&amp;rsquo;ll have to specify which column is to be used for geometry.</description>
+    </item>
+    
+    <item>
+      <title>Mongodb export woes</title>
+      <link>https://www.karnwong.me/posts/2021/01/mongodb-export-woes/</link>
+      <pubDate>Wed, 27 Jan 2021 04:51:41 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/01/mongodb-export-woes/</guid>
+      <description>There&amp;rsquo;s a task where I need to export 4M+ records out of mongodb, total uncompressed size is 17GB+ 26GB
+export methods mongoexport The recommended way to export is using mongoexport utility, but you have to specify the output attributes, which doesn&amp;rsquo;t work for me because the schema from older set of records are less than the newer set
+DIY python script the vanilla way But you can interact with mongodb from python, and if you read from it it&amp;rsquo;ll return a dict, which is perfect for this because you don&amp;rsquo;t have to specify the required attributes beforehand.</description>
+    </item>
+    
+    <item>
+      <title>CPU upgrade is a breeze, only if you know how</title>
+      <link>https://www.karnwong.me/posts/2020/12/upgrading-cpu-is-hard/</link>
+      <pubDate>Sun, 20 Dec 2020 19:12:38 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2020/12/upgrading-cpu-is-hard/</guid>
+      <description>I want to update my pc config to use a more powerful cpu (from Ryzen 1300x &amp;ndash;&amp;gt; Ryzen 3600). Watched a few videos and it didn&amp;rsquo;t look complicated enough, so I order the new CPU and plan to install it myself. Things didn&amp;rsquo;t go exactly to plan. To sum up relevant things I didn&amp;rsquo;t know from watching &amp;ldquo;how to install AM4 CPU&amp;rdquo; videos:
+on some motherboard, you need to &amp;ldquo;support&amp;rdquo; the backplate from under the motherboard so the socket would protrude far up enough to &amp;ldquo;lock&amp;rdquo; the CPU fan.</description>
+    </item>
+    
+    <item>
+      <title>เป็นหมอไม่ได้แปลว่าเป็นคนดี</title>
+      <link>https://www.karnwong.me/posts/2020/12/epnhm-aimaidaeplwaaepnkhndii/</link>
+      <pubDate>Sat, 05 Dec 2020 15:18:17 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2020/12/epnhm-aimaidaeplwaaepnkhndii/</guid>
+      <description>เมื่อ 2-3 อาทิตย์ก่อน เห็นน้องที่ทำงานลนๆ กัน เลยได้ความว่า มีน้องคนนึงเขาปวดท้อง จุกเสียด ตั้งแต่คืนวันก่อน แต่ไม่มีอาการท้องเสีย แล้วน้องเขาปวดท้องมาก พี่หัวหน้าทีมก็เลยจะหาน้องคนนี้ไปโรงพยาบาลใกล้ๆ
+พอดีแม่เราเป็นพยาบาล เลยให้น้องลองคุยกับแม่เราก่อน เบื้องต้นจะได้รู้ว่าอาการร้ายแรงมั้ย แม่เราสรุปว่า น้องเขาอาหารไม่ย่อย ประกอบกับวันก่อนน้องกินหอยทอด ก็มีความเป็นไปได้สูงว่าหอยอาจจะไม่สุกดี
+ตอนเย็นๆ วันเดียวกัน เราถามหัวหน้าทีมน้องเขาว่า หมอเขาบอกว่าน้องเป็นอะไร หมอบอกว่าเป็น อาหารเป็นพิษ
+แต่ อาการของอาหารเป็นพิษ คือ ท้องเสีย ไม่ได้ปวดท้องข้ามวันข้ามคืน ซึ่งคำอธิบายว่า ทำไมหมอถึงวินิจฉัยว่าเป็นอาหารเป็นพิษนั้น ก็เพราะว่าสมัยนี้ถ้าเป็นอาการกลุ่มอาหารไม่ย่อย อาหารเป็นพิษ เขาจะให้ยาฆ่าเชื้อกันไว้ก่อน แต่นั้นหมายความว่า ในบางกรณีที่ไม่จำเป็นต้องกินยาฆ่าเชื้อ ก็จะมีการจ่ายยาฆ่าเชื้อให้โดยไม่จำเป็น และอย่าลืมว่า บิลจะราคาแพงกว่าเดิม
+อย่างในเคสของน้องในบทความนี้ น้องไม่ได้แสดงอาการท้องเสีย ซึ่งไม่มีความจำเป็นใดๆ เลยที่ต้องให้ยาฆ่าเชื้อ แต่ ถ้าให้ยาฆ่าเชื้อ มันก็ง่ายในการรักษา เพราะว่าไม่ว่าจะเป็นอาหารเป็นพิษหรือไม่ย่อย รักษาแบบเดียวกันได้ และปิดเคสได้ไว ได้ตังเยอะกว่าด้วยเพราะต้องคิดค่ายาฆ่าเชื้อ
+และนี่ก็เป็นเหตุผลเดียวกับการที่ว่า ทำไมหมอถึงผ่าคลอดโดยไม่จำเป็น บางเคสสามารถคลอดธรรมชาติได้ แต่หมอเลือกที่จะผ่า เพราะว่าใช้เวลาน้อยกว่าคลอดแบบธรรมชาติ หมอปิดเคสได้เยอะกว่า และได้ตังเยอะกว่าเช่นกัน
+อย่าลืมว่า คนที่เรียนแพทย์มาเป็นหมอได้หมดถ้าสอบใบประกอบได้ ต่อให้จะอยู่อันดับสุดท้ายของชั้นก็ตาม</description>
+    </item>
+    
+    <item>
+      <title>There are caveats behind every statement</title>
+      <link>https://www.karnwong.me/posts/2020/12/there-are-caveats-behind-every-statement/</link>
+      <pubDate>Tue, 01 Dec 2020 10:28:01 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2020/12/there-are-caveats-behind-every-statement/</guid>
+      <description>You may have come across news headlines with something like &amp;ldquo;woman diagnoses herself with rare disease.&amp;rdquo;
+If you take this statement at face value, you might think &amp;ldquo;hmmm so this woman, out of the blue, just diagnose herself with a rare disease.&amp;rdquo;
+What most people don&amp;rsquo;t often realize is that for a rare disease to be considered, she must have gone through many different doctors who diagnosed her with various diseases, but she feels that neither of them accurately describe her symptoms.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing map region prefix/suffix</title>
+      <link>https://www.karnwong.me/posts/2020/09/visualizing-map-region-prefix-suffix/</link>
+      <pubDate>Thu, 03 Sep 2020 12:04:42 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2020/09/visualizing-map-region-prefix-suffix/</guid>
+      <description>import pandas as pd import numpy as np import geopandas as gpd import geoplot as gplt import matplotlib.pyplot as plt from geoplot import polyplot from pythainlp.tokenize import word_tokenize, syllable_tokenize Data structure name: target region name geometry: spatial column *: parent region name, e.g. in &amp;ldquo;district&amp;rdquo; dataset it would have a &amp;ldquo;province&amp;rdquo; column Dissolving dataset in case you have multiple region level in the same file ## assuming you have a district dataset and want to dissolve to province only district_filename = &amp;#34;FILE_PATH_HERE&amp;#34; gdf = gpd.</description>
+    </item>
+    
+    <item>
+      <title>แทคติคสอบถามโรงงานเรื่องกลูเตน</title>
+      <link>https://www.karnwong.me/posts/2020/08/aethkhtikhs-bthaamorngngaaneruue-ngkluuetn/</link>
+      <pubDate>Fri, 14 Aug 2020 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2020/08/aethkhtikhs-bthaamorngngaaneruue-ngkluuetn/</guid>
+      <description>มนุษย์ทุกคนต้องการอาหาร ไม่งั้นก็อยู่ไม่ได้เพราะหิวตายไปก่อน แต่ก็จะมีคนบางกลุ่มที่กินอาหารบางอย่างไม่ได้ อันนี้ก็ถือว่าเป็นความเคราะห์ร้ายไป แต่นั่นไม่ได้แปลว่า วงการอาหารควรจะนอนนิ่งเฉย เพราะบทคนกินอาหารบางอย่างไม่ได้ ไม่ใช่ว่าเขาเลือกที่จะไม่กิน แต่เขากินไม่ได้ จะตอบแบบกำปั้นทุบดินว่าจริงๆ แล้วกินได้ก็ใช่ แต่กินแล้วจะผื่นขึ้น ลำคอตีบ ปากบวม ท้องเสีย อะไรก็ว่าไป ซึ่งอาการไม่พึงประสงค์เหล่านี่ไม่ควรเกิดขึ้น
+ตัวอาหารที่บางคนกินไม่ได้อาจจะเป็นตัวที่คนกินไม่ได้กันเยอะ อันนี้ก็ถือว่าโชคดี เพราะนั่นแปลว่าผู้ผลิตส่วนใหญ่จะแจ้งไว้บนฉลาก เช่น ไข่ นม แต่ ถ้าดันงอแงกับตัวแปลกๆ ที่คนไม่ค่อยรู้จักกัน อันนี้เริ่มจะอยู่ยาก บุฟเฟ่ร้านดัง อาหารร้านเด็ด โบกมือลาได้เลย
+แล้วกลูเตนเกี่ยวอะไรด้วย? ความงอแงของคนที่กินกลูเตนไม่ได้ คือ ตัวนี้ผู้ประกอบการไม่ค่อยรู้จักกันว่ามันคืออะไร ต่อให้รู้จักก็ไม่ค่อยรู้อีกว่ามันจะไปอยู่ตรงไหนบ้าง ตามตำราก็จะบอกว่า กลูเตนเจอได้ในข้าวสาลี ไรย์ บาเลย์ มอลต์ แต่อันนี้มันเป็นต้นตอไง พอเข้าสู่กระบวนการผลิตมันไปกระจายทิ้งได้หลายจุดมาก เช่น ถ้าเป็นถั่ว บางทีตอนขนส่งเขาให้อุปกรณ์ร่วมกับการขนส่งข้าวสาลี ละอองข้าวสาลีติดถั่ว = ปนเปื้อนกลูเตน
+บางคนอาจจะมีคำถามว่า ซีเรียสไปรึเปล่า แค่นี้เองก็กินไม่ได้เหรอ ก็จะขอตอบว่า คนที่ไม่กินกลูเต็นมีอยู่สามประเภทหลักๆ คือ คนที่แพ้แป้งสาลี คนที่ย่อยกลูเตนไม่ได้ และ คนที่ร่างกายเข้าใจว่ากลูเตนเป็นสิ่งแปลกปลอม เลยต้องกำจัดทิ้ง (celiac) &amp;ndash;&amp;gt; ลำไส้โดนกัด ทีนี้ คนที่แพ้แป้งสาลี อาการก็จะเหมือนคนที่แพ้กุ้ง ปลา ที่อาจจะทนปริมาณน้อยๆ ได้ เช่นเดียวกับคนที่ย่อยกลูเตนไม่ได้ แต่มนุษย์ celiac นั้น กลูเตนน้อยแค่ไหนก็เจ็บตัว</description>
+    </item>
+    
+    <item>
+      <title>Impute pipelines</title>
+      <link>https://www.karnwong.me/posts/2020/05/impute-pipelines/</link>
+      <pubDate>Fri, 22 May 2020 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2020/05/impute-pipelines/</guid>
+      <description>Imagine having a dataset that you need to use for training a prediction model, but some of the features are missing. The good news is you don&amp;rsquo;t need to throw some data away, just have to impute them. Below are steps you can take in order to create an imputation pipeline. Github link here!
+from random import randint import pandas as pd import numpy as np from sklearn.preprocessing import OneHotEncoder from sklearn.</description>
+    </item>
+    
+    <item>
+      <title>Word-based analysis with song lyrics</title>
+      <link>https://www.karnwong.me/posts/2020/04/word-based-analysis-with-song-lyrics/</link>
+      <pubDate>Wed, 15 Apr 2020 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2020/04/word-based-analysis-with-song-lyrics/</guid>
+      <description>I listen to a lot of music, mostly symphonic heavy metal. What&amp;rsquo;s interesting is that in this genre, each album often has different themes, also each band focus on different topics in terms of lyrics. For instance, Nightwish focuses on nature, and their Imaginaerum album focuses on evolution. So I thought it would be interesting if I apply various text analysis methods to the lyrics, which resulted in this article. Github link here!</description>
+    </item>
+    
+    <item>
+      <title>อยู่เมืองไทยกินกลูเตนไม่ได้ช่างลำบาก</title>
+      <link>https://www.karnwong.me/posts/2020/01/yuuemuue-ngaithykinkluuetnaimaidchaanglambaak/</link>
+      <pubDate>Sun, 26 Jan 2020 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2020/01/yuuemuue-ngaithykinkluuetnaimaidchaanglambaak/</guid>
+      <description>เดี๋ยวนี้หันไปทางไหนก็เห็นแต่กระแสกลูเต็นฟรี นี่มองละเบะปากเพราะเกือบทั้งหมดฉันกินไม่ได้ จะไปกินได้ยังไงในเมื่อพวกนี้มันกะอัพราคากับมนุษย์ที่หลงกระแส ไม่ได้ทำมาให้พวกคนที่กินกลูเตนไม่ได้จริงๆ กิน
+แล้วอย่าคิดว่าอ่านฉลากดีๆ แล้วจะรอด เพราะฉลากอาหารไทยนั้นลึก ลึกมากจนฉันเข้าไม่ถึง ตัวอย่างเบาะๆ ก็เช่น:
+หมูหมักซีอิ้ว แจ้งแค่ว่ามีถั่วเหลือง (ซีอิ้วหมักกับแป้งสาลี) ฉลากแปะช็อคโกแลตนำเข้า ที่ฉลากต้นทางเขียนว่ามีสารก่อภูมิแพ้สี่ห้าอย่างได้ ฉลากไทยเขียนแค่สอง และแน่นอนว่ากลูเตนไม่ค่อยโผล่ในฉลากไทย ต่อให้ฉลากต้นทางมันจะเขียนตัวหนามาก็ตาม ที่ลำไยกว่าคือ ครั้นจะโทรถามโรงงานผลิตนี่ก็ต้องมาลุ้นอีกว่าเค้าจะรู้งานดีแค่ไหน บางทีแจ็คพอตพนักงานมีคุณภาพก็รอดไป แต่ส่วนใหญ่เจอน้อย ส่วนมากจะตอบแบบขอไปที ตอบแบบส่งๆ หรือไม่โทรกลับเลยก้มี (และแน่นอนว่าฉันจดชื่อบริษัทขึ้นบัญชีหนังหมาไว้แล้ว)
+ที่เจอสดๆ วันนี้เลยก็คือ โทรไปถามโรงงานปลากระป๋องว่า ฉลากแจ้งกลูเตนสองระดับมั้ย ระดับแรกคือ ใส่ส่วนผสมนี้ลงไปในผลิตภัณฑ์จริงๆ ระดับสองคือ อาจจะมีส่วนผสมของ&amp;hellip;. มาจากการะบวนการผลิตที่ใช้อุปกรณ์ร่วมกัน ที่ถามแบบนี้เพราะว่า การแจ้ง &amp;ldquo;อาจจะมีส่วนผสมของ&amp;hellip;&amp;rdquo; ไม่ได้ทำกันทุกที่ และต่อให้ทำก็ใช่ว่าจะแจ้งกลูเตนกัน
+มันพีคตรงที่พอพนง.ฟังแล้วก็บอกเลยว่า ผลิตภัณฑ์เราไม่มีกลูเตนเลย ในใจนี่เริ่มเดือดละ วันก่อนเห็นเต็มสองตาว่ามีทูน่าหมักซีอิ๊วญี่ปุ่น ฉลากแจ้งด้วยนะว่ามีแป้งสาลี อ่ะนี่ก็บอกให้ทางนั้นไปเช็คมา
+สามชั่วโมงผ่านไป พนง.โทรกลับมาแจ้งว่า ทางบริษัทมีการแจ้งกลูเตนจากโชยุ แต่ประทานโทษ นั่นไม่ใช่คำถามฉัน นี่ต้องจี้แล้วจี้อีก ทางนั้นบทจะหนีก็ไล่ให้ไปอ่านฉลาก ถ้าอ่านมาจนถึงตรงนี้คิดว่าหลายๆ คนคงดูออกว่า ถ้าฉลากมันเชื่อถือได้ฉันคงไม่เสียค่าโทรศัพท์นั่งโทรถามหรอก เปลืองตังแถมเสียเวลาอีก สุดท้ายเลยจี้ถามว่า ถ้ามีผลิตภัณฑ์ ก ที่มีกลูเตน และผลิตภัณฑ์ ข ที่ไม่มีกลูเตน แต่ใช้สายผลิตร่วมกัน มีการตรวจสอบปริมาณกลูเตนตกค้างมั้ยว่าเจอเท่าไหร่ ทางนั้นก็ไปให้คนอ่านกล่องตัวทดสอบกลูเตนมา สรุปว่าฉันกินได้อย่างสบายใจถ้าไม่เจอคำว่า กลูเตน หรือ แป้งสาลีบนฉลาก</description>
+    </item>
+    
+    <item>
+      <title>My diet is not for you to market it as healthy</title>
+      <link>https://www.karnwong.me/posts/2020/01/my-diet-is-not-for-you-to-market-it-as-healthy/</link>
+      <pubDate>Sat, 11 Jan 2020 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2020/01/my-diet-is-not-for-you-to-market-it-as-healthy/</guid>
+      <description>Assuming you&amp;rsquo;re from the Anglosphere or live in trendy neighborhoods, you will see a lot of places offering gluten-free options and slapping &amp;ldquo;healthy&amp;rdquo; label on it. The problem arises when restauranters see the opportunity to cash in the gluten-free wave and start offering gluten-free options. This is an issue because, gluten-free is not just eliminating wheat, barley, rye or oat. It&amp;rsquo;s more than that.
+If you bake pizza using gluten-free flour in the same oven as regular pizza, it is considered cross-contaminated from floating flour dust in the air and some flour bits sticking to the oven, meaning it would contain gluten even if you use gluten-free flour.</description>
+    </item>
+    
+    <item>
+      <title>ความน่าปวดหัวของการถอดอักษรไทยเป็นตัวโรมัน</title>
+      <link>https://www.karnwong.me/posts/2020/01/khwaamnaapwdhawkh-ngkaarth-d-aksraithyepntaworman/</link>
+      <pubDate>Mon, 06 Jan 2020 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2020/01/khwaamnaapwdhawkh-ngkaarth-d-aksraithyepntaworman/</guid>
+      <description>*ตัวโรมัน = a b c d e f g &amp;hellip;
+วันดีคืนดีชาวต่างชาติอยากมาเมืองไทย แต่จะมาเพราะอะไรนี่ก็ไม่ขอยุ่ง ไม่ได้สู่รู้เบอร์นั้น อนุมานว่ามาจากแถบยุโรป อเมริกาอะไรเทือกนี้ก็น่าจะเครื่องลงที่สุวรรณภูมิ ปัญหาที่จะเจออย่างแรกเลยก็คือ ชื่อป้ายชื่ออะไรไม่ได้ออกเสียงเหมือนที่ตัวโรมันเขียนไว้ เรื่องของเรื่องคือป้ายชื่อในไทยจะใช้ระบบ Royal Thai General System of Transcription ของ ราชบัณฑิตยสถาน แล้วปัญหาหลักๆ เลยก็คือมันไม่ได้สื่อว่าจริงๆ แล้วคำมันควรออกเสียงยังไง เช่น:
+Thai Romanization Romanization System Pronunciation Source เทเวศ The-wet RTGS Tae-wet Pali-Sanskrit สุวรรณภูมิ Suvarnabhumi Devanagari transliteration Su-wan*-na-poom *&amp;lsquo;a&amp;rsquo; as in father Pali-Sanskrit ดินแดง Din-daeng RTGS Din-daeng Thai ศรีราชา Sri Racha Mixed:Sri - Devanagari transliterationRacha - RTGS See-ra-cha Pali-Sanskrit จะเห็นได้ว่าคำที่ต้นทางมาจากภาษาเดียวกันยังใช้คนละระบบในการถอดอักษรซะงั้น ที่เหนือกว่านั้นคือคำที่มาจาก บาลี-สันสกฤต นี่ก็ดันใช้ทั้งสองระบบถอดเสียงดื้อๆ โดยที่ไม่แคร์ว่าต่างชาติจะงงเบอร์ไหน</description>
+    </item>
+    
+    <item>
+      <title>Loanwords are okay</title>
+      <link>https://www.karnwong.me/posts/2019/11/loanwords-are-okay/</link>
+      <pubDate>Wed, 06 Nov 2019 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2019/11/loanwords-are-okay/</guid>
+      <description>Does it matter if you language has a lot of loanwords? To be considered a loan, it has to be of foreign origin, and speakers from the borrowing end can understand and use in various contexts. It&amp;rsquo;s perfectly okay for the meaning to shift on the borrowing end, as semantic shift happens naturally. It does not make the word &amp;ldquo;unpure&amp;rdquo; or anything, it&amp;rsquo;s just how things happen. The borrowing language may have different point of view or context, so not all properties from the source can be carried over.</description>
+    </item>
+    
+    <item>
+      <title>Indic name mistransliteration in Thai version of Harry Potter</title>
+      <link>https://www.karnwong.me/posts/2018/10/indic-name-mistransliteration-in-thai-version-of-harry-potter/</link>
+      <pubDate>Wed, 10 Oct 2018 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2018/10/indic-name-mistransliteration-in-thai-version-of-harry-potter/</guid>
+      <description>I read Harry Potter as a kid, and I couldn&amp;rsquo;t shake the feeling that one character&amp;rsquo;s name is a bit off. I couldn&amp;rsquo;t quite pinpoint exactly why. Turns out, my hunch was right – the Thai translator used the wrong transliteration.
+In Thai, &amp;ldquo;Parvati Patil&amp;rdquo; is &amp;ldquo;ปาราวตี พาติล.&amp;rdquo; This doesn&amp;rsquo;t even match the English transliteration (from Indic), as seen by a completely messed up second syllable on the first name. Because Thai language has a lot of influences from Indic, we also have our own system of transliterating Indic to Thai.</description>
+    </item>
+    
+    <item>
+      <title>Definition of &#39;a Word&#39;</title>
+      <link>https://www.karnwong.me/posts/2018/07/definition-of-a-word/</link>
+      <pubDate>Mon, 30 Jul 2018 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2018/07/definition-of-a-word/</guid>
+      <description>You often hear people say &amp;ldquo;you need to know x words in y language to be able to understand basic conversations.&amp;rdquo;. This is a bit misleading, since the definition of &amp;ldquo;word&amp;rdquo; is varied. For example, in Chinese (yes, I know, Chinese as a language doesn&amp;rsquo;t exist, but I digress) one character (one block) is one word. So this is easy. Then you have Japanese, where the same kanji (Hanzi, Chinese characters) can be pronounced differently, each with different meaning.</description>
+    </item>
+    
+    <item>
+      <title>Resettled refugees in Sweden</title>
+      <link>https://www.karnwong.me/posts/2018/07/resettled-refugees-in-sweden/</link>
+      <pubDate>Mon, 30 Jul 2018 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2018/07/resettled-refugees-in-sweden/</guid>
+      <description>One of my friends is a Syrian refugee, who was granted asylum in Sweden last year. I also want to try data analysis, so it fits that I should analyze something that&amp;rsquo;s relevant to my friend. This is my first ever analysis in pandas, apologies for code abomination in advance.
+In this analysis, I use pandas for dataframe, numpy for dealing with numbers (because I need to count and do some math with it) and matplotlib for plotting graphs.</description>
+    </item>
+    
+    <item>
+      <title>How angur became องุ่น</title>
+      <link>https://www.karnwong.me/posts/2017/11/how-angur-became-ngun/</link>
+      <pubDate>Thu, 23 Nov 2017 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2017/11/how-angur-became-ngun/</guid>
+      <description>More often than not, Thai loanwords are of Indic, Khmer, English or Chinese origin. Although loans from other languages do exist. For instance, องุ่น (grape). This word is of Persian origin (read: Iran), which is انگور, literally angur. In Thai it&amp;rsquo;s angun. Notice that it&amp;rsquo;s n at the end instead of the original r. The reason is because in Thai r as end consonant doesn&amp;rsquo;t exist, instead substituted with n. For example, the Sanskrit loanword ahar is pronounced as aha[n] in Thai.</description>
+    </item>
+    
+    <item>
+      <title>The confusing case of Thai romanization system</title>
+      <link>https://www.karnwong.me/posts/2017/09/the-confusing-case-of-thai-romanization-system/</link>
+      <pubDate>Thu, 14 Sep 2017 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2017/09/the-confusing-case-of-thai-romanization-system/</guid>
+      <description>You decided to visit Thailand for whatever reason I don&amp;rsquo;t want to know. (It&amp;rsquo;s not my business.) Assuming you&amp;rsquo;re in from outside of Asia, you&amp;rsquo;ll land at Suvarnabhumi Airport. The problem? The locals don&amp;rsquo;t pronounce it that way. All the names and signs here are romanized using the Royal Thai General System of Transcription (RTGS). The big problem with this is that it is light years away of what Thais actually pronounce.</description>
+    </item>
+    
+  </channel>
+</rss>

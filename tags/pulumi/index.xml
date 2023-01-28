@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>pulumi on Karn Wong</title>
+    <link>https://www.karnwong.me/tags/pulumi/</link>
+    <description>Recent content in pulumi on Karn Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 26 Sep 2022 15:06:11 +0700</lastBuildDate><atom:link href="https://www.karnwong.me/tags/pulumi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro to Pulumi</title>
+      <link>https://www.karnwong.me/posts/2022/09/intro-to-pulumi/</link>
+      <pubDate>Mon, 26 Sep 2022 15:06:11 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/09/intro-to-pulumi/</guid>
+      <description>For IaC, no doubt that Terraform is the leader. But there are other alternatives too, one of them is Pulumi. Currently Pulumi provides fun challenges to get started with their services. Best of all, they give you swags too! We are going to create a simple Pulumi project for hosting a static site through Cloudfront CDN.
+Challenge url: https://www.pulumi.com/challenge/startup-in-a-box/
+Pre-requisites Pulumi account Checkly account AWS acount Install Pulumi cli: brew install pulumi/tap/pulumi Steps Init Init pulumi project</description>
+    </item>
+    
+  </channel>
+</rss>

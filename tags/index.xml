@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Karn Wong</title>
+    <link>https://www.karnwong.me/tags/</link>
+    <description>Recent content in Tags on Karn Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 10 Dec 2022 19:17:18 +0700</lastBuildDate><atom:link href="https://www.karnwong.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>devops</title>
+      <link>https://www.karnwong.me/tags/devops/</link>
+      <pubDate>Sat, 10 Dec 2022 19:17:18 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloudflare</title>
+      <link>https://www.karnwong.me/tags/cloudflare/</link>
+      <pubDate>Sun, 20 Nov 2022 17:06:17 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/tags/cloudflare/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>terraform</title>
+      <link>https://www.karnwong.me/tags/terraform/</link>
+      <pubDate>Sun, 20 Nov 2022 17:06:17 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/tags/terraform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aws</title>
+      <link>https://www.karnwong.me/tags/aws/</link>
+      <pubDate>Tue, 04 Oct 2022 22:04:34 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data engineering</title>
+      <link>https://www.karnwong.me/tags/data-engineering/</link>
+      <pubDate>Tue, 27 Sep 2022 17:19:45 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/tags/data-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pulumi</title>
+      <link>https://www.karnwong.me/tags/pulumi/</link>
+      <pubDate>Mon, 26 Sep 2022 15:06:11 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/tags/pulumi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://www.karnwong.me/tags/docker/</link>
+      <pubDate>Sun, 06 Feb 2022 15:06:16 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://www.karnwong.me/tags/github/</link>
+      <pubDate>Sun, 06 Feb 2022 15:06:16 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data science</title>
+      <link>https://www.karnwong.me/tags/data-science/</link>
+      <pubDate>Tue, 21 Dec 2021 19:26:32 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://www.karnwong.me/tags/python/</link>
+      <pubDate>Fri, 02 Jul 2021 14:59:12 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>backend</title>
+      <link>https://www.karnwong.me/tags/backend/</link>
+      <pubDate>Mon, 03 May 2021 14:04:05 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/tags/backend/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gis</title>
+      <link>https://www.karnwong.me/tags/gis/</link>
+      <pubDate>Fri, 23 Apr 2021 18:25:13 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/tags/gis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>celiac</title>
+      <link>https://www.karnwong.me/tags/celiac/</link>
+      <pubDate>Wed, 31 Mar 2021 13:35:55 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/tags/celiac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>life</title>
+      <link>https://www.karnwong.me/tags/life/</link>
+      <pubDate>Sun, 20 Dec 2020 19:12:38 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/tags/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data analysis</title>
+      <link>https://www.karnwong.me/tags/data-analysis/</link>
+      <pubDate>Thu, 03 Sep 2020 12:04:42 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/tags/data-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>languages</title>
+      <link>https://www.karnwong.me/tags/languages/</link>
+      <pubDate>Mon, 06 Jan 2020 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/tags/languages/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

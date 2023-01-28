@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>python on Karn Wong</title>
+    <link>https://www.karnwong.me/tags/python/</link>
+    <description>Recent content in python on Karn Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 02 Jul 2021 14:59:12 +0700</lastBuildDate><atom:link href="https://www.karnwong.me/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python venv management</title>
+      <link>https://www.karnwong.me/posts/2021/07/python-venv-management/</link>
+      <pubDate>Fri, 02 Jul 2021 14:59:12 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/07/python-venv-management/</guid>
+      <description>When you create a project in python, you should create requirements.txt to specify dependencies, so other people can have the same environment when using your project.
+However, if you don’t specify module versions in requirements.txt, you could end up with people using the wrong module version, where some APIs can be deprecated or have different behaviors than older versions.
+Another issue is that maybe you’re working on a few python projects, each uses different python versions (eg.</description>
+    </item>
+    
+  </channel>
+</rss>

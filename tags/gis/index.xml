@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>gis on Karn Wong</title>
+    <link>https://www.karnwong.me/tags/gis/</link>
+    <description>Recent content in gis on Karn Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 23 Apr 2021 18:25:13 +0000</lastBuildDate><atom:link href="https://www.karnwong.me/tags/gis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shapefile to data lake</title>
+      <link>https://www.karnwong.me/posts/2021/04/shapefile-to-data-lake/</link>
+      <pubDate>Fri, 23 Apr 2021 18:25:13 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/04/shapefile-to-data-lake/</guid>
+      <description>Background: we use spark to read/write to data lake. For dealing with spatial data &amp;amp; analysis, we use sedona. Shapefile is converted to TSV then read by spark for further processing &amp;amp; archival.
+Recently I had to archive shapefiles in our data lake. It wasn&amp;rsquo;t rosy for the following reasons:
+Invalid geometries Sedona (and geopandas too) whines if it encounters invalid geometry during geometry casting. The invalid geometries could be from many reasons, one of them being unclean polygon clipping.</description>
+    </item>
+    
+    <item>
+      <title>Workarounds for archiving large shapefile in data lake</title>
+      <link>https://www.karnwong.me/posts/2021/01/workarounds-for-archiving-large-shapefile-in-data-lake/</link>
+      <pubDate>Sun, 31 Jan 2021 17:40:53 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/01/workarounds-for-archiving-large-shapefile-in-data-lake/</guid>
+      <description>If you work with spatial data, chances are you are familiar with shapefile, a file format for viewing / editing spatial data.
+Essentially, shapefile is just a tabular data like csv, but it does thingamajig with geometry data type, where any gis tools like qgis or arcgis can understand right away. If you have a csv file with geometry column in wkt format (something like POLYGON ((30 10, 40 40, 20 40, 10 20, 30 10))), you&amp;rsquo;ll have to specify which column is to be used for geometry.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing map region prefix/suffix</title>
+      <link>https://www.karnwong.me/posts/2020/09/visualizing-map-region-prefix-suffix/</link>
+      <pubDate>Thu, 03 Sep 2020 12:04:42 +0000</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2020/09/visualizing-map-region-prefix-suffix/</guid>
+      <description>import pandas as pd import numpy as np import geopandas as gpd import geoplot as gplt import matplotlib.pyplot as plt from geoplot import polyplot from pythainlp.tokenize import word_tokenize, syllable_tokenize Data structure name: target region name geometry: spatial column *: parent region name, e.g. in &amp;ldquo;district&amp;rdquo; dataset it would have a &amp;ldquo;province&amp;rdquo; column Dissolving dataset in case you have multiple region level in the same file ## assuming you have a district dataset and want to dissolve to province only district_filename = &amp;#34;FILE_PATH_HERE&amp;#34; gdf = gpd.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>docker on Karn Wong</title>
+    <link>https://www.karnwong.me/tags/docker/</link>
+    <description>Recent content in docker on Karn Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 06 Feb 2022 15:06:16 +0700</lastBuildDate><atom:link href="https://www.karnwong.me/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use SSH key during docker build without embedding the key via ssh-agent</title>
+      <link>https://www.karnwong.me/posts/2022/02/use-ssh-key-during-docker-build-without-embedding-the-key-via-ssh-agent/</link>
+      <pubDate>Sun, 06 Feb 2022 15:06:16 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/02/use-ssh-key-during-docker-build-without-embedding-the-key-via-ssh-agent/</guid>
+      <description>Imagine working in a company, and they have a super cool internal module! The module works great, except that it is a private module, which means you need to install it by cloning the source repo and install it from source.
+That shouldn&amp;rsquo;t be an issue if you work on your local machine. But for production usually this means you somehow need to bundle this awesome module into your docker image.</description>
+    </item>
+    
+    <item>
+      <title>Use pyspark locally with docker</title>
+      <link>https://www.karnwong.me/posts/2021/12/use-pyspark-locally-with-docker/</link>
+      <pubDate>Tue, 21 Dec 2021 19:26:32 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/12/use-pyspark-locally-with-docker/</guid>
+      <description>For data that doesn&amp;rsquo;t fit into memory, spark is often a recommended solution, since it can utilize map-reduce to work with data in a distributed manner. However, setting up local spark development from scratch involves multiple steps, and definitely not for a faint of heart. Thankfully using docker means you can skip a lot of steps 😃
+Instructions Install Docker Desktop Create docker-compose.yml in a directory somewhere version: &amp;#34;3.3&amp;#34; services: pyspark: container_name: pyspark image: jupyter/pyspark-notebook:latest ports: - &amp;#34;8888:8888&amp;#34; volumes: - .</description>
+    </item>
+    
+    <item>
+      <title>Reduce docker image size with alpine</title>
+      <link>https://www.karnwong.me/posts/2021/12/reduce-docker-image-size-with-alpine/</link>
+      <pubDate>Sun, 19 Dec 2021 20:50:07 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/12/reduce-docker-image-size-with-alpine/</guid>
+      <description>Creating scripts are easy. But creating a small docker image is not 😅.
+Not all Linux flavors are created equal, some are bigger than others, etc. But this difference is very crucial when it comes to reducing docker image size.
+A simple bash script docker image Given a Dockerfile (change apk to apt for ubuntu):
+FROM alpine:3 WORKDIR /app RUN apk update &amp;amp;&amp;amp; apk add jq curl COPY water-cut-notify.sh ./ ENTRYPOINT [&amp;#34;sh&amp;#34;, &amp;#34;/app/water-cut-notify.</description>
+    </item>
+    
+  </channel>
+</rss>

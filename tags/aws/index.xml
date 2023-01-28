@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>aws on Karn Wong</title>
+    <link>https://www.karnwong.me/tags/aws/</link>
+    <description>Recent content in aws on Karn Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 04 Oct 2022 22:04:34 +0700</lastBuildDate><atom:link href="https://www.karnwong.me/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Terraform with ECS task on EC2 backend</title>
+      <link>https://www.karnwong.me/posts/2022/10/terraform-with-ecs-task-on-ec2-backend/</link>
+      <pubDate>Tue, 04 Oct 2022 22:04:34 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/10/terraform-with-ecs-task-on-ec2-backend/</guid>
+      <description>Previously I wrote about setting up ECS task on fargate backend. But we can also use EC2 as backend too, in some cases where the workload is consistent, ie scaling is not required, since EC2 would be cheaper than fargate backend, even more so if you have reserved instance on top. There&amp;rsquo;s a few modifications from the fargate version to make it work with EC2 backend, if you are curious you can try to hunt those down 😎.</description>
+    </item>
+    
+    <item>
+      <title>Intro to Pulumi</title>
+      <link>https://www.karnwong.me/posts/2022/09/intro-to-pulumi/</link>
+      <pubDate>Mon, 26 Sep 2022 15:06:11 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/09/intro-to-pulumi/</guid>
+      <description>For IaC, no doubt that Terraform is the leader. But there are other alternatives too, one of them is Pulumi. Currently Pulumi provides fun challenges to get started with their services. Best of all, they give you swags too! We are going to create a simple Pulumi project for hosting a static site through Cloudfront CDN.
+Challenge url: https://www.pulumi.com/challenge/startup-in-a-box/
+Pre-requisites Pulumi account Checkly account AWS acount Install Pulumi cli: brew install pulumi/tap/pulumi Steps Init Init pulumi project</description>
+    </item>
+    
+    <item>
+      <title>Minimal ECS task with fargate backend</title>
+      <link>https://www.karnwong.me/posts/2022/08/minimal-ecs-task-with-fargate-backend/</link>
+      <pubDate>Fri, 26 Aug 2022 21:10:58 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/08/minimal-ecs-task-with-fargate-backend/</guid>
+      <description>To deploy a web application, there are many ways to go about it. I could spin up a bare VM and set up the environment manually. To make things easier, I could have package the app into docker image. But this still means I have to &amp;ldquo;update&amp;rdquo; the app manually if I add changes to it.
+Things would be super cool if: after I push the changes to master branch, the app would be deployed automatically.</description>
+    </item>
+    
+    <item>
+      <title>Secrets management with SOPS, AWS SSM and Terraform</title>
+      <link>https://www.karnwong.me/posts/2021/11/secrets-management-with-sops-aws-ssm-terraform/</link>
+      <pubDate>Tue, 30 Nov 2021 20:11:12 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/11/secrets-management-with-sops-aws-ssm-terraform/</guid>
+      <description>At my organization we use sops to check in encrypted secrets into git repos. This solves plaintext credentials in version control. However, say, you have 5 repos using the same database credentials, rotating secrets means you have to go into each repo and update the SOPS credentials manually.
+Also worth nothing that, for GitHub actions, authenticating AWS means you have to add repo secrets. This means for all the repos you have CI enabled, you have to populate the repo secrets with AWS credentials.</description>
+    </item>
+    
+    <item>
+      <title>ecs-cli snippets</title>
+      <link>https://www.karnwong.me/posts/2021/10/ecs-cli-snippets/</link>
+      <pubDate>Fri, 08 Oct 2021 17:18:29 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/10/ecs-cli-snippets/</guid>
+      <description>ecs-cli configure profile \ --access-key $KEY \ --secret-key $SECRET \ --profile-name $PROFILE ### launch mode: fargate ecs-cli configure \ --cluster $CLUSTER \ --default-launch-type FARGATE \ --config-name $NAME \ --region ap-southeast-1 ecs-cli up \ --cluster-config $NAME \ --vpc $VPCID\ --subnets $SUBNETID1, $SUBNETID2 ### launch mode: ec2 ecs-cli configure \ --cluster $CLUSTER \ --region ap-southeast-1 \ --default-launch-type EC2 \ --config-name $NAME ecs-cli up --keypair $KEYPAIR \ --extra-user-data userData.sh \ --capability-iam --size 1 \ --instance-type t2.</description>
+    </item>
+    
+  </channel>
+</rss>

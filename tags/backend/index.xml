@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>backend on Karn Wong</title>
+    <link>https://www.karnwong.me/tags/backend/</link>
+    <description>Recent content in backend on Karn Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 03 May 2021 14:04:05 +0700</lastBuildDate><atom:link href="https://www.karnwong.me/tags/backend/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Elasticsearch with custom dictionary</title>
+      <link>https://www.karnwong.me/posts/2021/05/elasticsearch-with-custom-dictionary/</link>
+      <pubDate>Mon, 03 May 2021 14:04:05 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/05/elasticsearch-with-custom-dictionary/</guid>
+      <description>Elasticsearch is a search engine with built-in analyzers (combination of tokenizer and filters), which makes it easier to set it up and get it running, seeing you don’t have to implement NLP logic from scratch. However, for some languages such as Thai, the built-in Thai analyzer may not be working quite as expected.
+For instance, for region name search autocomplete, it doesn’t recommend anything when I type เชียง, but it should be showing เชียงใหม่ or เชียงราย.</description>
+    </item>
+    
+  </channel>
+</rss>

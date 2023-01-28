@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>github on Karn Wong</title>
+    <link>https://www.karnwong.me/tags/github/</link>
+    <description>Recent content in github on Karn Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 06 Feb 2022 15:06:16 +0700</lastBuildDate><atom:link href="https://www.karnwong.me/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use SSH key during docker build without embedding the key via ssh-agent</title>
+      <link>https://www.karnwong.me/posts/2022/02/use-ssh-key-during-docker-build-without-embedding-the-key-via-ssh-agent/</link>
+      <pubDate>Sun, 06 Feb 2022 15:06:16 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2022/02/use-ssh-key-during-docker-build-without-embedding-the-key-via-ssh-agent/</guid>
+      <description>Imagine working in a company, and they have a super cool internal module! The module works great, except that it is a private module, which means you need to install it by cloning the source repo and install it from source.
+That shouldn&amp;rsquo;t be an issue if you work on your local machine. But for production usually this means you somehow need to bundle this awesome module into your docker image.</description>
+    </item>
+    
+    <item>
+      <title>Secrets management with SOPS, AWS SSM and Terraform</title>
+      <link>https://www.karnwong.me/posts/2021/11/secrets-management-with-sops-aws-ssm-terraform/</link>
+      <pubDate>Tue, 30 Nov 2021 20:11:12 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/11/secrets-management-with-sops-aws-ssm-terraform/</guid>
+      <description>At my organization we use sops to check in encrypted secrets into git repos. This solves plaintext credentials in version control. However, say, you have 5 repos using the same database credentials, rotating secrets means you have to go into each repo and update the SOPS credentials manually.
+Also worth nothing that, for GitHub actions, authenticating AWS means you have to add repo secrets. This means for all the repos you have CI enabled, you have to populate the repo secrets with AWS credentials.</description>
+    </item>
+    
+    <item>
+      <title>Run GitHub Actions faster with cache for pipenv and docker build</title>
+      <link>https://www.karnwong.me/posts/2021/11/run-github-actions-faster-with-cache-for-pipenv-and-docker-build/</link>
+      <pubDate>Tue, 09 Nov 2021 23:54:23 +0700</pubDate>
+      
+      <guid>https://www.karnwong.me/posts/2021/11/run-github-actions-faster-with-cache-for-pipenv-and-docker-build/</guid>
+      <description>Update 2021-11-29
+Recently we create more PRs, notice that there are a lot of redundant steps (env setup before triggering checks, etc). Found out you can cache steps in GitHub Actions, so I did some research. Got it working and turns out I reduce at least 60% actions time for a large docker image build (since only the later RUN directives are changed more frequently). For pipenv it shaved off 1 minute 18 seconds.</description>
+    </item>
+    
+  </channel>
+</rss>
