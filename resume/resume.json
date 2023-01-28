@@ -130,15 +130,15 @@
       "url": "https://github.com/kahnwong/self-hosted/",
       "highlights": [
         "Alternative / self-hosted version for popular subscription services: Netflix, Spotify, LastPass, Trello, Dropbox, NordVPN, etc.",
-        "Managed via docker-compose",
+        "Managed via docker-compose and helm",
         "Use Caddy for reverse-proxy",
         "Use terraform to manage DNS via Cloudflare"
       ],
       "keywords": [
         "Docker",
-        "Reverse-Proxy",
-        "DevOps",
-        "Infrastructure as Code"
+        "Kubernetes",
+        "Helm",
+        "Terraform"
       ],
       "startDate": "2017-12-01",
       "type": "service"
