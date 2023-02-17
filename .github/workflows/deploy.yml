@@ -51,8 +51,14 @@ jobs:
         run: |
           hugo --gc --minify --cleanDestinationDir
 
-      - name: Deploy site
+      ########################
+      # publish
+      ########################
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@1
         with:
-          build-dir: public
-          deploy-branch: gh-pages
-        uses: NickSchimek/deploy_jamstack_action@main
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID}}
+          projectName: karnwong-me
+          directory: public
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
