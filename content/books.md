@@ -5,7 +5,7 @@ url: "/books"
 summary: "books"
 ---
 
-Updated 2022-12-27
+Updated 2023-02-17
 
 ## Nonfiction
 
@@ -150,6 +150,8 @@ Updated 2022-12-27
 - [Talking With Tech Leads](https://www.goodreads.com/book/show/23270194-talking-with-tech-leads) - Patrick Kua
 - [Team Topologies: Organizing Business and Technology Teams for Fast Flow](https://www.goodreads.com/book/show/44135420-team-topologies) - Matthew Skelton & Manuel Pais
 - [The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change](https://www.goodreads.com/book/show/33369254-the-manager-s-path) - Camille Fournier
+- [An Elegant Puzzle: Systems of Engineering Management](https://www.goodreads.com/book/show/45303387-an-elegant-puzzle) - Will Larson
+- [The Art of Leadership](https://www.goodreads.com/book/show/50083106-the-art-of-leadership) - Michael Lopp
 
 ## Fiction
 
