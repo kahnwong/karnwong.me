@@ -54,6 +54,9 @@ params:
   author: Karn Wong
     # author: ["Me", "You"] # multiple authors
 
+  assets:
+    disableFingerprinting: true
+
   defaultTheme: auto
     # disableThemeToggle: true
     # ShowShareButtons: true
@@ -95,21 +98,21 @@ params:
         #     icon: icon.png
         #     iconHeight: 35
 
-  assets:
-    # favicon: "<link / abs url>"
-    # favicon16x16: "<link / abs url>"
-    # favicon32x32: "<link / abs url>"
-    # apple_touch_icon: "<link / abs url>"
-    # safari_pinned_tab: "<link / abs url>"
+  # assets:
+  # favicon: "<link / abs url>"
+  # favicon16x16: "<link / abs url>"
+  # favicon32x32: "<link / abs url>"
+  # apple_touch_icon: "<link / abs url>"
+  # safari_pinned_tab: "<link / abs url>"
 
-    # fuseOpts:
-    #     isCaseSensitive: false
-    #     shouldSort: true
-    #     location: 0
-    #     distance: 1000
-    #     threshold: 0.4
-    #     minMatchCharLength: 0
-    #     keys: ["title", "permalink", "summary", "content"]
+  # fuseOpts:
+  #     isCaseSensitive: false
+  #     shouldSort: true
+  #     location: 0
+  #     distance: 1000
+  #     threshold: 0.4
+  #     minMatchCharLength: 0
+  #     keys: ["title", "permalink", "summary", "content"]
 
 taxonomies:
   category: categories
