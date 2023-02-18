@@ -5,7 +5,7 @@ url: "/books"
 summary: "books"
 ---
 
-Updated 2023-02-17
+Updated 2023-02-18
 
 ## Nonfiction
 
@@ -152,6 +152,7 @@ Updated 2023-02-17
 - [The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change](https://www.goodreads.com/book/show/33369254-the-manager-s-path) - Camille Fournier
 - [An Elegant Puzzle: Systems of Engineering Management](https://www.goodreads.com/book/show/45303387-an-elegant-puzzle) - Will Larson
 - [The Art of Leadership](https://www.goodreads.com/book/show/50083106-the-art-of-leadership) - Michael Lopp
+- [The Staff Engineer's Path: A Guide for Individual Contributors Navigating Growth and Change](https://www.goodreads.com/book/show/61058107-the-staff-engineer-s-path) - Tanya Reilly
 
 ## Fiction
 
