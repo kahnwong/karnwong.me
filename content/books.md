@@ -5,7 +5,7 @@ url: "/books"
 summary: "books"
 ---
 
-Updated 2023-02-18
+Updated 2023-02-20
 
 ## Nonfiction
 
@@ -144,14 +144,18 @@ Updated 2023-02-18
 
 #### Management & Leadership
 
+- [An Elegant Puzzle: Systems of Engineering Management](https://www.goodreads.com/book/show/45303387-an-elegant-puzzle) - Will Larson
+- [Engineering Management for the Rest of Us](https://www.goodreads.com/en/book/show/58502800) - Sarah Drasner
 - [Managing Humans: More Biting and Humorous Tales of a Software Engineering Manager](https://www.goodreads.com/book/show/60015819-managing-humans) - Michael Lopp
 - [Peopleware: Productive Projects and Teams](https://www.goodreads.com/book/show/67825.Peopleware) - Tom Demarco & Tim Lister
+- [Team Topologies: Organizing Business and Technology Teams for Fast Flow](https://www.goodreads.com/book/show/44135420-team-topologies) - Matthew Skelton & Manuel Pais
+- [The Art of Leadership](https://www.goodreads.com/book/show/50083106-the-art-of-leadership) - Michael Lopp
+- [The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change](https://www.goodreads.com/book/show/33369254-the-manager-s-path) - Camille Fournier
+
+##### Technical Leadership
+
 - [Staff Engineer: Leadership Beyond the Management Track](https://www.goodreads.com/book/show/56481725-staff-engineer) - Will Larson
 - [Talking With Tech Leads](https://www.goodreads.com/book/show/23270194-talking-with-tech-leads) - Patrick Kua
-- [Team Topologies: Organizing Business and Technology Teams for Fast Flow](https://www.goodreads.com/book/show/44135420-team-topologies) - Matthew Skelton & Manuel Pais
-- [The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change](https://www.goodreads.com/book/show/33369254-the-manager-s-path) - Camille Fournier
-- [An Elegant Puzzle: Systems of Engineering Management](https://www.goodreads.com/book/show/45303387-an-elegant-puzzle) - Will Larson
-- [The Art of Leadership](https://www.goodreads.com/book/show/50083106-the-art-of-leadership) - Michael Lopp
 - [The Staff Engineer's Path: A Guide for Individual Contributors Navigating Growth and Change](https://www.goodreads.com/book/show/61058107-the-staff-engineer-s-path) - Tanya Reilly
 
 ## Fiction
