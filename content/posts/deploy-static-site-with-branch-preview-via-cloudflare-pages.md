@@ -10,6 +10,8 @@ tags:
   - terraform
 ---
 
+_Updated 2023-02-20_: update terraform code
+
 For frontends, if no server-side rendering is required, we can deploy it as a static site. If you already use GitHub, you might be familiar with GitHub Pages. One common use case is to deploy your personal landing page / blog via GitHub Actions.
 
 Interestingly enough, this might cause problems if you are working in a team. For example, if you are working on a UI change, and you need to have someone else approve the changes, they would need to build the site locally to do so.
@@ -21,27 +23,20 @@ You should have a github repo with the source code for your site. Then,
 ## Terraform
 
 ```hcl
-#############
-# Project
-#############
 resource "cloudflare_pages_project" "this" {
-  account_id        = local.account_id
-  name              = local.project_name
-  production_branch = local.production_branch
+  account_id        = var.account_id
+  name              = var.project_name
+  production_branch = var.production_branch
 
-  build_config {
-    web_analytics_tag   = "/y224zpVq0juV7R1QSfDcshL4yOuy1aV" # can be any random string
-    web_analytics_token = "U+q+gyJF5/G90gzbOAG9aUk+83ucJX5P" # can be any random string
+  lifecycle {
+    ignore_changes = [deployment_configs, source]
   }
 }
 
-#############
-# DNS
-#############
 resource "cloudflare_record" "this" {
   depends_on = [cloudflare_pages_project.this]
 
-  name    = local.project_name
+  name    = var.subdomain
   proxied = true
   ttl     = 1
   type    = "CNAME"
@@ -49,21 +44,16 @@ resource "cloudflare_record" "this" {
   zone_id = var.zone_id
 }
 
-# # run apply with this block to create custom domain
-# # it would throw "error creating domain" error
-# # ignore and remove this block from terraform state
-# resource "cloudflare_pages_domain" "this" {
-#   # need to pass validation via the web UI button before you can proceed further
+resource "cloudflare_pages_domain" "this" {
+  depends_on = [cloudflare_record.this]
 
-#   depends_on = [cloudflare_record.this]
-
-#   account_id   = local.account_id
-#   project_name = local.project_name
-#   domain       = local.domain_name
-# }
+  account_id   = var.account_id
+  project_name = var.project_name
+  domain       = var.domain_name
+}
 ```
 
-Notice that `cloudflare_pages_domain` is commented out, this is because it has a bug that would throw "error creating domain". Although behind the scenes it creates a subdomain successfully (and is actually working with cloudflare pages).
+~~Notice that `cloudflare_pages_domain` is commented out, this is because it has a bug that would throw "error creating domain". Although behind the scenes it creates a subdomain successfully (and is actually working with cloudflare pages).~~
 
 ### GitHub Actions
 
@@ -107,7 +97,7 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID}}
           projectName: YOUR_PROJECT_NAME
-          directory: YOUR_BUILD_DIR
+          directory: $YOUR_BUILD_DIR
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
 ```
 
