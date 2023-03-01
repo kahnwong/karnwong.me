@@ -20,8 +20,9 @@ I started out as an IT support, then pick up DevOps through self-hosting and sof
 
 ### Misc
 
-- AWS Community Builders '22
-- [Certified Google Cloud Professional Cloud Architect](https://www.credential.net/af628a29-bca4-4987-aba5-4bb1456dfe3a#gs.l9nmhc)
+- AWS: Community Builders '22
+- GCP: [Certified Google Cloud Professional Cloud Architect](https://www.credential.net/af628a29-bca4-4987-aba5-4bb1456dfe3a#gs.l9nmhc)
+- HashiCorp: [HashiCorp Ambassador 2023](https://www.credly.com/badges/850db8f0-746b-4ffb-bd5e-06d84f048f1b)
 
 ---
 
