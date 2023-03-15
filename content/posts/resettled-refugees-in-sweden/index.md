@@ -8,11 +8,9 @@ tags:
   - data analysis
 ---
 
-
 One of my friends is a Syrian refugee, who was granted asylum in Sweden last year. I also want to try data analysis, so it fits that I should analyze something that's relevant to my friend. This is my first ever analysis in pandas, apologies for code abomination in advance.
 
 In this analysis, I use pandas for dataframe, numpy for dealing with numbers (because I need to count and do some math with it) and matplotlib for plotting graphs.
-
 
 ```python
 import numpy as np
@@ -22,12 +20,12 @@ import matplotlib.pyplot as plt
 ```
 
 The next step is to clean up the dataframe for further analysis. The steps are:
+
 - Read csv
 - Group by origin country and year resettled
 - Remove destination country column (because it's the same value)
 - Remove non-integer values (because you can't do math magic with it)
 - Convert year and value to integer (hello, math magic)
-
 
 ```python
 ## data prep
@@ -40,13 +38,14 @@ df.Value = df.Value.astype(np.int64) # convert value to int
 
 df
 ```
+
 <style>.my-black-bordered-table table, th, td { border: 1px solid black; border-collapse: collapse; }</style>
 
 <div class="ox-hugo-table my-black-bordered-table">
 <div></div>
 
-|      | Origin                               | Year   | Value  |
-|--------|--------------------------------------|--------|--------|
+|        | Origin                               | Year   | Value  |
+| ------ | ------------------------------------ | ------ | ------ |
 | 0      | Afghanistan                          | 1984   | 7      |
 | 1      | Afghanistan                          | 1985   | 4      |
 | 2      | Afghanistan                          | 1986   | 4      |
@@ -111,11 +110,7 @@ df
 
 725 rows × 3 columns
 
-
-
-
 Since I want to plot a multiple line graph, I need to supply one dataframe per each line. This step is to create one dataframe per source country and clean it up. For example, if there is one year where no refugees are resettled, that year doesn't exist in the dataframe, so I have to check whether the years are missing or not, and if missing, create it and set the value to 0.
-
 
 ```python
 ## create one dataframe per one origin country
@@ -142,7 +137,6 @@ def clean_up_dataframe(df):
 ```
 
 And because Syria is in the Middle East, I want to focus in the MENA region (Middle East and North Africa). However, the list is too big, and I've yet to figure out how to make it look pretty. What I do instead is group countries into each subregion and plot them.
-
 
 ```python
 ## orginal MENA, too big
@@ -183,12 +177,11 @@ def plot(region_name, region_list):
 ## plot('All MENA', UniqueNames_og_mena) # list is too big
 ```
 
-
 ```python
 plot('MENA', UniqueNames_mena)
 ```
 
-![](/images/2021-08-18-18-49-07.png)
+![](images/2021-08-18-18-49-07.png)
 
 You can see that a lot of Iraqi refugees resettled between 1990-1995, which coincides with the Gulf War (1990-1).
 
@@ -196,7 +189,7 @@ You can see that a lot of Iraqi refugees resettled between 1990-1995, which coin
 plot('Levant', UniqueNames_levant)
 ```
 
-![](/images/2021-08-18-18-51-31.png)
+![](images/2021-08-18-18-51-31.png)
 
 This graph shows only refugees from the Levant region. As expected, a lot of Iraqis sought asylum during the 90's, but Syrian refugees spiked up after 2010, which coincides with Arab Spring (2010-2).
 
@@ -204,6 +197,6 @@ This graph shows only refugees from the Levant region. As expected, a lot of Ira
 plot('North Africa', UniqueNames_north_africa)
 ```
 
-![](/images/2021-08-18-18-51-58.png)
+![](images/2021-08-18-18-51-58.png)
 
 In North Africa, Somalian refugees spiked up around 2010, which is the result from non-functioning government, which resulted in rising clan wars. Additionally, you can see that there are a lot of Eritrean refugees too, from indefinite conscription. Families of those who fled the military are also targeted.
