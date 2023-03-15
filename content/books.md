@@ -18,7 +18,6 @@ Updated 2023-02-20
 - [ALIEN Thinking: The Unconventional Path to Breakthrough Ideas](https://www.goodreads.com/book/show/54503525-alien-thinking) - Cyril Bouquet, Jean-Louis Barsoux, Michael Wade
 - [Platform Revolution: How Networked Markets Are Transforming the Economy and How to Make Them Work for You](https://www.goodreads.com/book/show/25623202) - Geoffrey G. Parker & - Marshall W. Van Alstyne & Sangeet Paul Choudary
 - [The Culture Map: Breaking Through the Invisible Boundaries of Global Business](https://www.goodreads.com/book/show/23089268) - Erin Meyer
-- [The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers](https://www.goodreads.com/book/show/18176747-the-hard-thing-about-hard-things) - Ben Horowitz
 - [Trust Me, I'm Lying: Confessions of a Media Manipulator](https://www.goodreads.com/book/show/13542853-trust-me-i-m-lying) - Ryan Holiday
 
 ### Cultural / History / Politics
@@ -82,10 +81,12 @@ Updated 2023-02-20
 
 ### Management
 
-- [Powerful: Building a Culture of Freedom and Responsibility](https://www.goodreads.com/book/show/36417234-powerful) - Patty McCord
-- [The Ideal Team Player: How to Recognize and Cultivate The Three Essential Virtues](https://www.goodreads.com/book/show/28930640-the-ideal-team-player) - Patrick Lencioni
-- [The Five Dysfunctions of a Team: A Leadership Fable](https://www.goodreads.com/book/show/21343.The_Five_Dysfunctions_of_a_Team) - Patrick Lencioni
 - [HBR's 10 Must Reads on Managing Yourself](https://www.goodreads.com/book/show/8308501-hbr-s-10-must-reads-on-managing-yourself) - Harvard Business Review
+- [Powerful: Building a Culture of Freedom and Responsibility](https://www.goodreads.com/book/show/36417234-powerful) - Patty McCord
+- [The Five Dysfunctions of a Team: A Leadership Fable](https://www.goodreads.com/book/show/21343.The_Five_Dysfunctions_of_a_Team) - Patrick Lencioni
+- [The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers](https://www.goodreads.com/book/show/18176747-the-hard-thing-about-hard-things) - Ben Horowitz
+- [The Ideal Team Player: How to Recognize and Cultivate The Three Essential Virtues](https://www.goodreads.com/book/show/28930640-the-ideal-team-player) - Patrick Lencioni
+- [What You Do is Who You Are](https://www.goodreads.com/book/show/44063692-what-you-do-is-who-you-are) - Ben Horowitz
 
 ### Medicine
 
