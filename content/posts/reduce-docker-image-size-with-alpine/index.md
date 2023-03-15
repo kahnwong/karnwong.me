@@ -57,6 +57,6 @@ Ubuntu image size is `1716%` larger!!!!!!
 
 From above two experiments, we get:
 
-![](/images/2021-12-19-21-21-35.png)
+![](images/2021-12-19-21-21-35.png)
 
 It's obvious that alpine has a very significant lighter footprint than ubuntu. But don't use alpine image for everything. For bash and go, using alpine results in lighter footprint. But for python apps, it's better to go with debian-based images. This [article](https://pythonspeed.com/articles/alpine-docker-python/) explains in details why it's so.
