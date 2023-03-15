@@ -113,7 +113,7 @@ col: area_usable, missing: 0.0%
 col: region, missing: 0.0%
 ```
 
-![](/images/2021-08-18-19-05-52.png)
+![](images/2021-08-18-19-05-52.png)
 
 ## Data exploration
 
@@ -299,7 +299,7 @@ report_missing(df)
     col: bed_imputed, missing: 0.0%
     col: bath_imputed, missing: 0.0%
 
-![](/images/2021-08-18-19-08-00.png)
+![](images/2021-08-18-19-08-00.png)
 
 Notice that the imputed columns there are no missing values. Yay!
 
