@@ -18,4 +18,7 @@ git pull --recurse-submodules
 
 ```bash
 ./create-post.sh -n $TITLE -t $TAG
+
+# with images
+./create-post.sh -n $TITLE -t $TAG -i true
 ```
