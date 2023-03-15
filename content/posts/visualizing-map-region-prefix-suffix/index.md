@@ -23,10 +23,9 @@ from pythainlp.tokenize import word_tokenize, syllable_tokenize
 
 - **name**: target region name
 - geometry: spatial column
-- *: parent region name, e.g. in "district" dataset it would have a "province" column
+- \*: parent region name, e.g. in "district" dataset it would have a "province" column
 
 ## Dissolving dataset in case you have multiple region level in the same file
-
 
 ```python
 ## assuming you have a district dataset and want to dissolve to province only
@@ -50,9 +49,6 @@ province = province.reset_index()\
 province
 ```
 
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -66,6 +62,7 @@ province
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -136,16 +133,12 @@ province
 <p>76 rows × 2 columns</p>
 </div>
 
-
-
-
 ```python
 ## declare dummy variable so it can be reused with other region type
 df = province
 ```
 
 ## EDA: tokenize region name. Use other tokenizer for your target language
-
 
 ```python
 def tokenize(unique_region_values):
@@ -174,13 +167,9 @@ def tokenize(unique_region_values):
 
 Don't forget to look through the results and pick tokens you think are "correct"
 
-
 ```python
 tokenize(df.name.unique())
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -195,6 +184,7 @@ tokenize(df.name.unique())
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -337,10 +327,7 @@ tokenize(df.name.unique())
 <p>76 rows × 8 columns</p>
 </div>
 
-
-
 ## Tokenize with selected slugs
-
 
 ```python
 ## replace with your slugs here
@@ -360,16 +347,12 @@ def get_slug_2(x):
             return i
 ```
 
-
 ```python
 df['prefix'] = df['name'].apply(lambda x: get_slug_1(x))
 df['suffix'] = df['name'].apply(lambda x: get_slug_2(x))
 
 df
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -384,6 +367,7 @@ df
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -490,10 +474,7 @@ df
 <p>76 rows × 5 columns</p>
 </div>
 
-
-
 ## Viz prep
-
 
 ```python
 ## make total_bound (background outline)
@@ -505,7 +486,6 @@ boundary = province.dissolve(by='class')
 extent = boundary.total_bounds
 ```
 
-
 ```python
 ## set font (default matplotlib font can't render Thai)
 plt.rcParams["font.family"] = "Tahoma"
@@ -514,7 +494,6 @@ plt.rcParams["font.family"] = "Tahoma"
 ## Cleaning it up
 
 There are some degree of Pali-Sanskrit influence in Thai, in which the word order is different, so it is possible for a certain \*fix to appear as either prefix or suffix. it's like **re**peat and do**re** (for redo)
-
 
 ```python
 ## ⛩⛩⛩ rerun from this cell onward if you want to change *fix ⛩⛩⛩
@@ -528,8 +507,6 @@ df_temp['{}_count'.format(_fix_column)] = df_temp[_fix_column].map(df_temp[_fix_
                                             .value_counts()\
                                             .to_dict())
 ```
-
-
 
 ```python
 ## at the largest region level it won't be much, but at a smaller level like subdistrict
@@ -545,13 +522,9 @@ threshold = 0
 df_temp = df_temp[df_temp[viz_categ_count_column] >= threshold]
 ```
 
-
 ```python
 df_temp
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -566,6 +539,7 @@ df_temp
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -647,10 +621,7 @@ df_temp
 </table>
 </div>
 
-
-
 ## Viz
-
 
 ```python
 import os
@@ -678,24 +649,24 @@ for key in gdf[key_column].unique():
 ##     break
 ```
 
-
 ## Output structure
-![](/images/2021-08-18-19-12-14.png)
+
+![](images/2021-08-18-19-12-14.png)
 
 ## Some interesting outputs (at subdistrict level)
 
 ### Northern region
 
 You can see that the prefix "แม่" concentrates around the northern region.
-![](/images/2021-08-18-19-12-05.png)
+![](images/2021-08-18-19-12-05.png)
 
 ### Eastern region
 
 "โนน" seems to be specific to the eastern seeing it's clustered around the eastern part of the country.
-![](/images/2021-08-18-19-12-22.png)
+![](images/2021-08-18-19-12-22.png)
 
 ### Multi-region
 
 As expected, "บาง" is clustered around the central region, no surprise here since the old name of Thailand's capital (it's located in the central region) is "บางกอก." But you can see that it's clustered around the southern parts as well.
 
-![](/images/2021-08-18-19-12-35.png)
+![](images/2021-08-18-19-12-35.png)
