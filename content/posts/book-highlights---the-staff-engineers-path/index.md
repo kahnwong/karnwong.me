@@ -6,6 +6,7 @@ ShowToc: false
 images:
 tags:
   - book-highlights
+  - leadership
 ---
 
 ## Opportunity cost
