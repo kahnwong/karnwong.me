@@ -32,9 +32,10 @@ It’s best if a manager learns an employee’s Ultimate Goals early on. Where d
 Career ladders alone will not create clarity—as managers, we need to put them into action.
 
 On career ladders:
-• To get to “senior,” you’re the best “you” you can be — you perform your role exceedingly well, and you’ve reached a high potential for your own output.
-• To get to “staff,” your focus is really to expand beyond yourself. You start teaching people the great things you’ve learned and help serve their needs.
-• To get to “principal,” you’re creating systems that scale beyond yourself. You’re no longer helping folks operate like you — you’re helping them where they are. A lot of your activities are related to enabling the success of everyone around you.
+
+- To get to “senior,” you’re the best “you” you can be — you perform your role exceedingly well, and you’ve reached a high potential for your own output.
+- To get to “staff,” your focus is really to expand beyond yourself. You start teaching people the great things you’ve learned and help serve their needs.
+- To get to “principal,” you’re creating systems that scale beyond yourself. You’re no longer helping folks operate like you — you’re helping them where they are. A lot of your activities are related to enabling the success of everyone around you.
 
 I typically have an employee read aloud every list item in their current role to me, then self-assess the progress they’ve made on each item. I sound off a bit. We generally align; people tend to be fair and honest about their progress. I personally think it’s important that the employee read their list to me instead of the other way around. There’s a sense of ownership that way.
 
