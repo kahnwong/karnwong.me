@@ -104,7 +104,16 @@
   ],
   "projects": [
     {
-      "name": "Nix",
+      "name": "music-lyrics-tagger",
+      "highlights": ["Add lyrics to flac and m4a files."],
+      "keywords": ["id3tag", "ogg", "flac", "m4a"],
+      "startDate": "2023-02-23",
+      "endDate": "2023-03-18",
+      "type": "tools",
+      "url": "https://github.com/kahnwong/music-lyrics-tagger"
+    },
+    {
+      "name": "nix",
       "highlights": [
         "A cross-platform setup script that works with both Linux and Mac."
       ],
@@ -126,7 +135,7 @@
       "url": "https://github.com/kahnwong/terraform-sops-ssm"
     },
     {
-      "name": "Self-hosting",
+      "name": "self-hosted",
       "url": "https://github.com/kahnwong/self-hosted/",
       "highlights": [
         "Alternative / self-hosted version for popular subscription services: Netflix, Spotify, LastPass, Trello, Dropbox, NordVPN, etc.",
@@ -134,12 +143,7 @@
         "Use Caddy for reverse-proxy",
         "Use terraform to manage DNS via Cloudflare"
       ],
-      "keywords": [
-        "Docker",
-        "Kubernetes",
-        "Helm",
-        "Terraform"
-      ],
+      "keywords": ["Docker", "Kubernetes", "Helm", "Terraform"],
       "startDate": "2017-12-01",
       "type": "service"
     },
