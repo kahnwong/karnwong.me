@@ -28,10 +28,10 @@ Notice `efficiency` column, this tells how well your resources are being utilize
 
 ## Boring math part 😴
 
-So that's `$35.57` for `6 days`, which would be around `$5.9 per day`. Per year this would cost `$5.9 * 52 = $306.8` 😱.
+So that's `$35.57 / 6 days`, which would be around `$5.9 / day`. Per year this would cost `$5.9 * 52 = $306.8 / year` 😱.
 
 My current home server setup is around `$880`, so that's around `3 years` before it would break even 🤣.
 
-But what if we're talking about raw compute price? My server is `8 cores, 64GB RAM, 1TB`, cheapest compute on AWS with similar specs per year is `i4i.2xlarge`, which is `$600 per year`.
+But what if we're talking about raw compute price? My server is `8 cores, 64GB RAM, 1TB SSD`, cheapest compute on AWS with similar specs per year is `i4i.2xlarge`, which is `$600 / year`.
 
 Pricing is hard...
