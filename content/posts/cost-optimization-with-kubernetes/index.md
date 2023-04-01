@@ -24,6 +24,10 @@ You can follow OpenCost install instructions [here](https://www.opencost.io/docs
 
 ![picture 1](images/4d695173c90ef2db997019774a93863847a39368e35bfdaf48d79b76acca515b.png)
 
+Notice `efficiency` column, this tells how well your resources are being utilized. If you see a low number here, consider using function-as-a-service or other cloud compute where pricing is calculated per usage, not active time (something like gcp's cloud run).
+
+## Boring math part 😴
+
 So that's `$35.57` for `6 days`, which would be around `$5.9 per day`. Per year this would cost `$5.9 * 52 = $306.8` 😱.
 
 My current home server setup is around `$880`, so that's around `3 years` before it would break even 🤣.
