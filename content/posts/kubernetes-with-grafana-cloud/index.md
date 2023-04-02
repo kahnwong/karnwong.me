@@ -10,7 +10,7 @@ tags:
   - grafana
 ---
 
-Kubernetes is awesome, I think this is obvious if you have more than a handful of services to manage. If you use cloud, either VM or container-based runtime, it would provide you a dashboard to see the metrics. But what about kubernetes? Since you would have multiple services inside a single cluster, in which it's backed my VMs, at best you would only see into your VMs' metrics, but doesn't provide separate metrics per each service.
+Kubernetes is awesome, I think this is obvious if you have more than a handful of services to manage. If you use cloud, either VM or container-based runtime, it would provide you a dashboard to see the metrics. But what about kubernetes? Since you would have multiple services inside a single cluster, in which it's backed by VMs, at best you would only see into your VMs' metrics, but doesn't provide separate metrics per each service.
 
 In the end, what metrics dashboards are is just visualizations on collected metrics, which are stored somewhere. On open source front, usually people store metrics in prometheus, and visualize it via grafana.
 
