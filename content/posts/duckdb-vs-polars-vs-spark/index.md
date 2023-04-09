@@ -41,3 +41,11 @@ Contrast with most dataframe benchmarks, I intentionally abuse each framework by
 Input data is equally partitioned into 8 chunks.
 
 Repo is [here](https://github.com/kahnwong/dataframe-frameworks-showdown) if you want run it against different parameters. Please drop me a chart if you see something interesting!
+
+## Update 2023-04-10
+
+What if you Window on multi-key partitions?
+
+![dataframe showdown result 2](images/9ad99e712d172b8964bbde490cf19c15a0056961ba9dc3e137c4bd397cc87f99.png)
+
+Spark wins! Makes sense, since spark can do parallel processing on each partition independently of each other. Also apparently a certain polar bear is very hungry!
