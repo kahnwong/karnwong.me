@@ -92,9 +92,9 @@ projects:
       - A cross-platform setup script that works with both Linux and Mac.
     keywords:
       - Nix
-      - Environment
-      - Dotfiles
-      - Package Manager
+      - environment
+      - dotfiles
+      - package manager
     startDate: 2022-11-30
     type: devops
     url: https://github.com/kahnwong/nix
@@ -103,10 +103,10 @@ projects:
       - Create SSM secrets from SOPS-encrypted secrets.
       - Create github-ci+lambda roles and users with access to SSM.
     keywords:
-      - Terraform
-      - AWS
-      - GitHub
-      - Security
+      - terraform
+      - aws
+      - github
+      - security
     startDate: 2021-11-24
     endDate: 2021-11-30
     type: devops
@@ -119,10 +119,10 @@ projects:
       - Use Caddy for reverse-proxy
       - Use terraform to manage DNS via Cloudflare
     keywords:
-      - Docker
-      - Kubernetes
-      - Helm
-      - Terraform
+      - docker
+      - kubernetes
+      - helm
+      - terraform
     startDate: 2017-12-01
     type: service
   - name: Impute Pipelines
@@ -131,8 +131,8 @@ projects:
       - Utilize hyperparameter tuning to find the optimum parameters
     keywords:
       - Machine Learning
-      - Data Science
-      - Hyperparameter Tuning
+      - data science
+      - hyperparameter tuning
     startDate: 2019-11-28
     endDate: 2019-12-23
     url: https://www.karnwong.me/posts/2020/05/impute-pipelines/
