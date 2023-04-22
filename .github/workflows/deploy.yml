@@ -27,7 +27,7 @@ jobs:
           node-version: 18
           cache: yarn
           cache-dependency-path: resume/yarn.lock
-      - uses: chrisdickinson/setup-yq@latest
+      - uses: vegardit/gha-setup-yq@v1
       - name: build resume
         run: |
           cd resume
