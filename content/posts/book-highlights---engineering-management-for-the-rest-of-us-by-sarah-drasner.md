@@ -5,7 +5,7 @@ draft: false
 ShowToc: false
 images:
 tags:
-  - book-highlights
+  - book highlights
   - leadership
 ---
 
