@@ -25,7 +25,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'yarn'
+          cache: yarn
+          cache-dependency-path: resume/yarn.lock
       - uses: chrisdickinson/setup-yq@latest
       - name: build resume
         run: |
