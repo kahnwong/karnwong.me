@@ -20,11 +20,13 @@ Ghost CMS is very easy to use, but the deployment overhead (maintaining db, ghos
 1. Install [https://github.com/Fried-Chicken/ghost-static-site-generator](https://github.com/Fried-Chicken/ghost-static-site-generator)
 2. `cd` to `static` directory in your Hugo folder
 3. run
+
 ```bash
 gssg --domain ${YOUR_GHOST_INSTANCE_URL} --dest posts --url ${YOUR_STATIC_SITE_DOMAIN_WITHOUT_TRAILING_SLASH} --subDir posts
 ```
 
 4. Update your hugo config to link to the above folder:
+
 ```toml
 [[menu.main]]
     identifier = "posts"

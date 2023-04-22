@@ -30,7 +30,7 @@ All these challenges are well known among on-premise users, and there are ways t
 
 Let's break them down one-by-one to see how cloud can help:
 
-### 1. Frontend, backend, database, etc.
+### 1. Frontend, backend, database, etc
 
 If you have to develop against local resources, you would need to spin up each component separately, but this means more context to management. Using cloud means you can develop against some resources that were already deployed on cloud.
 

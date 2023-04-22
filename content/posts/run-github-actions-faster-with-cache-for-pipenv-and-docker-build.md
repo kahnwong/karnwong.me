@@ -14,6 +14,7 @@ _Update 2021-11-29_
 Recently we create more PRs, notice that there are a lot of redundant steps (env setup before triggering checks, etc). Found out you can cache steps in GitHub Actions, so I did some research. Got it working and turns out I reduce at least 60% actions time for a large docker image build (since only the later `RUN` directives are changed more frequently). For pipenv it shaved off 1 minute 18 seconds. Pretty neat!
 
 ### pipenv cache
+
 ```yaml
 # https://github.com/actions/setup-python#caching-packages-dependencies
 - uses: actions/setup-python@v2
@@ -23,6 +24,7 @@ Recently we create more PRs, notice that there are a lot of redundant steps (env
 ```
 
 ### docker build cache
+
 ```yaml
 - name: Set up Docker Buildx
   uses: docker/setup-buildx-action@v1

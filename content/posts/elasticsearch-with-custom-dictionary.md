@@ -48,4 +48,4 @@ Below is an `index_config` for using a custom dictionary for tokenizer:
 }
 ```
 
-See elasticsearch documentation for more details: https://www.elastic.co/guide/en/elasticsearch/reference/7.12/analysis-dict-decomp-tokenfilter.html
+See elasticsearch documentation for more details: <https://www.elastic.co/guide/en/elasticsearch/reference/7.12/analysis-dict-decomp-tokenfilter.html>

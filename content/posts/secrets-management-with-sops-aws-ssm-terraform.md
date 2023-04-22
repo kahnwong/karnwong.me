@@ -22,7 +22,7 @@ I did some research and consensus for AWS / Terraform setup is to: encrypt secre
 
 ## Implementation
 
-Repo here: https://github.com/kahnwong/terraform-sops-ssm
+Repo here: <https://github.com/kahnwong/terraform-sops-ssm>
 
 ### 1. Bootstrap Terraform
 
@@ -50,7 +50,7 @@ terraform {
 
 ### 2. Create KMS key for SOPS
 
-https://github.com/mozilla/sops/#kms-aws-profiles
+<https://github.com/mozilla/sops/#kms-aws-profiles>
 
 ```hcl
 resource "aws_kms_key" "sops" {

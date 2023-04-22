@@ -49,7 +49,7 @@ A low-cooperation culture where power and status are the goal and people hoard i
 
 It’s very hard to draw team boundaries in a way that lets each team work autonomously. No matter how opinionated your APIs, contracts, or team charters, there will inevitably be some pieces of work that multiple teams think they own, and navigating those disputes can feel risky.
 
-## The new paved road is beautiful, but most of the places people actually want to go are deep in the marsh.
+## The new paved road is beautiful, but most of the places people actually want to go are deep in the marsh
 
 ![](images/20230218170803.png)
 
@@ -67,7 +67,7 @@ Shadow org chart: the unwritten structures through which power and influence flo
 
 Focusing only on short-term goals limits the way you think about and frame your work, and how much ownership you take of the work that falls into the cracks between tasks. If the team is trying to achieve a big project, they’ll have to identify the gaps between the assigned tasks and figure out how to fill them, building skills in the process. A team that’s used to iterating on short, clearly specified goals won’t build muscle for bigger, more difficult projects and won’t be able to tell the story of why they did what they did.
 
-## The story of where you were and how much progress you’ve made as well as where you’re going.
+## The story of where you were and how much progress you’ve made as well as where you’re going
 
 ![](images/20230218171015.png)
 
@@ -75,7 +75,7 @@ Focusing only on short-term goals limits the way you think about and frame your 
 
 Teams pursuing their own best action without coordinating with others leads to an outcome that is bad for everyone. There’s that local maximum again.
 
-## Depending on the size of the problem, you might start with an engineering-wide vision, a team-scoped vision, or something in between. Don’t create a vision, strategy, etc., unless you need it.
+## Depending on the size of the problem, you might start with an engineering-wide vision, a team-scoped vision, or something in between. Don’t create a vision, strategy, etc., unless you need it
 
 ![](images/20230218171109.png)
 

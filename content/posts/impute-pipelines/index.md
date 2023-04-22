@@ -547,6 +547,6 @@ mae
 
 You'll notice that we use "median absolute error" to measure performance. There are other metrics available, such as mean squared error, but in some cases it's more meaningful to use a metric that measure the performance in actual data's unit, in this case the error on dev and test set are around 8 units away from its correct value. Since normally we use square meter for area, it means the prediction will be off by about 8 square meters in most cases.
 
-PS: We applied the same process to data from https://baania.com/ and it was a success!
+PS: We applied the same process to data from <https://baania.com/> and it was a success!
 
-Update 2022-07-14: Baania how has opendata! Check it out at https://gobestimate.com/data.
+Update 2022-07-14: Baania how has opendata! Check it out at <https://gobestimate.com/data>.

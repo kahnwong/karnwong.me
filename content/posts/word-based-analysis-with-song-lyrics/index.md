@@ -11,12 +11,12 @@ tags:
 I listen to a lot of music, mostly symphonic heavy metal. What's interesting is that in this genre, each album often has different themes, also each band focus on different topics in terms of lyrics. For instance, Nightwish focuses on nature, and their Imaginaerum album focuses on evolution. So I thought it would be interesting if I apply various text analysis methods to the lyrics, which resulted in this article. Github link [here](https://github.com/kahnwong/lyrics_visualization)!
 
 ## Techniques used
+
 - tokenization
 - stemming and lemming
 - topic modeling
 
 ## Import modules
-
 
 ```python
 from collections import Counter
@@ -38,7 +38,6 @@ sns.set()
 ## Import data generated from 01_get_data.py
 
 In this step, I import raw data and convert raw year into a decade, for instance 1993 is in 1990s. I won't be doing analysis by decades, because in heavy metal it doesn't follow the trend much. But I include it here in case you are working on pop artists. In addition, the differences by year may not be that large, so it makes sense to see it in terms of decades.
-
 
 ```python
 df = pd.read_csv('lyrics.csv')
@@ -104,9 +103,6 @@ df = df.drop(columns=['1990s', '2000s', '2010s', '2020s'])
 df
 ```
 
-
-
-
 |    | artist    | album             | title                          | lyrics     |   year | tokens                                    |   word_count |   unique_word_count | decade   |
 |---:|:----------|:------------------|:-------------------------------|:-----------|-------:|:------------------------------------------|-------------:|--------------------:|:---------|
 |  0 | Nightwish | Angels Fall First | Elvenpath                      | (In the sh |   1996 | ['shelter', 'shade', 'forest', ...]            |          121 |                  90 | 1990s    |
@@ -120,12 +116,9 @@ df
 |  8 | Nightwish | Angels Fall First | Lappi (Lapland)                | Part 1: Er |   1996 | ['erämaajärvi', 'kautta', 'erämaajärven', ...] |           63 |                  54 | 1990s    |
 |  9 | Nightwish | Angels Fall First | Once Upon A Troubadour         | A lonely b |   1996 | ['lone', 'bard', 'wander', ...]                |           91 |                  62 | 1990s    |
 
-
-
 ## Explore relationship
 
 From this plot, I can see that there is a correlation between ```word_count``` and ```unique_word_count```, that is, they go in the same direction. The higher the word_count, the higher unique_word_count and vice versa.
-
 
 ```python
 g = sns.PairGrid(df[['word_count', 'unique_word_count']])
@@ -142,7 +135,6 @@ Boxplot represents data distribution in quartiles, in which the the box-y area i
 
 From this figure, I can see that Nightwish has a very large outlier, seeing one data point is in 350 range. Myrath has the least words, and Linkin Park has the most. For Linkin Park, it can be attributed to the fact that their lyrics contain rap verses. As for Nightwish outliers, some of their songs contain very lengthy spoken parts.
 
-
 ```python
 plt.figure(figsize=(10,7))
 sns.boxplot(x="word_count", y="artist", data=df, orient='h')
@@ -150,11 +142,9 @@ sns.boxplot(x="word_count", y="artist", data=df, orient='h')
 
 ![](/images/2021-08-18-19-02-38.png)
 
-
 ## Most common words
 
 In this step, I count how many times a word occur per dataset, then plot a bar graph for each. For the bands I usually listen to, each album has a theme, so it's very probable that each album would have different set of most common words.
-
 
 ```python
 def word_vector(df):
@@ -206,11 +196,9 @@ for index, i in enumerate(wordcount_group[group].unique()):
 
 ![](/images/2021-08-18-19-02-53.png)
 
-
 From the above image, you can see that the top words don't vary much between albums. So I can conclude that Epica have a consistent lyric themes, but if you listen you can hear that their melody changes every album. For instance, in The Divine Conspiracy, it's very classical and oriental oriented, but in The Holographic Principle it gets heavier.
 
 But that's only variations between albums from one artist. What if we do the same but with each artist instead?
-
 
 ```python
 wordcount_group = []
@@ -232,13 +220,11 @@ for index, i in enumerate(wordcount_group[group].unique()):
 
 ![](/images/2021-08-18-19-03-11.png)
 
-
 Whoops. Still more or less the same. But if you look carefully, Powerwolf stands out because their lyrical themes are werewolves and myths.
 
 ## Topic modeling
 
 So I change the tactics a bit by using topic modeling instead of seeing just the top words count. This way, the model and extract group of words that said to be the essence belonging to each cluster. I use both NMF and LDA here for comparison. Here, I tell the model to read lyrics from four artists, then try to group into clusters and finding main words from each, but I'm not telling it which document belongs to which artist.
-
 
 ```python
 def display_topics(model, feature_names, no_top_words):
@@ -274,15 +260,13 @@ topic_words = display_topics(nmf, tfidf_feature_names, no_top_words)
 
     ========== NMF ==========
     Topic 0:
-    	ll time life way light come live free just feel inside ve day let world
+     ll time life way light come live free just feel inside ve day let world
     Topic 1:
-    	love heart night wish forever hate soul dream oh art rest heaven need kiss lust
+     love heart night wish forever hate soul dream oh art rest heaven need kiss lust
     Topic 2:
-    	away run far stay inside journey dream fade just wash felt destruction escape falling walked
+     away run far stay inside journey dream fade just wash felt destruction escape falling walked
     Topic 3:
-    	don know wanna want just feel say care hate goes cause liar let look reason
-
-
+     don know wanna want just feel say care hate goes cause liar let look reason
 
 ```python
 print('========== LDA ==========')
@@ -293,14 +277,13 @@ topic_words = display_topics(lda, tfidf_feature_names, no_top_words)
 
     ========== LDA ==========
     Topic 0:
-    	distance don beautiful let today cold look guide read world way faith wish mind heart
+     distance don beautiful let today cold look guide read world way faith wish mind heart
     Topic 1:
-    	est tale feels talking drives wall wishmaster disciple bone mad searching free master apprentice sing
+     est tale feels talking drives wall wishmaster disciple bone mad searching free master apprentice sing
     Topic 2:
-    	love heart ll hearts time world fight let come night know shadows try eyes mind
+     love heart ll hearts time world fight let come night know shadows try eyes mind
     Topic 3:
-    	leaving ll healing endless sed died walk desire life nos ne moment die nostra like
-
+     leaving ll healing endless sed died walk desire life nos ne moment die nostra like
 
 From NMF, I can tell that:
 

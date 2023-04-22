@@ -10,15 +10,11 @@ tags:
 
 When you create a project in python, you should create `requirements.txt` to specify dependencies, so other people can have the same environment when using your project.
 
-
 However, if you don’t specify module versions in `requirements.txt`, you could end up with people using the wrong module version, where some APIs can be deprecated or have different behaviors than older versions.
-
 
 Another issue is that maybe you’re working on a few python projects, each uses different python versions (eg. projectA uses python3.6, projectB uses python3.9, etc).
 
-
 Enters `pyenv` and `pipenv` (I will discuss about `poetry` later), where you can easily switch python versions, and have different environment (with python version locking) for projects you’re working on.
-
 
 # Installing pyenv
 
@@ -46,7 +42,6 @@ pyenv virtualenv 3.8.0 my-data-project
 pyenv local my-data-project
 ```
 
-
 # Installing [pipenv](https://github.com/pypa/pipenv)
 
 Notes: make sure `pyenv` is installed, and remove `anaconda / miconda` & `python3` installed via official installer from your system. Then run:
@@ -57,7 +52,6 @@ $ pip install pipenv
 # run this command every time pip installs a .exe
 $ pyenv rehash
 ```
-
 
 ## pipenv workflow
 
@@ -81,16 +75,15 @@ pipenv run python main.py # is equivalent to `pipenv shell && python3 main.py`
 ## Windows only
 
 ```bash
-$ pyenv install 3.7.7 # see Pipfile for required python version
-$ pyenv local 3.7.7 # IMPORTANT. global / shell doesn't work with pipenv
-$ pyenv rehash
-$ pip install pipenv # done once per pyenv python version
-$ pyenv rehash
-$ pipenv --python 3.7
-$ pipenv install
-$ pipenv run python tokenization_sandbox.py
+pyenv install 3.7.7 # see Pipfile for required python version
+pyenv local 3.7.7 # IMPORTANT. global / shell doesn't work with pipenv
+pyenv rehash
+pip install pipenv # done once per pyenv python version
+pyenv rehash
+pipenv --python 3.7
+pipenv install
+pipenv run python tokenization_sandbox.py
 ```
-
 
 # Notes
 
