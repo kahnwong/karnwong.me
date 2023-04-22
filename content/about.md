@@ -10,7 +10,6 @@ ShowToc: false
 
 I started out as an IT support, then pick up DevOps through self-hosting and software engineering during school years. I have been involved in every step in machine learning project workflow from r&d to production. Used to moonlight as a sysadmin, data engineer, machine learning engineer, DevOps and site reliability engineer. Currently I am a head of platform engineering at [Baania](https://baaniathailand.com). If you are in Bangkok, you might see me at a local meetup 😎.
 
-
 ### Active Communities
 
 - [Data Engineering Discord](https://invite.gg/dataengineering) (English)
@@ -20,7 +19,7 @@ I started out as an IT support, then pick up DevOps through self-hosting and sof
 
 ### Misc
 
-- AWS: Community Builders '22
+- AWS: Community Builder
 - GCP: [Certified Google Cloud Professional Cloud Architect](https://www.credential.net/af628a29-bca4-4987-aba5-4bb1456dfe3a#gs.l9nmhc)
 - HashiCorp: [HashiCorp Ambassador 2023](https://www.credly.com/badges/850db8f0-746b-4ffb-bd5e-06d84f048f1b)
 
