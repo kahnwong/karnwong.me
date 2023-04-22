@@ -4,9 +4,7 @@
 
 ```bash
 # dev
-resume serve --theme even
-
-entr
+fd yaml | entr yarn build
 
 # build
 yarn build
