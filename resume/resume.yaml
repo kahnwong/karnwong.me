@@ -17,6 +17,7 @@ work:
     endDate:
     highlights:
       - Research and implement internal data platform v2, with CI/CD for integration and unit tests, dependencies and code changes
+      - Use Terraform with Infracost to asses infrastructure cost to prune unused/underutilized resources, saving 5200 USD / month
   - name: Baania
     position: Lead Data Engineer | Machine Learning Engineer | SRE
     website: https://www.baania.com
