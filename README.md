@@ -11,7 +11,7 @@ git submodule update --init --recursive
 ## Update theme
 
 ```bash
-git pull --recurse-submodules
+git submodule foreach git pull origin master
 ```
 
 ## Create a new post
