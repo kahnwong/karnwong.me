@@ -6,6 +6,10 @@ summary: "projects"
 ShowToc: false
 ---
 
+## Data Engineering
+
+- [Dataframe Frameworks Showdown](https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/) - Benchmark performance between duckdb, polars and spark. In addition to runtime, RAM usage is also provided.
+
 ## Data Science
 
 - [Impute Pipelines](https://www.karnwong.me/posts/2020/05/impute-pipelines/) - Use machine learning to fill in missing data. Utilize hyperparameter tuning to find the optimum parameters.
@@ -14,7 +18,7 @@ ShowToc: false
 
 ## Ops
 
-- [nix](https://github.com/kahnwong/nix) - A cross-platform setup script that works with both Linux and Mac.
+- [nix](https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/) - A cross-platform setup script that works with both Linux and Mac.
 
 ## Tools
 

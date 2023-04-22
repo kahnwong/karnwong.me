@@ -76,6 +76,19 @@ languages:
   - language: Thai
     fluency: Native speaker
 projects:
+  - name: Dataframe Frameworks Showdown
+    highlights:
+      - Benchmark performance between duckdb, polars and spark. In addition to runtime, RAM usage is also provided.
+    keywords:
+      - duckdb
+      - polars
+      - spark
+      - dataframe
+      - data engineering
+    startDate: 2023-04-05
+    endDate: 2023-04-10
+    type: data
+    url: https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/
   - name: music-lyrics-tagger
     highlights:
       - Add lyrics to flac and m4a files.
@@ -98,8 +111,8 @@ projects:
       - package manager
     startDate: 2022-11-30
     type: devops
-    url: https://github.com/kahnwong/nix
-  - name: " terraform-sops-ssm"
+    url: https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/
+  - name: terraform-sops-ssm
     highlights:
       - Create SSM secrets from SOPS-encrypted secrets.
       - Create github-ci+lambda roles and users with access to SSM.
