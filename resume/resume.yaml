@@ -1,0 +1,139 @@
+---
+basics:
+  name: Karn Wong
+  label: Head of platform engineering
+  email: karn@karnwong.me
+  phone: ""
+  website: https://www.karnwong.me
+  profiles:
+    - network: Github
+      username: kahnwong
+      url: https://github.com/kahnwong
+work:
+  - name: Baania
+    position: Head of platform engineering
+    website: https://www.baania.com
+    startDate: 2022-10-01
+    endDate:
+    highlights:
+      - Research and implement internal data platform v2, with CI/CD for integration and unit tests, dependencies and code changes
+  - name: Baania
+    position: Lead Data Engineer | Machine Learning Engineer | SRE
+    website: https://www.baania.com
+    startDate: 2022-01-10
+    endDate: 2022-09-30
+    highlights:
+      - Enable backend team to perform auto-deployment to ECS with Terraform and GitHub Actions
+      - Manage repo permissions / secrets / webhooks with Terraform
+      - Research BI solution to consolidate fragmented dashboard platforms into a single one
+      - Setup Grafana for centralized metrics and logs monitoring
+      - Introduce Sourcegraph to help with code search and refactoring
+      - Setup GitOps for Terraform to enable collaboration between different teams, in turn reducing configuration drift
+  - name: Baania
+    position: Senior Data Engineer
+    website: https://www.baania.com
+    startDate: 2021-01-29
+    endDate: 2022-01-10
+    highlights:
+      - Reduce development time for ETL pipelines from a week to 1 day via workflow redesign + codebase refactoring
+      - Mentor data engineers
+      - Consult other teams as a platform engineer
+      - Set up alerts & monitoring to automatically notify task failures (ChatOps)
+      - Create a script to automatically grant postgres access permission based on user groups, with option for special permissions per-user basis
+      - Optimize a large spark pipeline that fails often due to OOM with divide-and-conquer method for unlimited scaling
+      - Reduce runtime for PR code quality checks by 90% to shorten feedback loop cycle
+      - Set up secrets management using SOPS/Terraform/AWS SSM, for improved security and secrets rotation
+      - Launched Baania Engineering Blog, a platform to showcase how Baania does things behind the scenes
+      - Reduce employee onboarding time per employee by a few days via a setup script to setup necessary tools, applications and environment for development
+  - name: Baania
+    position: Data Engineer
+    website: https://www.baania.com
+    startDate: 2018-04-02
+    endDate: 2021-01-29
+    highlights:
+      - Create and maintain data gathering infrastructure for daily ingestion and processing to be stored in data lake (S3)
+      - Create and optimize machine learning models to achieve near-realtime performance
+      - Create and maintain ETL pipelines via task orchestrator to reduce data update frequency from once a month to daily
+      - Deploy and maintain ML via cloud services to reduce ML deployment time from a day to within minutes
+      - Mentor data scientists
+      - Automate infrastructure and governance using Terraform
+      - Package cron services to AWS ECS and invoke via AWS ECS Task to cut down cost from 50 USD / year to 0.1 USD / year
+education:
+  - institution: Rangsit University
+    area: Information and Communication Technology
+    studyType: Bachelor
+    startDate: "2015"
+    endDate: "2018"
+publications:
+  - name: Using Classification Technique for Customer Relationship Management based on Thai Social Media Data
+    publisher: ICCAE
+    releaseDate: 2019-02-01
+    website: https://doi.org/10.1145/3313991.3314010
+languages:
+  - language: English
+    fluency: Native speaker
+  - language: Thai
+    fluency: Native speaker
+projects:
+  - name: music-lyrics-tagger
+    highlights:
+      - Add lyrics to flac and m4a files.
+    keywords:
+      - id3tag
+      - ogg
+      - flac
+      - m4a
+    startDate: 2023-02-23
+    endDate: 2023-03-18
+    type: tools
+    url: https://github.com/kahnwong/music-lyrics-tagger
+  - name: nix
+    highlights:
+      - A cross-platform setup script that works with both Linux and Mac.
+    keywords:
+      - Nix
+      - Environment
+      - Dotfiles
+      - Package Manager
+    startDate: 2022-11-30
+    type: devops
+    url: https://github.com/kahnwong/nix
+  - name: " terraform-sops-ssm"
+    highlights:
+      - Create SSM secrets from SOPS-encrypted secrets.
+      - Create github-ci+lambda roles and users with access to SSM.
+    keywords:
+      - Terraform
+      - AWS
+      - GitHub
+      - Security
+    startDate: 2021-11-24
+    endDate: 2021-11-30
+    type: devops
+    url: https://github.com/kahnwong/terraform-sops-ssm
+  - name: self-hosted
+    url: https://github.com/kahnwong/self-hosted/
+    highlights:
+      - "Alternative / self-hosted version for popular subscription services: Netflix, Spotify, LastPass, Trello, Dropbox, NordVPN, etc."
+      - Managed via docker-compose and helm
+      - Use Caddy for reverse-proxy
+      - Use terraform to manage DNS via Cloudflare
+    keywords:
+      - Docker
+      - Kubernetes
+      - Helm
+      - Terraform
+    startDate: 2017-12-01
+    type: service
+  - name: Impute Pipelines
+    highlights:
+      - Use machine learning to fill in missing data
+      - Utilize hyperparameter tuning to find the optimum parameters
+    keywords:
+      - Machine Learning
+      - Data Science
+      - Hyperparameter Tuning
+    startDate: 2019-11-28
+    endDate: 2019-12-23
+    url: https://www.karnwong.me/posts/2020/05/impute-pipelines/
+    type: data

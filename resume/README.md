@@ -1,9 +1,13 @@
-# install
-npm install -g resume-cli
+# resume
 
+## Usage
 
-# export
-```
+```bash
+# dev
 resume serve --theme even
-resume export resume.html --theme onepage-updated
+
+entr
+
+# build
+yarn build
 ```

@@ -1,7 +1,12 @@
+# hugo
 public
-resources
-resume/node_modules
 .hugo_build.lock
-**/.ipynb_checkpoints
+
+# python
+**/.ipynb_checkpoints/
+
+# resume
+node_modules
+resume.json
 resume.html
 resume.pdf

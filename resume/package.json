@@ -11,5 +11,9 @@
     "jsonresume-theme-stackoverflowed": "^1.1.2",
     "jsonresume-theme-standard-resume": "^2.1.0",
     "resume-cli": "^3.0.8"
-  }
+  },
+   "scripts": {
+    "build": "yq -I2 resume.yaml -o=json > resume.json && resume export resume.html --theme stackoverflow-mats"
+  },
+  "license": "MIT"
 }

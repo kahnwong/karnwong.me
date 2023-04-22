@@ -24,12 +24,15 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
+          cache: 'yarn'
+      - uses: chrisdickinson/setup-yq@latest
       - name: build resume
         run: |
           cd resume
           yarn install
-          yarn resume export ../static/resume.html --theme stackoverflow-mats
+          yarn build
+          cp resume.html ../static/resume.html
 
       ########################
       # build hugo
