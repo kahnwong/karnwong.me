@@ -197,10 +197,11 @@ Updated 2023-02-20
 - [All You Need Is Kill](https://www.goodreads.com/book/show/6255949) - Hiroshi Sakurazaka
 - [Autonomous](https://www.goodreads.com/book/show/28209634-autonomous) - Annalee Newitz
 - [Iraq + 100: stories from a century after the invasion](https://www.goodreads.com/book/show/28592595-iraq-100) - Hassan Blasim
-- [Repo Men](https://www.goodreads.com/book/show/7153019) - Eric Garcia
-- [Unauthorized Bread](https://www.goodreads.com/book/show/41085118-unauthorized-bread) - Cory Doctorow
 - [Lock In](https://www.goodreads.com/series/135720-lock-in) - John Scalzi
+- [Repo Men](https://www.goodreads.com/book/show/7153019) - Eric Garcia
+- [The Dispatcher](https://www.goodreads.com/series/298915-the-dispatcher) - John Scalzi
 - [The Murderbot Diaries](https://www.goodreads.com/series/191900-the-murderbot-diaries) - Martha Wells
+- [Unauthorized Bread](https://www.goodreads.com/book/show/41085118-unauthorized-bread) - Cory Doctorow
 
 ### Thriller
 
