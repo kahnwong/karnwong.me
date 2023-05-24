@@ -125,6 +125,18 @@ projects:
     endDate: 2021-11-30
     type: devops
     url: https://github.com/kahnwong/terraform-sops-ssm
+  - name: Impute Pipelines
+    highlights:
+      - Use machine learning to fill in missing data
+      - Utilize hyperparameter tuning to find the optimum parameters
+    keywords:
+      - Machine Learning
+      - data science
+      - hyperparameter tuning
+    startDate: 2019-11-28
+    endDate: 2019-12-23
+    url: https://www.karnwong.me/posts/2020/05/impute-pipelines/
+    type: data
   - name: self-hosted
     url: https://github.com/kahnwong/self-hosted/
     highlights:
@@ -139,15 +151,3 @@ projects:
       - terraform
     startDate: 2017-12-01
     type: service
-  - name: Impute Pipelines
-    highlights:
-      - Use machine learning to fill in missing data
-      - Utilize hyperparameter tuning to find the optimum parameters
-    keywords:
-      - Machine Learning
-      - data science
-      - hyperparameter tuning
-    startDate: 2019-11-28
-    endDate: 2019-12-23
-    url: https://www.karnwong.me/posts/2020/05/impute-pipelines/
-    type: data
