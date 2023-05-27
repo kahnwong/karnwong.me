@@ -8,6 +8,8 @@ tags:
   - data analysis
 ---
 
+## 2023 version: <https://github.com/kahnwong/lyrics-analysis>
+
 I listen to a lot of music, mostly symphonic heavy metal. What's interesting is that in this genre, each album often has different themes, also each band focus on different topics in terms of lyrics. For instance, Nightwish focuses on nature, and their Imaginaerum album focuses on evolution. So I thought it would be interesting if I apply various text analysis methods to the lyrics, which resulted in this article. Github link [here](https://github.com/kahnwong/lyrics_visualization)!
 
 ## Techniques used
