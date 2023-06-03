@@ -19,6 +19,8 @@ ShowToc: false
 ## Ops
 
 - [nix](https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/) - A cross-platform setup script that works with both Linux and Mac.
+- [self-hosted](https://github.com/kahnwong/self-hosted) - Self-hosting open-source alternatives for popular services. Managed via docker-compose.
+- [terraform-sops-ssm](https://github.com/kahnwong/terraform-sops-ssm) - Create SSM secrets from SOPS-encrypted secrets, with IAM roles & users creation for SSM access.
 
 ## Tools
 
@@ -26,8 +28,3 @@ ShowToc: false
 - [subsonic-github-readme](https://github.com/devbaygroup/subsonic-github-readme) - Now playing and random tracks widget via subsonic API. Golang port [here](https://github.com/kahnwong/subsonic-github-readme-golang).
 - [todotxt-to-calendar](https://github.com/devbaygroup/todotxt-to-calendar) - Convert todo.txt entries to calendar all-day event.
 - [water-cut-notify](https://github.com/devbaygroup/water-cut-notify) - Send water cut alert as LINE notifications.
-
-## Misc
-
-- [self-hosted](https://github.com/kahnwong/self-hosted) - Self-hosting open-source alternatives for popular services. Managed via docker-compose.
-- [terraform-sops-ssm](https://github.com/kahnwong/terraform-sops-ssm) - Create SSM secrets from SOPS-encrypted secrets, with IAM roles & users creation for SSM access.
