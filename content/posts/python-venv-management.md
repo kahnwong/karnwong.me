@@ -16,11 +16,11 @@ Another issue is that maybe you’re working on a few python projects, each uses
 
 Enters `pyenv` and `pipenv` (I will discuss about `poetry` later), where you can easily switch python versions, and have different environment (with python version locking) for projects you’re working on.
 
-# Installing pyenv
+## Installing pyenv
 
 Follow instructions [here](https://github.com/pyenv/pyenv). For windows, use [this](https://github.com/pyenv-win/pyenv-win).
 
-## Useful commands
+### Useful commands
 
 ```bash
 # list available python versions
@@ -42,7 +42,7 @@ pyenv virtualenv 3.8.0 my-data-project
 pyenv local my-data-project
 ```
 
-# Installing [pipenv](https://github.com/pypa/pipenv)
+## Installing [pipenv](https://github.com/pypa/pipenv)
 
 Notes: make sure `pyenv` is installed, and remove `anaconda / miconda` & `python3` installed via official installer from your system. Then run:
 
@@ -53,7 +53,7 @@ $ pip install pipenv
 $ pyenv rehash
 ```
 
-## pipenv workflow
+### pipenv workflow
 
 ```bash
 pipenv --python 3.7
@@ -85,11 +85,11 @@ pipenv install
 pipenv run python tokenization_sandbox.py
 ```
 
-# Notes
+## Notes
 
 * On linux/mac, do not use system python. OS updates would mean python version upgrade, in turn making all your installed modules gone. Use python installed via pyenv instead.
 * On windows, start fresh with pyenv.
-* Do not use anaconda distribution. It does too much background magic that can make things harder to manage environment property. In addition, venv definition from anaconda is often doesn’t work cross-platform (eg. venv def from windows wouldn’t work on mac due to different wheel binary versions).
+* Do not use anaconda distribution. It does too much background magic that can make things harder to manage environment properly. In addition, venv definition from anaconda is often doesn’t work cross-platform (eg. venv def from windows wouldn’t work on mac due to different wheel binary versions).
 * Always create venv via pipenv per each project. Although you can have a playground venv via pyenv, so you can shell into it and do a quick analysis / scripting on an adhoc basis.
 * I heard good things about [poetry](https://github.com/python-poetry/poetry) but it doesn’t integrate with `pyenv` natively. It would work if you use it to publish python modules, since it simplifies a lot of processes.
   * poetry also picks up the wrong python version from pyenv. And if you sync python version via pyenv, it has to be the same python version across all OSes, including minor version. pipenv doesn’t have this restriction, and it also picks up the correct python version from pyenv by default (via `pipenv --python 3.8`).
