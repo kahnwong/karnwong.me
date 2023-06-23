@@ -89,18 +89,6 @@ projects:
     endDate: 2023-04-10
     type: data
     url: https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/
-  - name: music-lyrics-tagger
-    highlights:
-      - Add lyrics to flac and m4a files.
-    keywords:
-      - id3tag
-      - ogg
-      - flac
-      - m4a
-    startDate: 2023-02-23
-    endDate: 2023-03-18
-    type: tools
-    url: https://github.com/kahnwong/music-lyrics-tagger
   - name: nix
     highlights:
       - A cross-platform setup script that works with both Linux and Mac.
