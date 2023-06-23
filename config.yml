@@ -77,7 +77,7 @@ params:
   profileMode:
     enabled: true
     title: Karn Wong
-    subtitle: Head of platform engineering | HashiCorp Ambassador | AWS Community Builder
+    subtitle: Head of platform engineering | HashiCorp Ambassador | AWS Community Builder | GCP Certified
 
   socialIcons:
     - name: github
