@@ -6,6 +6,13 @@ summary: "projects"
 ShowToc: false
 ---
 
+## Ops
+
+- [nix](https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/) - A cross-platform setup script that works with both Linux and Mac.
+- [self-hosted](https://github.com/kahnwong/self-hosted) - Self-hosting open-source alternatives for popular services. Managed via docker-compose.
+- [terraform-sops-ssm](https://github.com/kahnwong/terraform-sops-ssm) - Create SSM secrets from SOPS-encrypted secrets, with IAM roles & users creation for SSM access.
+- [Vercel - Multi Branch Deployment](https://github.com/kahnwong/vercel-multi-branch-deployment) - Use GitHub Actions to deploy a frontend project from different branches (dev, uat, master), each with their own preview environment.
+
 ## Data Engineering
 
 - [Dataframe Frameworks Showdown](https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/) - Benchmark performance between duckdb, polars and spark. In addition to runtime, RAM usage is also provided.
@@ -15,12 +22,6 @@ ShowToc: false
 - [Impute Pipelines](https://www.karnwong.me/posts/2020/05/impute-pipelines/) - Use machine learning to fill in missing data. Utilize hyperparameter tuning to find the optimum parameters.
 - [Visualizing Map Region Prefix/Suffix](https://www.karnwong.me/posts/2020/09/visualizing-map-region-prefix-suffix/) - Utilize NLP to group region name prefix/suffix.
 - [Word-Based Analysis With Song Lyrics](https://www.karnwong.me/posts/2020/04/word-based-analysis-with-song-lyrics/) - Visualize lyrics trend using NLP and use topic modeling to find common words per specified clusters.
-
-## Ops
-
-- [nix](https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/) - A cross-platform setup script that works with both Linux and Mac.
-- [self-hosted](https://github.com/kahnwong/self-hosted) - Self-hosting open-source alternatives for popular services. Managed via docker-compose.
-- [terraform-sops-ssm](https://github.com/kahnwong/terraform-sops-ssm) - Create SSM secrets from SOPS-encrypted secrets, with IAM roles & users creation for SSM access.
 
 ## Tools
 

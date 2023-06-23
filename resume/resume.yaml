@@ -76,55 +76,7 @@ languages:
   - language: Thai
     fluency: Native speaker
 projects:
-  - name: Dataframe Frameworks Showdown
-    highlights:
-      - Benchmark performance between duckdb, polars and spark. In addition to runtime, RAM usage is also provided.
-    keywords:
-      - duckdb
-      - polars
-      - spark
-      - dataframe
-      - data engineering
-    startDate: 2023-04-05
-    endDate: 2023-04-10
-    type: data
-    url: https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/
-  - name: nix
-    highlights:
-      - A cross-platform setup script that works with both Linux and Mac.
-    keywords:
-      - Nix
-      - environment
-      - dotfiles
-      - package manager
-    startDate: 2022-11-30
-    type: devops
-    url: https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/
-  - name: terraform-sops-ssm
-    highlights:
-      - Create SSM secrets from SOPS-encrypted secrets.
-      - Create github-ci+lambda roles and users with access to SSM.
-    keywords:
-      - terraform
-      - aws
-      - github
-      - security
-    startDate: 2021-11-24
-    endDate: 2021-11-30
-    type: devops
-    url: https://github.com/kahnwong/terraform-sops-ssm
-  - name: Impute Pipelines
-    highlights:
-      - Use machine learning to fill in missing data
-      - Utilize hyperparameter tuning to find the optimum parameters
-    keywords:
-      - Machine Learning
-      - data science
-      - hyperparameter tuning
-    startDate: 2019-11-28
-    endDate: 2019-12-23
-    url: https://www.karnwong.me/posts/2020/05/impute-pipelines/
-    type: data
+  # ---------------- devops ----------------
   - name: self-hosted
     url: https://github.com/kahnwong/self-hosted/
     highlights:
@@ -138,4 +90,65 @@ projects:
       - helm
       - terraform
     startDate: 2017-12-01
-    type: service
+    type: devops
+  - name: nix
+    highlights:
+      - A cross-platform setup script that works with both Linux and Mac.
+    keywords:
+      - Nix
+      - environment
+      - dotfiles
+      - package manager
+    startDate: 2022-11-30
+    type: devops
+    url: https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/
+  - name: Vercel - Multi Branch Deployment
+    highlights:
+      - Use GitHub Actions to deploy a frontend project from different branches (dev, uat, master), each with their own preview environment.
+    keywords:
+      - terraform
+      - github actions
+      - vercel
+    startDate: 2023-06-17
+    endDate: 2023-06-17
+    type: devops
+    url: https://github.com/kahnwong/vercel-multi-branch-deployment
+  - name: terraform-sops-ssm
+    highlights:
+      - Create SSM secrets from SOPS-encrypted secrets.
+      - Create github-ci+lambda roles and users with access to SSM.
+    keywords:
+      - terraform
+      - aws
+      - github
+      - security
+    startDate: 2021-11-24
+    endDate: 2021-11-30
+    type: devops
+    url: https://github.com/kahnwong/terraform-sops-ssm
+  # ---------------- data ----------------
+  - name: Dataframe Frameworks Showdown
+    highlights:
+      - Benchmark performance between duckdb, polars and spark. In addition to runtime, RAM usage is also provided.
+    keywords:
+      - duckdb
+      - polars
+      - spark
+      - dataframe
+      - data engineering
+    startDate: 2023-04-05
+    endDate: 2023-04-10
+    type: data
+    url: https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/
+  - name: Impute Pipelines
+    highlights:
+      - Use machine learning to fill in missing data
+      - Utilize hyperparameter tuning to find the optimum parameters
+    keywords:
+      - Machine Learning
+      - data science
+      - hyperparameter tuning
+    startDate: 2019-11-28
+    endDate: 2019-12-23
+    url: https://www.karnwong.me/posts/2020/05/impute-pipelines/
+    type: data
