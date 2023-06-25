@@ -8,11 +8,19 @@ ShowToc: false
 
 ![me-at-grill-the-data](/about/me-at-grill-the-data.jpg)
 
-I currently hold the position of Head of Platform Engineering at Baania. My expertise lies in the realms of data engineering, machine learning, and devops, where I work diligently to optimize processes and drive impactful projects. At Baania, I've had the pleasure of automating deployments, managing secrets, and improving the performance of complex pipelines.
+I'm currently the Head of Platform Engineering at Baania. Our mission is to be the leader in Thailand's property data.
+
+Previously I was a Data Engineer, Machine Learning Engineer and Site Reliability Engineer. Before that I was doing IT Support and System Administration.
+
+My expertise lies in the realms of data engineering, machine learning, and devops, where I optimize processes and drive impactful projects.
 
 Apart from my professional pursuits, I actively contribute to tech & data communities and open-source projects.
 
-If you're interested in platform engineering or would like to connect for potential collaborations, I'm excited to engage with you. Let's discuss and uncover opportunities for innovation together. Cheers!
+When I have lessons to share I enjoy speaking at conferences.
+
+Surprisingly, I do enjoy cooking a lot, but not as much as tinkering with my homelab.
+
+I’m probably listening to symphonic heavy metal.
 
 ### Active Communities
 
