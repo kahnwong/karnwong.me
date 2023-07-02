@@ -67,15 +67,15 @@ params:
   ShowCodeCopyButtons: true
   # ShowToc: true
 
-  # homeInfoParams:
-  #   Title: Karn Wong
-  #   Content: Data Engineer // DevOps // SRE // Platform Engineer // Tech Lead
+  homeInfoParams:
+    Title: Karn Wong
+    Content: Head of platform engineering | HashiCorp Ambassador | AWS CB | GCP Certified
   TocSide: left # or 'right'
 
-  profileMode:
-    enabled: true
-    title: Karn Wong
-    subtitle: Head of platform engineering | HashiCorp Ambassador | AWS Community Builder | GCP Certified
+  # profileMode:
+  #   enabled: true
+  #   title: Karn Wong
+  #   subtitle: Head of platform engineering | HashiCorp Ambassador | AWS Community Builder | GCP Certified
 
   socialIcons:
     - name: github
