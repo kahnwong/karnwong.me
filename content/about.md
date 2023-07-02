@@ -6,7 +6,7 @@ summary: "about"
 ShowToc: false
 ---
 
-![me-at-grill-the-data](/about/me-at-grill-the-data.jpg)
+<!--- ![me-at-grill-the-data](/about/me-at-grill-the-data.jpg) -->
 
 I'm currently the Head of Platform Engineering at Baania. Our mission is to be the leader in Thailand's property data.
 
