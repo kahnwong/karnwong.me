@@ -12,6 +12,8 @@ tags:
   - finops
 ---
 
+Correction 2023-07-02: fix homelab specs and corresponding AWS EC2 instance class (it's actually 32GB RAM, not 64GB)
+
 Congratulations, you managed to successfully deployed a few services on kubernetes! But this is not the end 👀. Unfortunately money doesn't grow on trees, and if you can't justify your infra expenses, finance department won't be happy.
 
 If you're using Terraform, you can use [Infracost](https://www.infracost.io/) to create a cost report. Pretty nifty. But what about kubernetes? Given cost reporting is a basic feature, kubernetes is no exception.
@@ -32,6 +34,6 @@ So that's `$35.57 / 6 days`, which would be around `$5.9 / day`. Per year this w
 
 My current home server setup is around `$880`, so that's around `3 years` before it would break even 🤣.
 
-But what if we're talking about raw compute price? My server is `8 cores, 64GB RAM, 1TB SSD`, cheapest compute on AWS with similar specs per year is `i4i.2xlarge`, which is `$600 / year`.
+But what if we're talking about raw compute price? My server is `8 cores, 32GB RAM, 1TB SSD`, cheapest compute on AWS with similar specs per year is `t3a.2xlarge`, which is `$3307 / year`.
 
 Pricing is hard...
