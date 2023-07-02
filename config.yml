@@ -15,7 +15,7 @@ googleAnalytics: G-8CYMFC0KZ9
 
 minify:
   disableXML: true
-    # minifyOutput: true
+  # minifyOutput: true
 
 languages:
   en:
@@ -52,26 +52,24 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: Homepage and blog by Karn Wong
   author: Karn Wong
-    # author: ["Me", "You"] # multiple authors
 
   assets:
     disableFingerprinting: true
 
   defaultTheme: auto
-    # disableThemeToggle: true
+  # disableThemeToggle: true
   ShowShareButtons: true
   ShowReadingTime: true
-    # disableSpecial1stPost: true
+  # disableSpecial1stPost: true
   displayFullLangName: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
-  ShowToc: true
-    # comments: false
+  # ShowToc: true
 
-    # homeInfoParams:
-    #     Title: Karn Wong
-    #     Content: Data Engineer // DevOps // SRE // Platform Engineer // Tech Lead
+  # homeInfoParams:
+  #   Title: Karn Wong
+  #   Content: Data Engineer // DevOps // SRE // Platform Engineer // Tech Lead
   TocSide: left # or 'right'
 
   profileMode:
@@ -92,27 +90,6 @@ params:
       url: index.xml
     - name: webring
       url: https://webring.wonderful.software#karnwong.me
-
-        # label:
-        #     text: "Home"
-        #     icon: icon.png
-        #     iconHeight: 35
-
-  # assets:
-  # favicon: "<link / abs url>"
-  # favicon16x16: "<link / abs url>"
-  # favicon32x32: "<link / abs url>"
-  # apple_touch_icon: "<link / abs url>"
-  # safari_pinned_tab: "<link / abs url>"
-
-  # fuseOpts:
-  #     isCaseSensitive: false
-  #     shouldSort: true
-  #     location: 0
-  #     distance: 1000
-  #     threshold: 0.4
-  #     minMatchCharLength: 0
-  #     keys: ["title", "permalink", "summary", "content"]
 
 taxonomies:
   category: categories
