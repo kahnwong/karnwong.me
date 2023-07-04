@@ -8,7 +8,7 @@ ShowToc: false
 
 <!--- ![me-at-grill-the-data](/about/me-at-grill-the-data.jpg) -->
 
-I'm currently the Head of Platform Engineering at Baania. Our mission is to be the leader in Thailand's property data.
+I'm currently the Head of Platform Engineering at Baania. Our mission is to be the leader in Thailand's property data. The best part about this role is I get to work with [this dude](https://faithstory.info/)!
 
 Previously I was a Data Engineer, Machine Learning Engineer and Site Reliability Engineer. Before that I was doing IT Support and System Administration.
 
