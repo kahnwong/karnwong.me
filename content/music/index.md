@@ -3,9 +3,10 @@ title: "Music"
 layout: "music"
 url: "/music"
 summary: "music"
+ShowToc: true
 ---
 
-Updated 2021-10-14
+Updated 2023-07-05
 
 Partial list.
 
@@ -24,6 +25,11 @@ Partial list.
 **Percival - Slava! Pieśni Słowian Zachodnich (2018)**
 ![](images/2021-10-14-15-06-02.png)
 
+## Jazz
+
+**Zela Margossian Quintet - Transition (2018)**
+![](images/2023-07-05-19-27-54.png)
+
 ## Metal
 
 **In Legend - Ballads 'n' Bullets (2011)**
@@ -38,6 +44,11 @@ Partial list.
 
 **Cydemind - Erosion (2017)**
 ![](images/2021-10-14-14-27-15.png)
+
+---
+
+**Opus Arise - The Network (2022)**
+![](images/2023-07-05-19-35-43.png)
 
 ### Folk Metal
 
@@ -76,8 +87,23 @@ Partial list.
 
 ---
 
+**Serenity - Memoria - Live (2022)**
+![](images/2023-07-05-19-29-15.png)
+
+---
+
+**Temperance - Diamanti (2021)**
+![](images/2023-07-05-19-38-45.png)
+
+---
+
 **Visions of Atlantis - Old Routes - New Waters - EP (2016)**
 ![](images/2021-10-14-15-19-51.png)
+
+---
+
+**Warkings - Revenge (2020)**
+![](images/2023-07-05-19-37-54.png)
 
 ### Symphonic Metal
 
@@ -91,6 +117,11 @@ Partial list.
 
 ## New Age
 
+**ERA - The Live Experience (2022)**
+![](images/2023-07-05-19-36-58.png)
+
+---
+
 **Gregorian - The Dark Side of the Chant (2010)**
 ![](images/2021-10-14-15-03-51.png)
 
@@ -103,6 +134,16 @@ Partial list.
 
 **Anneke van Giersbergen - Drive (2013)**
 ![](images/2021-10-14-15-07-23.png)
+
+---
+
+**Cœur de pirate - Rose (2015)**
+![](images/2023-07-05-19-33-55.png)
+
+---
+
+**Evelyne Brochu - Objets perdus (2019)**
+![](images/2023-07-05-19-34-58.png)
 
 ---
 
@@ -157,7 +198,7 @@ Partial list.
 ---
 
 **Nologo - Gravity (2008)**
-![](images/2021-10-14-14-25-58.png)
+![](images/2021-10-14-14-25-58.jpg)
 
 ---
 
@@ -183,3 +224,40 @@ Partial list.
 
 **Globus - Break From This World (2011)**
 ![](images/2021-10-14-15-19-25.png)
+
+## Soundtrack
+
+**Alexandre Desplat - Argo (2012)**
+![](images/2023-07-05-19-20-55.png)
+
+---
+
+**Darren  Korb - Transistor (2014)**
+![](images/2023-07-05-19-22-20.png)
+
+---
+
+**Jeremy Soule - The Elder Scrolls V: Skyrim (2011)**
+![](images/2023-07-05-19-23-17.png)
+
+---
+
+**Jesper Kyd - Assassin's Creed Brotherhood (2010)**
+
+![](images/2023-07-05-19-23-52.png)
+
+---
+
+**Kaveh Cohen & Michael Nielsen - Tom Clancy's Splinter Cell: Conviction (2010)**
+
+![](images/2023-07-05-19-24-36.png)
+
+---
+
+**Michael Giacchino - Fringe: Season 1 (2010)**
+![](images/2023-07-05-19-25-34.png)
+
+---
+
+**Ramin Djawadi - Person of Interest (2012)**
+![](images/2023-07-05-19-26-32.png)
