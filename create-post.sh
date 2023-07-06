@@ -12,7 +12,7 @@ slug=$(echo "$title" | awk '{print tolower($0)}')
 slug=$(echo "$slug" | tr " " - | tr ":" -)
 
 date=$(date "+%Y-%m-%dT%H:%M:%S%Z:00")
-date_str=$(date "+%Y-%m-%d")
+# date_str=$(date "+%Y-%m-%d")
 
 if [[ -n "$contains_image" ]]; then # create a post with images
 	mkdir -p "content/posts/$slug"
