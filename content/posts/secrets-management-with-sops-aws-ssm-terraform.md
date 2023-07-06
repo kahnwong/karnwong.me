@@ -9,6 +9,7 @@ tags:
   - aws
   - github
   - terraform
+  - recommended
 ---
 
 At my organization we use sops to check in encrypted secrets into git repos. This solves plaintext credentials in version control. However, say, you have 5 repos using the same database credentials, rotating secrets means you have to go into each repo and update the SOPS credentials manually.

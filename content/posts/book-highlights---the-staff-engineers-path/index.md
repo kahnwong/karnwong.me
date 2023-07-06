@@ -7,6 +7,7 @@ images:
 tags:
   - book highlights
   - leadership
+  - recommended
 ---
 
 ## Opportunity cost

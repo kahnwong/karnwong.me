@@ -9,6 +9,7 @@ tags:
   - devx
   - aws
   - docker
+  - recommended
 ---
 
 Platform engineering is all the rage these days. Often, you'll often hear this term with the keyword `DevX`. How are they related?

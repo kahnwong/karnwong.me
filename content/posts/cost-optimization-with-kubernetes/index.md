@@ -10,6 +10,7 @@ tags:
   - prometheus
   - opencost
   - finops
+  - recommended
 ---
 
 Correction 2023-07-02: fix homelab specs and corresponding AWS EC2 instance class (it's actually 32GB RAM, not 64GB)

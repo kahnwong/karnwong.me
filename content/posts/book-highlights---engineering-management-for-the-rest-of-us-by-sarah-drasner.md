@@ -7,6 +7,7 @@ images:
 tags:
   - book highlights
   - leadership
+  - recommended
 ---
 
 Organizational health lies in being able to work together.

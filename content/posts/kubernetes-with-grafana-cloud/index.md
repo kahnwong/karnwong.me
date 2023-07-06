@@ -9,6 +9,7 @@ tags:
   - sre
   - kubernetes
   - grafana
+  - recommended
 ---
 
 Kubernetes is awesome, I think this is obvious if you have more than a handful of services to manage. If you use cloud, either VM or container-based runtime, it would provide you a dashboard to see the metrics. But what about kubernetes? Since you would have multiple services inside a single cluster, in which it's backed by VMs, at best you would only see into your VMs' metrics, but doesn't provide separate metrics per each service.

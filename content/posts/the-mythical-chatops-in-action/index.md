@@ -9,6 +9,7 @@ tags:
   - devops
   - aws
   - ecs
+  - recommended
 ---
 
 Imagine having multiple services running, each has its own logs. Most people don't read them, and they shouldn't, because services emit a lot of logs! But we need them, because it's the only way to diagnose and troubleshoot system errors. But you might say "my service is not a system! It's only doing tiny stuff!" Gotta break it to you, your small part is a piece in a large system networks stitched together! So your seemingly-tiny service is also important!

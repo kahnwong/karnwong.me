@@ -6,6 +6,7 @@ ShowToc: true
 images:
 tags:
   - data science
+  - recommended
 ---
 
 Imagine having a dataset that you need to use for training a prediction model, but some of the features are missing. The good news is you don't need to throw some data away, just have to impute them. Below are steps you can take in order to create an imputation pipeline. Github link [here!](https://github.com/kahnwong/impute-pipelines)

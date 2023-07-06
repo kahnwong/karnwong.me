@@ -6,6 +6,7 @@ ShowToc: false
 images:
 tags:
   - data engineering
+  - recommended
 ---
 
 I think everyone who has worked with data, in any role or function, used pandas 🐼 at certain point. I first used pandas in 2017, so it's 6 years already. Things have come a long way, and so is data size I'm working with!

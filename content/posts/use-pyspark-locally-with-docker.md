@@ -9,6 +9,7 @@ tags:
   - data science
   - data engineering
   - docker
+  - recommended
 ---
 
 For data that doesn't fit into memory, spark is often a recommended solution, since it can utilize map-reduce to work with data in a distributed manner. However, setting up local spark development from scratch involves multiple steps, and definitely not for a faint of heart. Thankfully using docker means you can skip a lot of steps 😃

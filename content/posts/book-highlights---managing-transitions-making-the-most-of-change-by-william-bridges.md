@@ -7,6 +7,7 @@ images:
 tags:
   - leadership
   - book highlights
+  - recommended
 ---
 
 It isn’t the changes themselves that the people in these cases resist. It’s the losses and endings that they have experienced and the transition that they are resisting.

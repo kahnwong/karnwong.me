@@ -6,6 +6,7 @@ ShowToc: false
 images:
 tags:
   - devops
+  - recommended
 ---
 
 For many years, installing a package on linux means either:

@@ -8,6 +8,7 @@ tags:
   - devops
   - kubernetes
   - sre
+  - recommended
 ---
 
 Successfully deploying services are not the end, maintenance is coming to town! When you want to see how your system works, usually people rely on SaaS like Datadog or New Relic to do the heavy lifting. Also a lot of $$$ is required.
