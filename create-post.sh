@@ -9,7 +9,7 @@ while getopts n:t:i: flag; do
 done
 
 slug=$(echo "$title" | awk '{print tolower($0)}')
-slug=$(echo "$slug" | tr " " -)
+slug=$(echo "$slug" | tr " " - | tr ":" -)
 
 date=$(date "+%Y-%m-%dT%H:%M:%S%Z:00")
 date_str=$(date "+%Y-%m-%d")
@@ -18,6 +18,8 @@ if [[ -n "$contains_image" ]]; then # create a post with images
 	mkdir -p "content/posts/$slug"
 	mkdir -p "content/posts/$slug/images"
 
+	path="content/posts/$slug/index.md"
+
 	echo "---
 title: "$title"
 date: "$date"
@@ -26,8 +28,10 @@ ShowToc: false
 images:
 tags:
   - "$tag"
----" >"content/posts/$slug/index.md"
+---" >"$path"
+
 else
+	path="content/posts/$slug.md"
 	echo "---
 title: "$title"
 date: "$date"
@@ -36,5 +40,7 @@ ShowToc: false
 images:
 tags:
   - "$tag"
----" >"content/posts/$slug.md"
+---" >"$path"
 fi
+
+echo "Created $path"
