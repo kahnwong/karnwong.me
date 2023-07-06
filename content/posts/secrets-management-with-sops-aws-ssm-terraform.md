@@ -1,5 +1,5 @@
 ---
-title: Secrets management with SOPS, AWS SSM and Terraform
+title: Secrets management with SOPS, AWS Secrets Manager and Terraform
 date: 2021-11-30T20:11:12+07:00
 draft: false
 ShowToc: true
@@ -12,14 +12,16 @@ tags:
   - recommended
 ---
 
+Correction 2023-07-06: I only recently realized SSM and Secrets Manager are not the same.
+
 At my organization we use sops to check in encrypted secrets into git repos. This solves plaintext credentials in version control. However, say, you have 5 repos using the same database credentials, rotating secrets means you have to go into each repo and update the SOPS credentials manually.
 
 Also worth nothing that, for GitHub actions, authenticating AWS means you have to add repo secrets. This means for all the repos you have CI enabled, you have to populate the repo secrets with AWS credentials. When time comes for rotating the creds, you'll encounter the same situation as above.
 
-I did some research and consensus for AWS / Terraform setup is to: encrypt secrets via SOPS, and use Terraform to create AWS SSM secret entries. That way, you have a trail for credentials. This setup means:
+I did some research and consensus for AWS / Terraform setup is to: encrypt secrets via SOPS, and use Terraform to create AWS secret entries. That way, you have a trail for credentials. This setup means:
 
 1. You don't have to populate repos with AWS creds, instead supplying an ARN role instead.
-2. You don't have to change credentials in projects, since they all get the secrets from AWS SSM.
+2. You don't have to change credentials in projects, since they all get the secrets from AWS Secrets Manager.
 
 ## Implementation
 
@@ -63,7 +65,7 @@ resource "aws_kms_alias" "sops" {
 }
 ```
 
-### 3. Create SSM secrets
+### 3. Create secrets
 
 Create a folder named `secrets`, inside it create JSON files and encrypt each with sops.
 
@@ -133,7 +135,7 @@ resource "aws_iam_access_key" "playground-prod-dev" {
 }
 ```
 
-#### Grant IAM user access to SSM
+#### Grant IAM user access to Secrets
 
 ```hcl
 resource "aws_iam_user_policy_attachment" "playground-prod-dev" {
