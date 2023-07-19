@@ -81,6 +81,7 @@ Updated 2023-05-07
 
 ### Management
 
+- [Build: An Unorthodox Guide to Making Things Worth Making](https://www.goodreads.com/book/show/59696349-build) - Tony Fadell
 - [HBR's 10 Must Reads on Managing Yourself](https://www.goodreads.com/book/show/8308501-hbr-s-10-must-reads-on-managing-yourself) - Harvard Business Review
 - [Powerful: Building a Culture of Freedom and Responsibility](https://www.goodreads.com/book/show/36417234-powerful) - Patty McCord
 - [The Five Dysfunctions of a Team: A Leadership Fable](https://www.goodreads.com/book/show/21343.The_Five_Dysfunctions_of_a_Team) - Patrick Lencioni
