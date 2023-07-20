@@ -32,7 +32,7 @@ I’m probably listening to symphonic heavy metal.
 ### Misc
 
 - **HashiCorp**: [HashiCorp Ambassador 2023](https://www.credly.com/badges/850db8f0-746b-4ffb-bd5e-06d84f048f1b). [Public directory](https://www.hashicorp.com/ambassadors/directory?region=Asia+Pacific&q=karn+wong).
-- **GCP**: [Certified Google Cloud Professional Cloud Architect](https://www.credential.net/af628a29-bca4-4987-aba5-4bb1456dfe3a#gs.l9nmhc)
+- **GCP**: [Certified Google Cloud Professional Cloud Architect](https://www.credential.net/af628a29-bca4-4987-aba5-4bb1456dfe3a#gs.l9nmhc). [Public directory](https://googlecloudcertified.credential.net/profile/3796f4a796bbbba459f63ef99fad2b7638b557c8?name=karn).
 - **AWS**: Community Builder. [Public directory](https://aws.amazon.com/developer/community/community-builders/community-builders-directory/?cb-cards.sort-by=item.additionalFields.cbName&cb-cards.sort-order=asc&awsf.builder-category=*all&awsf.location=*all&awsf.year=*all&cb-cards.q=karn%2Bwong&cb-cards.q_operator=AND).
 
 ---
