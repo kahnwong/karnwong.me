@@ -26,11 +26,11 @@ languages:
         - name: About
           url: about/
           weight: 1
-        - name: Posts
-          url: posts
-          weight: 2
         - name: Recommended Posts
           url: tags/recommended/
+          weight: 2
+        - name: Archives
+          url: archives
           weight: 3
         - name: Projects
           url: projects/
