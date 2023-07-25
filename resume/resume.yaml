@@ -20,6 +20,9 @@ work:
       - Use Terraform with Infracost to asses infrastructure cost to prune unused/underutilized resources, saving more than 100 USD / month (FinOps)
       - Design and implement end-to-end cloud-native application deployment (Terraform for infra/secrets, Helm for application deployment, GitHub Actions
         for CI/CD, Kubernetes for container orchestration)
+      - "Lead a major core product refactoring across ops, engineering and data (data engineering, data science and machine learning engineering). Affected
+        areas: data pipelines, model training pipelines, real-time inference endpoints, database performance optimization, deployment pipelines, local development
+        workflow"
   - name: Baania
     position: Lead Data Engineer | Machine Learning Engineer | SRE
     website: https://www.baania.com
