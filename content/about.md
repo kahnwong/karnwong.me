@@ -22,6 +22,8 @@ Surprisingly, I do enjoy cooking a lot, but not as much as tinkering with my hom
 
 I’m probably listening to symphonic heavy metal.
 
+And unsurprisingly, our tech team recognized me as DevSecMLFinDataOps.
+
 ### Active Communities
 
 - [Data Engineering Discord](https://invite.gg/dataengineering) (English)
