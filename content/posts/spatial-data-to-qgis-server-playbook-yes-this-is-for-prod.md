@@ -16,12 +16,12 @@ Assuming we're starting with raw spatial data as hardfiles, and you want to use 
 
 ## Playbook
 
-1. Import data to QGIS desktop
-2. `Fix geometries` > save to Postgres
-3. `Collect geometries` > save to Postgres (this is for some cases where the raw data contain both `Polygon` and `MultiPolygon` in the same file, Postgres backend doesn't allow mixed geometry type)
-4. `DB Manager` > `Import Layer/File`, and set desired `CRS` + spatial index here
-5. Import uploaded layers into current QGIS project
-6. Import geoserver styles (in SLD format) in QGIS via python console, then attach to layers
+1. Import data to QGIS desktop.
+2. `Fix geometries` > save to Postgres.
+3. `Collect geometries` > save to Postgres. (This is for some cases where the raw data contain both `Polygon` and `MultiPolygon` in the same file, Postgres backend doesn't allow mixed geometry type).
+4. `DB Manager` > `Import Layer/File`, and set desired `CRS` + spatial index here.
+5. Import uploaded layers into current QGIS project.
+6. Import geoserver styles (in SLD format) in QGIS via python console, then attach to layers.
 
 ```python
 layer = iface.activeLayer()
@@ -29,17 +29,17 @@ layer = iface.activeLayer()
 layer.loadSldStyle("style.sld")
 ```
 
-7. `Properties` > set `rendering` to `3`
-8. Enable `WMS` and `WFS` under `project properties`
-9. Save current project as `*.qgz`
-10. Unzip `*.qgz`, manually replace `database hostname` with `private ip address`
-11. Re-zip the assets into `*.qgz`. Important: have to use command-line on MacOS
-12. Turn on airplane mode, then open the modified QGIS project (this is so that it won't keep reaching Postgres via private ip)
-13. Disable airplane mode, then write the project to Postgres (need to whitelist your home ip so that you can reach prod db behind vpc)
+7. `Properties` > set `rendering` to `3`.
+8. Enable `WMS` and `WFS` under `project properties`.
+9. Save current project as `*.qgz`.
+10. Unzip `*.qgz`, manually replace `database hostname` with `private ip address`.
+11. Re-zip the assets into `*.qgz`. Important: have to use command-line on MacOS.
+12. Turn on airplane mode, then open the modified QGIS project. (This is so that it won't keep reaching Postgres via private ip.)
+13. Disable airplane mode, then write the project to Postgres. (Need to whitelist your home ip so that you can reach prod db behind vpc.)
 14. Voila 🎉
 
 ## Notes
 
-- To be sure, restart the server every time you update the project
-- Need to use private ip for database hostname
-- On M1, need to use QGIS installed via mamba (otherwise you'll have missing requirements for `Fix geometries`)
+- To be sure, restart the server every time you update the project.
+- Need to use private ip for database hostname.
+- On M1, need to use QGIS installed via mamba. (Otherwise you'll have missing requirements for `Fix geometries`).
