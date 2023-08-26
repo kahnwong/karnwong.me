@@ -12,6 +12,7 @@ ShowToc: false
 - [self-hosted](https://github.com/kahnwong/self-hosted) - Self-hosting open-source alternatives for popular services. Managed via docker-compose.
 - [terraform-sops-ssm](https://github.com/kahnwong/terraform-sops-ssm) - Create SSM secrets from SOPS-encrypted secrets, with IAM roles & users creation for SSM access.
 - [Vercel - Multi Branch Deployment](https://github.com/kahnwong/vercel-multi-branch-deployment) - Use GitHub Actions to deploy a frontend project from different branches (dev, uat, master), each with their own preview environment.
+- [pgconn](https://github.com/kahnwong/pgconn) - pgcli wrapper to connect to PostgreSQL database specified in db.yaml. Proxy/tunnel connection is automatically created and killed when pgcli is exited.
 
 ## Data Engineering
 
@@ -28,4 +29,4 @@ ShowToc: false
 - [music-lyrics-tagger](https://github.com/kahnwong/music-lyrics-tagger) - Add lyrics to flac and m4a files.
 - [subsonic-github-readme](https://github.com/devbaygroup/subsonic-github-readme) - Now playing and random tracks widget via subsonic API. Golang port [here](https://github.com/kahnwong/subsonic-github-readme-golang).
 - [todotxt-to-calendar](https://github.com/devbaygroup/todotxt-to-calendar) - Convert todo.txt entries to calendar all-day event.
-- [water-cut-notify](https://github.com/devbaygroup/water-cut-notify) - Send water cut alert as LINE notifications.
+- [water-cut-notify](https://github.com/kahnwong/water-cut-notify) - Send water cut alert as LINE notifications.

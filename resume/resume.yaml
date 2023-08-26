@@ -111,6 +111,18 @@ projects:
     startDate: 2022-11-30
     type: devops
     url: https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/
+  - name: pgconn
+    highlights:
+      - pgcli wrapper to connect to PostgreSQL database specified in db.yaml. Proxy/tunnel connection is automatically created and killed when pgcli is
+        exited.
+    keywords:
+      - postgres
+      - ssh tunneling
+      - cli
+    startDate: 2023-08-24
+    endDate: 2023-08-31
+    type: devops
+    url: https://github.com/kahnwong/pgconn
   - name: Vercel - Multi Branch Deployment
     highlights:
       - Use GitHub Actions to deploy a frontend project from different branches (dev, uat, master), each with their own preview environment.
@@ -122,19 +134,6 @@ projects:
     endDate: 2023-06-17
     type: devops
     url: https://github.com/kahnwong/vercel-multi-branch-deployment
-  - name: terraform-sops-ssm
-    highlights:
-      - Create SSM secrets from SOPS-encrypted secrets.
-      - Create github-ci+lambda roles and users with access to SSM.
-    keywords:
-      - terraform
-      - aws
-      - github
-      - security
-    startDate: 2021-11-24
-    endDate: 2021-11-30
-    type: devops
-    url: https://github.com/kahnwong/terraform-sops-ssm
   # ---------------- data ----------------
   - name: Dataframe Frameworks Showdown
     highlights:
