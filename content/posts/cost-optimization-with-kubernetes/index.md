@@ -19,7 +19,7 @@ Congratulations, you managed to successfully deployed a few services on kubernet
 
 If you're using Terraform, you can use [Infracost](https://www.infracost.io/) to create a cost report. Pretty nifty. But what about kubernetes? Given cost reporting is a basic feature, kubernetes is no exception.
 
-Enters [OpenCost](https://www.opencost.io/), a vendor-neutral open source project for measuring and allocating infrastructure and container costs in real time. This also means it is vendor-agnostic. Meaning as long as it's kubernetes, it would work regardless of which cloud it's on (and it works with on-prem setup as well 😉).
+Enter [OpenCost](https://www.opencost.io/), a vendor-neutral open source project for measuring and allocating infrastructure and container costs in real time. This also means it is vendor-agnostic. Meaning as long as it's kubernetes, it would work regardless of which cloud it's on (and it works with on-prem setup as well 😉).
 
 Under the hood, it utilizes [prometheus metrics], in conjunction with [provisioned resources for containers - defined in deployment manifest], to calculate cost based on [cloud pricing per compute unit - you can adjust this later].
 

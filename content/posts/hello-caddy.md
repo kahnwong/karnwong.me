@@ -10,7 +10,7 @@ tags:
 
 Since starting self-hosting back in 2017, I've always used apache2 since it's the first webserver I came across. Over time adding more services and managing separate vhost config is a bit tiresome.
 
-Enters Caddy. It's very simple to set up and configure. Some services where I have trouble setting up in apache2 do not need extra config at all, even TLS is set up by default. Starting from Caddy2 it works with CNAME by default without extra setups.
+Enter Caddy. It's very simple to set up and configure. Some services where I have trouble setting up in apache2 do not need extra config at all, even TLS is set up by default. Starting from Caddy2 it works with CNAME by default without extra setups.
 
 You can set it up using a Caddy docker container, but some containers I use also expose port 443, so I have to install Caddy natively instead.
 

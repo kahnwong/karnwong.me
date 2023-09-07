@@ -14,7 +14,7 @@ However, if you don’t specify module versions in `requirements.txt`, you could
 
 Another issue is that maybe you’re working on a few python projects, each uses different python versions (eg. projectA uses python3.6, projectB uses python3.9, etc).
 
-Enters `pyenv` and `pipenv` (I will discuss about `poetry` later), where you can easily switch python versions, and have different environment (with python version locking) for projects you’re working on.
+Enter `pyenv` and `pipenv` (I will discuss about `poetry` later), where you can easily switch python versions, and have different environment (with python version locking) for projects you’re working on.
 
 ## Installing pyenv
 

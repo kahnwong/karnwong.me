@@ -30,7 +30,7 @@ This is how dagster work. But to set all this up yourself, you need to at least:
 
 And if you have multiple users, you need to set up the auth yourself too.
 
-## Enters Dagster Cloud
+## Enter Dagster Cloud
 
 But folks at Dagster know people are finding it very tricky to set it up, so they provide a few cloud offerings, one of which is serverless. This essentially means you only need to supply the code and set up CI/CD, and Dagster would provide a VM to run your tasks.
 
