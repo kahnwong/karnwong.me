@@ -6,15 +6,15 @@ summary: "books"
 ShowToc: true
 ---
 
-Updated 2023-05-07
+Updated 2023-09-09
 
 ## Nonfiction
 
 ### Architecture
 
-| Title                                                                                  | Author                                                               |
-| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| [Soft City](https://www.goodreads.com/book/show/42480560-soft-city)                                       | David Sim       |
+| Title                                                               | Author    |
+| ------------------------------------------------------------------- | --------- |
+| [Soft City](https://www.goodreads.com/book/show/42480560-soft-city) | David Sim |
 
 ### Food
 
@@ -24,11 +24,11 @@ Updated 2023-05-07
 
 ### Medicine
 
-| Title                                                                                  | Author                                                               |
-| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| [How to Treat People](https://www.goodreads.com/book/show/43726583-how-to-treat-people)                   | Molly Case      |
-| [If Our Bodies Could Talk](https://www.goodreads.com/book/show/30211959-if-our-bodies-could-talk)         | James Hamblin   |
-| [This is Going to Hurt](https://www.goodreads.com/book/show/https://www.goodreads.com/book/show/40951628) | Adam Kay        |
+| Title                                                                                                     | Author        |
+| --------------------------------------------------------------------------------------------------------- | ------------- |
+| [How to Treat People](https://www.goodreads.com/book/show/43726583-how-to-treat-people)                   | Molly Case    |
+| [If Our Bodies Could Talk](https://www.goodreads.com/book/show/30211959-if-our-bodies-could-talk)         | James Hamblin |
+| [This is Going to Hurt](https://www.goodreads.com/book/show/https://www.goodreads.com/book/show/40951628) | Adam Kay      |
 
 ### Science
 
@@ -98,7 +98,7 @@ Updated 2023-05-07
 | [Rethinking Narcissism](https://www.goodreads.com/book/show/27213149-rethinking-narcissism)                                                                                   | Craig Malkin                                       |
 | [The Book You Wish Your Parents Had Read (and Your Children Will Be Glad That You Did)](https://www.goodreads.com/book/show/42348818-the-book-you-wish-your-parents-had-read) | Philippa Perry                                     |
 | [When Strangers Meet](https://www.goodreads.com/book/show/27274361-when-strangers-meet)                                                                                       | Kio Stark                                          |
-| [The Great Mental Models](https://www.goodreads.com/book/show/44245196-the-great-mental-models)                                                                               | Shane Parrish
+| [The Great Mental Models](https://www.goodreads.com/book/show/44245196-the-great-mental-models)                                                                               | Shane Parrish                                      |
 
 ### Business
 
@@ -111,15 +111,17 @@ Updated 2023-05-07
 
 ### Leadership
 
-| Title                                                                                                                            | Author                  |
-| -------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| [Build](https://www.goodreads.com/book/show/59696349-build)                                                                      | Tony Fadell             |
-| [HBR's 10 Must Reads on Managing Yourself](https://www.goodreads.com/book/show/8308501-hbr-s-10-must-reads-on-managing-yourself) | Harvard Business Review |
-| [Powerful](https://www.goodreads.com/book/show/36417234-powerful)                                                                | Patty McCord            |
-| [The Five Dysfunctions of a Team](https://www.goodreads.com/book/show/21343.The_Five_Dysfunctions_of_a_Team)                     | Patrick Lencioni        |
-| [The Hard Thing About Hard Things](https://www.goodreads.com/book/show/18176747-the-hard-thing-about-hard-things)                | Ben Horowitz            |
-| [The Ideal Team Player](https://www.goodreads.com/book/show/28930640-the-ideal-team-player)                                      | Patrick Lencioni        |
-| [What You Do is Who You Are](https://www.goodreads.com/book/show/44063692-what-you-do-is-who-you-are)                            | Ben Horowitz            |
+| Title                                                                                                                            | Author                             |
+| -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| [Build](https://www.goodreads.com/book/show/59696349-build)                                                                      | Tony Fadell                        |
+| [HBR's 10 Must Reads on Managing Yourself](https://www.goodreads.com/book/show/8308501-hbr-s-10-must-reads-on-managing-yourself) | Harvard Business Review            |
+| [Humble Inquiry]( https://www.goodreads.com/book/show/17381706-humble-inquiry)                                                   | Edgar H. Schein                    |
+| [Powerful](https://www.goodreads.com/book/show/36417234-powerful)                                                                | Patty McCord                       |
+| [The Five Dysfunctions of a Team](https://www.goodreads.com/book/show/21343.The_Five_Dysfunctions_of_a_Team)                     | Patrick Lencioni                   |
+| [The Hard Thing About Hard Things](https://www.goodreads.com/book/show/18176747-the-hard-thing-about-hard-things)                | Ben Horowitz                       |
+| [The Ideal Team Player](https://www.goodreads.com/book/show/28930640-the-ideal-team-player)                                      | Patrick Lencioni                   |
+| [Too Proud To Lead](https://www.goodreads.com/book/show/50994035-too-proud-to-lead)                                              | Ben Laker, David Cobb, Rita Trehan |
+| [What You Do is Who You Are](https://www.goodreads.com/book/show/44063692-what-you-do-is-who-you-are)                            | Ben Horowitz                       |
 
 ### Technology
 
@@ -145,7 +147,7 @@ Updated 2023-05-07
 | [Continuous Delivery Pipelines](https://www.goodreads.com/book/show/56771495-continuous-delivery-pipelines---how-to-build-better-software-faster) | Dave Farley                                                                              |
 | [Docs for Developers](https://www.goodreads.com/book/show/58278048-docs-for-developers)                                                           | Jared Bhatti & Zachary Sarah Corleissen & Jen Lambourne & David Nunez & Heidi Waterhouse |
 | [Site Reliability Engineering](https://www.goodreads.com/book/show/27968891-site-reliability-engineering)                                         | Betsy Beyer & Chris Jones & Jennifer Petoff & Niall Richard Murphy                       |
-| [The Phoenix Project](https://www.goodreads.com/book/show/17255186-the-phoenix-project)                                                           | Gene Kim
+| [The Phoenix Project](https://www.goodreads.com/book/show/17255186-the-phoenix-project)                                                           | Gene Kim                                                                                 |
 
 #### Data
 
