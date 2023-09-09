@@ -18,7 +18,7 @@ And things would be even better if I don't have to set up the infra manually eve
 
 Below are minimal ecs task with fargate backend setup 😎. Repo [here](https://github.com/devbaygroup/terraform-aws-ecs-fargate-example).
 
-_Updated 2022-09-02_
+**Updated 2022-09-02**
 
 Notes: you might need to set up autoscaling on LB connections per target. Also this example contains two target tracking policies for the same service. Race conditions can result in undesirable scaling issues. Thanks John Mille!
 

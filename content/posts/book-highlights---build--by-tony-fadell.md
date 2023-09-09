@@ -7,6 +7,7 @@ images:
 tags:
   - leadership
   - book highlights
+  - recommended
 ---
 
 Asshole assholes: They suck at work and everything else. These are the mean, jealous, insecure jerks who you’d avoid at a party, but who inevitably sit immediately next to you at the office. They cannot deliver, are deeply unproductive, so they do everything possible to deflect attention away from themselves. They will lie, craft gossip, and manipulate others to get people off their scent. The only good thing about these assholes is that they’re generally out the door pretty quickly—they can only deflect for so long before people start noticing that they bring zero value. And nobody likes working with them.

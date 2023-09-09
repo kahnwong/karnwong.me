@@ -10,7 +10,7 @@ tags:
   - terraform
 ---
 
-_Updated 2023-02-20_: update terraform code
+**Updated 2023-02-20**: update terraform code
 
 For frontends, if no server-side rendering is required, we can deploy it as a static site. If you already use GitHub, you might be familiar with GitHub Pages. One common use case is to deploy your personal landing page / blog via GitHub Actions.
 

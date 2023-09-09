@@ -7,6 +7,7 @@ images:
 tags:
   - data analysis
   - platform engineering
+  - recommended
 ---
 
 CSV as a file format is very versatile, almost any programs can parse it. The only issue is you can't use SQL against CSV files directly.

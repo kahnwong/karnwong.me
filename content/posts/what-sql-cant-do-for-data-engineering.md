@@ -6,6 +6,7 @@ ShowToc: false
 images:
 tags:
   - data engineering
+  - recommended
 ---
 
 I often hear people ask "if you can do data engineering with SQL, then what's the point of learning spark or python?"

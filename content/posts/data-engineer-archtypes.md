@@ -6,6 +6,7 @@ ShowToc: true
 images:
 tags:
   - data engineering
+  - recommended
 ---
 
 I have been working in the data industry since almost half a decade ago. Over time I have noticed so-called archetypes within various data engineering roles. Below are main skills and combinations I have seen over the years. This is by no means an exhaustive list, rather what I often see.
@@ -53,7 +54,7 @@ I have been working in the data industry since almost half a decade ago. Over ti
 
 ---
 
-_Updated 2022-09-02_
+**Updated 2022-09-02**
 
 ## GUI-based solutions
 

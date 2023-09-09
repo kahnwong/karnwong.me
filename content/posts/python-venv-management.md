@@ -6,6 +6,11 @@ ShowToc: false
 images:
 tags:
   - python
+  - recommended
+---
+
+**Updated 2023-09-09**: I now revert back to plain `requirements.txt`, since pipenv is very poor at resolving large dependencies list. Poetry still remains funky so that's off the table as well.
+
 ---
 
 When you create a project in python, you should create `requirements.txt` to specify dependencies, so other people can have the same environment when using your project.

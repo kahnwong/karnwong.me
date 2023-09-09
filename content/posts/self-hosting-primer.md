@@ -6,6 +6,7 @@ ShowToc: false
 images:
 tags:
   - devops
+  - recommended
 ---
 
 Self-hosting is a practice for running and managing websites / services using your own server. Some people do this because they are concerned about their privacy, or some services are free if they host it themselves. Below are instructions for how to do self-hosting (also applies to hosting your own website too).

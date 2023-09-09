@@ -6,6 +6,7 @@ ShowToc: false
 images:
 tags:
   - networking
+  - recommended
 ---
 
 Imagine going to your client's site to deploy a software. During the deployment process, you notice that the speed is atrociously slow. You have a suspicion that your client's network bandwidth is the issue.
