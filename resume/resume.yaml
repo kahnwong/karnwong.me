@@ -123,6 +123,17 @@ projects:
     endDate: 2023-08-31
     type: devops
     url: https://github.com/kahnwong/pgconn
+  - name: GKE Autopilot Cost Calculator
+    highlights:
+      - Calculate GKE Autopilot workloads cost.
+      - Available for normal application deployments and spark-submit jobs.
+    keywords:
+      - streamlit
+      - gke
+    startDate: 2023-09-12
+    endDate: 2023-09-12
+    type: devops
+    url: https://gke-autopilot-cost-calculator.karnwong.me/
   - name: Vercel - Multi Branch Deployment
     highlights:
       - Use GitHub Actions to deploy a frontend project from different branches (dev, uat, master), each with their own preview environment.

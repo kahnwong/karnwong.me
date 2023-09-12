@@ -13,6 +13,7 @@ ShowToc: false
 - [terraform-sops-ssm](https://github.com/kahnwong/terraform-sops-ssm) - Create SSM secrets from SOPS-encrypted secrets, with IAM roles & users creation for SSM access.
 - [Vercel - Multi Branch Deployment](https://github.com/kahnwong/vercel-multi-branch-deployment) - Use GitHub Actions to deploy a frontend project from different branches (dev, uat, master), each with their own preview environment.
 - [pgconn](https://github.com/kahnwong/pgconn) - pgcli wrapper to connect to PostgreSQL database specified in db.yaml. Proxy/tunnel connection is automatically created and killed when pgcli is exited.
+- [GKE Autopilot Cost Calculator](https://gke-autopilot-cost-calculator.karnwong.me/) - Calculate GKE Autopilot workloads cost. Available for normal application deployments and spark-submit jobs. Source code [here](https://github.com/kahnwong/gke-autopilot-cost-calculator).
 
 ## Data Engineering
 
