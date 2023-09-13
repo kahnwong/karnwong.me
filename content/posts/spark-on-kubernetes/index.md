@@ -151,6 +151,6 @@ Traditionally, when you're creating a kubernetes cluster, you'll have to attach 
 
 ## Closing
 
-If you're already using kubernetes, and also use spark for data processing, migrating workloads to k8s can reduce a significant amount of cost. For our case, existing spark jobs is run in a 4vCPU/16GB VM (`109.79 USD / Month`), and this cause a lot of dent in our bills. But if we migrate to spark on k8s, it would only cost us around`16.41 USD / month` 😱. So that's a whopping 85% price reduction 🤯.
+If you're already using kubernetes, and also use spark for data processing, migrating workloads to k8s can reduce a significant amount of cost. For our case, existing spark jobs are run on a 4vCPU/16GB VM (`109.79 USD / Month`), and this cause a lot of dent in our bills. But if we migrate to spark on k8s, it would only cost us around`16.41 USD / month` 😱. So that's a whopping 85% price reduction 🤯.
 
 For more advanced use cases, check out <https://github.com/kahnwong/spark-on-k8s>.
