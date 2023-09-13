@@ -145,6 +145,10 @@ while not found_break_even_point:
         found_break_even_point = True
 ```
 
+### Why GKE Autopilot
+
+Traditionally, when you're creating a kubernetes cluster, you'll have to attach nodes yourself. This means, if you're running spark jobs where the compute requirement exceeds the available capacity, your jobs won't be able to start. By using GKE Autopilot, GCP automatically provision nodes and attach to your GKE cluster automatically, which means you won't ever face "insufficient cpu / memory" errors.
+
 ## Closing
 
 If you're already using kubernetes, and also use spark for data processing, migrating workloads to k8s can reduce a significant amount of cost. For our case, existing spark jobs is run in a 4vCPU/16GB VM (`109.79 USD / Month`), and this cause a lot of dent in our bills. But if we migrate to spark on k8s, it would only cost us around`16.41 USD / month` 😱. So that's a whopping 85% price reduction 🤯.
