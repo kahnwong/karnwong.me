@@ -146,6 +146,19 @@ projects:
     type: devops
     url: https://github.com/kahnwong/vercel-multi-branch-deployment
   # ---------------- data ----------------
+  - name: Spark on Kubernetes
+    highlights:
+      - Run spark jobs on kubernetes, which can be used both locally and on production environment.
+    keywords:
+      - spark
+      - kubernetes
+      - minio
+      - finops
+      - devex
+    startDate: 2023-09-09
+    endDate: 2023-09-10
+    type: data
+    url: https://www.karnwong.me/posts/2023/09/spark-on-kubernetes/
   - name: Dataframe Frameworks Showdown
     highlights:
       - Benchmark performance between duckdb, polars and spark. In addition to runtime, RAM usage is also provided.

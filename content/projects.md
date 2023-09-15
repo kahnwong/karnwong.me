@@ -18,6 +18,7 @@ ShowToc: false
 ## Data Engineering
 
 - [Dataframe Frameworks Showdown](https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/) - Benchmark performance between duckdb, polars and spark. In addition to runtime, RAM usage is also provided.
+- [Spark on Kubernetes](https://www.karnwong.me/posts/2023/09/spark-on-kubernetes/)
 
 ## Data Science
 
