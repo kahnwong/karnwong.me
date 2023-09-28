@@ -23,6 +23,7 @@ work:
       - "Lead a major core product refactoring across ops, engineering and data (data engineering, data science and machine learning engineering). Affected
         areas: data pipelines, model training pipelines, real-time inference endpoints, database performance optimization, deployment pipelines, local development
         workflow"
+      - Lead a cloud migration from AWS to GCP
   - name: Baania
     position: Lead Data Engineer | Machine Learning Engineer | SRE
     website: https://www.baania.com
