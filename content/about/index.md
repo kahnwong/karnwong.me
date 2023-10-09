@@ -24,6 +24,10 @@ I’m probably listening to symphonic heavy metal.
 
 And unsurprisingly, our tech team recognized me as DevSecMLFinDataOps.
 
+### Timeline
+
+![Timeline](images/2023-10-09-14-13-19.png)
+
 ### Active Communities
 
 - [Data Engineering Discord](https://invite.gg/dataengineering) (English)
