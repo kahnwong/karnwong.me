@@ -24,11 +24,10 @@ Updated 2023-09-09
 
 ### Medicine
 
-| Title                                                                                                     | Author        |
-| --------------------------------------------------------------------------------------------------------- | ------------- |
-| [How to Treat People](https://www.goodreads.com/book/show/43726583-how-to-treat-people)                   | Molly Case    |
-| [If Our Bodies Could Talk](https://www.goodreads.com/book/show/30211959-if-our-bodies-could-talk)         | James Hamblin |
-| [This is Going to Hurt](https://www.goodreads.com/book/show/https://www.goodreads.com/book/show/40951628) | Adam Kay      |
+| Title                                                                                             | Author        |
+| ------------------------------------------------------------------------------------------------- | ------------- |
+| [How to Treat People](https://www.goodreads.com/book/show/43726583-how-to-treat-people)           | Molly Case    |
+| [If Our Bodies Could Talk](https://www.goodreads.com/book/show/30211959-if-our-bodies-could-talk) | James Hamblin |
 
 ### Science
 
@@ -49,22 +48,21 @@ Updated 2023-09-09
 
 ### Politics
 
-| Title                                                                                                             | Author                          |
-| ----------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| [Imagined Communities](https://www.goodreads.com/book/show/10531038)                                              | Benedict Anderson               |
-| [Manufacturing Consent](https://www.goodreads.com/book/show/12617.Manufacturing_Consent)                          | Edward S. Herman & Noam Chomsky |
-| [Notes on a Foreign Country](https://www.goodreads.com/book/show/31450559)                                        | Suzy Hansen                     |
-| [Prisoners of Geography](https://www.goodreads.com/book/show/25135194-prisoners-of-geography)                     | Tim Marshall                    |
-| [Sweden’s Dark Soul](https://www.goodreads.com/book/show/42779500-sweden-s-dark-soul)                             | Kajsa Norman                    |
-| [The Coddling of the American Mind](https://www.goodreads.com/book/show/36556202)                                 | Jonathan Haidt & Greg Lukianoff |
-| [The Death Of Expertise](https://www.goodreads.com/book/show/26720949)                                            | Thomas M. Nichols               |
-| [The Nordic Theory of Everything](https://www.goodreads.com/book/show/28014216)                                   | Anu Partanen                    |
-| [The Power of Geography](https://www.goodreads.com/book/show/56696339-the-power-of-geography)                     | Tim Marshall                    |
-| [The View From Flyover Country](https://www.goodreads.com/book/show/25437695-the-view-from-flyover-country)       | Sarah Kendzior                  |
-| [City of Lies](https://www.goodreads.com/book/show/21535308-city-of-lies)                                         | Ramita Navai                    |
-| [Discontent and Its Civilizations](https://www.goodreads.com/book/show/22571794-discontent-and-its-civilizations) | Mohsin Hamid                    |
-| [Honeymoon in Tehran](https://www.goodreads.com/book/show/7013523)                                                | Azadeh Moaveni                  |
-| [Our Women on the Ground](https://www.goodreads.com/book/show/42853221-our-women-on-the-ground)                   | Zahra Hankir                    |
+| Title                                                                                                       | Author                          |
+| ----------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| [Imagined Communities](https://www.goodreads.com/book/show/10531038)                                        | Benedict Anderson               |
+| [Manufacturing Consent](https://www.goodreads.com/book/show/12617.Manufacturing_Consent)                    | Edward S. Herman & Noam Chomsky |
+| [Notes on a Foreign Country](https://www.goodreads.com/book/show/31450559)                                  | Suzy Hansen                     |
+| [Prisoners of Geography](https://www.goodreads.com/book/show/25135194-prisoners-of-geography)               | Tim Marshall                    |
+| [Sweden’s Dark Soul](https://www.goodreads.com/book/show/42779500-sweden-s-dark-soul)                       | Kajsa Norman                    |
+| [The Coddling of the American Mind](https://www.goodreads.com/book/show/36556202)                           | Jonathan Haidt & Greg Lukianoff |
+| [The Death Of Expertise](https://www.goodreads.com/book/show/26720949)                                      | Thomas M. Nichols               |
+| [The Nordic Theory of Everything](https://www.goodreads.com/book/show/28014216)                             | Anu Partanen                    |
+| [The Power of Geography](https://www.goodreads.com/book/show/56696339-the-power-of-geography)               | Tim Marshall                    |
+| [The View From Flyover Country](https://www.goodreads.com/book/show/25437695-the-view-from-flyover-country) | Sarah Kendzior                  |
+| [City of Lies](https://www.goodreads.com/book/show/21535308-city-of-lies)                                   | Ramita Navai                    |
+| [Honeymoon in Tehran](https://www.goodreads.com/book/show/7013523)                                          | Azadeh Moaveni                  |
+| [Our Women on the Ground](https://www.goodreads.com/book/show/42853221-our-women-on-the-ground)             | Zahra Hankir                    |
 
 ### Linguistics
 
@@ -111,17 +109,18 @@ Updated 2023-09-09
 
 ### Leadership
 
-| Title                                                                                                                            | Author                             |
-| -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| [Build](https://www.goodreads.com/book/show/59696349-build)                                                                      | Tony Fadell                        |
-| [HBR's 10 Must Reads on Managing Yourself](https://www.goodreads.com/book/show/8308501-hbr-s-10-must-reads-on-managing-yourself) | Harvard Business Review            |
-| [Humble Inquiry]( https://www.goodreads.com/book/show/17381706-humble-inquiry)                                                   | Edgar H. Schein                    |
-| [Powerful](https://www.goodreads.com/book/show/36417234-powerful)                                                                | Patty McCord                       |
-| [The Five Dysfunctions of a Team](https://www.goodreads.com/book/show/21343.The_Five_Dysfunctions_of_a_Team)                     | Patrick Lencioni                   |
-| [The Hard Thing About Hard Things](https://www.goodreads.com/book/show/18176747-the-hard-thing-about-hard-things)                | Ben Horowitz                       |
-| [The Ideal Team Player](https://www.goodreads.com/book/show/28930640-the-ideal-team-player)                                      | Patrick Lencioni                   |
-| [Too Proud To Lead](https://www.goodreads.com/book/show/50994035-too-proud-to-lead)                                              | Ben Laker, David Cobb, Rita Trehan |
-| [What You Do is Who You Are](https://www.goodreads.com/book/show/44063692-what-you-do-is-who-you-are)                            | Ben Horowitz                       |
+| Title                                                                                                                            | Author                                       |
+| -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| [Build](https://www.goodreads.com/book/show/59696349-build)                                                                      | Tony Fadell                                  |
+| [HBR's 10 Must Reads on Managing Yourself](https://www.goodreads.com/book/show/8308501-hbr-s-10-must-reads-on-managing-yourself) | Harvard Business Review                      |
+| [Humble Inquiry]( https://www.goodreads.com/book/show/17381706-humble-inquiry)                                                   | Edgar H. Schein                              |
+| [Powerful](https://www.goodreads.com/book/show/36417234-powerful)                                                                | Patty McCord                                 |
+| [The Five Dysfunctions of a Team](https://www.goodreads.com/book/show/21343.The_Five_Dysfunctions_of_a_Team)                     | Patrick Lencioni                             |
+| [The Hard Thing About Hard Things](https://www.goodreads.com/book/show/18176747-the-hard-thing-about-hard-things)                | Ben Horowitz                                 |
+| [The Ideal Team Player](https://www.goodreads.com/book/show/28930640-the-ideal-team-player)                                      | Patrick Lencioni                             |
+| [Too Proud To Lead](https://www.goodreads.com/book/show/50994035-too-proud-to-lead)                                              | Ben Laker, David Cobb, Rita Trehan           |
+| [What You Do is Who You Are](https://www.goodreads.com/book/show/44063692-what-you-do-is-who-you-are)                            | Ben Horowitz                                 |
+| [Tribal Leadership](https://www.goodreads.com/book/show/2741559-tribal-leadership)                                               | Dave Logan, John King & Halee Fischer-Wright |
 
 ### Technology
 
@@ -132,7 +131,7 @@ Updated 2023-09-09
 | [Algorithms to Live By](https://www.goodreads.com/book/show/25666050-algorithms-to-live-by)                                            | Brian Christian & Tom Griffiths |
 | [Close to the Machine](https://www.goodreads.com/book/show/486625)                                                                     | Ellen Ullman                    |
 | [Life in Code](https://www.goodreads.com/book/show/31450584)                                                                           | Ellen Ullman                    |
-| [Mythical Man-Month, The](https://www.goodreads.com/book/show/13629.The_Mythical_Man_Month)                                            | Frederick Brooks Jr.            |
+| [The Mythical Man-Month](https://www.goodreads.com/book/show/13629.The_Mythical_Man_Month)                                             | Frederick Brooks Jr.            |
 | [The Business Value of Developer Relations](https://www.goodreads.com/en/book/show/40167835-the-business-value-of-developer-relations) | Mary Thengvall                  |
 | [The Missing Readme](https://www.goodreads.com/book/show/57271519-the-missing-readme)                                                  | Chris Riccomini                 |
 | [The Pragmatic Programmer](https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer)                                          | Andy Hunt                       |
@@ -171,7 +170,7 @@ Updated 2023-09-09
 
 | Title                                                                                                                 | Author                         |
 | --------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
-| [Don't Make Me Think, Revisited](https://www.goodreads.com/book/show/18197267-don-t-make-me-think-revisited)          | Steve Krug                     |
+| [Don't Make Me Think](https://www.goodreads.com/book/show/18197267-don-t-make-me-think-revisited)                     | Steve Krug                     |
 | [The Best Interface Is No Interface](https://www.goodreads.com/book/show/22758923-the-best-interface-is-no-interface) | Golden Krishna                 |
 | [The Design of Everyday Things](https://www.goodreads.com/book/show/840.The_Design_of_Everyday_Things)                | Donald A. Norman               |
 | [User Friendly](https://www.goodreads.com/book/show/30815777)                                                         | Cliff Kuang & Robert Fabricant |
@@ -219,7 +218,6 @@ Updated 2023-09-09
 | Title                                                                   | Author        |
 | ----------------------------------------------------------------------- | ------------- |
 | [Millennium Trilogy](https://www.goodreads.com/series/44598-millennium) | Stieg Larsson |
-| [Vik & Stubø](https://www.goodreads.com/series/54401-vik-stub)          | Anne Holt     |
 
 ### Fantasy
 
