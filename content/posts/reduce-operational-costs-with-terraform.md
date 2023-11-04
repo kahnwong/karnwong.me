@@ -26,15 +26,15 @@ This also poses another challenge, that a deployment steps outlined in the docum
 
 Assuming a team of DevOps consists of:
 
-- 50 engineers
+- 8 engineers
 - 3 deployments per engineer per day
 - $140K salary  -> 1 man-minute costs `140,000 USD / 12 months / 20 days / 8 hours / 60 minutes` = `1.2 USD/minute`
 
 Provisioning cloud resources via a provider's web console has following costs:
 
-- Setting up a shared documentation website; Confluence costs `6.05 USD * 50 engineers * 1 month` = `302.50 USD / month`
-- Tracking down deployment steps, locating secrets, making sure that environment variables / secrets are correct: `3 services * 30 minutes * 50 engineers * 1.2 USD/minute * 20 days` = `108,000 USD / month`
-- Updating deployment steps in the documentation: `3 services * 30 minutes * 50 engineers * 1.2 USD/minute * 20 days` = `108,000 USD / month`
+- Setting up a shared documentation website; Confluence costs `6.05 USD * 8 engineers * 1 month` = `48.4 USD / month`
+- Tracking down deployment steps, locating secrets, making sure that environment variables / secrets are correct: `3 services * 30 minutes * 8 engineers * 1.2 USD/minute * 20 days` = `17,280 USD / month`
+- Updating deployment steps in the documentation: `3 services * 30 minutes * 8 engineers * 1.2 USD/minute * 20 days` = `17,280 USD / month`
 
 ## What about other costs?
 
@@ -46,6 +46,8 @@ Assuming there are 100 services, costs are calculated each quarter, and it takes
 
 [Terraform](https://www.terraform.io/) is an IaC (infrastructure as code) tool, which means you can declare cloud resources progamatically, and you can uses it to apply cloud configurations. It can also act as a living documentation, since terraform code directly translates to desired cloud resources. This would eliminate the need for a documentation instance, tracking down steps/configurations and updating the documentation manually. Plus, it takes almost no time to perform a cost breakdown by using [Infracost](https://www.infracost.io/) CLI against a terraform project.
 
-In total, you would save `302.50 USD + 108,000 USD + 108,000 USD` = `216,302.5 USD / month`
+In total, you would save `48.4 USD + 17,280 USD + 17,280 USD` = `34,608.4 USD / month`.
+
+In a single year, this means `34,608.4 USD / month * 12 months` = `415,300.8 USD / year` can be saved!
 
 Very crazy!
