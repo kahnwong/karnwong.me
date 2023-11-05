@@ -50,7 +50,7 @@ work:
       - Optimize a large spark pipeline that fails often due to OOM with divide-and-conquer method for unlimited scaling
       - Reduce runtime for PR code quality checks by 90% to shorten feedback loop cycle
       - Set up secrets management using SOPS/Terraform/AWS SSM, for improved security and secrets rotation
-      - Launched Baania Engineering Blog, a platform to showcase how Baania does things behind the scenes
+      - Launch Baania Engineering Blog, a platform to showcase how Baania does things behind the scenes
       - Reduce employee onboarding time per employee by a few days via a setup script to setup necessary tools, applications and environment for development
   - name: Baania
     position: Data Engineer
@@ -67,7 +67,7 @@ work:
       - Package cron services to AWS ECS and invoke via AWS ECS Task to cut down cost from 50 USD / year to 0.1 USD / year
   - name: "-"
     position: IT Support & SysAdmin
-    startDate: 2015-01-01
+    startDate: 2005-01-01
     endDate: 2018-12-31
 education:
   - institution: Rangsit University
