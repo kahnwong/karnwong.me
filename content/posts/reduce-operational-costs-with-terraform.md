@@ -44,7 +44,7 @@ Assuming there are 100 services, costs are calculated each quarter, and it takes
 
 ## The solution
 
-[Terraform](https://www.terraform.io/) is an IaC (infrastructure as code) tool, which means you can declare cloud resources progamatically, and you can uses it to apply cloud configurations. It can also act as a living documentation, since terraform code directly translates to desired cloud resources. This would eliminate the need for a documentation instance, tracking down steps/configurations and updating the documentation manually. Plus, it takes almost no time to perform a cost breakdown by using [Infracost](https://www.infracost.io/) CLI against a terraform project.
+[Terraform](https://www.terraform.io/) is an IaC (infrastructure as code) tool, which means you can declare cloud resources programmatically, and you can uses it to apply cloud configurations. It can also act as a living documentation, since terraform code directly translates to desired cloud resources. This would eliminate the need for a documentation instance, tracking down steps/configurations and updating the documentation manually. Plus, it takes almost no time to perform a cost breakdown by using [Infracost](https://www.infracost.io/) CLI against a terraform project.
 
 In total, you would save `48.4 USD + 17,280 USD + 17,280 USD` = `34,608.4 USD / month`.
 
