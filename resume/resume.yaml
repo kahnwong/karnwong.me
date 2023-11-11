@@ -1,7 +1,7 @@
 ---
 basics:
   name: Karn Wong
-  label: Head of platform engineering | HashiCorp Ambassador | Part of the FinOps Foundation Community | GCP Certified | AWS Community Builder
+  label: Head of platform engineering | HashiCorp Ambassador | Part of the FinOps Foundation Community | AWS & GCP Certified | AWS Community Builder
   email: karn@karnwong.me
   phone: ""
   website: https://karnwong.me
@@ -67,7 +67,7 @@ work:
       - Package cron services to AWS ECS and invoke via AWS ECS Task to cut down cost from 50 USD / year to 0.1 USD / year
   - name: "-"
     position: IT Support & SysAdmin
-    startDate: 2005-01-01
+    startDate: 2015-01-01
     endDate: 2018-12-31
 education:
   - institution: Rangsit University
