@@ -550,4 +550,4 @@ You'll notice that we use "median absolute error" to measure performance. There 
 
 PS: We applied the same process to data from <https://baania.com/> and it was a success!
 
-Update 2022-07-14: Baania how has opendata! Check it out at <https://gobestimate.com/data>.
+Update 2022-07-14: Baania now has opendata! Check it out at <https://gobestimate.com/data>.
