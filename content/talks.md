@@ -20,3 +20,4 @@ ShowToC: false
 - [May 2023] Monitoring and observability with Kubernetes @JMT
 - [May 2023] [Cross-platform reproducible environment setup](https://www.eventpop.me/e/15089/functional) @Functional Programming Meetup #1
 - [Aug 2023] [Database Query Optimization](/pdf/database-query-optimization.pdf) @Baania
+- [Nov 2023] [Faster deployments with multi-stage build caching](https://github.com/kahnwong/slides-github-actions-cache) @GitHub Universe After Party Thailand
