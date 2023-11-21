@@ -9,6 +9,9 @@ basics:
     - network: Github
       username: kahnwong
       url: https://github.com/kahnwong
+    - network: LinkedIn
+      username: karnsiree-w-7b535b202
+      url: https://www.linkedin.com/in/karnsiree-w-7b535b202/
 work:
   - name: Baania
     position: Head of platform engineering
@@ -138,6 +141,17 @@ projects:
     startDate: 2022-11-30
     type: devops
     url: https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/
+  - name: GKE Autopilot Cost Calculator
+    highlights:
+      - Calculate GKE Autopilot workloads cost.
+      - Available for normal application deployments and spark-submit jobs.
+    keywords:
+      - streamlit
+      - gke
+    startDate: 2023-09-12
+    endDate: 2023-09-12
+    type: devops
+    url: https://gke-autopilot-cost-calculator.karnwong.me/
   - name: pgconn
     highlights:
       - pgcli wrapper to connect to PostgreSQL database specified in db.yaml. Proxy/tunnel connection is automatically created and killed when pgcli is
@@ -150,17 +164,6 @@ projects:
     endDate: 2023-08-31
     type: devops
     url: https://github.com/kahnwong/pgconn
-  - name: GKE Autopilot Cost Calculator
-    highlights:
-      - Calculate GKE Autopilot workloads cost.
-      - Available for normal application deployments and spark-submit jobs.
-    keywords:
-      - streamlit
-      - gke
-    startDate: 2023-09-12
-    endDate: 2023-09-12
-    type: devops
-    url: https://gke-autopilot-cost-calculator.karnwong.me/
   - name: Vercel - Multi Branch Deployment
     highlights:
       - Use GitHub Actions to deploy a frontend project from different branches (dev, uat, master), each with their own preview environment.
@@ -201,8 +204,8 @@ projects:
     url: https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/
   - name: Impute Pipelines
     highlights:
-      - Use machine learning to fill in missing data
-      - Utilize hyperparameter tuning to find the optimum parameters
+      - Use machine learning to fill in missing data.
+      - Utilize hyperparameter tuning to find the optimum parameters.
     keywords:
       - Machine Learning
       - data science
@@ -211,3 +214,71 @@ projects:
     endDate: 2019-12-23
     url: https://www.karnwong.me/posts/2020/05/impute-pipelines/
     type: data
+interests:
+  - name: Humanities
+    keywords:
+      - Anthropology
+      - Linguistics
+      - Psychology
+      - Sociology
+  - name: Music
+    keywords:
+      - Symphonic Heavy Metal
+      - Power Metal
+      - Folk Metal
+      - Classical Crossover
+      - Operatic Pop
+  - name: Technology
+    keywords:
+      - Platform Engineering
+      - DevX
+      - Kubernetes
+      - DevOps / DataOps / MLOps
+      - Scaling & Optimization
+volunteer:
+  - organization: Data Engineering Discord
+    position: Moderator & Frequent Contributor
+    startDate: 2020
+  - organization: Data Science Discord
+    position: Frequent Contributor
+    startDate: 2021
+  - organization: DevOps, SRE & Infrastructure Discord
+    position: Frequent Contributor
+    startDate: 2021
+  - organization: Data Engineer Cafe
+    position: Frequent Contributor
+    startDate: 2022
+skills:
+  - name: Cloud Native
+    keywords:
+      - Docker
+      - Kubernetes
+      - Helm
+      - K3S
+      - Harbor
+      - Grafana
+      - Prometheus
+      - Minio
+      - MLflow
+  - name: DevOps
+    keywords:
+      - Caddy
+      - Terraform
+      - GitHub Actions
+      - Proxmox
+  - name: Data / ML
+    keywords:
+      - Apache Spark
+      - Apache Parquet
+      - Polars / Pandas / DuckDB
+      - Postgres / BigQuery
+      - Scikit-learn / Spark MLib
+      - DVC
+      - H3 / QGIS
+      - FastAPI / Pydantic / Pytest
+  - name: Cloud
+    keywords:
+      - AWS
+      - GCP
+      - Digital Ocean
+      - Cloudflare
