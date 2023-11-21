@@ -111,9 +111,9 @@ publications:
     website: https://doi.org/10.1145/3313991.3314010
 languages:
   - language: English
-    fluency: Native speaker
+    fluency: Native or bilingual proficiency
   - language: Thai
-    fluency: Native speaker
+    fluency: Native or bilingual proficiency
 projects:
   # ---------------- devops ----------------
   - name: self-hosted
