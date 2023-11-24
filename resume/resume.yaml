@@ -42,7 +42,7 @@ work:
       - Introduce Sourcegraph to help with code search and refactoring
       - Setup GitOps for Terraform to enable collaboration between different teams, in turn reducing configuration drift
       - Architect end-to-end machine learning project involving reproducible data / model training pipelines, hyper-parameter tuning, CI/CD for inference
-        API endpoint (MLOps). Real-time model performance dashboard and tracing via request id are also implemented via Grafana.
+        API endpoint (MLOps). Real-time model performance dashboard and tracing via request id are also implemented via Grafana
   - name: Baania
     position: Senior Data Engineer
     website: https://www.baania.com
@@ -60,7 +60,7 @@ work:
       - Launch Baania Engineering Blog, a platform to showcase how Baania does things behind the scenes
       - Reduce employee onboarding time per employee by a few days via a setup script to setup necessary tools, applications and environment for development
       - Optimize a nearby POI lookup in PostGIS against 4 million rows with lochash, in turn reducing query runtime and resources requirements. Runtime
-        is reduced from 10 minutes to 2 seconds.
+        is reduced from 10 minutes to 2 seconds
   - name: Baania
     position: Data Engineer
     website: https://www.baania.com
