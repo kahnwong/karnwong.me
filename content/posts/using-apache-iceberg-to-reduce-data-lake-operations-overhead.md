@@ -9,6 +9,7 @@ tags:
   - apache iceberg
   - spark
   - data engineering
+  - recommended
 ---
 
 Every business generates data, some very little, some do generate ginormous amount of data. If you are familiar with the basic web application architecture, there are data, application and web tier. But it doesn't end there, because the data generated has to be analyzed for reports. A lot of organizations have analysts working on production database directly. This works fine and well, until the data they are working with is very large to the point that a single query can take half a day to process!
