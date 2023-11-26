@@ -29,21 +29,24 @@ languages:
         - name: Consulting
           url: consulting/
           weight: 2
-        - name: Recommended Posts
-          url: tags/recommended/
-          weight: 3
+        # - name: Recommended Posts
+        #   url: tags/recommended/
+        #   weight: 3
         - name: Archives
           url: archives
           weight: 4
         - name: Projects
           url: projects/
           weight: 5
+        - name: Talks
+          url: talks/
+          weight: 6
         - name: Tags
           url: tags/
-          weight: 6
+          weight: 7
         - name: Search
           url: search/
-          weight: 7
+          weight: 8
 
 outputs:
   home:
