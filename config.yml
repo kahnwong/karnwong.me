@@ -78,7 +78,7 @@ params:
 
   homeInfoParams:
     Title: Karn Wong
-    Content: Head of platform engineering | HashiCorp Ambassador | AWS CB | GCP Certified
+    Content: Head of platform engineering | HashiCorp Ambassador | AWS SA-Associate & GCP PCA Certified
   TocSide: left # or 'right'
 
   # profileMode:
