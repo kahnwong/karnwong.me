@@ -106,10 +106,6 @@ certificates:
     date: 2023
     issuer: Dagster Labs
     url: https://courses.dagster.io/certificates/dpy66jhmvg
-  - name: DataOps Fundamentals
-    date: 2023
-    issuer: DataKitchen
-    url: https://learn.datakitchen.io/certificate/ODIwMDBfMTQ3ODgxMg
 publications:
   - name: Using Classification Technique for Customer Relationship Management based on Thai Social Media Data
     publisher: ICCAE
