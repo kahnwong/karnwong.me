@@ -7,7 +7,7 @@ ShowToc: false
 
 I offer consulting on DevOps / MLOps / DataOps. If you want something else we can also discuss about it.
 
-I charge $70/hour.
+I charge $200/hour.
 
 Payments are only accepted if you are satistifed with the results.
 
