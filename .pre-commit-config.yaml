@@ -27,3 +27,9 @@ repos:
     hooks:
       - id: markdownlint
         args: [--ignore, node_modules, --ignore, src, --fix, --disable=MD013, --disable=MD024, --disable=MD040, --disable=MD041, --disable=MD045]
+  - repo: https://github.com/dnephin/pre-commit-golang
+    rev: v0.5.0
+    hooks:
+      - id: go-fmt
+      - id: go-imports
+      - id: go-mod-tidy
