@@ -1,4 +1,4 @@
-module github.com/karnwong.me/utils/create-post
+module github.com/kahnwong/karnwong.me/utils/create-post
 
 go 1.21.5
 
