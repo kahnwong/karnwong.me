@@ -6,7 +6,7 @@ summary: "books"
 ShowToc: true
 ---
 
-Updated 2023-09-09
+Updated 2023-12-22
 
 ## Nonfiction
 
@@ -95,8 +95,9 @@ Updated 2023-09-09
 | [Maybe You Should Talk to Someone](https://www.goodreads.com/book/show/37570546-maybe-you-should-talk-to-someone)                                                             | Lori Gottlieb                                      |
 | [Rethinking Narcissism](https://www.goodreads.com/book/show/27213149-rethinking-narcissism)                                                                                   | Craig Malkin                                       |
 | [The Book You Wish Your Parents Had Read (and Your Children Will Be Glad That You Did)](https://www.goodreads.com/book/show/42348818-the-book-you-wish-your-parents-had-read) | Philippa Perry                                     |
-| [When Strangers Meet](https://www.goodreads.com/book/show/27274361-when-strangers-meet)                                                                                       | Kio Stark                                          |
 | [The Great Mental Models](https://www.goodreads.com/book/show/44245196-the-great-mental-models)                                                                               | Shane Parrish                                      |
+| [Toxic People](https://www.goodreads.com/book/show/56817329-toxic-people)                                                                                                     | Tim Cantopher                                      |
+| [When Strangers Meet](https://www.goodreads.com/book/show/27274361-when-strangers-meet)                                                                                       | Kio Stark                                          |
 
 ### Business
 
@@ -180,6 +181,7 @@ Updated 2023-09-09
 | Title                                                                                        | Author                        |
 | -------------------------------------------------------------------------------------------- | ----------------------------- |
 | [An Elegant Puzzle](https://www.goodreads.com/book/show/45303387-an-elegant-puzzle)          | Will Larson                   |
+| [Dynamic Reteaming](https://www.goodreads.com/book/show/32853178-dynamic-reteaming)          | Heidi Helfand                 |
 | [Engineering Management for the Rest of Us](https://www.goodreads.com/en/book/show/58502800) | Sarah Drasner                 |
 | [Managing Humans](https://www.goodreads.com/book/show/60015819-managing-humans)              | Michael Lopp                  |
 | [Peopleware](https://www.goodreads.com/book/show/67825.Peopleware)                           | Tom Demarco & Tim Lister      |
