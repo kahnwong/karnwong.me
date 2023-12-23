@@ -15,6 +15,7 @@ ShowToc: false
 - [pgconn](https://github.com/kahnwong/pgconn) - pgcli wrapper to connect to PostgreSQL database specified in db.yaml. Proxy/tunnel connection is automatically created and killed when pgcli is exited.
 - [totp](https://github.com/kahnwong/totp) - CLI TOTP token generator with autocomplete.
 - [GKE Autopilot Cost Calculator](https://gke-autopilot-cost-calculator.karnwong.me/) - Calculate GKE Autopilot workloads cost. Available for normal application deployments and spark-submit jobs. Source code [here](https://github.com/kahnwong/gke-autopilot-cost-calculator).
+- [Proxmox VM Selector](https://github.com/kahnwong/proxmox-vm-selector) - A simple TUI to select which Proxmox VM to start/stop.
 
 ## Data Engineering
 

@@ -143,6 +143,16 @@ projects:
     startDate: 2022-11-30
     type: devops
     url: https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/
+  - name: Proxmox VM Selector
+    highlights:
+      - A simple TUI to select which Proxmox VM to start/stop.
+    keywords:
+      - proxmox
+      - tui
+    startDate: 2023-12-21
+    endDate: 2023-12-21
+    type: devops
+    url: https://github.com/kahnwong/proxmox-vm-selector
   - name: GKE Autopilot Cost Calculator
     highlights:
       - Calculate GKE Autopilot workloads cost.
