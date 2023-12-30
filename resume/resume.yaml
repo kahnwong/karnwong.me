@@ -1,7 +1,7 @@
 ---
 basics:
   name: Karn Wong
-  label: Head of platform engineering | HashiCorp Ambassador | Part of the FinOps Foundation Community | AWS & GCP Certified | AWS Community Builder
+  label: Platform engineer | HashiCorp Ambassador | Part of the FinOps Foundation Community | AWS & GCP Certified | AWS Community Builder
   email: karn@karnwong.me
   phone: ""
   website: https://karnwong.me
@@ -13,11 +13,17 @@ basics:
       username: karnsiree-w-7b535b202
       url: https://www.linkedin.com/in/karnsiree-w-7b535b202/
 work:
+  - name: Data Cafe (Thailand)
+    position: Platform engineer
+    website: https://www.datacafethailand.com/
+    startDate: 2023-01-03
+    endDate:
+    # highlights:
   - name: Baania
     position: Head of platform engineering
     website: https://www.baania.com
     startDate: 2022-10-01
-    endDate:
+    endDate: 2022-12-28
     highlights:
       - Research and implement internal data platform v2, with CI/CD for integration and unit tests, dependencies and code changes
       - Use Terraform with Infracost to asses infrastructure cost to prune unused/underutilized resources, in turn reduce 33% of cloud cost per month (FinOps)
