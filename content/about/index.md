@@ -8,7 +8,7 @@ ShowToc: false
 
 <!--- ![me-at-grill-the-data](/about/me-at-grill-the-data.jpg) -->
 
-I'm currently the Head of Platform Engineering at Baania. Our mission is to be the leader in Thailand's property data. The best part about this role is I get to work with [this dude](https://faithstory.info/)!
+I'm currently the platform engineer at [Data Cafe (Thailand)](https://www.datacafethailand.com/).
 
 Previously I was a Data Engineer, Machine Learning Engineer and Site Reliability Engineer. Before that I was doing IT Support and System Administration.
 
@@ -22,7 +22,9 @@ Surprisingly, I do enjoy cooking a lot, but not as much as tinkering with my hom
 
 I’m probably listening to symphonic heavy metal.
 
-And unsurprisingly, our tech team recognized me as DevSecMLFinDataOps.
+Many people wonder what I do, because I seem to hang out in a lot of communities, to which I tell them it's DevSecMLFinDataOps 😃.
+
+Fun fact: [this dude](https://faithstory.info/) stole my homelab configuration, but I already picked his brain for management and leadership skills 🫢.
 
 ### Timeline
 
