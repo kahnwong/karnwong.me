@@ -27,7 +27,7 @@ excluding web development.
 
 ![ml-project-flow](images/diagram.webp)
 
-## The difference between data science, machine learning engineering and mlops
+## The difference between data science, machine learning engineering and MLOps
 
 There are multiple definitions for data scientist and machine learning engineer, but a common theme for each is that:
 
@@ -37,11 +37,11 @@ There are multiple definitions for data scientist and machine learning engineer,
 | Machine Learning Engineer | Make sure mathematical models can be deployed                             |
 | MLOps                     | Deploy mathematical models and make sure the system is up and operational |
 
-As you can see, machine learning engineer is more closely aligned with software engineering, which makes sense why data
+As you can see, machine learning engineering is more closely aligned with software engineering, which makes sense why data
 scientists are struggling with model deployments, because it's a territory they are unfamiliar with.
 
 In the same vein, mlops is a subtype of devops, which utilizes different skills set than machine learning engineering.
-MLOps main focus is to making sure the whole pipelines are running smoothly and that the systems are operational.
+MLOps main focus is to make sure the whole pipelines are running smoothly and that the systems are operational.
 
 ## Why a separate MLOps role
 
