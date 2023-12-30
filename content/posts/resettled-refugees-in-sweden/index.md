@@ -181,7 +181,7 @@ def plot(region_name, region_list):
 plot('MENA', UniqueNames_mena)
 ```
 
-![](images/2021-08-18-18-49-07.png)
+![](images/2021-08-18-18-49-07.webp)
 
 You can see that a lot of Iraqi refugees resettled between 1990-1995, which coincides with the Gulf War (1990-1).
 
@@ -189,7 +189,7 @@ You can see that a lot of Iraqi refugees resettled between 1990-1995, which coin
 plot('Levant', UniqueNames_levant)
 ```
 
-![](images/2021-08-18-18-51-31.png)
+![](images/2021-08-18-18-51-31.webp)
 
 This graph shows only refugees from the Levant region. As expected, a lot of Iraqis sought asylum during the 90's, but Syrian refugees spiked up after 2010, which coincides with Arab Spring (2010-2).
 
@@ -197,6 +197,6 @@ This graph shows only refugees from the Levant region. As expected, a lot of Ira
 plot('North Africa', UniqueNames_north_africa)
 ```
 
-![](images/2021-08-18-18-51-58.png)
+![](images/2021-08-18-18-51-58.webp)
 
 In North Africa, Somalian refugees spiked up around 2010, which is the result from non-functioning government, which resulted in rising clan wars. Additionally, you can see that there are a lot of Eritrean refugees too, from indefinite conscription. Families of those who fled the military are also targeted.

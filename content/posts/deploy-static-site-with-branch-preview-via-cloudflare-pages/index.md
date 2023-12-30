@@ -105,4 +105,4 @@ Notice the "build" section, you can adjust this per your site's setup.
 
 This actions would work for both a push to master and a pull request
 
-![cloudflare pages branch preview](images/2022-10-05-02-40-24.png)
+![cloudflare pages branch preview](images/2022-10-05-02-40-24.webp)

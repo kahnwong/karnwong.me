@@ -27,7 +27,7 @@ But you probably are not the only one who amassed a lot of tracking data, and lu
 6. Wait for a day. (Initial setup only.)
 7. Head back to [BigQuery console](https://console.cloud.google.com/bigquery) and you should see the results.
 
-![picture 1](images/1faf596d55d0b74a522f327ff9849190c4afc76bbef2a0fd9ac36e1d6c80f8d5.png)
+![picture 1](images/1faf596d55d0b74a522f327ff9849190c4afc76bbef2a0fd9ac36e1d6c80f8d5.webp)
 
 ## Ingestion
 

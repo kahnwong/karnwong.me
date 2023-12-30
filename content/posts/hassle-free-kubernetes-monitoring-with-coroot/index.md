@@ -37,27 +37,27 @@ kubectl port-forward -n coroot service/coroot 8080:8080
 ---
 
 Most of my services are on Kubernetes installed via `k3s`.
-![applications overview](images/2023-06-09-20-16-36.png)
+![applications overview](images/2023-06-09-20-16-36.webp)
 
 ---
 
 Since I am installing Coroot on my home server, only a single node is reported, and it's mostly stay idle because I'm the only user.
-![nodes overview](images/2023-06-09-20-18-24.png)
+![nodes overview](images/2023-06-09-20-18-24.webp)
 
 ---
 
 When you access each service, it would display overview status for each observability metrics.
-![application detail](images/2023-06-09-20-21-23.png)
+![application detail](images/2023-06-09-20-21-23.webp)
 
 ---
 
 Hello four golden signals!
-![four golden signals](images/2023-06-09-20-22-16.png)
+![four golden signals](images/2023-06-09-20-22-16.webp)
 
 ---
 
 Under `tracing`, you can see which routes are being requested and you can see that Coroot is tailor-made for SRE disciplines because they also provide a quick-access button to see `error traces` and `latency SLO violations`.
-![tracing page](images/2023-06-09-20-24-22.png)
+![tracing page](images/2023-06-09-20-24-22.webp)
 
 ---
 

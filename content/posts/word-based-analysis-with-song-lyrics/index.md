@@ -127,7 +127,7 @@ g = sns.PairGrid(df[['word_count', 'unique_word_count']])
 g.map(plt.scatter)
 ```
 
-![](images/2021-08-18-19-02-25.png)
+![](images/2021-08-18-19-02-25.webp)
 
 ## Boxplot
 
@@ -142,7 +142,7 @@ plt.figure(figsize=(10,7))
 sns.boxplot(x="word_count", y="artist", data=df, orient='h')
 ```
 
-![](images/2021-08-18-19-02-38.png)
+![](images/2021-08-18-19-02-38.webp)
 
 ## Most common words
 
@@ -196,7 +196,7 @@ for index, i in enumerate(wordcount_group[group].unique()):
     axs[index].set_title(i)
 ```
 
-![](images/2021-08-18-19-02-53.png)
+![](images/2021-08-18-19-02-53.webp)
 
 From the above image, you can see that the top words don't vary much between albums. So I can conclude that Epica have a consistent lyric themes, but if you listen you can hear that their melody changes every album. For instance, in The Divine Conspiracy, it's very classical and oriental oriented, but in The Holographic Principle it gets heavier.
 
@@ -220,7 +220,7 @@ for index, i in enumerate(wordcount_group[group].unique()):
     axs[index].set_title(i)
 ```
 
-![](images/2021-08-18-19-03-11.png)
+![](images/2021-08-18-19-03-11.webp)
 
 Whoops. Still more or less the same. But if you look carefully, Powerwolf stands out because their lyrical themes are werewolves and myths.
 

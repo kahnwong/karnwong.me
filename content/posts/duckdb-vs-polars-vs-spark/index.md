@@ -23,7 +23,7 @@ And we're back to spark, where it's not that easy to setup, but if you get it to
 
 Enough talking, here's the benchmark:
 
-![dataframe showdown result](images/e22cca514a40af13328884eede1bfbcf2cee2e103f4230307d5859e5b444d8ff.png)
+![dataframe showdown result](images/e22cca514a40af13328884eede1bfbcf2cee2e103f4230307d5859e5b444d8ff.webp)
 
 If you see a small green bar chart for duckdb, the reason there's no values at > 30M rows is because it's been running for 14 minutes, and I would guess it would take much longer to finish the task. For comparison, a spark job against 270M rows only take `400 seconds / 60 seconds = 6.5 minutes`.
 
@@ -47,6 +47,6 @@ Repo is [here](https://github.com/kahnwong/dataframe-frameworks-showdown) if you
 
 What if you Window on multi-key partitions?
 
-![dataframe showdown result 2](images/9ad99e712d172b8964bbde490cf19c15a0056961ba9dc3e137c4bd397cc87f99.png)
+![dataframe showdown result 2](images/9ad99e712d172b8964bbde490cf19c15a0056961ba9dc3e137c4bd397cc87f99.webp)
 
 Spark wins! Makes sense, since spark can do parallel processing on each partition independently of each other. Also apparently a certain polar bear is very hungry!

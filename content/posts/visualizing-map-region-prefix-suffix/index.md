@@ -651,22 +651,22 @@ for key in gdf[key_column].unique():
 
 ## Output structure
 
-![](images/2021-08-18-19-12-14.png)
+![](images/2021-08-18-19-12-14.webp)
 
 ## Some interesting outputs (at subdistrict level)
 
 ### Northern region
 
 You can see that the prefix "แม่" concentrates around the northern region.
-![](images/2021-08-18-19-12-05.png)
+![](images/2021-08-18-19-12-05.webp)
 
 ### Eastern region
 
 "โนน" seems to be specific to the eastern seeing it's clustered around the eastern part of the country.
-![](images/2021-08-18-19-12-22.png)
+![](images/2021-08-18-19-12-22.webp)
 
 ### Multi-region
 
 As expected, "บาง" is clustered around the central region, no surprise here since the old name of Thailand's capital (it's located in the central region) is "บางกอก." But you can see that it's clustered around the southern parts as well.
 
-![](images/2021-08-18-19-12-35.png)
+![](images/2021-08-18-19-12-35.webp)

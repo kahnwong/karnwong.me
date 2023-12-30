@@ -16,7 +16,7 @@ Sounds familiar? If you have been looking into Airflow, this is exactly what it 
 
 ## [Dagster architecture](https://docs.dagster.io/deployment/overview)
 
-![dagster architecture](images/2022-09-27-19-27-01.png)
+![dagster architecture](images/2022-09-27-19-27-01.webp)
 
 This is how dagster work. But to set all this up yourself, you need to at least:
 
@@ -42,7 +42,7 @@ To test it out, you can [sign up on Dagster Cloud](https://dagster.cloud/signup)
 
 Frontend usually set up CI/CD to return a preview of a PR, now you can do the same with dagster!
 
-![dagster pr branch deployment](images/2022-09-27-19-35-47.png)
+![dagster pr branch deployment](images/2022-09-27-19-35-47.webp)
 
 This means your team can preview what the DAG would look like, or give it a spin before deploying to prod 🚀.
 
@@ -50,7 +50,7 @@ This means your team can preview what the DAG would look like, or give it a spin
 
 Imagine working in an organization with many teams. Some teams might use dbt, another might use spark. Sometimes each team has different virtual environment. Even if you can use the same setup for multiple teams, over time the number of pipelines would grow significantly, which means it's harder to manage. But we can set up a dagster repo for each team, then link them together via Dagster Cloud for a single control plane.
 
-![dagster workspace](images/2022-09-27-19-41-55.png)
+![dagster workspace](images/2022-09-27-19-41-55.webp)
 
 Notice each code location has attached git hash. Yay tracing!
 
@@ -58,7 +58,7 @@ Notice each code location has attached git hash. Yay tracing!
 
 Running multiple pipelines are cool. But if you update this pipeline, do you also need to update downstream pipelines? I'm sure you can have a list of pipelines dependency somewhere, but it's so much more convenient to see it right from dagster.
 
-![dagster table lineage](images/2022-09-27-19-45-20.png)
+![dagster table lineage](images/2022-09-27-19-45-20.webp)
 
 Notice the `Materialize` button on top right. This means you can trigger run on an upstream table, and it would automatically update downstream tables.
 

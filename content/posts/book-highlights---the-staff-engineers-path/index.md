@@ -24,7 +24,7 @@ When you find yourself in an echo chamber where everyone you meet holds the same
 
 ## A staff engineer navigating tricky terrain
 
-![](images/20230218170349.png)
+![](images/20230218170349.webp)
 
 ## Secret or open?
 
@@ -36,7 +36,7 @@ Knowing the cultural expectations around sharing is crucial. In a culture that k
 
 ## Most companies will be somewhere in the middle on each of these attributes
 
-![](images/20230218170520.png)
+![](images/20230218170520.webp)
 
 ## Pathological
 
@@ -44,7 +44,7 @@ A low-cooperation culture where power and status are the goal and people hoard i
 
 ## The chasm between an infrastructure and a product engineering organization
 
-![](images/20230218170659.png)
+![](images/20230218170659.webp)
 
 ## Disputed territory
 
@@ -52,7 +52,7 @@ It’s very hard to draw team boundaries in a way that lets each team work auton
 
 ## The new paved road is beautiful, but most of the places people actually want to go are deep in the marsh
 
-![](images/20230218170803.png)
+![](images/20230218170803.webp)
 
 ## Asking to join in
 
@@ -70,7 +70,7 @@ Focusing only on short-term goals limits the way you think about and frame your 
 
 ## The story of where you were and how much progress you’ve made as well as where you’re going
 
-![](images/20230218171015.png)
+![](images/20230218171015.webp)
 
 ## Tragedy of the commons
 
@@ -78,7 +78,7 @@ Teams pursuing their own best action without coordinating with others leads to a
 
 ## Depending on the size of the problem, you might start with an engineering-wide vision, a team-scoped vision, or something in between. Don’t create a vision, strategy, etc., unless you need it
 
-![](images/20230218171109.png)
+![](images/20230218171109.webp)
 
 ## Embrace the Boring Ideas
 
@@ -114,7 +114,7 @@ I love the “Three Bullets and a Call to Action” method that Brian Fitzpatric
 
 ## The team declared victory and went home—but there was another, better treasure they never got to
 
-![](images/20230218171842.png)
+![](images/20230218171842.webp)
 
 ## It’s Built on a Shaky Foundation
 

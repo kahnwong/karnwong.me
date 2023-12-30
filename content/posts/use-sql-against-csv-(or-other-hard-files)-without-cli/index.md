@@ -29,9 +29,9 @@ Interestingly enough, you can use in-memory [DuckDB](https://duckdb.org/) agains
 As for `JDBC URI`, set it as `jdbc:duckdb::memory:`
 
 DBeaver:
-![duckdb on dbeaver](images/2023-04-25-19-38-55.png)
+![duckdb on dbeaver](images/2023-04-25-19-38-55.webp)
 
 DataGrip:
-![duckdb on datagrip](images/2023-04-25-19-40-34.png)
+![duckdb on datagrip](images/2023-04-25-19-40-34.webp)
 
 The whole process takes less than 5 minutes. Give it a try and let me know how it goes!

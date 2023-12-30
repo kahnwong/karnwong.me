@@ -39,6 +39,6 @@ For my organization's workspace, we have set up alerts for ECS services status, 
 
 One time, someone merged a PR and suddenly we see a lot of service termination alerts. Turns out, this commit introduced a new feature that requires a new environment variable, but it wasn't added in the deployment specs yet. This also allows for fast feedback cycle, so you have an easier to time to trace your steps for likely event(s) that caused a service disruption.
 
-![ecs error logs](images/d3db35924b0a0d68a22b3821305f21ab0c4856781e1d3876c10af95776b531f2.png)
+![ecs error logs](images/d3db35924b0a0d68a22b3821305f21ab0c4856781e1d3876c10af95776b531f2.webp)
 
 Ops is easy, said no one, I think 😅.

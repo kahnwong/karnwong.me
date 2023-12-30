@@ -18,13 +18,13 @@ Imagine you are working on a microservice backend. You are just starting out, so
 
 AWS has a service known as Lambda, a serverless computing platform. This basically means "hey we can run your code, and you don't have to manage the infra at all." You go check it out, and you are very pleased to see that Lambda supports a lot of runtime.
 
-![lambda runtime](images/2023-04-22-20-00-57.png)
+![lambda runtime](images/2023-04-22-20-00-57.webp)
 
 ## The honeymoon period
 
 You go through the setup wizard, at the end you see a Lambda function goes live, and it also gives you a code editor!
 
-![lambda code editor](images/2023-04-22-20-03-54.png)
+![lambda code editor](images/2023-04-22-20-03-54.webp)
 
 You really love this, because you don't have to go through the `edit code > zip > upload to Lambda > test on Lambda` loop for eternity. You add more lines of code, getting closer to your end product. Then you hit a block because a calculation function you need to use is very hard to do manually, you need to use a library for that. You go looking for a library, and fortune is on your side because you found it. Then you froze, because you just realize that you can't install packages in Lambda, since it doesn't give you a terminal console 😱.
 

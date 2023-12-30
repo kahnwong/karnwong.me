@@ -630,7 +630,7 @@ Duration: 3m25s
 
 Don't you love it when everything works as you planned 😎.
 
-![checkly status checks](images/2022-09-26-15-30-32.png)
+![checkly status checks](images/2022-09-26-15-30-32.webp)
 
 To teardown all resources, run `pulumi destroy`. If successful, your terminal should return:
 

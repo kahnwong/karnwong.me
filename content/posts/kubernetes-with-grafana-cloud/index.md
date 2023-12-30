@@ -24,6 +24,6 @@ There is a way of out this though - use managed grafana (via [grafana cloud](htt
 
 If you follow the instructions successfully, head to your grafana cloud dashboard, and you should see your cluster metrics pop up:
 
-![picture 1](images/89ab6ea8ef3397a80470c0e75dcd5e3f3885b6e124c0d68a44dce806f082c7be.png)
+![picture 1](images/89ab6ea8ef3397a80470c0e75dcd5e3f3885b6e124c0d68a44dce806f082c7be.webp)
 
 And the best part is it's the same dashboards you get from installing `kube-prometheus-stack` above! And you can access the dashboard from anywhere as well, instead of doing a port forward every time you want to see the dashboard.

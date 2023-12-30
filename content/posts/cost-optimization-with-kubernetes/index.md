@@ -25,7 +25,7 @@ Under the hood, it utilizes [prometheus metrics], in conjunction with [provision
 
 You can follow OpenCost install instructions [here](https://www.opencost.io/docs/install). Wait for a few days for prometheus to collect usage metrics, and check out OpenCost dashboard. This is what mine looks like:
 
-![picture 1](images/4d695173c90ef2db997019774a93863847a39368e35bfdaf48d79b76acca515b.png)
+![picture 1](images/4d695173c90ef2db997019774a93863847a39368e35bfdaf48d79b76acca515b.webp)
 
 Notice `efficiency` column, this tells how well your resources are being utilized. If you see a low number here, consider using function-as-a-service or other cloud compute where pricing is calculated per usage, not active time (something like gcp's cloud run).
 
