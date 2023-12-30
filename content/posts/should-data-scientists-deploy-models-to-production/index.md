@@ -16,7 +16,7 @@ there is a pattern here. This article is my reflection on the matter.
 ## So what's the problem?
 
 Data scientists, by definition, create mathematical models from data so some unknowns can become known. This is
-colloquially known as "prediction."  For example, if you have sales data from last year, you can use it to forecase
+colloquially known as "prediction."  For example, if you have sales data from last year, you can use it to forecast
 sales performance of next year.
 
 The fun starts when data scientists have to "deploy" models to production, because their expertise do not always extend
