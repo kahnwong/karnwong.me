@@ -29,7 +29,7 @@ excluding web development.
 
 ## The difference between data science, machine learning engineering and MLOps
 
-There are multiple definitions for data scientist and machine learning engineer, but a common theme for each is that:
+There are multiple definitions for data scientist, machine learning engineer and mlops, but a common theme for each is that:
 
 | Role                      | Area of Focus                                                             |
 |---------------------------|---------------------------------------------------------------------------|
