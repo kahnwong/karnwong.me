@@ -18,7 +18,7 @@ Apart from my professional pursuits, I actively contribute to tech & data commun
 
 When I have lessons to share I enjoy speaking at conferences.
 
-Surprisingly, I do enjoy cooking a lot, but not as much as tinkering with my homelab.
+Surprisingly, I do enjoy cooking a lot, but not as much as tinkering with my [homelab](https://github.com/kahnwong/self-hosted).
 
 I’m probably listening to symphonic heavy metal.
 
