@@ -44,6 +44,12 @@ And unsurprisingly, our tech team recognized me as DevSecMLFinDataOps.
 | [Google Cloud Professional Cloud Architect](https://google.accredible.com/af628a29-bca4-4987-aba5-4bb1456dfe3a) | ![GCP PCA](images/2023-10-16-21-25-26.png)                   |
 |[AWS Community Builder 2022](https://aws.amazon.com/developer/community/community-builders/community-builders-directory/?cb-cards.sort-by=item.additionalFields.cbName&cb-cards.sort-order=asc&awsf.builder-category=*all&awsf.location=*all&awsf.year=*all&cb-cards.q=karn%2Bwong&cb-cards.q_operator=AND)|![AWS CB 22](images/2023-10-16-21-32-01.png)|
 
+### Friends
+
+- [Apiporn Simapornchai (Faith)](https://faithstory.info)
+- [Snuufix](https://snuu.io/)
+- [Chris Dong](https://cdong.us/)
+
 ---
 
 - [Recommended books]({{< ref "/books" >}})
