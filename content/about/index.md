@@ -8,7 +8,7 @@ ShowToc: false
 
 <!--- ![me-at-grill-the-data](/about/me-at-grill-the-data.jpg) -->
 
-I'm currently the platform engineer at [Data Cafe (Thailand)](https://www.datacafethailand.com/).
+I'm currently a platform engineer at [Data Cafe (Thailand)](https://www.datacafethailand.com/).
 
 Previously I was a Data Engineer, Machine Learning Engineer and Site Reliability Engineer. Before that I was doing IT Support and System Administration.
 
