@@ -64,7 +64,8 @@ work:
       - Reduce runtime for PR code quality checks by 90% to shorten feedback loop cycle
       - Set up secrets management using SOPS/Terraform/AWS SSM, for improved security and secrets rotation
       - Launch Baania Engineering Blog, a platform to showcase how Baania does things behind the scenes
-      - Reduce employee onboarding time per employee by a few days via a setup script to setup necessary tools, applications and environment for development
+      - Reduce employee onboarding time per employee from a few days to 30 minutes via a setup script to setup necessary tools, applications and environment
+        for development
       - Optimize a nearby POI lookup in PostGIS against 4 million rows with lochash, in turn reducing query runtime and resources requirements. Runtime
         is reduced from 10 minutes to 2 seconds
   - name: Baania
