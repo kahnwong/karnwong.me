@@ -1,0 +1,68 @@
+---
+name: Deploy
+
+on:
+  push:
+    branches: [master]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout Repository"
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+
+      ########################
+      # build resume
+      ########################
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: yarn
+          cache-dependency-path: resume/yarn.lock
+      - uses: vegardit/gha-setup-yq@v1
+      - name: build resume
+        run: |
+          cd resume
+          yarn install
+          yarn build
+          cp resume.html ../static/resume.html
+
+      ########################
+      # build hugo
+      ########################
+      - name: Install hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "latest"
+          extended: true
+
+      - name: Set timezone
+        uses: szenius/set-timezone@v1.0
+        with:
+          timezoneLinux: "Asia/Bangkok"
+          timezoneMacos: "Asia/Bangkok"
+          timezoneWindows: "SE Asia Standard Time"
+
+      - name: Build site
+        run: |
+          hugo
+
+      ########################
+      # publish
+      ########################
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID}}
+          projectName: karnwong-me
+          directory: public
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}

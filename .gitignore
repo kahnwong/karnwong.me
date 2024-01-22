@@ -1,0 +1,18 @@
+# hugo
+public
+.hugo_build.lock
+
+# python
+**/.ipynb_checkpoints/
+
+# resume
+node_modules
+resume.json
+resume.html
+resume.pdf
+
+# ide
+.idea
+
+# utils
+create-post

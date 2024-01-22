@@ -1,0 +1,303 @@
+---
+basics:
+  name: Karn Wong
+  label: Platform engineer | HashiCorp Ambassador | AWS & GCP Certified | AWS Community Builder
+  email: karn@karnwong.me
+  phone: ""
+  website: https://karnwong.me
+  profiles:
+    - network: Github
+      username: kahnwong
+      url: https://github.com/kahnwong
+    - network: LinkedIn
+      username: karnsiree-w-7b535b202
+      url: https://www.linkedin.com/in/karnsiree-w-7b535b202/
+work:
+  - name: Data Cafe (Thailand)
+    position: Platform engineer
+    website: https://www.datacafethailand.com/
+    startDate: 2023-01-03
+    endDate:
+    # highlights:
+  - name: Baania
+    position: Head of platform engineering
+    website: https://www.baania.com
+    startDate: 2022-10-01
+    endDate: 2023-12-28
+    highlights:
+      - Research and implement internal data platform v2, with CI/CD for integration and unit tests, dependencies and code changes
+      - Use Terraform with Infracost to asses infrastructure cost to prune unused/underutilized resources, in turn reduce 33% of cloud cost per month (FinOps)
+      - Design and implement end-to-end cloud-native application deployment (Terraform for infra/secrets, Helm for application deployment, GitHub Actions
+        for CI/CD, Kubernetes for container orchestration)
+      - "Lead a major core product refactoring across ops, engineering and data (data engineering, data science and machine learning engineering). Affected
+        areas: data pipelines, model training pipelines, real-time inference endpoints, database performance optimization, deployment pipelines, local development
+        workflow"
+      - Lead a cloud migration from AWS to GCP
+      - Introduce H3 spatial indexing to improve spatial queries performance. This also allows any system to obtain the performance gain, since it is not
+        tied to execution engine with spatial support
+  - name: Baania
+    position: Lead Data Engineer | Machine Learning Engineer | SRE
+    website: https://www.baania.com
+    startDate: 2022-01-10
+    endDate: 2022-09-30
+    highlights:
+      - Enable backend team to perform auto-deployment to ECS with Terraform and GitHub Actions
+      - Manage repo permissions / secrets / webhooks with Terraform
+      - Research BI solution to consolidate fragmented dashboard platforms into a single one
+      - Setup Grafana for centralized metrics and logs monitoring
+      - Introduce Sourcegraph to help with code search and refactoring
+      - Setup GitOps for Terraform to enable collaboration between different teams, in turn reducing configuration drift
+      - Architect end-to-end machine learning project involving reproducible data / model training pipelines, hyper-parameter tuning, CI/CD for inference
+        API endpoint (MLOps). Real-time model performance dashboard and tracing via request id are also implemented via Grafana
+  - name: Baania
+    position: Senior Data Engineer
+    website: https://www.baania.com
+    startDate: 2021-01-29
+    endDate: 2022-01-10
+    highlights:
+      - Reduce development time for ETL pipelines from a week to 1 day via workflow redesign + codebase refactoring
+      - Mentor data engineers
+      - Consult other teams as a platform engineer
+      - Set up alerts & monitoring to automatically notify task failures (ChatOps)
+      - Create a script to automatically grant postgres access permission based on user groups, with option for special permissions per-user basis
+      - Optimize a large spark pipeline that fails often due to OOM with divide-and-conquer method for unlimited scaling
+      - Reduce runtime for PR code quality checks by 90% to shorten feedback loop cycle
+      - Set up secrets management using SOPS/Terraform/AWS SSM, for improved security and secrets rotation
+      - Launch Baania Engineering Blog, a platform to showcase how Baania does things behind the scenes
+      - Reduce employee onboarding time per employee from a few days to 30 minutes via a setup script to setup necessary tools, applications and environment
+        for development
+      - Optimize a nearby POI lookup in PostGIS against 4 million rows with lochash, in turn reducing query runtime and resources requirements. Runtime
+        is reduced from 10 minutes to 2 seconds
+  - name: Baania
+    position: Data Engineer
+    website: https://www.baania.com
+    startDate: 2018-04-02
+    endDate: 2021-01-29
+    highlights:
+      - Create and maintain data gathering infrastructure for daily ingestion and processing to be stored in data lake (S3)
+      - Create and optimize machine learning models to achieve near-realtime performance
+      - Create and maintain ETL pipelines via task orchestrator to reduce data update frequency from once a month to daily
+      - Deploy and maintain ML via cloud services to reduce ML deployment time from a day to within minutes
+      - Mentor data scientists
+      - Automate infrastructure and governance using Terraform
+      - Package cron services to AWS ECS and invoke via AWS ECS Task to cut down cost from 50 USD / year to 0.1 USD / year
+  - name: "-"
+    position: IT Support & SysAdmin
+    startDate: 2015-01-01
+    endDate: 2018-12-31
+education:
+  - institution: Rangsit University
+    area: Information and Communication Technology
+    studyType: Bachelor
+    startDate: "2015"
+    endDate: "2018"
+certificates:
+  - name: HashiCorp Ambassador 2023
+    date: 2023
+    issuer: HashiCorp
+    url: https://www.credly.com/badges/850db8f0-746b-4ffb-bd5e-06d84f048f1b
+  - name: AWS Certified Solutions Architect – Associate
+    date: 2023
+    issuer: AWS
+    url: https://www.credly.com/badges/0e07c3db-19c2-4ade-bb6c-66df4929fc5c/public_url
+  - name: Google Cloud Professional Cloud Architect
+    date: 2022
+    issuer: Google Cloud Platform
+    url: https://google.accredible.com/af628a29-bca4-4987-aba5-4bb1456dfe3a
+  - name: AWS Community Builder 2023
+    date: 2023
+    issuer: AWS
+    url: 
+      https://aws.amazon.com/developer/community/community-builders/community-builders-directory/?cb-cards.sort-by=item.additionalFields.cbName&cb-cards.sort-order=asc&awsf.builder-category=*all&awsf.location=*all&awsf.year=*all&cb-cards.q=karn%2Bwong&cb-cards.q_operator=AND
+  - name: Dagster Essentials
+    date: 2023
+    issuer: Dagster Labs
+    url: https://courses.dagster.io/certificates/dpy66jhmvg
+publications:
+  - name: Using Classification Technique for Customer Relationship Management based on Thai Social Media Data
+    publisher: ICCAE
+    releaseDate: 2019-02-01
+    website: https://doi.org/10.1145/3313991.3314010
+languages:
+  - language: English
+    fluency: Native or bilingual proficiency
+  - language: Thai
+    fluency: Native or bilingual proficiency
+projects:
+  # ---------------- devops ----------------
+  - name: self-hosted
+    url: https://github.com/kahnwong/self-hosted/
+    highlights:
+      - "Alternative / self-hosted version for popular subscription services: Netflix, Spotify, LastPass, Trello, Dropbox, NordVPN, etc."
+      - Managed via docker-compose and helm
+      - Use Caddy for reverse-proxy
+      - Use terraform to manage DNS via Cloudflare
+    keywords:
+      - docker
+      - kubernetes
+      - helm
+      - terraform
+    startDate: 2017-12-01
+    type: devops
+  - name: nix
+    highlights:
+      - A cross-platform setup script that works with both Linux and Mac.
+    keywords:
+      - Nix
+      - environment
+      - dotfiles
+      - package manager
+    startDate: 2022-11-30
+    type: devops
+    url: https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/
+  - name: Proxmox VM Selector
+    highlights:
+      - A simple TUI to select which Proxmox VM to start/stop.
+    keywords:
+      - proxmox
+      - tui
+    startDate: 2023-12-21
+    endDate: 2023-12-21
+    type: devops
+    url: https://github.com/kahnwong/proxmox-vm-selector
+  - name: GKE Autopilot Cost Calculator
+    highlights:
+      - Calculate GKE Autopilot workloads cost.
+      - Available for normal application deployments and spark-submit jobs.
+    keywords:
+      - streamlit
+      - gke
+    startDate: 2023-09-12
+    endDate: 2023-09-12
+    type: devops
+    url: https://gke-autopilot-cost-calculator.karnwong.me/
+  - name: pgconn
+    highlights:
+      - pgcli wrapper to connect to PostgreSQL database specified in db.yaml. Proxy/tunnel connection is automatically created and killed when pgcli is
+        exited.
+    keywords:
+      - postgres
+      - ssh tunneling
+      - cli
+    startDate: 2023-08-24
+    endDate: 2023-08-31
+    type: devops
+    url: https://github.com/kahnwong/pgconn
+  - name: Vercel - Multi Branch Deployment
+    highlights:
+      - Use GitHub Actions to deploy a frontend project from different branches (dev, uat, master), each with their own preview environment.
+    keywords:
+      - terraform
+      - github actions
+      - vercel
+    startDate: 2023-06-17
+    endDate: 2023-06-17
+    type: devops
+    url: https://github.com/kahnwong/vercel-multi-branch-deployment
+  # ---------------- data ----------------
+  - name: Spark on Kubernetes
+    highlights:
+      - Run spark jobs on kubernetes, which can be used both locally and on production environment.
+    keywords:
+      - spark
+      - kubernetes
+      - minio
+      - finops
+      - devex
+    startDate: 2023-09-09
+    endDate: 2023-09-10
+    type: data
+    url: https://www.karnwong.me/posts/2023/09/spark-on-kubernetes/
+  - name: Dataframe Frameworks Showdown
+    highlights:
+      - Benchmark performance between duckdb, polars and spark. In addition to runtime, RAM usage is also provided.
+    keywords:
+      - duckdb
+      - polars
+      - spark
+      - dataframe
+      - data engineering
+    startDate: 2023-04-05
+    endDate: 2023-04-10
+    type: data
+    url: https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/
+  - name: Impute Pipelines
+    highlights:
+      - Use machine learning to fill in missing data.
+      - Utilize hyperparameter tuning to find the optimum parameters.
+    keywords:
+      - Machine Learning
+      - data science
+      - hyperparameter tuning
+    startDate: 2019-11-28
+    endDate: 2019-12-23
+    url: https://www.karnwong.me/posts/2020/05/impute-pipelines/
+    type: data
+interests:
+  - name: Humanities
+    keywords:
+      - Anthropology
+      - Linguistics
+      - Psychology
+      - Sociology
+  - name: Music
+    keywords:
+      - Symphonic Heavy Metal
+      - Power Metal
+      - Folk Metal
+      - Classical Crossover
+      - Operatic Pop
+  - name: Technology
+    keywords:
+      - Platform Engineering
+      - DevX
+      - Kubernetes
+      - DevOps / DataOps / MLOps
+      - Scaling & Optimization
+volunteer:
+  - organization: Data Engineering Discord
+    position: Moderator / Staff & Frequent Contributor
+    startDate: 2020
+  - organization: Data Science Discord
+    position: Frequent Contributor
+    startDate: 2021
+  - organization: DevOps, SRE & Infrastructure Discord
+    position: Frequent Contributor
+    startDate: 2021
+  - organization: Data Engineer Cafe
+    position: Frequent Contributor
+    startDate: 2022
+skills:
+  - name: Cloud Native
+    keywords:
+      - Docker
+      - Kubernetes
+      - Helm
+      - K3S
+      - Harbor
+      - Grafana
+      - Prometheus
+      - Minio
+      - MLflow
+  - name: DevOps
+    keywords:
+      - Caddy
+      - Terraform
+      - GitHub Actions
+      - Proxmox
+  - name: Data / ML
+    keywords:
+      - Apache Spark
+      - Apache Parquet
+      - Polars / Pandas / DuckDB
+      - Postgres / BigQuery
+      - Scikit-learn / Spark MLib
+      - DVC
+      - H3 / QGIS
+      - FastAPI / Pydantic / Pytest
+  - name: Cloud
+    keywords:
+      - AWS
+      - GCP
+      - Digital Ocean
+      - Cloudflare

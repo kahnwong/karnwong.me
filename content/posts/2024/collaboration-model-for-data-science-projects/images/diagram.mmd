@@ -1,0 +1,25 @@
+graph TD;
+    subgraph business[Business]
+        direction LR
+        client[Client] --> ba[Business Analyst]
+    end
+
+    subgraph web-dev[Web Development]
+        direction LR
+        tech-lead[Tech Lead] --> team[Team]
+    end
+
+    subgraph ds-dev[Data / ML Development]
+        direction LR
+        tech-lead2[Tech Lead] --> ds[Data Scientist] --> mle[Machine Learning Engineer]
+    end
+
+    subgraph devops[DevOps]
+        direction LR
+        pf-sa[Platform / Solutions Architect] --> devops-engineer[DevOps Engineer]
+    end
+
+    business --> pm[Product Owner]
+    pm --> web-dev --> devops
+    pm --> ds-dev --> devops
+    ds-dev --> web-dev

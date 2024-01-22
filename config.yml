@@ -1,0 +1,136 @@
+---
+baseURL: https://karnwong.me/
+# baseURL: "/"
+title: Karn Wong
+paginate: 5
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: false
+googleAnalytics: G-8CYMFC0KZ9
+
+minify:
+  disableXML: true
+  # minifyOutput: true
+
+languages:
+  en:
+    languageName: English
+    weight: 1
+    menu:
+      main:
+        - name: About
+          url: about/
+          weight: 1
+        - name: Consulting
+          url: consulting/
+          weight: 2
+        # - name: Recommended Posts
+        #   url: tags/recommended/
+        #   weight: 3
+        - name: Archives
+          url: archives
+          weight: 4
+        - name: Projects
+          url: projects/
+          weight: 5
+        - name: Talks
+          url: talks/
+          weight: 6
+        - name: Tags
+          url: tags/
+          weight: 7
+        - name: Search
+          url: search/
+          weight: 8
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+permalinks:
+  posts: /:section/:year/:month/:slugorfilename
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  description: Homepage and blog by Karn Wong
+  author: Karn Wong
+
+  assets:
+    disableFingerprinting: true
+
+  defaultTheme: auto
+  # disableThemeToggle: true
+  ShowShareButtons: true
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  # ShowToc: true
+
+  homeInfoParams:
+    Title: Karn Wong
+    Content: Platform engineer | HashiCorp Ambassador | AWS SA-Associate & GCP PCA Certified
+  TocSide: left # or 'right'
+
+  # profileMode:
+  #   enabled: true
+  #   title: Karn Wong
+  #   subtitle: Head of platform engineering | HashiCorp Ambassador | AWS Community Builder | GCP Certified
+
+  socialIcons:
+    - name: github
+      url: https://github.com/kahnwong
+    - name: linkedin
+      url: https://www.linkedin.com/in/karnsiree-w-7b535b202/
+    - name: email
+      url: mailto:karn@karnwong.me
+    - name: cv
+      url: /resume.html
+    - name: RsS
+      url: index.xml
+    - name: webring
+      url: https://webring.wonderful.software#karnwong.me
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+markup:
+  highlight:
+    style: monokai
+    # noClasses: false
+    # guessSyntax: true
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+
+  instagram:
+    disabled: false
+    simple: true
+
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
