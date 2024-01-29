@@ -19,7 +19,7 @@ Many data science teams are struggling with implementing end-to-end machine lear
 **Note**: The diagram does not signify order of communication. Rather, it states the communication pathways between teams.
 
 1. Clients have problems. Business Analysts gather initial requirements.
-2. Product owners break technical tasks, to be discussed with Tech Lead on both Web Development and Data Team
+2. Project managers plan tasks and timelines, to be discussed with Tech Lead on both Web Development and Data Team
 3. Tech Lead on both teams discuss how their services should be integrated, then loop in Platform Engineer / Solutions Architect on the deployment model, in which DevOps Engineer would be the one implementing CI/CD / deployment.
 4. Once each Team Lead break down the tasks, the team would start developing services.
 5. Specifically for Data Team, once the ML model is working, it would be sent over to Machine Learning Engineer to optimize and  refactor the code, so it's ready for production.
