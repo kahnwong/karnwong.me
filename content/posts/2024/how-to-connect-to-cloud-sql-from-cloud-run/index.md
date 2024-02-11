@@ -23,7 +23,7 @@ From above diagram, the Backend instance can access the database directly, since
 
 ## Cloud Run and and Cloud SQL
 
-With Cloud Run and Cloud SQL, thins are a bit different, but for a good reason. Both Cloud Run and Cloud SQL are in GCP-managed VPC, meaning, they can talk to each other directly.
+With Cloud Run and Cloud SQL, things are a bit different, but for a good reason. Both Cloud Run and Cloud SQL are in GCP-managed VPC, meaning, they can talk to each other directly.
 
 ![gcp-nentwork](images/gcp-nentwork.webp)
 
