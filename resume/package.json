@@ -5,7 +5,8 @@
     "resume-cli": "^3.0.8"
   },
    "scripts": {
-    "build": "yq -I2 resume.yaml -o=json > resume.json && resume export resume.html --theme stackoverflow-mats"
+    "build": "yq -I2 resume.yaml -o=json > resume.json && resume export resume.html --theme stackoverflow-mats",
+     "dev": "fd resume.yaml | entr yarn build"
   },
   "license": "MIT"
 }

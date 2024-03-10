@@ -128,10 +128,10 @@ projects:
   - name: self-hosted
     url: https://github.com/kahnwong/self-hosted/
     highlights:
-      - "Alternative / self-hosted version for popular subscription services: Netflix, Spotify, LastPass, Trello, Dropbox, NordVPN, etc."
-      - Managed via docker-compose and helm
+      - "Alternative / self-hosted version for popular subscription services: Netflix, Spotify, LastPass, Trello, Dropbox, NordVPN, etc"
+      - Managed via docker-compose, helm and terraform
+      - Use terraform to manage Cloudflare and Kubernetes.
       - Use Caddy for reverse-proxy
-      - Use terraform to manage DNS via Cloudflare
     keywords:
       - docker
       - kubernetes
@@ -139,9 +139,19 @@ projects:
       - terraform
     startDate: 2017-12-01
     type: devops
+  - name: docs
+    url: https://docs.karnwong.me/
+    highlights:
+      - Personal documentation website on various topics
+    keywords:
+      - documentation
+      - knowledge base
+      - vitepress
+    startDate: 2020-01-01
+    type: devops
   - name: nix
     highlights:
-      - A cross-platform setup script that works with both Linux and Mac.
+      - A cross-platform setup script that works with both Linux and Mac
     keywords:
       - Nix
       - environment
@@ -152,7 +162,7 @@ projects:
     url: https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/
   - name: Proxmox VM Selector
     highlights:
-      - A simple TUI to select which Proxmox VM to start/stop.
+      - A simple TUI to select which Proxmox VM to start/stop
     keywords:
       - proxmox
       - tui
@@ -160,21 +170,20 @@ projects:
     endDate: 2023-12-21
     type: devops
     url: https://github.com/kahnwong/proxmox-vm-selector
-  - name: GKE Autopilot Cost Calculator
+  - name: Calculator
     highlights:
-      - Calculate GKE Autopilot workloads cost.
-      - Available for normal application deployments and spark-submit jobs.
+      - Meeting cost, GKE Autopilot and cloud cost calculator
     keywords:
-      - streamlit
-      - gke
-    startDate: 2023-09-12
-    endDate: 2023-09-12
+      - quasar
+      - static site
+    startDate: 2024-03-04
+    endDate: 2024-03-07
     type: devops
-    url: https://gke-autopilot-cost-calculator.karnwong.me/
+    url: https://calculator.karnwong.me/
   - name: pgconn
     highlights:
       - pgcli wrapper to connect to PostgreSQL database specified in db.yaml. Proxy/tunnel connection is automatically created and killed when pgcli is
-        exited.
+        exited
     keywords:
       - postgres
       - ssh tunneling
@@ -185,7 +194,7 @@ projects:
     url: https://github.com/kahnwong/pgconn
   - name: Vercel - Multi Branch Deployment
     highlights:
-      - Use GitHub Actions to deploy a frontend project from different branches (dev, uat, master), each with their own preview environment.
+      - Use GitHub Actions to deploy a frontend project from different branches (dev, uat, master), each with their own preview environment
     keywords:
       - terraform
       - github actions
@@ -197,7 +206,7 @@ projects:
   # ---------------- data ----------------
   - name: Spark on Kubernetes
     highlights:
-      - Run spark jobs on kubernetes, which can be used both locally and on production environment.
+      - Run spark jobs on kubernetes, which can be used both locally and on production environment
     keywords:
       - spark
       - kubernetes
@@ -210,7 +219,7 @@ projects:
     url: https://www.karnwong.me/posts/2023/09/spark-on-kubernetes/
   - name: Dataframe Frameworks Showdown
     highlights:
-      - Benchmark performance between duckdb, polars and spark. In addition to runtime, RAM usage is also provided.
+      - Benchmark performance between duckdb, polars and spark. In addition to runtime, RAM usage is also provided
     keywords:
       - duckdb
       - polars
@@ -223,8 +232,8 @@ projects:
     url: https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/
   - name: Impute Pipelines
     highlights:
-      - Use machine learning to fill in missing data.
-      - Utilize hyperparameter tuning to find the optimum parameters.
+      - Use machine learning to fill in missing data
+      - Utilize hyperparameter tuning to find the optimum parameters
     keywords:
       - Machine Learning
       - data science
