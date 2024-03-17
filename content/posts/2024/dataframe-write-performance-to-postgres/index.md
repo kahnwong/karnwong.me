@@ -8,7 +8,7 @@ tags:
   - data engineering
 ---
 
-Previously, I talked about [dataframe performance]({{< ref "/posts/2023/duckdb-vs-polars-vs-spark" >}}), but this doesn't include the writing data to destination part.
+Previously, I talked about [dataframe performance]({{< ref "/posts/2023/duckdb-vs-polars-vs-spark" >}}), but this doesn't include writing data to destination part.
 
 At a large scale, big data means you need to use spark for data processing (unless you prefer SQL, in which this post is irrelevant). But not many orgs need big data, so small data frameworks should work, since they are easier to setup and use compared to spark.
 
