@@ -20,7 +20,7 @@ Repo is [here](github.com/kahnwong/db-write-performance-benchmark/). The results
 
 ![benchmark](images/benchmark.png)
 
-This is in-line with spark vs polars performance, since polars put everything in-memory, whereas spark can read from disk. Additionally, spark is a distributed framework, so there is an overhead compared to polars.
+Polars is faster than spark when it comes to writing data to postgres. This is in-line with spark vs polars performance, since polars puts everything in-memory, whereas spark can read from disk. Additionally, spark is a distributed framework, so there is an overhead compared to polars.
 
 Essentially, if your data is small enough (but larger than pandas can deal with) you can use polars. But if your data is very large, consider using spark, so you don't run into scaling issues later on.
 
