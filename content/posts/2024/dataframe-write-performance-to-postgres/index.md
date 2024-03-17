@@ -16,7 +16,7 @@ Initially I wanted to include pandas as well, but sadly it performs significantl
 
 ## Benchmark results
 
-Repo is [here](github.com/kahnwong/db-write-performance-benchmark/). The results:
+Repo is [here](https://github.com/kahnwong/db-write-performance-benchmark/). The results:
 
 ![benchmark](images/benchmark.png)
 
