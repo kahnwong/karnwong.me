@@ -4,9 +4,9 @@
     "jsonresume-theme-stackoverflow-mats": "^2.1.0",
     "resume-cli": "^3.0.8"
   },
-   "scripts": {
+  "scripts": {
     "build": "yq -I2 resume.yaml -o=json > resume.json && resume export resume.html --theme stackoverflow-mats",
-     "dev": "fd resume.yaml | entr yarn build"
+    "dev": "fd resume.yaml | entr yarn build"
   },
   "license": "MIT"
 }
