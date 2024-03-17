@@ -18,7 +18,8 @@ work:
     website: https://www.datacafethailand.com/
     startDate: 2023-01-03
     endDate:
-    # highlights:
+    highlights:
+      - Guide teams on how to better collaborate to achieve faster feedback loops and delivery
   - name: Baania
     position: Head of platform engineering
     website: https://www.baania.com
@@ -32,7 +33,7 @@ work:
       - "Lead a major core product refactoring across ops, engineering and data (data engineering, data science and machine learning engineering). Affected
         areas: data pipelines, model training pipelines, real-time inference endpoints, database performance optimization, deployment pipelines, local development
         workflow"
-      - Lead a cloud migration from AWS to GCP
+      - Lead a cloud migration from AWS to GCP (AWS ECS to GCP GKE)
       - Introduce H3 spatial indexing to improve spatial queries performance. This also allows any system to obtain the performance gain, since it is not
         tied to execution engine with spatial support
   - name: Baania
