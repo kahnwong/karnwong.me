@@ -31,6 +31,7 @@ ShowToC: false
 
 ## 2024
 
-| Date | Title | Event |
-|-|-|-|
-|Jan 2024| [Record CLI-based workflows with VHS](https://github.com/kahnwong/vhs-demo) | [BKK.JS #19: Into the New Year](https://www.eventpop.me/e/16880) |
+| Date     | Title                                                                         | Event                                                                                                                                                                                 |
+|----------|-------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Jan 2024 | [Record CLI-based workflows with VHS](https://github.com/kahnwong/vhs-demo)   | [BKK.JS #19: Into the New Year](https://www.eventpop.me/e/16880)                                                                                                                      |
+| Mar 2024 | [Friendly shell environment setup](/pdf/friendly-shell-environment-setup.pdf) | [WTM International Women's Day Bangkok 2024](https://gdg.community.dev/events/details/google-gdg-cloud-bangkok-presents-gdg-cloud-bangkok-wtm-international-womens-day-bangkok-2024/) |
