@@ -34,7 +34,7 @@ It's almost the end of day, and you are almost done with an MVP. Then you got a 
 
 You don't have a lot of time on your hand, since the feature requests were at the last minute. You know this will be a tech debt, but given the time frame, it's the best course of action, so you decide to add more features to existing Lambda function.
 
-These features, it's quite interesting, because they do completely different things, requiring different libraries. You installed a few more packages locally, so you can init new environment on Lambda. You do your usual workflow: `zip > upload > test`, but this time it wouldn't deploy! It ways the package size is too large. But you can still upload the zip package to s3 and submit it as a deployment artifact on Lambda, so you're good for now. You can tell that this project is going to be a success!
+These features, it's quite interesting, because they do completely different things, requiring different libraries. You installed a few more packages locally, so you can init new environment on Lambda. You do your usual workflow: `zip > upload > test`, but this time it wouldn't deploy! It says the package size is too large. But you can still upload the zip package to s3 and submit it as a deployment artifact on Lambda, so you're good for now. You can tell that this project is going to be a success!
 
 ## Reality hits
 
