@@ -265,18 +265,22 @@ interests:
       - DevOps / DataOps / MLOps
       - Scaling & Optimization
 volunteer:
-  - organization: Data Engineering Discord
-    position: Moderator / Staff & Frequent Contributor
-    startDate: 2020
-  - organization: Data Science Discord
-    position: Frequent Contributor
-    startDate: 2021
-  - organization: DevOps, SRE & Infrastructure Discord
-    position: Frequent Contributor
-    startDate: 2021
+  - organization: Data Engineer Thailand
+    position: Moderator & Frequent Contributor
+    startDate: 2024
   - organization: Data Engineer Cafe
     position: Frequent Contributor
     startDate: 2022
+  - organization: DevOps, SRE & Infrastructure Discord
+    position: Frequent Contributor
+    startDate: 2021
+  - organization: Data Science Discord
+    position: Frequent Contributor
+    startDate: 2021
+  - organization: Data Engineering Discord
+    position: Moderator & Frequent Contributor
+    startDate: 2020
+
 skills:
   - name: Cloud Native
     keywords:
