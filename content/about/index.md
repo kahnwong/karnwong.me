@@ -36,6 +36,7 @@ Fun fact: [this dude](https://faithstory.info/) stole my homelab configuration, 
 - [Data Science Discord](https://discord.com/invite/UYNaemm) (English)
 - [DevOps, SRE, & Infrastructure Discord](https://discord.com/invite/VEEnHkPzY6) (English)
 - [Data Engineer Cafe](https://discuss.dataengineercafe.io) (Thai)
+- [Data Engineer Thailand](https://www.facebook.com/groups/dataengineerth) (Thai)
 
 ### Licenses & Certifications
 
