@@ -44,7 +44,7 @@ Fun fact: [this dude](https://faithstory.info/) stole my homelab configuration, 
 | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | [HashiCorp Ambassador 2023](https://www.credly.com/badges/850db8f0-746b-4ffb-bd5e-06d84f048f1b)                        | ![HashiCorp Ambassador 2023](images/2023-10-16-21-24-44.png) |
 |[AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/0e07c3db-19c2-4ade-bb6c-66df4929fc5c/public_url) | ![AWS SA Associate](images/2023-11-11-12-46-35.png)|
-| [Google Cloud Professional Cloud Architect](https://google.accredible.com/af628a29-bca4-4987-aba5-4bb1456dfe3a) | ![GCP PCA](images/2023-10-16-21-25-26.png)                   |
+| [Google Cloud Professional Cloud Architect](https://www.credly.com/badges/a474b598-df0d-453f-8958-3181b6392f61/public_url) | ![GCP PCA](images/2023-10-16-21-25-26.png)                   |
 |[AWS Community Builder 2022](https://aws.amazon.com/developer/community/community-builders/community-builders-directory/?cb-cards.sort-by=item.additionalFields.cbName&cb-cards.sort-order=asc&awsf.builder-category=*all&awsf.location=*all&awsf.year=*all&cb-cards.q=karn%2Bwong&cb-cards.q_operator=AND)|![AWS CB 22](images/2023-10-16-21-32-01.png)|
 
 ### Friends
