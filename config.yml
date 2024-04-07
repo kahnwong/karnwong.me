@@ -65,7 +65,7 @@ params:
   assets:
     disableFingerprinting: true
 
-  defaultTheme: auto
+  defaultTheme: light
   # disableThemeToggle: true
   ShowShareButtons: true
   ShowReadingTime: true
