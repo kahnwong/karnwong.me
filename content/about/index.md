@@ -26,9 +26,10 @@ Many people wonder what I do, because I seem to hang out in a lot of communities
 
 Fun fact: [this dude](https://faithstory.info/) stole my homelab configuration, but I already picked his brain for management and leadership skills 🫢.
 
-### Timeline
+[//]: # (### Timeline)
 
-![Timeline](images/2023-10-09-14-13-19.png)
+[//]: # ()
+[//]: # (![Timeline]&#40;images/2023-10-09-14-13-19.png&#41;)
 
 ### Active Communities
 
