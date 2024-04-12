@@ -93,10 +93,10 @@ education:
     startDate: "2015"
     endDate: "2018"
 certificates:
-  - name: HashiCorp Ambassador 2023
-    date: 2023
+  - name: HashiCorp Ambassador 2024
+    date: 2024
     issuer: HashiCorp
-    url: https://www.credly.com/badges/850db8f0-746b-4ffb-bd5e-06d84f048f1b
+    url: https://www.credly.com/badges/cef04301-0db4-4bc6-8e69-8a186aa534c3
   - name: AWS Certified Solutions Architect – Associate
     date: 2023
     issuer: AWS
