@@ -233,7 +233,7 @@ projects:
     url: https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/
   - name: Dagster Demo
     highlights:
-      - Medallion architecture, partitioned assets, etc.
+      - A working dagster demo with medallion architecture, partitioned data, schedules, assets dependencies, job status alerts and auto-materialize assets.
     keywords:
       - dagster
       - data engineering

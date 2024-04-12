@@ -21,7 +21,7 @@ ShowToc: false
 
 - [Dataframe Frameworks Showdown](https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/) - Benchmark performance between duckdb, polars and spark. In addition to runtime, RAM usage is also provided.
 - [Spark on Kubernetes](https://www.karnwong.me/posts/2023/09/spark-on-kubernetes/)
-- [Dagster Demo](https://github.com/kahnwong/dagster-demo)
+- [Dagster Demo](https://github.com/kahnwong/dagster-demo) - A working dagster demo with medallion architecture, partitioned data, schedules, assets dependencies, job status alerts and auto-materialize assets.
 
 ## Data Science
 
