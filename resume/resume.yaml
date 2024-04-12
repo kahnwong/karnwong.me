@@ -231,6 +231,16 @@ projects:
     endDate: 2023-04-10
     type: data
     url: https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/
+  - name: Dagster Demo
+    highlights:
+      - Medallion architecture, partitioned assets, etc.
+    keywords:
+      - dagster
+      - data engineering
+    startDate: 2021-08-29
+    endDate: 2023-09-22
+    type: data
+    url: https://github.com/kahnwong/dagster-demo
   - name: Impute Pipelines
     highlights:
       - Use machine learning to fill in missing data
