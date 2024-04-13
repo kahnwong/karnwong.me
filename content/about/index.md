@@ -51,6 +51,7 @@ Fun fact: [this dude](https://faithstory.info/) stole my homelab configuration, 
 ### Friends
 
 - [Apiporn Simapornchai (Faith)](https://faithstory.info)
+- [Tyler Williams](https://stylerwilliams.me/)
 - [Snuufix](https://snuu.io/)
 - [Chris Dong](https://cdong.us/)
 
