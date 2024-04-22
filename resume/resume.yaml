@@ -82,9 +82,9 @@ work:
       - Mentor data scientists
       - Automate infrastructure and governance using Terraform
       - Package cron services to AWS ECS and invoke via AWS ECS Task to cut down cost from 50 USD / year to 0.1 USD / year
-  - name: "-"
+  - name: "Freelance"
     position: IT Support & SysAdmin
-    startDate: 2015-01-01
+    startDate: 2009-01-01
     endDate: 2018-12-31
 education:
   - institution: Rangsit University
@@ -321,19 +321,39 @@ skills:
       - Terraform
       - GitHub Actions
       - Proxmox
-  - name: Data / ML
-    keywords:
-      - Apache Spark
-      - Apache Parquet
-      - Polars / Pandas / DuckDB
-      - Postgres / BigQuery
-      - Scikit-learn / Spark MLib
-      - DVC
-      - H3 / QGIS
-      - FastAPI / Pydantic / Pytest
   - name: Cloud
     keywords:
       - AWS
       - GCP
       - Digital Ocean
       - Cloudflare
+  - name: Data Engineering
+    keywords:
+      - Dagster
+      - Apache Parquet
+      - Apache Spark
+      - Polars / Pandas / DuckDB
+      - Postgres / BigQuery
+      - Apache Iceberg
+  - name: Data Science / Machine Learning
+    keywords:
+      - Scikit-learn
+      - Spark MLib
+      - NumPy
+  - name: Geospatial
+    keywords:
+      - Apache Sedona
+      - PostGIS
+      - H3
+      - QGIS
+  - name: MLOps
+    keywords:
+      - DVC
+      - FastAPI
+      - Pydantic
+      - Pytest
+  - name: Domain
+    keywords:
+      - Real Estate
+      - Geospatial
+      - NLP
