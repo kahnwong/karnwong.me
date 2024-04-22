@@ -10,12 +10,17 @@ ShowToc: false
 
 - [nix](https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/) - A cross-platform setup script that works with both Linux and Mac.
 - [self-hosted](https://github.com/kahnwong/self-hosted) - Self-hosting open-source alternatives for popular services. Managed via docker-compose, helm and terraform.
-- [terraform-sops-ssm](https://github.com/kahnwong/terraform-sops-ssm) - Create SSM secrets from SOPS-encrypted secrets, with IAM roles & users creation for SSM access.
 - [Vercel - Multi Branch Deployment](https://github.com/kahnwong/vercel-multi-branch-deployment) - Use GitHub Actions to deploy a frontend project from different branches (dev, uat, master), each with their own preview environment.
 - [pgconn](https://github.com/kahnwong/pgconn) - pgcli wrapper to connect to PostgreSQL database specified in db.yaml. Proxy/tunnel connection is automatically created and killed when pgcli is exited.
 - [totp](https://github.com/kahnwong/totp) - CLI TOTP token generator with autocomplete.
+- [docs](https://docs.karnwong.me) - Personal documentation website on various topics.
 - [Calculator](https://calculator.karnwong.me/) - Various calculators: meeting, GKE Autopilot and cloud cost calculator. Source code [here](https://github.com/kahnwong/calculator).
 - [Proxmox VM Selector](https://github.com/kahnwong/proxmox-vm-selector) - A simple TUI to select which Proxmox VM to start/stop.
+- [Docker AWS Backup](https://github.com/kahnwong/docker-aws-backup) - Backup paths or postgres to S3-compatible storage, with NTFY notification.
+
+## MLOps
+
+- [Python API Template](https://github.com/kahnwong/python-api-template) - FastAPI template with pydantic and pytest.
 
 ## Data Engineering
 
