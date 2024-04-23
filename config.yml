@@ -93,6 +93,8 @@ params:
       url: https://www.linkedin.com/in/karnsiree-w-7b535b202/
     - name: email
       url: mailto:karn@karnwong.me
+    - name: speakerdeck
+      url: https://speakerdeck.com/kahnwong
     - name: cv
       url: /resume.html
     - name: RsS
