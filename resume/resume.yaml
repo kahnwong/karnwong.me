@@ -27,7 +27,7 @@ work:
     endDate: 2023-12-28
     highlights:
       - Research and implement internal data platform v2, with CI/CD for integration and unit tests, dependencies and code changes
-      - Use Terraform with Infracost to asses infrastructure cost to prune unused/underutilized resources, in turn reduce 33% of cloud cost per month (FinOps)
+      - Use Terraform with Infracost to assess infrastructure cost to prune unused/underutilized resources, in turn reduce 33% of cloud cost per month (FinOps)
       - Design and implement end-to-end cloud-native application deployment (Terraform for infra/secrets, Helm for application deployment, GitHub Actions
         for CI/CD, Kubernetes for container orchestration)
       - "Lead a major core product refactoring across ops, engineering and data (data engineering, data science and machine learning engineering). Affected
