@@ -97,6 +97,11 @@ certificates:
     date: 2024
     issuer: HashiCorp
     url: https://www.credly.com/badges/cef04301-0db4-4bc6-8e69-8a186aa534c3
+  - name: AWS Community Builder 2024
+    date: 2024
+    issuer: AWS
+    url: 
+      https://aws.amazon.com/developer/community/community-builders/community-builders-directory/?cb-cards.sort-by=item.additionalFields.cbName&cb-cards.sort-order=asc&awsf.builder-category=*all&awsf.location=*all&awsf.year=*all&cb-cards.q=karn%2Bwong&cb-cards.q_operator=AND
   - name: AWS Certified Solutions Architect – Associate
     date: 2023
     issuer: AWS
@@ -105,11 +110,6 @@ certificates:
     date: 2022
     issuer: Google Cloud Platform
     url: https://google.accredible.com/af628a29-bca4-4987-aba5-4bb1456dfe3a
-  - name: AWS Community Builder 2023
-    date: 2023
-    issuer: AWS
-    url: 
-      https://aws.amazon.com/developer/community/community-builders/community-builders-directory/?cb-cards.sort-by=item.additionalFields.cbName&cb-cards.sort-order=asc&awsf.builder-category=*all&awsf.location=*all&awsf.year=*all&cb-cards.q=karn%2Bwong&cb-cards.q_operator=AND
   - name: Dagster Essentials
     date: 2023
     issuer: Dagster Labs
