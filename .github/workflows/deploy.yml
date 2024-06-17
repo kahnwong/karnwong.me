@@ -71,9 +71,6 @@ jobs:
       # healthcheck
       ########################
       - name: Healthcheck
-        uses: jtalk/url-health-check-action@v4
-        with:
-          url: https://karnwong.me
-          follow-redirect: true
-          max-attempts: 3
-          retry-delay: 5s
+        run: |
+          sleep 15
+          curl --fail -sv --retry 3 --retry-delay 5 --retry-connrefused -L https://karnwong.me
