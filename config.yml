@@ -26,9 +26,9 @@ languages:
         - name: About
           url: about/
           weight: 1
-        # - name: Consulting
-        #  url: consulting/
-        #  weight: 2
+        - name: Schedule a Call
+          url: call/
+          weight: 2
         # - name: Recommended Posts
         #   url: tags/recommended/
         #   weight: 3
