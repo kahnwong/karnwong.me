@@ -1,5 +1,5 @@
 ---
-title: Thoughts on summarization service's system design
+title: Thoughts on summarization service system design
 date: 2024-06-09T22:10:56+07:00
 draft: false
 ShowToc: false
@@ -18,7 +18,7 @@ Transcription means taking an audio, then convert it to text. Luckily these days
 
 Audio formats can be categorized into two main groups: lossless and lossy. Lossless means all information are preserved, and can be converted between any lossless format without losing data. For example, going from `WAVE -> FLAC` should allow you to convert the resulting `FLAC -> WAVE` without losing quality.
 
-However, if you convert `WAVE -> MP3`, when you convert `MP3 -> WAVE`, this is a lossy to lossless format, which means the resulting `WAVE` file would contain as much information as the MP3 file.
+However, when you convert `MP3 -> WAVE`, this is a lossy to lossless format, which means the resulting `WAVE` file would contain as much information as the MP3 file.
 
 ## Why does audio format matter
 
