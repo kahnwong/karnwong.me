@@ -1,7 +1,7 @@
 ---
 basics:
   name: Karn Wong
-  label: Platform engineer | HashiCorp Ambassador | AWS & GCP Certified | AWS Community Builder
+  label: Platform engineer | Technical Leadership | HashiCorp Ambassador | AWS & GCP Certified | AWS Community Builder
   email: karn@karnwong.me
   phone: ""
   website: https://karnwong.me
@@ -14,14 +14,15 @@ basics:
       url: https://www.linkedin.com/in/karnsiree-w-7b535b202/
 work:
   - name: Data Cafe (Thailand)
-    position: Platform engineer
+    position: Platform Engineer (performs as Acting Team Lead)
     website: https://www.datacafethailand.com/
     startDate: 2024-01-03
     endDate:
     highlights:
       - Guide teams on how to better collaborate to achieve faster feedback loops and delivery
+      - Evangelize agile, software engineering and MLOps practices
   - name: Baania
-    position: Head of platform engineering
+    position: Head of Platform Engineering
     website: https://www.baania.com
     startDate: 2022-10-01
     endDate: 2023-12-28
