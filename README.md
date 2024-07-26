@@ -16,9 +16,4 @@ git submodule foreach git pull origin master
 
 ## Create a new post
 
-```bash
-./create-post.sh -n $TITLE -t $TAG
-
-# with images
-./create-post.sh -n $TITLE -t $TAG -i true
-```
+See `utils/create-post`
