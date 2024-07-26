@@ -8,15 +8,9 @@ ShowToc: false
 
 <!--- ![me-at-grill-the-data](/about/me-at-grill-the-data.jpg) -->
 
-I'm currently a platform engineer at [Data Cafe (Thailand)](https://www.datacafethailand.com/).
+I'm currently a platform engineer at [Data Cafe (Thailand)](https://www.datacafethailand.com/), working in a technical leadership capacity.
 
 Previously I was a Data Engineer, Machine Learning Engineer and Site Reliability Engineer. Before that I was doing IT Support and System Administration.
-
-My expertise lies in the realms of data engineering, machine learning, and devops, where I optimize processes and drive impactful projects.
-
-Apart from my professional pursuits, I actively contribute to tech & data communities and open-source projects.
-
-When I have lessons to share I enjoy speaking at conferences.
 
 Surprisingly, I do enjoy cooking a lot, but not as much as tinkering with my [homelab](https://github.com/kahnwong/self-hosted).
 
