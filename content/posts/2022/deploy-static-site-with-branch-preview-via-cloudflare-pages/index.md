@@ -70,6 +70,10 @@ concurrency:
   group: environment-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  PROJECT_NAME: PROJECT_NAME  # CHANGE ME
+  BUILD_DIR: BUILD_DIR  # CHANGE ME
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -91,14 +95,12 @@ jobs:
       - name: Build
         run: yarn run build
       # ---------- publish ----------
-      - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@1
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID}}
-          projectName: YOUR_PROJECT_NAME
-          directory: $YOUR_BUILD_DIR
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy ${{ env.BUILD_DIR }} --project-name=${{ env.PROJECT_NAME }}
 ```
 
 Notice the "build" section, you can adjust this per your site's setup.
