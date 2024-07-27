@@ -4,14 +4,15 @@ name: Deploy
 on:
   push:
     branches: [master]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+
+env:
+  PROJECT_NAME: karnwong-me
+  BUILD_DIR: public
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: "Checkout Repository"
         uses: actions/checkout@v4
@@ -59,13 +60,11 @@ jobs:
       # publish
       ########################
       - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID}}
-          projectName: karnwong-me
-          directory: public
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy ${{ env.BUILD_DIR }} --project-name=${{ env.PROJECT_NAME }}
 
       ########################
       # healthcheck
