@@ -10,15 +10,9 @@ ShowToc: false
 
 I'm currently a platform engineer at [Data Cafe (Thailand)](https://www.datacafethailand.com/), working in a technical leadership capacity.
 
-Previously I was a Data Engineer, Machine Learning Engineer and Site Reliability Engineer. Before that I was doing IT Support and System Administration.
-
-Surprisingly, I do enjoy cooking a lot, but not as much as tinkering with my [homelab](https://github.com/kahnwong/self-hosted).
-
-I’m probably listening to symphonic heavy metal.
-
 Many people wonder what I do, because I seem to hang out in a lot of communities, to which I tell them it's DevSecMLFinDataOps 😃.
 
-Fun fact: [this dude](https://faithstory.info/) stole my homelab configuration, but I already picked his brain for management and leadership skills 🫢.
+Fun fact: [this dude](https://faithstory.info/) stole [my homelab](https://github.com/kahnwong/self-hosted) configuration, but I already picked his brain for management and leadership skills 🫢.
 
 [//]: # (### Timeline)
 
@@ -33,14 +27,20 @@ Fun fact: [this dude](https://faithstory.info/) stole my homelab configuration, 
 - [Data Engineer Cafe](https://discuss.dataengineercafe.io) (Thai)
 - [Data Engineer Thailand](https://www.facebook.com/groups/dataengineerth) (Thai)
 
-### Licenses & Certifications
+[//]: # (### Licenses & Certifications)
 
-| Name                                                                                                                                                                                                                                                                                                        | Badge                                                        |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [HashiCorp Ambassador 2024](https://www.credly.com/badges/cef04301-0db4-4bc6-8e69-8a186aa534c3)                                                                                                                                                                                                             | ![HashiCorp Ambassador 2024](images/hashicorp-ambassador.png) |
-| [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/0e07c3db-19c2-4ade-bb6c-66df4929fc5c/public_url)                                                                                                                                                                              | ![AWS SA Associate](images/2023-11-11-12-46-35.png)          |
-| [Google Cloud Professional Cloud Architect](https://www.credly.com/badges/a474b598-df0d-453f-8958-3181b6392f61/public_url)                                                                                                                                                                                  | ![GCP PCA](images/2023-10-16-21-25-26.png)                   |
-| [AWS Community Builder 2022](https://aws.amazon.com/developer/community/community-builders/community-builders-directory/?cb-cards.sort-by=item.additionalFields.cbName&cb-cards.sort-order=asc&awsf.builder-category=*all&awsf.location=*all&awsf.year=*all&cb-cards.q=karn%2Bwong&cb-cards.q_operator=AND) | ![AWS CB 22](images/2023-10-16-21-32-01.png)                 |
+[//]: # ()
+[//]: # (| Name                                                                                                                                                                                                                                                                                                        | Badge                                                        |)
+
+[//]: # (|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|)
+
+[//]: # (| [HashiCorp Ambassador 2024]&#40;https://www.credly.com/badges/cef04301-0db4-4bc6-8e69-8a186aa534c3&#41;                                                                                                                                                                                                             | ![HashiCorp Ambassador 2024]&#40;images/hashicorp-ambassador.png&#41; |)
+
+[//]: # (| [AWS Certified Solutions Architect – Associate]&#40;https://www.credly.com/badges/0e07c3db-19c2-4ade-bb6c-66df4929fc5c/public_url&#41;                                                                                                                                                                              | ![AWS SA Associate]&#40;images/2023-11-11-12-46-35.png&#41;          |)
+
+[//]: # (| [Google Cloud Professional Cloud Architect]&#40;https://www.credly.com/badges/a474b598-df0d-453f-8958-3181b6392f61/public_url&#41;                                                                                                                                                                                  | ![GCP PCA]&#40;images/2023-10-16-21-25-26.png&#41;                   |)
+
+[//]: # (| [AWS Community Builder 2022]&#40;https://aws.amazon.com/developer/community/community-builders/community-builders-directory/?cb-cards.sort-by=item.additionalFields.cbName&cb-cards.sort-order=asc&awsf.builder-category=*all&awsf.location=*all&awsf.year=*all&cb-cards.q=karn%2Bwong&cb-cards.q_operator=AND&#41; | ![AWS CB 22]&#40;images/2023-10-16-21-32-01.png&#41;                 |)
 
 ### Friends
 
