@@ -10,9 +10,8 @@ ShowToc: false
 
 I'm currently a platform engineer at [Data Cafe (Thailand)](https://www.datacafethailand.com/), working in a technical leadership capacity.
 
-Many people wonder what I do, because I seem to hang out in a lot of communities, to which I tell them it's DevSecMLFinDataOps 😃.
+If you want to schedule a call, either to talk about stuff or possible collaborations, [book a meeting](https://cal.com/karn-wong-uuhbtm/).
 
-Fun fact: [this dude](https://faithstory.info/) stole [my homelab](https://github.com/kahnwong/self-hosted) configuration, but I already picked his brain for management and leadership skills 🫢.
 
 [//]: # (### Timeline)
 
