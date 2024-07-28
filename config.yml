@@ -72,7 +72,7 @@ params:
 
   homeInfoParams:
     Title: Karn Wong
-    Content: Platform engineer | Technical Leadership | DevSecMLFinDataOps | HashiCorp Ambassador
+    Content: Platform engineer | Technical Leadership | HashiCorp Ambassador
   TocSide: left # or 'right'
 
   # profileMode:

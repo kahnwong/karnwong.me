@@ -31,9 +31,9 @@ work:
       - Use Terraform with Infracost to assess infrastructure cost to prune unused/underutilized resources, in turn reduce 33% of cloud cost per month (FinOps)
       - Design and implement end-to-end cloud-native application deployment (Terraform for infra/secrets, Helm for application deployment, GitHub Actions
         for CI/CD, Kubernetes for container orchestration)
-      - "Lead a major core product refactoring across ops, engineering and data (data engineering, data science and machine learning engineering). Affected
-        areas: data pipelines, model training pipelines, real-time inference endpoints, database performance optimization, deployment pipelines, local development
-        workflow"
+      - "Lead a major core product refactoring across ops, engineering and data (data engineering, data science and machine learning engineering). Affected\
+        \ areas: data pipelines, model training pipelines, real-time inference endpoints, database performance optimization, deployment pipelines, local\
+        \ development workflow"
       - Lead a cloud migration from AWS to GCP (AWS ECS to GCP GKE)
       - Introduce H3 spatial indexing to improve spatial queries performance. This also allows any system to obtain the performance gain, since it is not
         tied to execution engine with spatial support
@@ -101,8 +101,7 @@ certificates:
   - name: AWS Community Builder 2024
     date: 2024
     issuer: AWS
-    url: 
-      https://aws.amazon.com/developer/community/community-builders/community-builders-directory/?cb-cards.sort-by=item.additionalFields.cbName&cb-cards.sort-order=asc&awsf.builder-category=*all&awsf.location=*all&awsf.year=*all&cb-cards.q=karn%2Bwong&cb-cards.q_operator=AND
+    url: https://aws.amazon.com/developer/community/community-builders/community-builders-directory/?cb-cards.sort-by=item.additionalFields.cbName&cb-cards.sort-order=asc&awsf.builder-category=*all&awsf.location=*all&awsf.year=*all&cb-cards.q=karn%2Bwong&cb-cards.q_operator=AND
   - name: AWS Certified Solutions Architect – Associate
     date: 2023
     issuer: AWS
@@ -139,7 +138,7 @@ projects:
       - kubernetes
       - helm
       - terraform
-    startDate: 2017-12-01
+#    startDate: 2017-12-01
     type: devops
   - name: docs
     url: https://docs.karnwong.me/
@@ -149,7 +148,7 @@ projects:
       - documentation
       - knowledge base
       - vitepress
-    startDate: 2020-01-01
+#    startDate: 2020-01-01
     type: devops
   - name: nix
     highlights:
@@ -159,7 +158,7 @@ projects:
       - environment
       - dotfiles
       - package manager
-    startDate: 2022-11-30
+#    startDate: 2022-11-30
     type: devops
     url: https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/
   - name: pgconn
@@ -170,71 +169,89 @@ projects:
       - postgres
       - ssh tunneling
       - cli
-    startDate: 2023-08-24
-    endDate: 2023-08-31
+#    startDate: 2023-08-24
+#    endDate: 2023-08-31
     type: devops
     url: https://github.com/kahnwong/pgconn
-  # ---------------- mlops ----------------
-  - name: Python API Template
+  - name: swissknife
     highlights:
-      - FastAPI template with pydantic and pytest
+      - Various CLI-based utilities for ops work
     keywords:
-      - fastapi
-      - pydantic
-      - pytest
-    startDate: 2023-12-01
-    endDate: 2023-12-07
-    type: mlops
-    url: https://github.com/kahnwong/python-api-template
-  # ---------------- data ----------------
-  - name: Spark on Kubernetes
+      - utilities
+      - cli
+    type: devops
+    url: https://github.com/kahnwong/swissknife
+  - name: config-init
     highlights:
-      - Run spark jobs on kubernetes, which can be used both locally and on production environment
+      - CLI app to init configurations
     keywords:
-      - spark
-      - kubernetes
-      - minio
-      - finops
-      - devex
-    startDate: 2023-09-09
-    endDate: 2023-09-10
-    type: data
-    url: https://www.karnwong.me/posts/2023/09/spark-on-kubernetes/
-  - name: Dataframe Frameworks Showdown
-    highlights:
-      - Benchmark performance between duckdb, polars and spark. In addition to runtime, RAM usage is also provided
-    keywords:
-      - duckdb
-      - polars
-      - spark
-      - dataframe
-      - data engineering
-    startDate: 2023-04-05
-    endDate: 2023-04-10
-    type: data
-    url: https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/
-  - name: Dagster Demo
-    highlights:
-      - A working dagster demo with medallion architecture, partitioned data, schedules, assets dependencies, job status alerts and auto-materialize assets.
-    keywords:
-      - dagster
-      - data engineering
-    startDate: 2021-08-29
-    endDate: 2023-09-22
-    type: data
-    url: https://github.com/kahnwong/dagster-demo
-  - name: Impute Pipelines
-    highlights:
-      - Use machine learning to fill in missing data
-      - Utilize hyperparameter tuning to find the optimum parameters
-    keywords:
-      - Machine Learning
-      - data science
-      - hyperparameter tuning
-    startDate: 2019-11-28
-    endDate: 2019-12-23
-    url: https://www.karnwong.me/posts/2020/05/impute-pipelines/
-    type: data
+      - template
+      - cli
+    #    startDate: 2023-08-24
+    #    endDate: 2023-08-31
+    type: devops
+    url: https://github.com/kahnwong/config-init
+#  # ---------------- mlops ----------------
+#  - name: Python API Template
+#    highlights:
+#      - FastAPI template with pydantic and pytest
+#    keywords:
+#      - fastapi
+#      - pydantic
+#      - pytest
+#    startDate: 2023-12-01
+#    endDate: 2023-12-07
+#    type: mlops
+#    url: https://github.com/kahnwong/python-api-template
+# # ---------------- data ----------------
+#  - name: Spark on Kubernetes
+#    highlights:
+#      - Run spark jobs on kubernetes, which can be used both locally and on production environment
+#    keywords:
+#      - spark
+#      - kubernetes
+#      - minio
+#      - finops
+#      - devex
+#    startDate: 2023-09-09
+#    endDate: 2023-09-10
+#    type: data
+#    url: https://www.karnwong.me/posts/2023/09/spark-on-kubernetes/
+#  - name: Dataframe Frameworks Showdown
+#    highlights:
+#      - Benchmark performance between duckdb, polars and spark. In addition to runtime, RAM usage is also provided
+#    keywords:
+#      - duckdb
+#      - polars
+#      - spark
+#      - dataframe
+#      - data engineering
+#    startDate: 2023-04-05
+#    endDate: 2023-04-10
+#    type: data
+#    url: https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/
+#  - name: Dagster Demo
+#    highlights:
+#      - A working dagster demo with medallion architecture, partitioned data, schedules, assets dependencies, job status alerts and auto-materialize assets.
+#    keywords:
+#      - dagster
+#      - data engineering
+#    startDate: 2021-08-29
+#    endDate: 2023-09-22
+#    type: data
+#    url: https://github.com/kahnwong/dagster-demo
+#  - name: Impute Pipelines
+#    highlights:
+#      - Use machine learning to fill in missing data
+#      - Utilize hyperparameter tuning to find the optimum parameters
+#    keywords:
+#      - Machine Learning
+#      - data science
+#      - hyperparameter tuning
+#    startDate: 2019-11-28
+#    endDate: 2019-12-23
+#    url: https://www.karnwong.me/posts/2020/05/impute-pipelines/
+#    type: data
 interests:
   - name: Humanities
     keywords:
@@ -274,6 +291,12 @@ volunteer:
     startDate: 2020
 
 skills:
+  - name: Languages
+    keywords:
+      - Bash
+      - Go
+      - HCL
+      - Python
   - name: Cloud Native
     keywords:
       - Docker
@@ -291,37 +314,44 @@ skills:
       - Terraform
       - GitHub Actions
       - Proxmox
+      - Infracost
+      - New Relic
+  - name: Databases
+    keywords:
+      - Postgres
+      - MongoDB
+      - BigQuery
+      - DuckDB
   - name: Cloud
     keywords:
       - AWS
       - GCP
       - Digital Ocean
       - Cloudflare
-  - name: Data Engineering
+      - Vercel
+  - name: Python
     keywords:
-      - Dagster
+      - FastAPI
+      - Pydantic
+      - Pytest
+  - name: Data / ML
+    keywords:
       - Apache Parquet
       - Apache Spark
-      - Polars / Pandas / DuckDB
-      - Postgres / BigQuery
+      - Polars
       - Apache Iceberg
-  - name: Data Science / Machine Learning
-    keywords:
+      - Dagster
+      - Ray
       - Scikit-learn
-      - Spark MLib
-      - NumPy
-  - name: Geospatial
+      - DVC
+  - name: GIS
     keywords:
       - Apache Sedona
       - PostGIS
       - H3
       - QGIS
-  - name: MLOps
-    keywords:
-      - DVC
-      - FastAPI
-      - Pydantic
-      - Pytest
+      - Folium
+      - Leaflet
   - name: Domain
     keywords:
       - Real Estate

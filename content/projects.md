@@ -17,6 +17,8 @@ ShowToc: false
 - [Calculator](https://calculator.karnwong.me/) - Various calculators: meeting, GKE Autopilot and cloud cost calculator. Source code [here](https://github.com/kahnwong/calculator).
 - [Proxmox VM Selector](https://github.com/kahnwong/proxmox-vm-selector) - A simple TUI to select which Proxmox VM to start/stop.
 - [Docker AWS Backup](https://github.com/kahnwong/docker-aws-backup) - Backup paths or postgres to S3-compatible storage, with NTFY notification.
+- [swissknife](https://github.com/kahnwong/swissknife) - Various CLI-based utilities for ops work.
+- [config-init](https://github.com/kahnwong/config-init) - CLI app to init configurations.
 
 ## MLOps
 
@@ -37,7 +39,3 @@ ShowToc: false
 ## Tools
 
 - [music-lyrics-tagger](https://github.com/kahnwong/music-lyrics-tagger) - Add lyrics to flac and m4a files.
-
-## Automation
-
-- [water-cut-notify](https://github.com/kahnwong/water-cut-notify) - Send water cut alert as LINE notifications.
