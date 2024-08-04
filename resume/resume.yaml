@@ -1,7 +1,7 @@
 ---
 basics:
   name: Karn Wong
-  label: Platform engineer | Technical Leadership | HashiCorp Ambassador | AWS & GCP Certified | AWS Community Builder
+  label: Platform engineer | Technical Leadership | HashiCorp Ambassador | AWS & GCP 2X Certified | AWS Community Builder
   email: karn@karnwong.me
   phone: ""
   website: https://karnwong.me
@@ -94,6 +94,10 @@ education:
     startDate: "2015"
     endDate: "2018"
 certificates:
+  - name: Google Cloud Professional Data Engineer
+    date: 2024
+    issuer: Google Cloud Platform
+    url: https://www.credly.com/badges/1daf754b-899c-49a4-ba42-70979d8fc9d1/public_url
   - name: HashiCorp Ambassador 2024
     date: 2024
     issuer: HashiCorp
@@ -109,7 +113,7 @@ certificates:
   - name: Google Cloud Professional Cloud Architect
     date: 2022
     issuer: Google Cloud Platform
-    url: https://google.accredible.com/af628a29-bca4-4987-aba5-4bb1456dfe3a
+    url: https://www.credly.com/badges/a474b598-df0d-453f-8958-3181b6392f61/public_url
   - name: Dagster Essentials
     date: 2023
     issuer: Dagster Labs
@@ -191,67 +195,67 @@ projects:
     #    endDate: 2023-08-31
     type: devops
     url: https://github.com/kahnwong/config-init
-#  # ---------------- mlops ----------------
-#  - name: Python API Template
-#    highlights:
-#      - FastAPI template with pydantic and pytest
-#    keywords:
-#      - fastapi
-#      - pydantic
-#      - pytest
+  # ---------------- mlops ----------------
+  - name: Python API Template
+    highlights:
+      - FastAPI template with pydantic and pytest
+    keywords:
+      - fastapi
+      - pydantic
+      - pytest
 #    startDate: 2023-12-01
 #    endDate: 2023-12-07
-#    type: mlops
-#    url: https://github.com/kahnwong/python-api-template
-# # ---------------- data ----------------
-#  - name: Spark on Kubernetes
-#    highlights:
-#      - Run spark jobs on kubernetes, which can be used both locally and on production environment
-#    keywords:
-#      - spark
-#      - kubernetes
-#      - minio
-#      - finops
-#      - devex
+    type: mlops
+    url: https://github.com/kahnwong/python-api-template
+ # ---------------- data ----------------
+  - name: Spark on Kubernetes
+    highlights:
+      - Run spark jobs on kubernetes, which can be used both locally and on production environment
+    keywords:
+      - spark
+      - kubernetes
+      - minio
+      - finops
+      - devex
 #    startDate: 2023-09-09
 #    endDate: 2023-09-10
-#    type: data
-#    url: https://www.karnwong.me/posts/2023/09/spark-on-kubernetes/
-#  - name: Dataframe Frameworks Showdown
-#    highlights:
-#      - Benchmark performance between duckdb, polars and spark. In addition to runtime, RAM usage is also provided
-#    keywords:
-#      - duckdb
-#      - polars
-#      - spark
-#      - dataframe
-#      - data engineering
+    type: data
+    url: https://www.karnwong.me/posts/2023/09/spark-on-kubernetes/
+  - name: Dataframe Frameworks Showdown
+    highlights:
+      - Benchmark performance between duckdb, polars and spark. In addition to runtime, RAM usage is also provided
+    keywords:
+      - duckdb
+      - polars
+      - spark
+      - dataframe
+      - data engineering
 #    startDate: 2023-04-05
 #    endDate: 2023-04-10
-#    type: data
-#    url: https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/
-#  - name: Dagster Demo
-#    highlights:
-#      - A working dagster demo with medallion architecture, partitioned data, schedules, assets dependencies, job status alerts and auto-materialize assets.
-#    keywords:
-#      - dagster
-#      - data engineering
+    type: data
+    url: https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/
+  - name: Dagster Demo
+    highlights:
+      - A working dagster demo with medallion architecture, partitioned data, schedules, assets dependencies, job status alerts and auto-materialize assets.
+    keywords:
+      - dagster
+      - data engineering
 #    startDate: 2021-08-29
 #    endDate: 2023-09-22
-#    type: data
-#    url: https://github.com/kahnwong/dagster-demo
-#  - name: Impute Pipelines
-#    highlights:
-#      - Use machine learning to fill in missing data
-#      - Utilize hyperparameter tuning to find the optimum parameters
-#    keywords:
-#      - Machine Learning
-#      - data science
-#      - hyperparameter tuning
+    type: data
+    url: https://github.com/kahnwong/dagster-demo
+  - name: Impute Pipelines
+    highlights:
+      - Use machine learning to fill in missing data
+      - Utilize hyperparameter tuning to find the optimum parameters
+    keywords:
+      - Machine Learning
+      - data science
+      - hyperparameter tuning
 #    startDate: 2019-11-28
 #    endDate: 2019-12-23
-#    url: https://www.karnwong.me/posts/2020/05/impute-pipelines/
-#    type: data
+    url: https://www.karnwong.me/posts/2020/05/impute-pipelines/
+    type: data
 interests:
   - name: Humanities
     keywords:
