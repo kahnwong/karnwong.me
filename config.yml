@@ -35,9 +35,12 @@ languages:
         - name: Projects
           url: projects/
           weight: 4
+        - name: Speaking
+          url: speaking/
+          weight: 4
         - name: Tags
           url: tags/
-          weight: 5
+          weight: 6
 #        - name: Search
 #          url: search/
 #          weight: 8

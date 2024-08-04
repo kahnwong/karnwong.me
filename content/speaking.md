@@ -1,8 +1,7 @@
 ---
-title: "Talks"
-layout: "talks"
-url: "/talks"
-summary: "talks"
+title: "Speaking"
+layout: "speaking"
+url: "/speaking"
 ShowToC: false
 ---
 

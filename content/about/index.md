@@ -52,4 +52,3 @@ If you want to schedule a call, either to talk about stuff or possible collabora
 
 - [Recommended books]({{< ref "/books" >}})
 - [Recommended music]({{< ref "/music" >}})
-- [Talks]({{< ref "/talks" >}})
