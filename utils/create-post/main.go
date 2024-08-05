@@ -14,12 +14,12 @@ import (
 )
 
 func titleToSlug(title string) string {
-	re := regexp.MustCompile("[a-zA-Z ]+")
+	re := regexp.MustCompile("[a-zA-Z' ]+")
 	sanitizedString := re.FindString(title)
 	lowerString := strings.ToLower(sanitizedString)
 	slug := strings.ReplaceAll(lowerString, " ", "-")
 
-	return slug
+	return strings.ReplaceAll(slug, "'", "")
 }
 
 func getCurrentTime() (string, string) {
