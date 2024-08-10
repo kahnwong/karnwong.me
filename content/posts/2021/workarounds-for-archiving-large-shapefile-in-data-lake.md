@@ -23,7 +23,7 @@ Now things work perfectly. As a bonus, gdal also skip invalid geometries by defa
 
 At this point I have a nice tsv file, and reading & archiving via spark is now a breeze. Yay!
 
-# Takeaway
+## Takeaway
 
 - If it takes too long to read, maybe it's a parsing bottleneck. Find a way to convert it to another format so it's easier to parse.
 - Sometimes your initial tools of choice might have some quirks. In most cases there will be similar tools out there that can workaround the issues. (In this case, use gdal to convert to csv in lieu of geopandas because gpd can't work with invalid geometries & takes longer to read compared to feeding spark a straight csv/tsv).

@@ -12,7 +12,6 @@ I'm currently a platform engineer at [Data Cafe (Thailand)](https://www.datacafe
 
 If you want to schedule a call, either to talk about stuff or possible collaborations, [book a meeting](https://cal.com/karn-wong-uuhbtm/).
 
-
 [//]: # (### Timeline)
 
 [//]: # ()

@@ -8,11 +8,11 @@ tags:
   - data engineering
 ---
 
-# Big data
+## Big data
 
 - Spark: Map-reduce framework for dealing with big data, especially for data that doesn't fit into memory. Utilizes parallelization.
 
-# Cloud
+## Cloud
 
 - AWS: Cloud platform for many tools used in software engineering.
 - AWS Fargate: A task launch mode for `ECS task`, where it automatically shuts down once a container exits. With EC2 launch mode, you'll have to turn off the machine yourself.
@@ -20,46 +20,46 @@ tags:
 - AWS RDS: Managed databases from AWS.
 - ECS Task: Launch a task in ECS cluster. For long-running services, launch via EC2. For small periodical tasks, trigger via Cloudwatch. For the latter, think of cron-like schedule for a task. Essentially at specified time, it runs a predefined docker image (you should configure your `entrypoint.sh` accordingly).
 
-# Data
+## Data
 
 - Parquet: Columnar data blob format, very efficient due to column-based compression with schema definition baked in.
 
-# Data engineering
+## Data engineering
 
 - Dagster: Task orchestration framework with built-in pipelines validation.
 - ETL: Stands for extract-transform-load. Essentially it means "moving data from A to B, with optional data wrangling in the middle."
 
-# Data science
+## Data science
 
 - NLP: Using machine (computer) to work on human languages. For instance, analyze whether a message is positive or negative.
 
-# Data wrangling
+## Data wrangling
 
 - Pandas: Dataframe wrangler, think of programmable Excel.
 
-# Database
+## Database
 
 - Postgres: RMDBS with good performance.
 
-# DataOps
+## DataOps
 
 - Great expectations: A framework for data validation.
 
-# DevOps
+## DevOps
 
 - Docker: Virtualization via containers.
 - Git: Version control.
 - Kubernetes: Container orchestration system.
 - Terraform: Infrastructure as code tool, essentially you use it to store a blueprint for your infra setup. If you were to move to another account, you can re-conjure existing infra with one command. This makes editing infra config easier too, since it automatically cleans up / update config automatically.
 
-# GIS
+## GIS
 
 - PostGIS: GIS extension for Postgres.
 
-# MLOps
+## MLOps
 
 - MLflow: A framework to track model parameters and output. Can also store model artifact as well.
 
-# Notebook
+## Notebook
 
 - Jupyter: Python notebook, used for exploring solutions before converting it to .py.

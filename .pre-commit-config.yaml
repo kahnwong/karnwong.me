@@ -1,7 +1,7 @@
 ---
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v4.6.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -23,8 +23,8 @@ repos:
         args: [--mapping, "2", --sequence, "4", --offset, "2", --width, "150", --preserve-quotes]
         exclude: ^.github/dependabot.yaml
   # ----------------------- DOCS -----------------------
-  - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.39.0
+  - repo: https://github.com/DavidAnson/markdownlint-cli2
+    rev: v0.13.0
     hooks:
-      - id: markdownlint
-        args: [--ignore, node_modules, --ignore, src, --fix, --disable, MD013]
+      - id: markdownlint-cli2
+        args: [--ignores, node_modules, src]

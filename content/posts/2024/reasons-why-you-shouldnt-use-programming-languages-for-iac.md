@@ -13,12 +13,14 @@ tags:
 When it comes to IaC (infrastructure as code), most people might have heard of HashiCorp's Terraform (it uses HCL as DSL. Interestingly enough, Terraform also has its own CDK to translate programming languages into HCL), Pulumi or AWS CDK. The latter two support programming languages as DSL.
 
 Mostly there are two camps:
+
 - People who swear by HCL and think you shouldn't use programming languages for IaC
 - People who don't see why you need to pick up a new language in order to use IaC, so they prefer using a programming language they already are familiar with instead
 
 Both camps are not wrong, they are both valid. However, I want to share my take on why you should use HCL for IaC.
 
 ## Pros
+
 The obvious perk is that you don't need to pick up a new language, which means you can get started right away to enjoy the benefits of IaC.
 
 ## Cons
@@ -28,6 +30,7 @@ However, when you are looking for resources or templates, you might find it hard
 Additionally, if you are using less popular languages (golang, for instance) you might have fewer references than people who use javascript/typescript or python.
 
 As for IaC codebase maintenance, you would have to find people who:
+
 1. Can use your programming language of choice for IaC
 2. Understands devops and infrastructure
 

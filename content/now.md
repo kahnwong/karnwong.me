@@ -11,7 +11,6 @@ summary: "What I'm currently doing"
 - Tinkering with home servers (Mac Mini 2018 & Intel NUC).
 - Cranking out golang CLI apps.
 
-
 Updated 2024-07-29
 
 This page was inspired by <https://fheidenreich.de/now/>.
