@@ -19,7 +19,7 @@ Mostly there are two camps:
 
 Both camps are not wrong, they are both valid. However, I want to share my take on why you should use HCL for IaC.
 
-## Pros
+## Pros for using programming languages
 
 The obvious perk is that you don't need to pick up a new language, which means you can get started right away to enjoy the benefits of IaC.
 
