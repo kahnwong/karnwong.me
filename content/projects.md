@@ -8,34 +8,45 @@ ShowToc: false
 
 ## Ops
 
-- [nix](https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/) - A cross-platform setup script that works with both Linux and Mac.
-- [self-hosted](https://github.com/kahnwong/self-hosted) - Self-hosting open-source alternatives for popular services. Managed via docker-compose, helm and terraform.
-- [Vercel - Multi Branch Deployment](https://github.com/kahnwong/vercel-multi-branch-deployment) - Use GitHub Actions to deploy a frontend project from different branches (dev, uat, master), each with their own preview environment.
-- [pgconn](https://github.com/kahnwong/pgconn) - pgcli wrapper to connect to PostgreSQL database specified in db.yaml. Proxy/tunnel connection is automatically created and killed when pgcli is exited.
-- [totp](https://github.com/kahnwong/totp) - CLI TOTP token generator with autocomplete.
-- [docs](https://docs.karnwong.me) - Personal documentation website on various topics.
-- [Calculator](https://calculator.karnwong.me/) - Various calculators: meeting, GKE Autopilot and cloud cost calculator. Source code [here](https://github.com/kahnwong/calculator).
-- [Proxmox VM Selector](https://github.com/kahnwong/proxmox-vm-selector) - A simple TUI to select which Proxmox VM to start/stop.
-- [Docker AWS Backup](https://github.com/kahnwong/docker-aws-backup) - Backup paths or postgres to S3-compatible storage, with NTFY notification.
-- [swissknife](https://github.com/kahnwong/swissknife) - Various CLI-based utilities for ops work.
-- [config-init](https://github.com/kahnwong/config-init) - CLI app to init configurations.
+| Project                                                                                        | Description                                                                                                                                            |
+|------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Vercel - Multi Branch Deployment](https://github.com/kahnwong/vercel-multi-branch-deployment) | Use GitHub Actions to deploy a frontend project from different branches (dev, uat, master), each with their own preview environment                    |
+| [calculator](https://calculator.karnwong.me/)                                                  | Various calculators: meeting, GKE Autopilot and cloud cost calculator. Source code [here](https://github.com/kahnwong/calculator)                      |
+| [config-init](https://github.com/kahnwong/config-init)                                         | CLI app to init configurations                                                                                                                         |
+| [docker-aws-backup](https://github.com/kahnwong/docker-aws-backup)                             | Backup paths or postgres to S3-compatible storage, with NTFY notification                                                                              |
+| [docs](https://docs.karnwong.me)                                                               | Personal documentation website on various topics                                                                                                       |
+| [nix](https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/)   | A cross-platform setup script that works with both Linux and Mac                                                                                       |
+| [pgconn](https://github.com/kahnwong/pgconn)                                                   | pgcli wrapper to connect to PostgreSQL database specified in db.yaml. Proxy/tunnel connection is automatically created and killed when pgcli is exited |
+| [proxmox-vm-selector](https://github.com/kahnwong/proxmox-vm-selector)                         | A simple TUI to select which Proxmox VM to start/stop                                                                                                  |
+| [self-hosted](https://github.com/kahnwong/self-hosted)                                         | Self-hosting open-source alternatives for popular services. Managed via docker-compose, helm and terraform                                             |
+| [swissknife](https://github.com/kahnwong/swissknife)                                           | Various CLI-based utilities for ops work                                                                                                               |
+| [totp](https://github.com/kahnwong/totp)                                                       | CLI TOTP token generator with autocomplete                                                                                                             |
 
 ## MLOps
 
-- [Python API Template](https://github.com/kahnwong/python-api-template) - FastAPI template with pydantic and pytest.
+| Project                                                                | Description                               |
+|------------------------------------------------------------------------|-------------------------------------------|
+| [Python API Template](https://github.com/kahnwong/python-api-template) | FastAPI template with pydantic and pytest |
 
 ## Data Engineering
 
-- [Dataframe Frameworks Showdown](https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/) - Benchmark performance between duckdb, polars and spark. In addition to runtime, RAM usage is also provided.
-- [Spark on Kubernetes](https://www.karnwong.me/posts/2023/09/spark-on-kubernetes/)
-- [Dagster Demo](https://github.com/kahnwong/dagster-demo) - A working dagster demo with medallion architecture, partitioned data, schedules, assets dependencies, job status alerts and auto-materialize assets.
+| Project                                                                                           | Description                                                                                                                                         |
+|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Dagster Demo](https://github.com/kahnwong/dagster-demo)                                          | A working dagster demo with medallion architecture, partitioned data, schedules, assets dependencies, job status alerts and auto-materialize assets |
+| [Dataframe Frameworks Showdown](https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/) | Benchmark performance between duckdb, polars and spark. In addition to runtime, RAM usage is also provided                                          |
+| [Spark on Kubernetes](https://www.karnwong.me/posts/2023/09/spark-on-kubernetes/)                 | Running spark jobs in Kubernetes                                                                                                                    |
 
 ## Data Science
 
-- [Impute Pipelines](https://www.karnwong.me/posts/2020/05/impute-pipelines/) - Use machine learning to fill in missing data. Utilize hyperparameter tuning to find the optimum parameters.
-- [Visualizing Map Region Prefix/Suffix](https://www.karnwong.me/posts/2020/09/visualizing-map-region-prefix-suffix/) - Utilize NLP to group region name prefix/suffix.
-- [Word-Based Analysis With Song Lyrics](https://www.karnwong.me/posts/2020/04/word-based-analysis-with-song-lyrics/) - Visualize lyrics trend using NLP and use topic modeling to find common words per specified clusters.
+| Project                                                                                                             | Description                                                                                                |
+|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| [Impute Pipelines](https://www.karnwong.me/posts/2020/05/impute-pipelines/)                                         | Use machine learning to fill in missing data. Utilize hyperparameter tuning to find the optimum parameters |
+| [Visualizing Map Region Prefix/Suffix](https://www.karnwong.me/posts/2020/09/visualizing-map-region-prefix-suffix/) | Utilize NLP to group region name prefix/suffix                                                             |
+| [Word-Based Analysis With Song Lyrics](https://www.karnwong.me/posts/2020/04/word-based-analysis-with-song-lyrics/) | Visualize lyrics trend using NLP and use topic modeling to find common words per specified clusters        |
 
 ## Tools
 
-- [music-lyrics-tagger](https://github.com/kahnwong/music-lyrics-tagger) - Add lyrics to flac and m4a files.
+| Project                                                                | Description                      |
+|------------------------------------------------------------------------|----------------------------------|
+| [music-lyrics-tagger](https://github.com/kahnwong/music-lyrics-tagger) | Add lyrics to flac and m4a files |
+| [waka](https://github.com/kahnwong/waka)                               | CLI to get WakaTime stats        |
