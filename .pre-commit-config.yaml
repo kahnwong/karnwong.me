@@ -27,4 +27,4 @@ repos:
     rev: v0.13.0
     hooks:
       - id: markdownlint-cli2
-        args: [--ignores, node_modules, src]
+        args: '[--ignores, node_modules, src, --fix]'
