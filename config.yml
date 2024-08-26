@@ -92,6 +92,8 @@ params:
       url: mailto:karn@karnwong.me
     - name: speakerdeck
       url: https://speakerdeck.com/kahnwong
+    - name: buymeacoffee
+      url: https://buymeacoffee.com/kahnwong
     - name: cv
       url: /resume.html
     - name: RsS
