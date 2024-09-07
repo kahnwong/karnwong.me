@@ -12,7 +12,7 @@ tags:
 
 These days there are multiple ways to deploy a workload, be it cloud-based or bare-metal. For cloud, depending on whether you are using PaaS or IaaS, backup options can vary.
 
-Why do we need to backup? Because your workloads can contain a state, this can be stored as local files, inside a database, or as other assets outside of the application itself.
+Why do we need to backup? Because your workloads can contain a state, this can be stored as local files, inside a database, or as other assets outside the application itself.
 
 Take a database for example, ideally you would need a daily backup so you can revert a database to a state before its corruption without losing as much data. Some workloads might store uploaded images, for simplicity let's say they are being written to disk.
 
@@ -20,7 +20,7 @@ For a backup, it can be as simple as running a database dump command, or compres
 
 In cloud, a managed database would have daily backups as a built-in feature, offloading users from setting up the backup operation themselves.
 
-But in a bare-metal setup (which also applies for self-hosting), you need to somehow store the backp artifacts in, say, AWS S3. And there's a lot of commands involved:
+But in a bare-metal setup (which also applies for self-hosting), you need to somehow store the backup artifacts in, say, AWS S3. And there's a lot of commands involved:
 
 ```bash
 current_date=$(date +%Y-%m-%d)
