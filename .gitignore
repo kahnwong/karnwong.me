@@ -4,6 +4,8 @@ public
 
 # python
 **/.ipynb_checkpoints/
+.venv
+__pycache__
 
 # resume
 node_modules
