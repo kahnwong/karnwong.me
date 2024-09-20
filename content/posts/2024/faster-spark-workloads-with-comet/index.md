@@ -7,6 +7,7 @@ images:
 tags:
   - spark
   - data engineering
+  - benchmark
 ---
 
 For big data processing, spark is still king. Over the years, many improvements have been made to improve spark performance. Databricks themselves created [photon](https://www.databricks.com/product/photon), a spark engine that can accelerate spark queries, but this is proprietary to Databricks.

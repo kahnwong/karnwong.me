@@ -6,6 +6,7 @@ ShowToc: false
 images:
 tags:
   - python
+  - benchmark
 ---
 
 Streamlit is well-loved by many people, especially among data folks due to the fact that it does not require prior web programming knowledge to get started.

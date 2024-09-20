@@ -6,6 +6,7 @@ ShowToc: false
 images:
 tags:
   - data engineering
+  - benchmark
 ---
 
 Previously, I talked about [dataframe performance]({{< ref "/posts/2023/duckdb-vs-polars-vs-spark" >}}), but this doesn't include writing data to destination part.
