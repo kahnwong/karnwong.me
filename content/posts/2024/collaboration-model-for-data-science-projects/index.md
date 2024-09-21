@@ -7,7 +7,7 @@ images:
 tags:
   - data science
   - mlops
-  - agile
+  - management
 ---
 
 Many data science teams are struggling with implementing end-to-end machine learning projects. It's a very common phenomenon, so if you are experiencing this, you are not alone. Having worked in every stage of data science project lifecycle, in addition to normal web services deployments, this is what I think how we should collaborate.

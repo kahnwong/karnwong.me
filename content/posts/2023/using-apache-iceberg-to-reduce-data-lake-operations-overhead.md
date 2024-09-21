@@ -6,7 +6,7 @@ ShowToc: false
 images:
 tags:
   - data lake
-  - apache iceberg
+  - iceberg
   - spark
   - data engineering
 

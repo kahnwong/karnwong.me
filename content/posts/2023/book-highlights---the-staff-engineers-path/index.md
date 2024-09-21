@@ -1,5 +1,5 @@
 ---
-title: Book highlights - The Staff Engineer's Path by Tanya Reilly
+title: Book Highlights - The Staff Engineer's Path by Tanya Reilly
 date: 2023-03-15T21:34:33+07:00
 draft: false
 ShowToc: false

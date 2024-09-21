@@ -1,5 +1,5 @@
 ---
-title: Book highlights - Engineering Management for the Rest of Us by Sarah Drasner
+title: Book Highlights - Engineering Management for the Rest of Us by Sarah Drasner
 date: 2023-03-16T07:09:24+07:00
 draft: false
 ShowToc: false

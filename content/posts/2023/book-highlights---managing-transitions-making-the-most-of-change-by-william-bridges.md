@@ -1,5 +1,5 @@
 ---
-title: "Book highlights - Managing Transitions: Making the Most of Change by William Bridges"
+title: "Book Highlights - Managing Transitions: Making the Most of Change by William Bridges"
 date: 2023-04-27T00:18:21+07:00
 draft: false
 ShowToc: false
