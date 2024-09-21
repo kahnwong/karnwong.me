@@ -9,6 +9,10 @@ tags:
   - backend
 ---
 
+**Correction 2024-09-21**: after using multi-stage build, Node image size dropped from 1.1GB to 130MB.
+
+---
+
 The first programming language I achieved proficiency was Python, so for the longest time I've been using it to do most
 stuff. Last year I picked up Go, and I had a blast with it. This month I picked up Rust for data/ml works, and so far I
 was very impressed.
@@ -22,15 +26,12 @@ results.
 It's a given that when you compile your code into a binary, it would be smaller than adding the whole runtime and
 dependencies into an image.
 
-The claim that "node_modules is the heaviest object in the universe" is
-actually true.
-
 | Language | Image Size (MB) |
-|----------|-----------------|
-| Go       | 13.4            |
-| Node     | 1100            |
-| Python   | 146             |
-| Rust     | 8.63            |
+|----------|----------------|
+| Go       | 13.4           |
+| Node     | 130            |
+| Python   | 146            |
+| Rust     | 8.63           |
 
 ## Resources utilization on startup
 
@@ -91,6 +92,6 @@ Zooming in on Go and Rust, we can see that Go uses slightly less CPU but more me
 
 ## Conclusion
 
-- Node takes up the most image size.
+- Python and Node take up the most image size.
 - Go and Rust consume the least amount of resources and have very similar performance. While the differences are almost negligible, Rust can serve more requests.
 - Node is faster than Python, but utilizes more resources.
