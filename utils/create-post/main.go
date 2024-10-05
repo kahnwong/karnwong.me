@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"regexp"
+	"os/exec"
 	"strconv"
 	"strings"
 	"time"
@@ -14,8 +14,9 @@ import (
 )
 
 func titleToSlug(title string) string {
-	re := regexp.MustCompile("[a-zA-Z' ]+")
-	sanitizedString := re.FindString(title)
+	replacer := strings.NewReplacer("(", "", ")", "", "?", "")
+	sanitizedString := replacer.Replace(title)
+
 	lowerString := strings.ToLower(sanitizedString)
 	slug := strings.ReplaceAll(lowerString, " ", "-")
 
@@ -43,6 +44,17 @@ func formatTags(tags string) string {
 	tagsFormatted := strings.Join(tagsSplit, "\n")
 
 	return tagsFormatted
+}
+
+func execCommand(name string, args ...string) {
+	cmd := exec.Command(name, args...)
+	stdout, err := cmd.Output()
+
+	if err != nil {
+		log.Fatal(err)
+	} else {
+		fmt.Print(string(stdout))
+	}
 }
 
 func main() {
@@ -134,4 +146,7 @@ tags:
 	}
 
 	fmt.Printf("Created %s", filePath)
+
+	// add to git
+	execCommand("git", "add", filePath)
 }

@@ -1,6 +1,6 @@
 module github.com/kahnwong/karnwong.me/utils/create-post
 
-go 1.21.5
+go 1.23
 
 require github.com/charmbracelet/huh v0.2.2
 
