@@ -24,6 +24,12 @@ I picked following frameworks to test LLM serving performance:
 | Python   | HuggingFace |
 | Rust     | mistral.rs  |
 
+For experiment details, see [here](https://github.com/kahnwong/llm-serving-benchmark).
+
+Model used: `gemma-2-2b-it`
+
+Unit: `second`
+
 Let's dive in!
 
 ## Baseline Stats
