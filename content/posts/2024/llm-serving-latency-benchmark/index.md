@@ -28,8 +28,6 @@ For experiment details, see [here](https://github.com/kahnwong/llm-serving-bench
 
 Model used: `gemma-2-2b-it`
 
-Unit: `second`
-
 Let's dive in!
 
 ## Baseline Stats
