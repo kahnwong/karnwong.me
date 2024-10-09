@@ -28,3 +28,11 @@ repos:
     hooks:
       - id: markdownlint-cli2
         args: [--ignores, node_modules, src, --fix]
+  - repo: https://github.com/nbQA-dev/nbQA
+    rev: 1.8.7
+    hooks:
+      - id: nbqa-black
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.7.1
+    hooks:
+      - id: nbstripout
