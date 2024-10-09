@@ -13,7 +13,7 @@ After the rise of ChatGPT in 2023, these days most people are familiar with the 
 
 But if you are on the other side - creating and deploying LLMs, there are certain things you need to think about. For one, your implementation team would have languages/frameworks they specialize in, so that's already a constraint you have to work with when designing a solution.
 
-Thankfully there a myriad of options to choose from to deploy LLMs, (see [here](https://github.com/Hannibal046/Awesome-LLM?tab=readme-ov-file#llm-deployment)). Even easier if you don't have to do fine-tuning, because you can serve up the model straightaway.
+Thankfully there are myriad of options to choose from to deploy LLMs, (see [here](https://github.com/Hannibal046/Awesome-LLM?tab=readme-ov-file#llm-deployment)). Even easier if you don't have to do fine-tuning, because you can serve up the model straightaway.
 
 I picked following frameworks to test LLM serving performance:
 
