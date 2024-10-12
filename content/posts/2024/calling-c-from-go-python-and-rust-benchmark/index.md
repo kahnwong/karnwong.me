@@ -74,3 +74,9 @@ But if we really have to compare `c` and `pure rust` (in rust), c is still faste
 ![10-all-stats-all.webp](images/10-all-stats-all.webp)
 
 You can also call rust from python via pyo3. In which, for the same function implementation, it is waaaaay faster than CFFI!
+
+## TLDR
+
+- Calling c from go and rust doesn't have much overhead. But if you are calling c from python, that's a very different story.
+- If we are talking about pure implementations, native rust is comparable to c.
+- For boosting python performance, utilizing pyo3 via rust is also a good option, since it brings the performance closer to go and rust.
