@@ -14,7 +14,7 @@ import (
 )
 
 func titleToSlug(title string) string {
-	replacer := strings.NewReplacer("(", "", ")", "", "?", "")
+	replacer := strings.NewReplacer("(", "", ")", "", "?", "", ",", "")
 	sanitizedString := replacer.Replace(title)
 
 	lowerString := strings.ToLower(sanitizedString)
