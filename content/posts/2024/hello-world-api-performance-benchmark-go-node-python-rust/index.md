@@ -7,6 +7,9 @@ images:
 tags:
   - benchmark
   - backend
+  - python
+  - go
+  - rust
 ---
 
 **Correction 2024-09-21**: after using multi-stage build, Node image size dropped from 1.1GB to 130MB.

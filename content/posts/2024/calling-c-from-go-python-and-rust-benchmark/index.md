@@ -7,6 +7,8 @@ images:
 tags:
   - benchmark
   - programming
+  - c
+  - python
 ---
 
 There's a consensus that generally, c is very fast, and python is very slow. But if we are talking about go and rust, you would find that rust is slightly faster than go. So from fastest to slowest: c, rust, go, python.
