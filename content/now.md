@@ -8,10 +8,9 @@ summary: "What I'm currently doing"
 
 - Guide teams to cross-collaborate
 - Share how to avoid pitfalls on various stuff
-- Tinkering with home servers (Mac Mini 2018 & Intel NUC)
-- Cranking out golang CLI apps
-- Tinkering with Rust for funsies
-- I found out I like managing people
+- Deploy stuff to home servers (Mac Mini 2018 & Intel NUC)
+- Crank out golang CLI apps
+- Use Rust for production data workloads
 
 Updated 2024-10-14
 
