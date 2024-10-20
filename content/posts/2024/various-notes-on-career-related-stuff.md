@@ -23,9 +23,12 @@ tags:
 - No matter how well you can perform in your current role, if you don't have the right amount of soft skills and big-picture thinking, you can't advance further.
 - Most ICs who's outgrowing their senior/technical lead roles tend to jump straight into considering that they are staff/principal engineer. This is almost always not the case, because to be a staff/principal, you still need soft skills and business acumen. You are influencing without authority after all.
 - Most engineers are stuck at mid level, and that's to be expected. And even less reach senior level. Less and less for technical lead and engineering manager.
-  - Some people are still mid level after 10 years in the industry, and you have to let them be. Not everyone has what it takes to advance
+  - Some people are still mid level after 10 years in the industry, and you have to let them be. Not everyone has what it takes to advance.
   - You would also find that some people can operate at a higher level, but it utilizes a lot of cognitive load for them, to the point they prefer to step down a level just to not lose their sanity.
 - If you are doing your best and are the best performed member of your team - if you are not getting promoted, chances are your manager doesn't want to lose you, because keeping you exactly where you are means your manager doesn't have to find someone to replace you.
+  - But it can also be that you need to catch up on your soft skills. Talk to your manager to assess your skills gap.
+- Having "senior" in the title doesn't make someone actually operating at a senior level. It's just a title. The same goes for "manager" as well.
+  - A lot of senior engineers by title are actually mid levels. And a lot of managers only took the job because they want more pay but don't actually enjoy managerial duties.
 
 ## Roles
 
