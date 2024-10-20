@@ -39,6 +39,10 @@ tags:
 - Some job descriptions for data engineering can include anything from development, ml deployment, data pipelines, visualization, etc. Some ops roles can expect anything from dev, llm experiment and deployment.
   - This is a symptom of hiring managers not really understand roles collaboration. Because realistically no one can juggle everything at the same time.
 - Your actual responsibilities and title may not align. It's up to you to present your title in resume.
+- After technical lead, one possible path is picking up management, PM and sales roles.
+  - If you have to manage but can't understand engineers, it's not going to work.
+  - If you have to keep the timeline in check and follow-up with people from multiple teams as a PM, not understanding the concerns from each team is not going to make your job as a PM easier.
+  - Pitching products and services to clients while not fully understand your offerings' capabilities can cause more headaches for the engineering team, because if you promised what can't actually be delivered, the engineering team wouldn't want to work with you.
 
 ## Job change
 
