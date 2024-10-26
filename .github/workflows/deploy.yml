@@ -11,7 +11,7 @@ env:
   BUILD_DIR: public
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout Repository"
@@ -69,7 +69,8 @@ jobs:
       ########################
       # healthcheck
       ########################
-      - uses: supplypike/setup-bin@v4
+      - name: Install ci-cd-utils
+        uses: supplypike/setup-bin@v4
         with:
           uri: https://github.com/kahnwong/ci-cd-utils/releases/download/v0.1.0/ci-cd-utils_0.1.0_linux_amd64.tar.gz
           name: ci-cd-utils
