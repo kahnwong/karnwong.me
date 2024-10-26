@@ -10,6 +10,10 @@ tags:
   - devops
   - finops
   - devx
+  - gcp
+  - aws
+  - azure
+  - gke
 
 ---
 
