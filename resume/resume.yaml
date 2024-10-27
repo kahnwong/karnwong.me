@@ -21,6 +21,10 @@ work:
     highlights:
       - Guide teams on how to better collaborate to achieve faster feedback loops and delivery
       - Evangelize agile, software engineering and MLOps practices
+      - Within 8 months since onboarding, managed to have the data science team who previously exclusively develop on Google Colab / Vertex Notebook do
+        code versioning, pull requests, and python venv (via poetry). More than 30+ pull requests have been made during this period
+      - Oversee technical direction and delivery for projects. This involves model development (MLOps) and application deployment (DevOps), while utilizing
+        a common foundational blocks to reduce implementation overhead (platform engineering)
   - name: Baania
     position: Head of Platform Engineering
     website: https://www.baania.com
@@ -137,11 +141,13 @@ projects:
       - Managed via docker-compose, helm and terraform
       - Use terraform to manage Cloudflare and Kubernetes.
       - Use Caddy for reverse-proxy
+      - SSO via Authentik
     keywords:
       - docker
       - kubernetes
       - helm
       - terraform
+      - sso
 #    startDate: 2017-12-01
     type: devops
   - name: docs
@@ -177,24 +183,40 @@ projects:
 #    endDate: 2023-08-31
     type: devops
     url: https://github.com/kahnwong/pgconn
-  - name: swissknife
+  # ---------------- benchmarks ----------------
+  - name: Dataframe Frameworks Showdown
     highlights:
-      - Various CLI-based utilities for ops work
+      - Benchmark performance between duckdb, polars and spark. In addition to runtime, RAM usage is also provided
     keywords:
-      - utilities
-      - cli
-    type: devops
-    url: https://github.com/kahnwong/swissknife
-  - name: config-init
+      - duckdb
+      - polars
+      - spark
+      - dataframe
+      - data engineering
+    #    startDate: 2023-04-05
+    #    endDate: 2023-04-10
+    type: data
+    url: https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/
+  - name: Hello World API Performance Benchmark (Go, Node, Python, Rust)
     highlights:
-      - CLI app to init configurations
+      - Measure latency, RPS and CPU & memory utilization for a hello world api in various languages
     keywords:
-      - template
-      - cli
-    #    startDate: 2023-08-24
-    #    endDate: 2023-08-31
-    type: devops
-    url: https://github.com/kahnwong/config-init
+      - go
+      - node
+      - python
+      - rust
+    type: benchmark
+    url: https://karnwong.me/posts/2024/09/hello-world-api-performance-benchmark-go-node-python-rust/
+  - name: Calling C from Go, Python and Rust benchmark
+    highlights:
+      - Measure overheads incurred from using C FFI in various languages
+    keywords:
+      - c
+      - go
+      - python
+      - rust
+    type: benchmark
+    url: https://karnwong.me/posts/2024/10/calling-c-from-go-python-and-rust-benchmark/
   # ---------------- mlops ----------------
   - name: Python API Template
     highlights:
@@ -221,19 +243,6 @@ projects:
 #    endDate: 2023-09-10
     type: data
     url: https://www.karnwong.me/posts/2023/09/spark-on-kubernetes/
-  - name: Dataframe Frameworks Showdown
-    highlights:
-      - Benchmark performance between duckdb, polars and spark. In addition to runtime, RAM usage is also provided
-    keywords:
-      - duckdb
-      - polars
-      - spark
-      - dataframe
-      - data engineering
-#    startDate: 2023-04-05
-#    endDate: 2023-04-10
-    type: data
-    url: https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/
   - name: Dagster Demo
     highlights:
       - A working dagster demo with medallion architecture, partitioned data, schedules, assets dependencies, job status alerts and auto-materialize assets.
@@ -301,6 +310,7 @@ skills:
       - Go
       - HCL
       - Python
+      - Rust
   - name: Cloud Native
     keywords:
       - Docker
@@ -318,6 +328,7 @@ skills:
       - Terraform
       - GitHub Actions
       - Proxmox
+      - Authentik
       - Infracost
       - New Relic
   - name: Databases
