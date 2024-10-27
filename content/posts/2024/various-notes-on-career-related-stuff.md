@@ -32,7 +32,7 @@ tags:
 
 ## Roles
 
-- Being a manager isn't about attending  meetings all day. Rather it's unblocking people and making sure people get the support they need.
+- Being a manager isn't about attending meetings all day. Rather it's unblocking people and making sure people get the support they need.
   - But if they do this job well, you wouldn't notice them at all. But if they do it poorly, you will notice their existence.
 - Data roles can be business or tech oriented, or somewhere in the middle. No point in fighting whether a DS/DE/MLE role should be technical or business-led.
 - Some roles are not entry-level. For instance, data engineering, data science, devops. But the caveat is that if you are joining an established team, it's somewhat doable for entry-level.
