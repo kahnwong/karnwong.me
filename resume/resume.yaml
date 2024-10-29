@@ -19,6 +19,8 @@ work:
     startDate: 2024-01-03
     endDate:
     highlights:
+      - Lead a team of three engineers, educating and support data science team to achieve faster delivery
+      - Collaborate with pre-sales and data science team to ensure the feasibility of incoming projects
       - Guide teams on how to better collaborate to achieve faster feedback loops and delivery
       - Evangelize agile, software engineering and MLOps practices
       - Within 8 months since onboarding, managed to have the data science team who previously exclusively develop on Google Colab / Vertex Notebook do
@@ -31,6 +33,8 @@ work:
     startDate: 2022-10-01
     endDate: 2023-12-28
     highlights:
+      - Lead a team of three engineers, building and maintaining infrastructure for five products, centralized data platform and MLOps platform.
+      - Collaborate with engineering, product and data team to align the platform directions that satisfy all parties
       - Research and implement internal data platform v2, with CI/CD for integration and unit tests, dependencies and code changes
       - Use Terraform with Infracost to assess infrastructure cost to prune unused/underutilized resources, in turn reduce 33% of cloud cost per month (FinOps)
       - Design and implement end-to-end cloud-native application deployment (Terraform for infra/secrets, Helm for application deployment, GitHub Actions
@@ -47,6 +51,8 @@ work:
     startDate: 2022-01-10
     endDate: 2022-09-30
     highlights:
+      - Lead a team of two engineers, building and maintaining data and MLOps platform
+      - Collaborate with engineering, product and data team to ensure that the platform serves their needs
       - Enable backend team to perform auto-deployment to ECS with Terraform and GitHub Actions
       - Manage repo permissions / secrets / webhooks with Terraform
       - Research BI solution to consolidate fragmented dashboard platforms into a single one
