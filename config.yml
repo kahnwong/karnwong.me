@@ -1,10 +1,8 @@
----
 baseURL: https://karnwong.me/
 # baseURL: "/"
 title: Karn Wong
 paginate: 5
 theme: PaperMod
-
 enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
@@ -12,11 +10,9 @@ buildFuture: false
 buildExpired: false
 enableEmoji: false
 googleAnalytics: G-8CYMFC0KZ9
-
 minify:
   disableXML: true
   # minifyOutput: true
-
 languages:
   en:
     languageName: English
@@ -53,18 +49,14 @@ outputs:
     - HTML
     - RSS
     - JSON
-
 permalinks:
   posts: /:section/:year/:month/:slugorfilename
-
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: Homepage and blog by Karn Wong
   author: Karn Wong
-
   assets:
     disableFingerprinting: true
-
   defaultTheme: light
   # disableThemeToggle: true
   ShowShareButtons: true
@@ -80,12 +72,10 @@ params:
     Title: Karn Wong
     Content: Platform engineer | Technical Leadership | HashiCorp Ambassador | AWS & GCP 2X Certified
   TocSide: left # or 'right'
-
   # profileMode:
   #   enabled: true
   #   title: Karn Wong
   #   subtitle: Head of platform engineering | HashiCorp Ambassador | AWS Community Builder | GCP Certified
-
   socialIcons:
     - name: github
       url: https://github.com/kahnwong
@@ -103,36 +93,29 @@ params:
       url: index.xml
     - name: webring
       url: https://webring.wonderful.software#karnwong.me
-
 taxonomies:
   category: categories
   tag: tags
   series: series
-
 markup:
   highlight:
     style: monokai
     # noClasses: false
     # guessSyntax: true
-
 privacy:
   vimeo:
     disabled: false
     simple: true
-
   twitter:
     disabled: false
     enableDNT: true
     simple: true
-
   instagram:
     disabled: false
     simple: true
-
   youtube:
     disabled: false
     privacyEnhanced: true
-
 services:
   instagram:
     disableInlineCSS: true

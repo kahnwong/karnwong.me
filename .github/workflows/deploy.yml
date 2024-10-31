@@ -1,15 +1,11 @@
----
 name: Deploy
-
 on:
   push:
     branches: [master]
   workflow_dispatch:
-
 env:
   PROJECT_NAME: karnwong-me
   BUILD_DIR: public
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -18,7 +14,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: true
-
       ########################
       # build resume
       ########################
@@ -35,7 +30,6 @@ jobs:
           yarn install
           yarn build
           cp resume.html ../static/resume.html
-
       ########################
       # build hugo
       ########################
@@ -44,18 +38,15 @@ jobs:
         with:
           hugo-version: "0.135.0"
           extended: true
-
       - name: Set timezone
         uses: szenius/set-timezone@v2.0
         with:
           timezoneLinux: "Asia/Bangkok"
           timezoneMacos: "Asia/Bangkok"
           timezoneWindows: "SE Asia Standard Time"
-
       - name: Build site
         run: |
           hugo
-
       ########################
       # publish
       ########################
@@ -65,7 +56,6 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy ${{ env.BUILD_DIR }} --project-name=${{ env.PROJECT_NAME }}
-
       ########################
       # healthcheck
       ########################

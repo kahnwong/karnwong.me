@@ -1,4 +1,3 @@
----
 basics:
   name: Karn Wong
   label: Platform engineer | Technical Leadership | HashiCorp Ambassador | AWS & GCP 2X Certified | AWS Community Builder
@@ -25,10 +24,8 @@ work:
       - Act as technical lead for data science team
       - Guide teams on how to better collaborate to achieve faster feedback loops and delivery
       - Evangelize agile, software engineering and MLOps practices
-      - Within 8 months since onboarding, managed to have the data science team who previously exclusively develop on Google Colab / Vertex Notebook do
-        code versioning, pull requests, and python venv (via poetry). More than 30+ pull requests have been made during this period
-      - Oversee technical direction and delivery for projects. This involves model development (MLOps) and application deployment (DevOps), while utilizing
-        a common foundational blocks to reduce implementation overhead (platform engineering)
+      - Within 8 months since onboarding, managed to have the data science team who previously exclusively develop on Google Colab / Vertex Notebook do code versioning, pull requests, and python venv (via poetry). More than 30+ pull requests have been made during this period
+      - Oversee technical direction and delivery for projects. This involves model development (MLOps) and application deployment (DevOps), while utilizing a common foundational blocks to reduce implementation overhead (platform engineering)
   - name: Baania
     position: Head of Platform Engineering
     website: https://www.baania.com
@@ -39,14 +36,10 @@ work:
       - Collaborate with engineering, product and data team to align the platform directions that satisfy all parties
       - Research and implement internal data platform v2, with CI/CD for integration and unit tests, dependencies and code changes
       - Use Terraform with Infracost to assess infrastructure cost to prune unused/underutilized resources, in turn reduce 33% of cloud cost per month (FinOps)
-      - Design and implement end-to-end cloud-native application deployment (Terraform for infra/secrets, Helm for application deployment, GitHub Actions
-        for CI/CD, Kubernetes for container orchestration)
-      - "Lead a major core product refactoring across ops, engineering and data (data engineering, data science and machine learning engineering). Affected\
-        \ areas: data pipelines, model training pipelines, real-time inference endpoints, database performance optimization, deployment pipelines, local\
-        \ development workflow"
+      - Design and implement end-to-end cloud-native application deployment (Terraform for infra/secrets, Helm for application deployment, GitHub Actions for CI/CD, Kubernetes for container orchestration)
+      - "Lead a major core product refactoring across ops, engineering and data (data engineering, data science and machine learning engineering). Affected areas: data pipelines, model training pipelines, real-time inference endpoints, database performance optimization, deployment pipelines, local development workflow"
       - Lead a cloud migration from AWS to GCP (AWS ECS to GCP GKE)
-      - Introduce H3 spatial indexing to improve spatial queries performance. This also allows any system to obtain the performance gain, since it is not
-        tied to execution engine with spatial support
+      - Introduce H3 spatial indexing to improve spatial queries performance. This also allows any system to obtain the performance gain, since it is not tied to execution engine with spatial support
   - name: Baania
     position: Lead Data Engineer | Machine Learning Engineer | SRE
     website: https://www.baania.com
@@ -61,8 +54,7 @@ work:
       - Setup Grafana for centralized metrics and logs monitoring
       - Introduce Sourcegraph to help with code search and refactoring
       - Setup GitOps for Terraform to enable collaboration between different teams, in turn reducing configuration drift
-      - Architect end-to-end machine learning project involving reproducible data / model training pipelines, hyper-parameter tuning, CI/CD for inference
-        API endpoint (MLOps). Real-time model performance dashboard and tracing via request id are also implemented via Grafana
+      - Architect end-to-end machine learning project involving reproducible data / model training pipelines, hyper-parameter tuning, CI/CD for inference API endpoint (MLOps). Real-time model performance dashboard and tracing via request id are also implemented via Grafana
   - name: Baania
     position: Senior Data Engineer
     website: https://www.baania.com
@@ -78,10 +70,8 @@ work:
       - Reduce runtime for PR code quality checks by 90% to shorten feedback loop cycle
       - Set up secrets management using SOPS/Terraform/AWS SSM, for improved security and secrets rotation
       - Launch Baania Engineering Blog, a platform to showcase how Baania does things behind the scenes
-      - Reduce employee onboarding time per employee from a few days to 30 minutes via a setup script to setup necessary tools, applications and environment
-        for development
-      - Optimize a nearby POI lookup in PostGIS against 4 million rows with lochash, in turn reducing query runtime and resources requirements. Runtime
-        is reduced from 10 minutes to 2 seconds
+      - Reduce employee onboarding time per employee from a few days to 30 minutes via a setup script to setup necessary tools, applications and environment for development
+      - Optimize a nearby POI lookup in PostGIS against 4 million rows with lochash, in turn reducing query runtime and resources requirements. Runtime is reduced from 10 minutes to 2 seconds
   - name: Baania
     position: Data Engineer
     website: https://www.baania.com
@@ -156,7 +146,7 @@ projects:
       - helm
       - terraform
       - sso
-#    startDate: 2017-12-01
+      #    startDate: 2017-12-01
     type: devops
   - name: docs
     url: https://docs.karnwong.me/
@@ -166,7 +156,7 @@ projects:
       - documentation
       - knowledge base
       - vitepress
-#    startDate: 2020-01-01
+      #    startDate: 2020-01-01
     type: devops
   - name: nix
     highlights:
@@ -176,19 +166,18 @@ projects:
       - environment
       - dotfiles
       - package manager
-#    startDate: 2022-11-30
+      #    startDate: 2022-11-30
     type: devops
     url: https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/
   - name: pgconn
     highlights:
-      - pgcli wrapper to connect to PostgreSQL database specified in db.yaml. Proxy/tunnel connection is automatically created and killed when pgcli is
-        exited
+      - pgcli wrapper to connect to PostgreSQL database specified in db.yaml. Proxy/tunnel connection is automatically created and killed when pgcli is exited
     keywords:
       - postgres
       - ssh tunneling
       - cli
-#    startDate: 2023-08-24
-#    endDate: 2023-08-31
+      #    startDate: 2023-08-24
+      #    endDate: 2023-08-31
     type: devops
     url: https://github.com/kahnwong/pgconn
   # ---------------- benchmarks ----------------
@@ -233,11 +222,11 @@ projects:
       - fastapi
       - pydantic
       - pytest
-#    startDate: 2023-12-01
-#    endDate: 2023-12-07
+      #    startDate: 2023-12-01
+      #    endDate: 2023-12-07
     type: mlops
     url: https://github.com/kahnwong/python-api-template
- # ---------------- data ----------------
+    # ---------------- data ----------------
   - name: Spark on Kubernetes
     highlights:
       - Run spark jobs on kubernetes, which can be used both locally and on production environment
@@ -247,8 +236,8 @@ projects:
       - minio
       - finops
       - devex
-#    startDate: 2023-09-09
-#    endDate: 2023-09-10
+      #    startDate: 2023-09-09
+      #    endDate: 2023-09-10
     type: data
     url: https://www.karnwong.me/posts/2023/09/spark-on-kubernetes/
   - name: Dagster Demo
@@ -257,8 +246,8 @@ projects:
     keywords:
       - dagster
       - data engineering
-#    startDate: 2021-08-29
-#    endDate: 2023-09-22
+      #    startDate: 2021-08-29
+      #    endDate: 2023-09-22
     type: data
     url: https://github.com/kahnwong/dagster-demo
   - name: Impute Pipelines
@@ -269,8 +258,8 @@ projects:
       - Machine Learning
       - data science
       - hyperparameter tuning
-#    startDate: 2019-11-28
-#    endDate: 2019-12-23
+      #    startDate: 2019-11-28
+      #    endDate: 2019-12-23
     url: https://www.karnwong.me/posts/2020/05/impute-pipelines/
     type: data
 interests:
@@ -310,7 +299,6 @@ volunteer:
   - organization: Data Engineering Discord
     position: Moderator & Frequent Contributor
     startDate: 2020
-
 skills:
   - name: Languages
     keywords:
