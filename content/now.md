@@ -6,12 +6,12 @@ summary: "What I'm currently doing"
 #ShowToc: true
 ---
 
-- Guide teams to cross-collaborate
-- Share how to avoid pitfalls on various stuff
 - Deploy stuff to home servers (Mac Mini 2018 & Intel NUC)
-- Crank out golang CLI apps
+- Crank out Go CLI apps
 - Use Rust for production data workloads
+- Tinker with various tools
+- On a career break until February
 
-Updated 2024-10-14
+Updated 2024-11-01
 
 This page was inspired by <https://fheidenreich.de/now/>.

@@ -8,7 +8,7 @@ ShowToc: false
 
 <!--- ![me-at-grill-the-data](/about/me-at-grill-the-data.jpg) -->
 
-I'm currently a platform engineer at [Data Cafe (Thailand)](https://www.datacafethailand.com/), working in a technical leadership capacity.
+I'm a platform engineer, working in a technical leadership capacity.
 
 If you want to schedule a call, either to talk about stuff or possible collaborations, [book a meeting](https://cal.com/karn-wong-uuhbtm/).
 

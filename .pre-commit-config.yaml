@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v5.0.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -14,18 +14,16 @@ repos:
       - id: detect-private-key
       - id: fix-byte-order-marker
       - id: mixed-line-ending
-        #  - repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
-        #    rev: 0.2.3
-        #    hooks:
-        #      - id: yamlfmt
-        #        args: [--mapping, "2", --sequence, "4", --offset, "2", --width, "150", --preserve-quotes]
-        #        exclude: ^.github/dependabot.yaml
-  - repo: https://github.com/nbQA-dev/nbQA
-    rev: 1.8.7
-    hooks:
-      - id: nbqa-black
   - repo: https://github.com/kahnwong/pre-commit
-    rev: "db955a3"
+    rev: "ecfbd9e"
     hooks:
+      - id: go-build
+      - id: go-fmt
+      - id: go-imports
+      - id: go-mod-tidy
+      - id: go-unit-tests
+      - id: go-vet
+      - id: golangci-lint
+      - id: nbstripout
       - id: yamlfmt
       - id: markdownlint-cli2
