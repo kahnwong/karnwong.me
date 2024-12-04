@@ -12,6 +12,6 @@ summary: "What I'm currently doing"
 - Tinker with various tools
 - On a career break until February
 
-Updated 2024-11-01
+Updated 2024-12-01
 
 This page was inspired by <https://fheidenreich.de/now/>.
