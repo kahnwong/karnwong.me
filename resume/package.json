@@ -1,14 +1,14 @@
 {
   "dependencies": {
     "jsonresume-theme-even": "^0.23.0",
-    "jsonresume-theme-jdambron": "^1.0.3",
+    "jsonresume-theme-one": "^0.0.1",
     "jsonresume-theme-stackoverflow-mats": "^2.1.0",
     "resume-cli": "^3.0.8",
     "resumed": "^4.0.0"
   },
   "scripts": {
     "prebuild": "yq -I2 resume.yaml -o=json > resume.json && resumed validate",
-    "build": "resumed export --output resume.html --theme jsonresume-theme-stackoverflow-mats",
+    "build": "resumed export --output resume.html --theme jsonresume-theme-one",
     "dev": "fd resume.yaml | entr yarn build"
   },
   "license": "MIT"

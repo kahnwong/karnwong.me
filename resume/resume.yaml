@@ -96,10 +96,10 @@ education:
     startDate: "2015"
     endDate: "2018"
 certificates:
-  #  - name: Google Cloud Professional Data Engineer
-  #    date: 2024
-  #    issuer: Google Cloud Platform
-  #    url: https://www.credly.com/badges/1daf754b-899c-49a4-ba42-70979d8fc9d1/public_url
+  - name: Google Cloud Professional Data Engineer
+    date: "2024"
+    issuer: Google Cloud Platform
+    url: https://www.credly.com/badges/1daf754b-899c-49a4-ba42-70979d8fc9d1/public_url
   - name: HashiCorp Ambassador 2024
     date: "2024"
     issuer: HashiCorp
@@ -148,38 +148,38 @@ projects:
       - sso
       #    startDate: 2017-12-01
     type: devops
-    #  - name: docs
-    #    url: https://docs.karnwong.me/
-    #    highlights:
-    #      - Personal documentation website on various topics
-    #    keywords:
-    #      - documentation
-    #      - knowledge base
-    #      - vitepress
-    #      #    startDate: 2020-01-01
-    #    type: devops
-    #  - name: nix
-    #    highlights:
-    #      - A cross-platform setup script that works with both Linux and Mac
-    #    keywords:
-    #      - Nix
-    #      - environment
-    #      - dotfiles
-    #      - package manager
-    #      #    startDate: 2022-11-30
-    #    type: devops
-    #    url: https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/
-    #  - name: pgconn
-    #    highlights:
-    #      - pgcli wrapper to connect to PostgreSQL database specified in db.yaml. Proxy/tunnel connection is automatically created and killed when pgcli is exited
-    #    keywords:
-    #      - postgres
-    #      - ssh tunneling
-    #      - cli
-    #      #    startDate: 2023-08-24
-    #      #    endDate: 2023-08-31
-    #    type: devops
-    #    url: https://github.com/kahnwong/pgconn
+  - name: docs
+    url: https://docs.karnwong.me/
+    highlights:
+      - Personal documentation website on various topics
+    keywords:
+      - documentation
+      - knowledge base
+      - vitepress
+      #    startDate: 2020-01-01
+    type: devops
+  - name: nix
+    highlights:
+      - A cross-platform setup script that works with both Linux and Mac
+    keywords:
+      - Nix
+      - environment
+      - dotfiles
+      - package manager
+      #    startDate: 2022-11-30
+    type: devops
+    url: https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/
+  - name: pgconn
+    highlights:
+      - pgcli wrapper to connect to PostgreSQL database specified in db.yaml. Proxy/tunnel connection is automatically created and killed when pgcli is exited
+    keywords:
+      - postgres
+      - ssh tunneling
+      - cli
+      #    startDate: 2023-08-24
+      #    endDate: 2023-08-31
+    type: devops
+    url: https://github.com/kahnwong/pgconn
   - name: Hello World API Performance Benchmark (Go, Node, Python, Rust)
     # ---------------- benchmarks ----------------
     #  - name: Dataframe Frameworks Showdown
@@ -264,27 +264,27 @@ projects:
 #      #    endDate: 2019-12-23
 #    url: https://www.karnwong.me/posts/2020/05/impute-pipelines/
 #    type: data
-#interests:
-#  - name: Humanities
-#    keywords:
-#      - Anthropology
-#      - Linguistics
-#      - Psychology
-#      - Sociology
-#  - name: Music
-#    keywords:
-#      - Symphonic Heavy Metal
-#      - Power Metal
-#      - Folk Metal
-#      - Classical Crossover
-#      - Operatic Pop
-#  - name: Technology
-#    keywords:
-#      - Platform Engineering
-#      - DevX
-#      - Kubernetes
-#      - DevOps / DataOps / MLOps
-#      - Scaling & Optimization
+interests:
+  - name: Humanities
+    keywords:
+      - Anthropology
+      - Linguistics
+      - Psychology
+      - Sociology
+  - name: Music
+    keywords:
+      - Symphonic Heavy Metal
+      - Power Metal
+      - Folk Metal
+      - Classical Crossover
+      - Operatic Pop
+  - name: Technology
+    keywords:
+      - Platform Engineering
+      - DevX
+      - Kubernetes
+      - DevOps / DataOps / MLOps
+      - Scaling & Optimization
 volunteer:
   #  - organization: Data Engineer Thailand
   #    position: Moderator & Frequent Contributor
@@ -301,72 +301,72 @@ volunteer:
 #  - organization: Data Engineering Discord
 #    position: Moderator & Frequent Contributor
 #    startDate: 2020
-#skills:
-##  - name: Languages
-##    keywords:
-##      - Bash
-##      - Go
-##      - HCL
-##      - Python
-##      - Rust
-#  - name: Cloud Native
-#    keywords:
-#      - Docker
-#      - Kubernetes
-#      - Helm
-#      - K3S
-#      - Harbor
-#      - Grafana
-#      - Prometheus
-#      - Minio
-#      - MLflow
-#  - name: DevOps
-#    keywords:
-#      - Caddy
-#      - Terraform
-#      - GitHub Actions
-#      - Proxmox
-#      - Authentik
-#      - Infracost
-#      - New Relic
-#  - name: Databases
-#    keywords:
-#      - Postgres
-#      - MongoDB
-#      - BigQuery
-#      - DuckDB
-#  - name: Cloud
-#    keywords:
-#      - AWS
-#      - GCP
-#      - Digital Ocean
-#      - Cloudflare
-#      - Vercel
-#  - name: Python
-#    keywords:
-#      - FastAPI
-#      - Pydantic
-#      - Pytest
-#  - name: Data / ML
-#    keywords:
-#      - Apache Parquet
-#      - Apache Spark
-#      - Polars
-#      - Apache Iceberg
-#      - Dagster
-#      - Ray
-#      - Scikit-learn
-#      - DVC
-#  - name: GIS
-#    keywords:
-#      - Apache Sedona
-#      - PostGIS
-#      - H3
-#      - QGIS
-#      - Folium
-#      - Leaflet
-#  - name: Domain
-#    keywords:
-#      - Real Estate
-#      - Geospatial
-#      - NLP
+skills:
+  - name: Languages
+    keywords:
+      - Bash
+      - Go
+      - HCL
+      - Python
+      - Rust
+  - name: Cloud Native
+    keywords:
+      - Docker
+      - Kubernetes
+      - Helm
+      - K3S
+      - Harbor
+      - Grafana
+      - Prometheus
+      - Minio
+      - MLflow
+  - name: DevOps
+    keywords:
+      - Caddy
+      - Terraform
+      - GitHub Actions
+      - Proxmox
+      - Authentik
+      - Infracost
+      - New Relic
+  # - name: Databases
+  #   keywords:
+  #     - Postgres
+  #     - MongoDB
+  #     - BigQuery
+  # - DuckDB
+  - name: Cloud
+    keywords:
+      - AWS
+      - GCP
+      - Digital Ocean
+      - Cloudflare
+      - Vercel
+# - name: Python
+#   keywords:
+#     - FastAPI
+#     - Pydantic
+#     - Pytest
+# - name: Data / ML
+#   keywords:
+#     - Apache Parquet
+#     - Apache Spark
+#     - Polars
+#     - Apache Iceberg
+#     - Dagster
+#     - Ray
+#     - Scikit-learn
+#     - DVC
+# - name: GIS
+#   keywords:
+#     - Apache Sedona
+#     - PostGIS
+#     - H3
+#     - QGIS
+#     - Folium
+#     - Leaflet
+# - name: Domain
+#   keywords:
+#     - Real Estate
+#     - Geospatial
+#     - NLP
