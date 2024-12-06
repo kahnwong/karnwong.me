@@ -3,7 +3,6 @@
     "jsonresume-theme-even": "^0.23.0",
     "jsonresume-theme-one": "^0.0.1",
     "jsonresume-theme-stackoverflow-mats": "^2.1.0",
-    "resume-cli": "^3.0.8",
     "resumed": "^4.0.0"
   },
   "scripts": {
