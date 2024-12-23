@@ -74,6 +74,10 @@ params:
     Badges:
       - url: https://overbrowsing.com/projects/co2-shield
         image: https://img.shields.io/badge/CO₂-A+_0.040g-58C521.svg?style=for-the-badge&logo=CO2&logoColor=green
+        width: 145
+      - url: https://512kb.club
+        image: https://img.shields.io/badge/512KB%20Club-BLUE%20TEAM-62B4F5.svg?style=for-the-badge&logo=CO2&logoColor=blue
+        width: 195
   TocSide: left # or 'right'
   # profileMode:
   #   enabled: true
