@@ -71,6 +71,9 @@ params:
   homeInfoParams:
     Title: Karn Wong
     Content: Platform Engineer | Technical Leadership | HashiCorp Ambassador | AWS & GCP 2X Certified
+    Badges:
+      - url: https://overbrowsing.com/projects/co2-shield
+        image: https://img.shields.io/badge/CO₂-A+_0.040g-58C521.svg?style=for-the-badge&logo=CO2&logoColor=green
   TocSide: left # or 'right'
   # profileMode:
   #   enabled: true
