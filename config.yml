@@ -79,6 +79,8 @@ params:
   socialIcons:
     - name: github
       url: https://github.com/kahnwong
+    - name: bluesky
+      url: https://bsky.app/profile/karnwong.me
     - name: linkedin
       url: https://www.linkedin.com/in/karnsiree-w-7b535b202/
     - name: email
