@@ -6,7 +6,7 @@ from icecream import ic
 os.makedirs("output", exist_ok=True)
 
 files = glob.glob(
-    "/Users/kahnwong/Git/kahnwong/fleet/karnwong.me/content/posts/2023/*.md"
+    "/Users/kahnwong/Git/kahnwong/fleet/karnwong.me/content/posts/2017/*.md"
 )
 for i in files:
     print(f"==== Processing: {i} ====")
