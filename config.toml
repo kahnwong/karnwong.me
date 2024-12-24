@@ -50,7 +50,7 @@ recent_more_text = "more »"
 sections = [
     { name = "now", path = "/now", is_external = false },
     { name = "posts", path = "/posts", is_external = false },
-    { name = "tags", path = "/tags", is_external = false },
+#    { name = "tags", path = "/tags", is_external = false },
     { name = "projects", path = "/projects", is_external = false },
     { name = "speaking", path = "/speaking", is_external = false },
      { name = "about", path = "/about", is_external = false },
