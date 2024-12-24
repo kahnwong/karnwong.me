@@ -1,17 +1,5 @@
-# hugo
+# zola
 public
-.hugo_build.lock
-
-# python
-**/.ipynb_checkpoints/
-.venv
-__pycache__
-
-# resume
-node_modules
-resume.json
-resume.html
-resume.pdf
 
 # ide
 .idea
