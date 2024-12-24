@@ -3,9 +3,6 @@ languages:
   en:
     menu:
       main:
-        - name: Now
-        - name: About
-        - name: Resume
         - name: Speaking
 
     Badges:
