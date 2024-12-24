@@ -15,22 +15,6 @@ jobs:
         with:
           submodules: true
       ########################
-      # build resume
-      ########################
-      - name: Setup node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: yarn
-          cache-dependency-path: resume/yarn.lock
-      - uses: vegardit/gha-setup-yq@v1
-      - name: build resume
-        run: |
-          cd resume
-          yarn install
-          yarn build
-          cp resume.html ../static/resume.html
-      ########################
       # build hugo
       ########################
       - name: Install hugo
