@@ -6,7 +6,7 @@ from icecream import ic
 os.makedirs("output", exist_ok=True)
 
 files = glob.glob(
-    "/home/kahnwong/Git/kahnwong/fleet/karnwong.me/content/posts/2024/*.md"
+    "/Users/kahnwong/Git/kahnwong/fleet/karnwong.me/content/posts/2024/*.md"
 )
 for i in files:
     print(f"==== Processing: {i} ====")
@@ -37,4 +37,6 @@ for i in files:
     with open(out_filename, 'w') as f:
         f.write(out_content)
 
-    break
+    os.remove(i)
+
+    # break
