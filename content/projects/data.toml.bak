@@ -1,0 +1,29 @@
+#[[project]]
+#name = "Vercel - Multi Branch Deployment"
+#desc = "Use GitHub Actions to deploy a frontend project from different branches (dev, uat, master), each with their own preview environment"
+#tags = ["ops", "vercel"]
+#links = [{ name = "GitHub", url = "https://github.com/kahnwong/vercel-multi-branch-deployment" }]
+
+#[[project]]
+#name = "calculator"
+#desc = "Various calculators: meeting, GKE Autopilot and cloud cost calculator"
+#tags = ["ops", "utility"]
+#links = [{ name = "Demo", url = "https://calculator.karnwong.me" }, {name="GitHub", url="https://github.com/kahnwong/calculator"}]
+
+#[[project]]
+#name = "config-init"
+#desc = "CLI app to init configurations"
+#tags = ["ops", "utility", "configuration"]
+#links = [{name="GitHub", url="https://github.com/kahnwong/config-init"}]
+
+#[[project]]
+#name = "swissknife"
+#links=[{name="GitHub", url="https://github.com/kahnwong/swissknife"}]
+#desc = "Various CLI-based utilities for ops work"
+#tags = ["ops", "utility"]
+
+#[[project]]
+#name = "totp"
+#links=[{name="GitHub", url="https://github.com/kahnwong/totp"}]
+#desc = "CLI TOTP token generator with autocomplete"
+#tags = ["ops", "utility"]

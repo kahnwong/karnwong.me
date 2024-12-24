@@ -1,0 +1,53 @@
+[[project]]
+name = "self-hosted"
+links=[{name="GitHub", url="https://github.com/kahnwong/self-hosted"}]
+desc = "Self-hosting open-source alternatives for popular services. Managed via docker-compose, helm and terraform"
+tags = ["ops", "homelab", "kubernetes", "terraform"]
+
+[[project]]
+name = "nix"
+links=[{name="GitHub", url="https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix"}]
+desc = "A cross-platform setup script that works with both Linux and Mac"
+tags = ["ops", "configuration"]
+
+[[project]]
+name = "docs"
+desc = "Personal documentation website on various topics"
+tags = ["docs"]
+links = [{name="Website", url="https://docs.karnwong.me"}]
+
+[[project]]
+name = "waka"
+links=[{name="GitHub", url="https://github.com/kahnwong/waka"}]
+desc = "CLI to get WakaTime stats"
+tags = ["utility", "productivity"]
+
+[[project]]
+name = "docker-aws-backup"
+desc = "Backup paths or postgres to S3-compatible storage, with NTFY notification"
+tags = ["ops", "utility", "aws"]
+links = [{name="GitHub", url="https://github.com/kahnwong/docker-aws-backup"}]
+
+[[project]]
+name = "pgconn"
+links=[{name="GitHub", url="https://github.com/kahnwong/pgconn"}]
+desc = "pgcli wrapper to connect to PostgreSQL database specified in db.yaml. Proxy/tunnel connection is automatically created and killed when pgcli is exited"
+tags = ["ops", "database", "utility"]
+
+[[project]]
+name = "proxmox-vm-selector"
+links=[{name="GitHub", url="https://github.com/kahnwong/proxmox-vm-selector"}]
+desc = "A simple TUI to select which Proxmox VM to start/stop"
+tags = ["ops", "tui", "proxmox"]
+
+[[project]]
+name = "python-api-template"
+links=[{name="GitHub", url="https://github.com/kahnwong/python-api-template"}]
+desc = "FastAPI template with pydantic and pytest"
+tags = ["mlops", "python"]
+
+[[project]]
+name = "dagster-demo"
+links=[{name="GitHub", url="https://github.com/kahnwong/dagster-demo"}]
+desc = "A working dagster demo with medallion architecture, partitioned data, schedules, assets dependencies, job status alerts and auto-materialize assets"
+tags = ["data-engineering", "orchestration"]
