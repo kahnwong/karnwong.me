@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Karn Wong</title>
+        <style>body {
+    font: 1rem Helvetica, "Times New Roman", Times, sans-serif;
+    line-height: 1.4;
+}
+
+em {
+    color: #999;
+}
+
+p {
+    line-height: 1.4;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+li {
+    margin-bottom: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#resume {
+    margin: 2rem auto;
+    max-width: 1000px;
+    background: #fff;
+}
+
+.coursesList {
+    width: 28%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.largeFont {
+    font-size: 1.75rem;
+}
+
+.sectionBlock {
+    display: flex;
+    width: 100%;
+}
+
+.sectionName {
+    width: 18%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.sectionContent {
+    width: 80%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.sectionContent ul {
+    padding-left: 20px;
+    margin-top: 6px;
+    list-style-type: circle;
+}
+
+.sectionContent .title {
+    font-weight: bold;
+}
+
+.sectionContent .name {
+    font-style: italic;
+}
+
+.sectionContent .date {
+    float: right;
+}
+
+.sectionLine {
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #CFCFCF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.divider {
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.summary {
+    margin-top: 6px;
+}
+
+.skillBlock {
+    margin-bottom: 4px;
+}
+
+.jobBlock {
+    page-break-inside: avoid;
+}
+
+/* PDF styles */
+
+@media print {
+    @page {
+        border: none;
+        size: letter portrait;
+        margin: 20px;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    #resume {
+        margin: 0;
+    }
+
+    .largeFont {
+        font-size: 20px;
+    }
+}</style>
+    </head>
+    <body>
+
+        <div id="resume">
+            <div id="nameBlock" class="largeFont">
+                <span class="name">
+                    Karn Wong,
+                </span>
+                <span class="label">Platform engineer | Technical Leadership | HashiCorp Ambassador | AWS &amp; GCP 2X Certified</span>
+            </div>
+            <div id="basicsBlock">
+                <span class="email">karn@karnwong.me</span>
+                <span class="divider">|</span>
+                <span class="url">
+                    <a href="https://github.com/kahnwong">Github</a>
+                </span>
+                <span class="divider">|</span>
+                <span class="url">
+                    <a href="https://www.linkedin.com/in/karnsiree-w-7b535b202/">LinkedIn</a>
+                </span>
+            </div>
+            <div class="sectionLine"></div>
+
+
+            <div id="skills" class="sectionBlock">
+                <div class="sectionName">
+                    <span>SKILLS</span>
+                </div>
+                <div class="sectionContent">
+                    <div class="skillBlock">
+                        <span class="title">
+                            Languages:
+                        </span>
+                        <span>Bash</span>,
+                        <span>Go</span>,
+                        <span>HCL</span>,
+                        <span>Python</span>,
+                        <span>Rust</span>
+                    </div>
+                    <div class="skillBlock">
+                        <span class="title">
+                            Cloud Native:
+                        </span>
+                        <span>Docker</span>,
+                        <span>Kubernetes</span>,
+                        <span>Helm</span>,
+                        <span>K3S</span>,
+                        <span>Harbor</span>,
+                        <span>Grafana</span>,
+                        <span>Prometheus</span>,
+                        <span>Minio</span>,
+                        <span>MLflow</span>
+                    </div>
+                    <div class="skillBlock">
+                        <span class="title">
+                            DevOps:
+                        </span>
+                        <span>Caddy</span>,
+                        <span>Terraform</span>,
+                        <span>GitHub Actions</span>,
+                        <span>Proxmox</span>,
+                        <span>Authentik</span>,
+                        <span>Infracost</span>,
+                        <span>New Relic</span>
+                    </div>
+                    <div class="skillBlock">
+                        <span class="title">
+                            Cloud:
+                        </span>
+                        <span>AWS</span>,
+                        <span>GCP</span>,
+                        <span>Digital Ocean</span>,
+                        <span>Cloudflare</span>,
+                        <span>Vercel</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionLine"></div>
+
+            <div id="workBlock" class="sectionBlock">
+                <div class="sectionName">
+                    <span>EXPERIENCE</span>
+                </div>
+                <div class="sectionContent">
+                    <div class="jobBlock">
+                        <div class="blockHeader">
+                            <span class="title">
+                                Platform Team Lead
+                            </span>
+                            <span class="name">
+                                 - Data Cafe (Thailand)
+                            </span>
+                            <span class="date">2024-01-03 - 2024-11-30</span>
+                        </div>
+                        <div></div>
+                        <div>
+                            <a href=""></a>
+                        </div>
+                        <ul class="highlights">
+                            <li>Lead a team of three engineers, educate and support data science team to achieve faster delivery</li>
+                            <li>Collaborate with pre-sales and data science team to ensure the feasibility of incoming projects</li>
+                            <li>Improve day-to-day operations within the consulting team to speed up processes</li>
+                            <li>Within 8 months since onboarding, managed to have the data science team who previously exclusively develop on Google Colab / Vertex Notebook do code versioning, pull requests, and python venv (via poetry). More than 30+ pull requests have been made during this period</li>
+                            <li>Oversee technical direction and delivery for projects. This involves model development (MLOps) and application deployment (DevOps), while utilizing a common foundational blocks to reduce implementation overhead (platform engineering)</li>
+                        </ul>
+                    </div>
+                    <div class="jobBlock">
+                        <div class="sectionLine"></div>
+                        <div class="blockHeader">
+                            <span class="title">
+                                Head of Platform Engineering
+                            </span>
+                            <span class="name">
+                                 - Baania
+                            </span>
+                            <span class="date">2018-04-01 - 2023-12-28</span>
+                        </div>
+                        <div></div>
+                        <div>
+                            <a href=""></a>
+                        </div>
+                        <ul class="highlights">
+                            <li>Lead a team of three engineers, building and maintaining infrastructure for five products, centralized data platform and MLOps platform.</li>
+                            <li>Collaborate with engineering, product and data team to align the platform directions that satisfy all parties</li>
+                            <li>Use Terraform with Infracost to assess infrastructure cost to prune unused/underutilized resources, in turn reduce 33% of cloud cost per month (FinOps)</li>
+                            <li>Design and implement end-to-end cloud-native application deployment (Terraform for infra/secrets, Helm for application deployment, GitHub Actions for CI/CD, Kubernetes for container orchestration)</li>
+                            <li>Lead a major core product refactoring across ops, engineering and data (data engineering, data science and machine learning engineering). Affected areas: data pipelines, model training pipelines, real-time inference endpoints, database performance optimization, deployment pipelines, local development workflow</li>
+                            <li>Lead a cloud migration from AWS to GCP (AWS ECS to GCP GKE)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionLine"></div>
+
+            <div id="projectBlock" class="sectionBlock">
+                <div class="sectionName">
+                    <span>PROJECTS</span>
+                </div>
+                <div class="sectionContent">
+                    <div class="jobBlock">
+                        <div class="blockHeader">
+                            <span class="title">
+                                <div>
+                                    <a href="https://github.com/kahnwong/self-hosted/">self-hosted</a>
+                                </div>
+                            </span>
+                        </div>
+                        <ul class="highlights">
+                            <li>Alternative / self-hosted version for popular subscription services: Netflix, Spotify, LastPass, Trello, Dropbox, NordVPN, etc</li>
+                            <li>Workloads are managed via Docker Compose and Helm</li>
+                            <li>Terraform for managing Cloudflare and Kubernetes</li>
+                            <li>Caddy for reverse-proxy</li>
+                            <li>SSO via Authentik</li>
+                        </ul>
+                        <div class="sectionLine"></div>
+                    </div>
+                    <div class="jobBlock">
+                        <div class="blockHeader">
+                            <span class="title">
+                                <div>
+                                    <a href="https://docs.karnwong.me/">docs</a>
+                                </div>
+                            </span>
+                        </div>
+                        <ul class="highlights">
+                            <li>Personal documentation website on various topics</li>
+                        </ul>
+                        <div class="sectionLine"></div>
+                    </div>
+                    <div class="jobBlock">
+                        <div class="blockHeader">
+                            <span class="title">
+                                <div>
+                                    <a href="https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/">nix</a>
+                                </div>
+                            </span>
+                        </div>
+                        <ul class="highlights">
+                            <li>A cross-platform setup script that works with both Linux and Mac</li>
+                        </ul>
+                        <div class="sectionLine"></div>
+                    </div>
+                    <div class="jobBlock">
+                        <div class="blockHeader">
+                            <span class="title">
+                                <div>
+                                    <a href="https://github.com/kahnwong/pgconn">pgconn</a>
+                                </div>
+                            </span>
+                        </div>
+                        <ul class="highlights">
+                            <li>pgcli wrapper to connect to PostgreSQL database specified in db.yaml. Proxy/tunnel connection is automatically created and killed when pgcli is exited</li>
+                        </ul>
+                        <div class="sectionLine"></div>
+                    </div>
+                    <div class="jobBlock">
+                        <div class="blockHeader">
+                            <span class="title">
+                                <div>
+                                    <a href="https://karnwong.me/posts/2024/09/hello-world-api-performance-benchmark-go-node-python-rust/">Hello World API Performance Benchmark (Go, Node, Python, Rust)</a>
+                                </div>
+                            </span>
+                        </div>
+                        <ul class="highlights">
+                            <li>Measure latency, RPS and CPU & memory utilization for a hello world api in various languages</li>
+                        </ul>
+                        <div class="sectionLine"></div>
+                    </div>
+                    <div class="jobBlock">
+                        <div class="blockHeader">
+                            <span class="title">
+                                <div>
+                                    <a href="https://karnwong.me/posts/2024/10/calling-c-from-go-python-and-rust-benchmark/">Calling C from Go, Python and Rust benchmark</a>
+                                </div>
+                            </span>
+                        </div>
+                        <ul class="highlights">
+                            <li>Measure overheads incurred from using C FFI in various languages</li>
+                        </ul>
+                        <div class="sectionLine"></div>
+                    </div>
+                    <div class="jobBlock">
+                        <div class="blockHeader">
+                            <span class="title">
+                                <div>
+                                    <a href="https://www.karnwong.me/posts/2023/09/spark-on-kubernetes/">Spark on Kubernetes</a>
+                                </div>
+                            </span>
+                        </div>
+                        <ul class="highlights">
+                            <li>Run spark jobs on kubernetes, which can be used both locally and on production environment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionLine"></div>
+
+
+            <div id="volunteer" class="sectionBlock">
+                <div class="sectionName">
+                    <span>VOLUNTEERING</span>
+                </div>
+                <div class="sectionContent">
+                    <div class="blockHeader">
+                        <span class="title">DevOps, SRE &amp; Infrastructure Discord
+                            - Frequent Contributor</span>
+                        <span class="date">
+                            2021 - Present
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionLine"></div>
+
+            <div id="certBlock" class="sectionBlock">
+                <div class="sectionName">
+                    <span>CERTIFICATES</span>
+                </div>
+                <div class="sectionContent">
+                    <div class="jobBlock">
+                        <div class="blockHeader">
+                            <span class="title">
+                                <a href="https://www.credly.com/badges/1daf754b-899c-49a4-ba42-70979d8fc9d1/public_url">Google Cloud Professional Data Engineer</a>
+                            </span>
+                        </div>
+                        <span>Google Cloud Platform</span>
+                        <div class="sectionLine"></div>
+                    </div>
+                    <div class="jobBlock">
+                        <div class="blockHeader">
+                            <span class="title">
+                                <a href="https://www.credly.com/badges/cef04301-0db4-4bc6-8e69-8a186aa534c3">HashiCorp Ambassador 2024</a>
+                            </span>
+                        </div>
+                        <span>HashiCorp</span>
+                        <div class="sectionLine"></div>
+                    </div>
+                    <div class="jobBlock">
+                        <div class="blockHeader">
+                            <span class="title">
+                                <a href="https://aws.amazon.com/developer/community/community-builders/community-builders-directory/?cb-cards.sort-by&#x3D;item.additionalFields.cbName&amp;cb-cards.sort-order&#x3D;asc&amp;awsf.builder-category&#x3D;*all&amp;awsf.location&#x3D;*all&amp;awsf.year&#x3D;*all&amp;cb-cards.q&#x3D;karn%2Bwong&amp;cb-cards.q_operator&#x3D;AND">AWS Community Builder 2024</a>
+                            </span>
+                        </div>
+                        <span>AWS</span>
+                        <div class="sectionLine"></div>
+                    </div>
+                    <div class="jobBlock">
+                        <div class="blockHeader">
+                            <span class="title">
+                                <a href="https://www.credly.com/badges/0e07c3db-19c2-4ade-bb6c-66df4929fc5c/public_url">AWS Certified Solutions Architect – Associate</a>
+                            </span>
+                        </div>
+                        <span>AWS</span>
+                        <div class="sectionLine"></div>
+                    </div>
+                    <div class="jobBlock">
+                        <div class="blockHeader">
+                            <span class="title">
+                                <a href="https://www.credly.com/badges/a474b598-df0d-453f-8958-3181b6392f61/public_url">Google Cloud Professional Cloud Architect</a>
+                            </span>
+                        </div>
+                        <span>Google Cloud Platform</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionLine"></div>
+
+
+            <div id="education" class="sectionBlock">
+                <div class="sectionName">
+                    <span>EDUCATION</span>
+                </div>
+                <div class="sectionContent">
+                    <div class="educationBlock">
+                        <span class="title">
+                            Rangsit University
+                        </span>
+                        <span class="date">
+                            2015 - 2018
+                        </span>
+                        <div class="">
+                            Bachelor  - Information and Communication Technology
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionLine"></div>
+
+
+            <div id="interests" class="sectionBlock">
+                <div class="sectionName">
+                    <span>INTERESTS</span>
+                </div>
+                <div class="sectionContent">
+                    <span class="name">Humanities</span>
+                    <span class="keywords">
+                        <em>[
+                            Anthropology
+                            ,
+                            Linguistics
+                            ,
+                            Psychology
+                            ,
+                            Sociology
+
+                            ]</em></span>
+                    <span>, </span>
+                    <span class="name">Music</span>
+                    <span class="keywords">
+                        <em>[
+                            Symphonic Heavy Metal
+                            ,
+                            Power Metal
+                            ,
+                            Folk Metal
+                            ,
+                            Classical Crossover
+                            ,
+                            Operatic Pop
+
+                            ]</em></span>
+                    <span>, </span>
+                    <span class="name">Technology</span>
+                    <span class="keywords">
+                        <em>[
+                            Platform Engineering
+                            ,
+                            DevX
+                            ,
+                            Kubernetes
+                            ,
+                            DevOps / DataOps / MLOps
+                            ,
+                            Scaling &amp; Optimization
+
+                            ]</em></span>
+
+                </div>
+                <div class="sectionLine"></div>
+            </div>
+        </div>
+    </body>
+</html>

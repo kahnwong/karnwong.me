@@ -1,0 +1,49 @@
+name: Deploy to Cloudflare Pages
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+concurrency:
+  group: environment-${{ github.ref }}
+  cancel-in-progress: true
+env:
+  PROJECT_NAME: karnwong-me-dev
+  BUILD_DIR: public
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: "write"
+      contents: read
+      deployments: write
+    name: Deploy to Cloudflare Pages
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+      # ---------- build ----------
+      - uses: DeterminateSystems/nix-installer-action@main
+      - uses: DeterminateSystems/magic-nix-cache-action@main
+      - uses: DeterminateSystems/flake-checker-action@main
+      - name: Install zola
+        run: nix profile install nixpkgs#zola
+      - name: Build zola
+        run: zola build
+      # ---------- publish ----------
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy ${{ env.BUILD_DIR }} --project-name=${{ env.PROJECT_NAME }}
+      # ---------- healthcheck ----------
+      - name: Install ci-cd-utils
+        uses: supplypike/setup-bin@v4
+        with:
+          uri: https://github.com/kahnwong/ci-cd-utils/releases/download/v0.1.0/ci-cd-utils_0.1.0_linux_amd64.tar.gz
+          name: ci-cd-utils
+          version: 0.1.0
+      - name: Healthcheck
+        run: |
+          ci-cd-utils healthcheck https://karnwong.me

@@ -1,0 +1,17 @@
+graph TD;
+    subgraph data-science[Data Science]
+        direction LR
+        EDA --> Train --> Test
+    end
+
+    subgraph machine-learning-engineering[Machine Learning Engineering]
+        direction LR
+        mle1[Create API] --> mle2[Integration tests] --> mle3[Load tests] --> mle4[End-to-end tests]
+    end
+
+    subgraph mlops[MLOps]
+        direction LR
+        mlops1[Deploy API] --> mlops2[Test on production system] --> mlops3[Monitor]
+    end
+
+    data-science --> machine-learning-engineering --> mlops
