@@ -60,4 +60,4 @@ for i in files:
 
     os.remove(i)
 
-    break
+    # break
