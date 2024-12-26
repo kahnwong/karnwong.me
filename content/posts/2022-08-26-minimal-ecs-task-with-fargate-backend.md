@@ -5,7 +5,7 @@ path = "/posts/2022/08/minimal-ecs-task-with-fargate-backend"
 
 [taxonomies]
 categories = ["infrastructure", ]
-tags = [ "terraform", "aws",]
+tags = [ "terraform", "aws", "ecs"]
 
 +++
 

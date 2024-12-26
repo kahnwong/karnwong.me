@@ -5,7 +5,7 @@ path = "/posts/2021/10/ecs-cli-snippets"
 
 [taxonomies]
 categories = [ "infrastructure",]
-tags = [ "aws",]
+tags = [ "aws", "ecs"]
 
 +++
 

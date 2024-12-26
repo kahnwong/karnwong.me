@@ -5,7 +5,7 @@ path = "/posts/2022/10/terraform-with-ecs-task-on-ec2-backend"
 
 [taxonomies]
 categories = ["infrastructure", ]
-tags = [ "terraform", "aws",]
+tags = [ "terraform", "aws","ecs"]
 
 +++
 

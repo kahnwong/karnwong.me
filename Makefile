@@ -1,5 +1,7 @@
 start:
 	zola serve
+build:
+	zola build
 theme-init:
 	git submodule update --init --recursive
 theme-update:
