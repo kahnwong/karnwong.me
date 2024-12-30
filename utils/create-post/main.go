@@ -5,60 +5,25 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"os/exec"
-	"strconv"
 	"strings"
-	"time"
 
 	"github.com/charmbracelet/huh"
+	"github.com/pelletier/go-toml"
 )
 
-func titleToSlug(title string) string {
-	replacer := strings.NewReplacer("(", "", ")", "", "?", "", ",", "")
-	sanitizedString := replacer.Replace(title)
-
-	lowerString := strings.ToLower(sanitizedString)
-	slug := strings.ReplaceAll(lowerString, " ", "-")
-
-	return strings.ReplaceAll(slug, "'", "")
+type Taxonomies struct {
+	Categories []string `toml:"categories"`
+	Tags       []string `toml:"tags"`
 }
-
-func getCurrentTime() (string, string) {
-	rawCurrentTime := time.Now()
-
-	currentTime := rawCurrentTime.Format("2006-01-02T15:04:05MST:00")
-	currentYear := strconv.Itoa(rawCurrentTime.Year())
-
-	return currentTime, currentYear
-}
-
-func formatTags(tags string) string {
-	tagsSplit := strings.Split(tags, ",")
-
-	// add `-` in front of each tag, to make it bullets
-	prefixChar := "  - "
-	for i := 0; i < len(tagsSplit); i++ {
-		tagsSplit[i] = prefixChar + tagsSplit[i]
-	}
-
-	tagsFormatted := strings.Join(tagsSplit, "\n")
-
-	return tagsFormatted
-}
-
-func execCommand(name string, args ...string) {
-	cmd := exec.Command(name, args...)
-	stdout, err := cmd.Output()
-
-	if err != nil {
-		log.Fatal(err)
-	} else {
-		fmt.Print(string(stdout))
-	}
+type Frontmatter struct {
+	Title      string     `toml:"title"`
+	Date       string     `toml:"date"`
+	Path       string     `toml:"path"`
+	Taxonomies Taxonomies `toml:"taxonomies"`
 }
 
 func main() {
-
+	// get user input
 	var (
 		title    string
 		tags     string
@@ -100,44 +65,34 @@ func main() {
 		log.Fatal(err)
 	}
 
-	//// create markdown file
+	// parse user input
 	titleSlug := titleToSlug(title)
-	currentTime, currentYear := getCurrentTime()
-	tagsFormatted := formatTags(tags)
+	currentDate, currentYear, currentMonth := getCurrentDate()
+	tagsSlice := tagsToSlice(tags)
 
-	// mkdir
-	contentPath := fmt.Sprintf("content/posts/%s", currentYear)
-	err = os.Mkdir(contentPath, os.ModePerm)
+	// create post dir & file
+	filePath := createFiles(currentDate, titleSlug, hasImage)
 
-	if err != nil && !os.IsExist(err) {
-		// Handle the error if it's not an "already exists" error
-		fmt.Printf("Error creating directory: %v\n", err)
+	// create file
+	frontmatter := Frontmatter{
+		Title: title,
+		Date:  currentDate,
+		Path:  fmt.Sprintf("/posts/%s/%s/%s", currentYear, currentMonth, titleSlug),
+		Taxonomies: Taxonomies{
+			Categories: []string{},
+			Tags:       tagsSlice,
+		},
 	}
 
-	// set filepath
-	var filePath string
-	if hasImage {
-		folder := fmt.Sprintf("%s/%s/images", contentPath, titleSlug)
-		err := os.MkdirAll(folder, os.ModePerm)
-		if err != nil {
-			fmt.Println(err)
-		}
-
-		filePath = fmt.Sprintf("%s/%s/index.md", contentPath, titleSlug)
-	} else {
-		filePath = fmt.Sprintf("%s/%s.md", contentPath, titleSlug)
+	//// marshal to toml
+	frontmatterBytes, err := toml.Marshal(frontmatter)
+	if err != nil {
+		panic(err)
 	}
 
 	// create file
-	text := fmt.Sprintf(`---
-title: %s
-date: %s
-draft: false
-ShowToc: false
-images:
-tags:
-%s
----`, title, currentTime, tagsFormatted)
+	text := fmt.Sprintf(`+++
+%s+++`, string(frontmatterBytes))
 
 	err = os.WriteFile(filePath, []byte(text), 0644)
 	if err != nil {

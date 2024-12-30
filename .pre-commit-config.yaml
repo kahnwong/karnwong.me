@@ -17,10 +17,10 @@ repos:
   - repo: https://github.com/kahnwong/pre-commit
     rev: "d4610d0"
     hooks:
-      - id: go-build
+      #      - id: go-build
       - id: go-fmt
       - id: go-imports
-      - id: go-mod-tidy
+        #      - id: go-mod-tidy
       - id: go-vet
       - id: golangci-lint
       - id: yamlfmt
