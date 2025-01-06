@@ -1,5 +1,5 @@
 start:
-	zola serve
+	MODE="development" zola serve
 build:
 	zola build
 theme-init:
