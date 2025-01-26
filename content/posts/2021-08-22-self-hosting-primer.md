@@ -9,6 +9,8 @@ tags = [ ]
 
 +++
 
+__Updated: 2025-01-26__
+
 Self-hosting is a practice for running and managing websites / services using your own server. Some people do this because they are concerned about their privacy, or some services are free if they host it themselves. Below are instructions for how to do self-hosting (also applies to hosting your own website too).
 
 ## Requirements
@@ -18,10 +20,10 @@ Self-hosting is a practice for running and managing websites / services using yo
 
 ## Instructions
 
-1. Set up and secure the server (set up password, disable password login (which means you can only login via SSH key), etc.)
-2. Deploy a website on your server (follow instructions for each service. I recommend deploy via Docker).
-3. If you are using a server at home which has dynamic IP, setup DDNS (I recommend duckdns.org, since it has very fast TTL).
-4. Go to your domain name registrar, under DNS, add a CNAME record for your desired subdomain, and set the value to your duckdns.org domain.
+1. Set up and secure the server. Don't forget to disable password login.
+2. Deploy a website on your server (follow instructions for each service. I recommend deploying via Docker).
+3. If you are using a server at home which has dynamic IP, setup DDNS (I recommend ~~duckdns.org~~ Cloudflare DNS, since it has very fast TTL). See <https://github.com/favonia/cloudflare-ddns>. Set it to update `ddns` CNAME.
+4. Go to your domain name registrar, under DNS, add a CNAME record for your desired subdomain, and set the value to your DDNS  (example: `ddns.yourdomain.com`)
 5. On your server, install a webserver for reverse-proxy. I recommend nginx or Caddy.
 6. Create a virtual host config for your website in your webserver of choice.
 7. On your router configuration page, under port forwarding, create two entries for port 80 and 443.
