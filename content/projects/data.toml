@@ -51,3 +51,51 @@ name = "dagster-demo"
 links=[{name="GitHub", url="https://github.com/kahnwong/dagster-demo"}]
 desc = "A working dagster demo with medallion architecture, partitioned data, schedules, assets dependencies, job status alerts and auto-materialize assets"
 tags = ["data-engineering", "orchestration"]
+
+[[project]]
+name = "calculator"
+desc = "Various calculators: meeting, GKE Autopilot and cloud cost calculator"
+tags = ["ops", "utility"]
+links = [{ name = "Website", url = "https://calculator.karnwong.me" }, {name="GitHub", url="https://github.com/kahnwong/calculator"}]
+
+[[project]]
+name = "config-init"
+desc = "CLI app to init configurations"
+tags = ["ops", "utility", "configuration"]
+links = [{name="GitHub", url="https://github.com/kahnwong/config-init"}]
+
+[[project]]
+name = "swissknife"
+links=[{name="GitHub", url="https://github.com/kahnwong/swissknife"}]
+desc = "Various CLI-based utilities for ops work"
+tags = ["ops", "utility"]
+
+[[project]]
+name = "totp"
+links=[{name="GitHub", url="https://github.com/kahnwong/totp"}]
+desc = "CLI TOTP token generator with autocomplete"
+tags = ["ops", "utility"]
+
+[[project]]
+name = "wallabag-tagger"
+links=[{name="GitHub", url="https://github.com/kahnwong/wallabag-tagger"}]
+desc = "Wallabag CLI utils for assigning reading time and tags via LLM"
+tags = ["wallabag", "utility"]
+
+[[project]]
+name = "PromptPay QR Code"
+desc = "PWA app to generate PromptPay QR Code. Data is stored in localstorage"
+tags = ["frontend", "pwa"]
+links = [{ name = "Website", url = "https://promptpay.karnwong.me" }, {name="GitHub", url="https://github.com/kahnwong/promptpay-qr-code"}]
+
+[[project]]
+name = "music-lyrics-tagger"
+links=[{name="GitHub", url="https://github.com/kahnwong/music-lyrics-tagger"}]
+desc = "Add lyrics to flac and m4a files"
+tags = ["music", "utility"]
+
+[[project]]
+name = "terraform-provider-slash"
+links=[{name="Docs", url="https://registry.terraform.io/providers/kahnwong/slash/latest/docs"},{name="GitHub", url="https://github.com/kahnwong/terraform-provider-slash"}]
+desc = "A Terraform Provider for slash - an open source, self-hosted platform for sharing and managing your most frequently used links. Easily create customizable, human-readable shortcuts to streamline your link management"
+tags = ["slash", "terraform-provider"]
