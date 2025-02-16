@@ -1,6 +1,6 @@
 basics:
   name: Karn Wong
-  label: Platform Engineer | Technical Leadership | HashiCorp Ambassador | AWS & GCP 2X Certified
+  label: "{Principal Engineer | Engineering Manager} (Cloud Automation & Optimization) | HashiCorp Ambassador | AWS & GCP Certified"
   email: karn@karnwong.me
   phone: ""
   website: https://karnwong.me
@@ -12,6 +12,10 @@ basics:
       username: karnsiree-w-7b535b202
       url: https://www.linkedin.com/in/karnsiree-w-7b535b202/
 work:
+  - name: MFEC
+    position: Cloud Automation and Optimization Consultant
+    website: https://www.mfec.co.th/
+    startDate: 2025-02-17
   - name: Data Cafe (Thailand)
     position: Platform Team Lead
     website: https://www.datacafethailand.com/

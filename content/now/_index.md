@@ -17,10 +17,10 @@ outdate_alert_days = 120
 
 - Deploy stuff to home servers (Mac Mini 2018 & Intel NUC)
 - Crank out Go CLI apps
-- Use Rust for production data workloads
+- Use Rust now and then for funsies
 - Tinker with various tools
-- On a career break until February
+- Help people communicate across teams :)
 
-Updated 2024-12-01
+Updated 2025-02-16
 
 This page was inspired by <https://fheidenreich.de/now/>.
