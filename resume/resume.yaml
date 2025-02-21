@@ -1,6 +1,6 @@
 basics:
   name: Karn Wong
-  label: "Principal Engineer (Cloud Automation & Optimization) | HashiCorp Ambassador | AWS & GCP Certified"
+  label: "Principal Cloud Engineer | HashiCorp Ambassador"
   email: karn@karnwong.me
   phone: ""
   website: https://karnwong.me
@@ -16,34 +16,36 @@ work:
     position: Cloud Automation and Optimization Consultant
     website: https://www.mfec.co.th/
     startDate: 2025-02-17
-  - name: Data Cafe (Thailand)
+  - name: Data Cafe Company Limited
     position: Platform Team Lead
     website: https://www.datacafethailand.com/
     startDate: 2024-01-03
     endDate: 2024-11-30
     highlights:
-      - Lead a team of three engineers, educate and support data science team to achieve faster delivery
-      - Collaborate with pre-sales and data science team to ensure the feasibility of incoming projects
-      - Improve day-to-day operations within the consulting team to speed up processes
-      #      - Act as technical lead for data science team
-      #      - Guide teams on how to better collaborate to achieve faster feedback loops and delivery
-      #      - Evangelize agile, software engineering and MLOps practices
-      - Within 8 months since onboarding, managed to have the data science team who previously exclusively develop on Google Colab / Vertex Notebook do code versioning, pull requests, and python venv (via poetry). More than 30+ pull requests have been made during this period
-      - Oversee technical direction and delivery for projects. This involves model development (MLOps) and application deployment (DevOps), while utilizing a common foundational blocks to reduce implementation overhead (platform engineering)
+      - Upskill data science team to adopt software engineering practices
+      #      - Lead a team of three engineers, educate and support data science team to achieve faster delivery
+      #      - Collaborate with pre-sales and data science team to ensure the feasibility of incoming projects
+      #      - Improve day-to-day operations within the consulting team to speed up processes
+      #      #      - Act as technical lead for data science team
+      #      #      - Guide teams on how to better collaborate to achieve faster feedback loops and delivery
+      #      #      - Evangelize agile, software engineering and MLOps practices
+      #      - Within 8 months since onboarding, managed to have the data science team who previously exclusively develop on Google Colab / Vertex Notebook do code versioning, pull requests, and python venv (via poetry). More than 30+ pull requests have been made during this period
+      #      - Oversee technical direction and delivery for projects. This involves model development (MLOps) and application deployment (DevOps), while utilizing a common foundational blocks to reduce implementation overhead (platform engineering)
   - name: Baania
     position: Head of Platform Engineering
     website: https://www.baania.com
     startDate: 2018-04-01
     endDate: 2023-12-28
     highlights:
-      - Lead a team of three engineers, building and maintaining infrastructure for five products, centralized data platform and MLOps platform.
-      - Collaborate with engineering, product and data team to align the platform directions that satisfy all parties
-      #      - Research and implement internal data platform v2, with CI/CD for integration and unit tests, dependencies and code changes
-      - Use Terraform with Infracost to assess infrastructure cost to prune unused/underutilized resources, in turn reduce 33% of cloud cost per month (FinOps)
-      - Design and implement end-to-end cloud-native application deployment (Terraform for infra/secrets, Helm for application deployment, GitHub Actions for CI/CD, Kubernetes for container orchestration)
-      - "Lead a major core product refactoring across ops, engineering and data (data engineering, data science and machine learning engineering). Affected areas: data pipelines, model training pipelines, real-time inference endpoints, database performance optimization, deployment pipelines, local development workflow"
-      - Lead a cloud migration from AWS to GCP (AWS ECS to GCP GKE)
-#      - Introduce H3 spatial indexing to improve spatial queries performance. This also allows any system to obtain the performance gain, since it is not tied to execution engine with spatial support
+      - Design, write and optimize most of the infrastructure, platform, pipelines (ci/cd + data) and app workloads for 5 products
+#      - Lead a team of three engineers, building and maintaining infrastructure for five products, centralized data platform and MLOps platform.
+#      - Collaborate with engineering, product and data team to align the platform directions that satisfy all parties
+#      #      - Research and implement internal data platform v2, with CI/CD for integration and unit tests, dependencies and code changes
+#      - Use Terraform with Infracost to assess infrastructure cost to prune unused/underutilized resources, in turn reduce 33% of cloud cost per month (FinOps)
+#      - Design and implement end-to-end cloud-native application deployment (Terraform for infra/secrets, Helm for application deployment, GitHub Actions for CI/CD, Kubernetes for container orchestration)
+#      - "Lead a major core product refactoring across ops, engineering and data (data engineering, data science and machine learning engineering). Affected areas: data pipelines, model training pipelines, real-time inference endpoints, database performance optimization, deployment pipelines, local development workflow"
+#      - Lead a cloud migration from AWS to GCP (AWS ECS to GCP GKE)
+##      - Introduce H3 spatial indexing to improve spatial queries performance. This also allows any system to obtain the performance gain, since it is not tied to execution engine with spatial support
 #  - name: Baania
 #    position: Lead Data Engineer | Machine Learning Engineer | SRE
 #    website: https://www.baania.com
