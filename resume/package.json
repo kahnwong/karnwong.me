@@ -7,7 +7,7 @@
   },
   "scripts": {
     "prebuild": "yq -I2 resume.yaml -o=json > resume.json && resumed validate",
-    "build": "resumed export --output resume.html --theme jsonresume-theme-one",
+    "build": "resumed export --output resume.html --theme jsonresume-theme-even",
     "dev": "fd resume.yaml | entr yarn build"
   },
   "license": "MIT"

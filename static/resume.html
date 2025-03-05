@@ -1,519 +1,506 @@
 <!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Karn Wong</title>
-        <style>body {
-    font: 1rem Helvetica, "Times New Roman", Times, sans-serif;
-    line-height: 1.4;
+    <html lang="en" style="">
+      <head>
+        <meta charset="utf-8" />
+
+    <title>Karn Wong</title>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" />
+        <style>
+          :root{color-scheme:light dark;--color-background-light: #ffffff;--color-dimmed-light: #f3f4f5;--color-primary-light: #191e23;--color-secondary-light: #6c7781;--color-accent-light: #0073aa;--color-background-dark: #191e23;--color-dimmed-dark: #23282d;--color-primary-dark: #fbfbfc;--color-secondary-dark: #ccd0d4;--color-accent-dark: #00a0d2;--color-background: var(--color-background-light);--color-dimmed: var(--color-dimmed-light);--color-primary: var(--color-primary-light);--color-secondary: var(--color-secondary-light);--color-accent: var(--color-accent-light);--scale-ratio: 1.25;--scale0: 1rem;--scale1: calc(var(--scale0) * var(--scale-ratio));--scale2: calc(var(--scale1) * var(--scale-ratio));--scale3: calc(var(--scale2) * var(--scale-ratio));--scale4: calc(var(--scale3) * var(--scale-ratio));--scale5: calc(var(--scale4) * var(--scale-ratio))}@media (prefers-color-scheme: dark){:root{--color-background: var(--color-background-dark);--color-dimmed: var(--color-dimmed-dark);--color-primary: var(--color-primary-dark);--color-secondary: var(--color-secondary-dark);--color-accent: var(--color-accent-dark)}}*{box-sizing:border-box;margin:0;padding:0}html{font-size:14px}body{background:var(--color-background);color:var(--color-primary);display:grid;font:1em/1.5 Lato,sans-serif;gap:2em;grid-template-columns:[full-start] 1fr [main-start side-start] minmax(min-content,12em) [side-end content-start] minmax(min-content,36em) [main-end content-end] 1fr [full-end];grid-template-rows:auto [content] 0;margin-bottom:4em}body:before{content:"";grid-column:full;grid-row:content}ol,ul{padding-left:1em}:not(.icon-list,.tag-list)>li+li{margin-top:.4em}li::marker,.network{color:var(--color-secondary)}a{color:var(--color-accent);text-decoration:none}a:focus,a:hover{text-decoration:underline}h1,h2,h3,h5{font-weight:400}h1,h2,h3{line-height:1.2}h1{font-size:var(--scale5)}h2{color:var(--color-secondary);font-size:var(--scale4)}h3{color:var(--color-secondary);font-size:var(--scale3);grid-column:side;margin-bottom:1rem}h4{font-size:var(--scale2)}h5{font-size:var(--scale1)}h6{font-size:var(--scale0)}blockquote{border-left:.2em solid var(--color-dimmed);padding-left:1em}cite{color:var(--color-secondary);font-style:inherit}cite:before{content:"— "}svg{margin-right:.2em;vertical-align:text-bottom}.masthead{background:var(--color-dimmed);display:inherit;gap:inherit;grid-column:full;grid-template-columns:inherit;padding:4em 0;text-align:center}.masthead>*,section{grid-column:main}.masthead>img{border:4px solid;border-radius:50%;margin:0 auto;max-width:12em}article>*+*,blockquote>*+*,.timeline>div>*+*{margin-top:.6em}.meta{color:var(--color-secondary)}.stack{display:grid;gap:1.5em}.icon-list{display:flex;flex-wrap:wrap;gap:.4em 1em;justify-content:center;list-style:none;padding:0}.grid-list{display:grid;gap:1em}.tag-list{display:flex;flex-wrap:wrap;gap:.4em;list-style:none;padding:0}.tag-list>li{background:var(--color-dimmed);border-radius:.2em;padding:.2em .6em}.timeline>div{position:relative}.timeline>div:not(:last-child){padding-bottom:1rem}.timeline>div:not(:last-child):before{content:"";position:absolute;top:1rem;left:-15px;width:2px;height:100%;background:var(--color-secondary)}.timeline>div:not(:only-child):after{content:"";position:absolute;top:.6rem;left:-20px;width:8px;height:8px;background:var(--color-secondary);border:2px solid var(--color-background);border-radius:50%}@media print,(min-width: 48em){h3{text-align:right;margin-bottom:inherit}.masthead{text-align:inherit}.masthead>*,section{grid-column:content}.masthead img{grid-column:side;grid-row:span 2;max-width:100%}section{display:contents}.icon-list{flex-direction:column}.grid-list{grid-template-columns:repeat(auto-fit,minmax(calc((100% - 1em)/2),1fr))}}@media print{.duration{display:none}}
+        </style>
+        <script type="module">
+          const pluralize = (num, str) => `${num} ${num === 1 ? str : str.concat('s')}`
+
+class TimeDuration extends HTMLElement {
+  connectedCallback() {
+    const [from, to] = this.querySelectorAll('time')
+    if (!from) return
+
+    const startDate = new Date(from.dateTime || from.textContent)
+    const endDate = new Date(to ? to.dateTime || to.textContent : Date.now())
+    const diffDate = new Date(endDate - startDate)
+
+    const years = diffDate.getFullYear() - 1970
+    const months = diffDate.getMonth()
+    const days = diffDate.getDate() - 1
+
+    const segments = [
+      years && pluralize(years, 'yr'),
+      months && pluralize(months, 'mo'),
+      days && !years && !months && pluralize(days, 'day'),
+    ].filter(Boolean)
+    if (!segments.length) return
+
+    const duration = document.createElement('time')
+    duration.classList.add('duration')
+    duration.textContent = '· '.concat(segments.join(' '))
+
+    this.append(' ', duration)
+  }
 }
 
-em {
-    color: #999;
-}
+customElements.define('time-duration', TimeDuration)
 
-p {
-    line-height: 1.4;
-}
+        </script>
+      </head>
+      <body>
 
-ul {
-    margin-bottom: 0;
-}
+    <header class="masthead">
 
-li {
-    margin-bottom: 2px;
-}
+      <div><h1>Karn Wong</h1> <h2>Principal Cloud Engineer | HashiCorp Ambassador</h2></div>
 
-a {
-    text-decoration: none;
-}
-
-#resume {
-    margin: 2rem auto;
-    max-width: 1000px;
-    background: #fff;
-}
-
-.coursesList {
-    width: 28%;
-    vertical-align: top;
-    display: inline-block;
-}
-
-.largeFont {
-    font-size: 1.75rem;
-}
-
-.sectionBlock {
-    display: flex;
-    width: 100%;
-}
-
-.sectionName {
-    width: 18%;
-    vertical-align: top;
-    display: inline-block;
-}
-
-.sectionContent {
-    width: 80%;
-    vertical-align: top;
-    display: inline-block;
-}
-
-.sectionContent ul {
-    padding-left: 20px;
-    margin-top: 6px;
-    list-style-type: circle;
-}
-
-.sectionContent .title {
-    font-weight: bold;
-}
-
-.sectionContent .name {
-    font-style: italic;
-}
-
-.sectionContent .date {
-    float: right;
-}
-
-.sectionLine {
-    border-style: dashed;
-    border-width: 1px;
-    border-color: #CFCFCF;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.divider {
-    font-weight: bold;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.summary {
-    margin-top: 6px;
-}
-
-.skillBlock {
-    margin-bottom: 4px;
-}
-
-.jobBlock {
-    page-break-inside: avoid;
-}
-
-/* PDF styles */
-
-@media print {
-    @page {
-        border: none;
-        size: letter portrait;
-        margin: 20px;
-    }
-
-    body {
-        font-size: 12px;
-    }
-
-    #resume {
-        margin: 0;
-    }
-
-    .largeFont {
-        font-size: 20px;
-    }
-}</style>
-    </head>
-    <body>
-
-        <div id="resume">
-            <div id="nameBlock" class="largeFont">
-                <span class="name">
-                    Karn Wong,
-                </span>
-                <span class="label">Principal Cloud Engineer | HashiCorp Ambassador</span>
-            </div>
-            <div id="basicsBlock">
-                <span class="email">karn@karnwong.me</span>
-                <span class="divider">|</span>
-                <span class="url">
-                    <a href="https://github.com/kahnwong">Github</a>
-                </span>
-                <span class="divider">|</span>
-                <span class="url">
-                    <a href="https://www.linkedin.com/in/karnsiree-w-7b535b202/">LinkedIn</a>
-                </span>
-            </div>
-            <div class="sectionLine"></div>
+      <ul class="icon-list">
 
 
-            <div id="skills" class="sectionBlock">
-                <div class="sectionName">
-                    <span>SKILLS</span>
-                </div>
-                <div class="sectionContent">
-                    <div class="skillBlock">
-                        <span class="title">
-                            Languages:
-                        </span>
-                        <span>Bash</span>,
-                        <span>Go</span>,
-                        <span>HCL</span>,
-                        <span>Python</span>,
-                        <span>Rust</span>
-                    </div>
-                    <div class="skillBlock">
-                        <span class="title">
-                            Cloud Native:
-                        </span>
-                        <span>Docker</span>,
-                        <span>Kubernetes</span>,
-                        <span>Helm</span>,
-                        <span>K3S</span>,
-                        <span>Harbor</span>,
-                        <span>Grafana</span>,
-                        <span>Prometheus</span>,
-                        <span>Minio</span>,
-                        <span>MLflow</span>
-                    </div>
-                    <div class="skillBlock">
-                        <span class="title">
-                            DevOps:
-                        </span>
-                        <span>Caddy</span>,
-                        <span>Terraform</span>,
-                        <span>GitHub Actions</span>,
-                        <span>Proxmox</span>,
-                        <span>Authentik</span>,
-                        <span>Infracost</span>,
-                        <span>New Relic</span>
-                    </div>
-                    <div class="skillBlock">
-                        <span class="title">
-                            Cloud:
-                        </span>
-                        <span>AWS</span>,
-                        <span>GCP</span>,
-                        <span>Digital Ocean</span>,
-                        <span>Cloudflare</span>,
-                        <span>Vercel</span>
-                    </div>
-                </div>
-            </div>
-            <div class="sectionLine"></div>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="mailto:karn@karnwong.me">karn@karnwong.me</a>
+          </li>
 
-            <div id="workBlock" class="sectionBlock">
-                <div class="sectionName">
-                    <span>EXPERIENCE</span>
-                </div>
-                <div class="sectionContent">
-                    <div class="jobBlock">
-                        <div class="blockHeader">
-                            <span class="title">
-                                Cloud Automation and Optimization Consultant
-                            </span>
-                            <span class="name">
-                                 - MFEC
-                            </span>
-                            <span class="date">2025-02-17 - Present</span>
-                        </div>
-                        <div></div>
+
+
+
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> <a href="https://github.com/kahnwong">kahnwong</a>
+              <span class="network">(Github)</span>
+            </li>
+
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> <a href="https://www.linkedin.com/in/karnsiree-w-7b535b202/">karnsiree-w-7b535b202</a>
+              <span class="network">(LinkedIn)</span>
+            </li>
+
+      </ul>
+    </header>
+
+      <section id="work">
+        <h3>Work</h3>
+        <div class="stack">
+
+              <article>
+                <header>
+                  <h4>MFEC</h4>
+                  <div class="meta"></div>
+                </header>
+                <div class="timeline">
+
+                      <div>
                         <div>
-                            <a href=""></a>
+                          <h5>Cloud Automation and Optimization Consultant</h5>
+                          <div class="meta">
+                            <div><time-duration><time datetime="2025-03-03">Mar 2025</time> – Present</time-duration></div>
+
+                          </div>
                         </div>
-                    </div>
-                    <div class="jobBlock">
-                        <div class="sectionLine"></div>
-                        <div class="blockHeader">
-                            <span class="title">
-                                Platform Team Lead
-                            </span>
-                            <span class="name">
-                                 - Data Cafe Company Limited
-                            </span>
-                            <span class="date">2024-01-03 - 2024-11-30</span>
-                        </div>
-                        <div></div>
+
+
+                      </div>
+
+                </div>
+              </article>
+
+              <article>
+                <header>
+                  <h4>Data Cafe Company Limited</h4>
+                  <div class="meta"></div>
+                </header>
+                <div class="timeline">
+
+                      <div>
                         <div>
-                            <a href=""></a>
+                          <h5>Platform Team Lead</h5>
+                          <div class="meta">
+                            <div><time-duration><time datetime="2024-01-03">Jan 2024</time> – <time datetime="2024-11-30">Nov 2024</time></time-duration></div>
+
+                          </div>
                         </div>
-                        <ul class="highlights">
-                            <li>Upskill data science team to adopt software engineering practices</li>
-                        </ul>
-                    </div>
-                    <div class="jobBlock">
-                        <div class="sectionLine"></div>
-                        <div class="blockHeader">
-                            <span class="title">
-                                Head of Platform Engineering
-                            </span>
-                            <span class="name">
-                                 - Baania
-                            </span>
-                            <span class="date">2018-04-01 - 2023-12-28</span>
-                        </div>
-                        <div></div>
+
+
+                          <ul>
+                            <li><p>Upskill data science team to adopt software engineering practices</p></li>
+                          </ul>
+
+                      </div>
+
+                </div>
+              </article>
+
+              <article>
+                <header>
+                  <h4>Baania</h4>
+                  <div class="meta"></div>
+                </header>
+                <div class="timeline">
+
+                      <div>
                         <div>
-                            <a href=""></a>
-                        </div>
-                        <ul class="highlights">
-                            <li>Design, write and optimize most of the infrastructure, platform, pipelines (ci/cd + data) and app workloads for 5 products</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="sectionLine"></div>
+                          <h5>Head of Platform Engineering</h5>
+                          <div class="meta">
+                            <div><time-duration><time datetime="2018-04-01">Apr 2018</time> – <time datetime="2023-12-28">Dec 2023</time></time-duration></div>
 
-            <div id="projectBlock" class="sectionBlock">
-                <div class="sectionName">
-                    <span>PROJECTS</span>
-                </div>
-                <div class="sectionContent">
-                    <div class="jobBlock">
-                        <div class="blockHeader">
-                            <span class="title">
-                                <div>
-                                    <a href="https://github.com/kahnwong/self-hosted/">self-hosted</a>
-                                </div>
-                            </span>
+                          </div>
                         </div>
-                        <ul class="highlights">
-                            <li>Alternative / self-hosted version for popular subscription services: Netflix, Spotify, LastPass, Trello, Dropbox, NordVPN, etc</li>
-                            <li>Workloads are managed via Docker Compose and Helm</li>
-                            <li>Terraform for managing Cloudflare and Kubernetes</li>
-                            <li>Caddy for reverse-proxy</li>
-                            <li>SSO via Authentik</li>
-                        </ul>
-                        <div class="sectionLine"></div>
-                    </div>
-                    <div class="jobBlock">
-                        <div class="blockHeader">
-                            <span class="title">
-                                <div>
-                                    <a href="https://docs.karnwong.me/">docs</a>
-                                </div>
-                            </span>
-                        </div>
-                        <ul class="highlights">
-                            <li>Personal documentation website on various topics</li>
-                        </ul>
-                        <div class="sectionLine"></div>
-                    </div>
-                    <div class="jobBlock">
-                        <div class="blockHeader">
-                            <span class="title">
-                                <div>
-                                    <a href="https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/">nix</a>
-                                </div>
-                            </span>
-                        </div>
-                        <ul class="highlights">
-                            <li>A cross-platform setup script that works with both Linux and Mac</li>
-                        </ul>
-                        <div class="sectionLine"></div>
-                    </div>
-                    <div class="jobBlock">
-                        <div class="blockHeader">
-                            <span class="title">
-                                <div>
-                                    <a href="https://github.com/kahnwong/pgconn">pgconn</a>
-                                </div>
-                            </span>
-                        </div>
-                        <ul class="highlights">
-                            <li>pgcli wrapper to connect to PostgreSQL database specified in db.yaml. Proxy/tunnel connection is automatically created and killed when pgcli is exited</li>
-                        </ul>
-                        <div class="sectionLine"></div>
-                    </div>
-                    <div class="jobBlock">
-                        <div class="blockHeader">
-                            <span class="title">
-                                <div>
-                                    <a href="https://karnwong.me/posts/2024/09/hello-world-api-performance-benchmark-go-node-python-rust/">Hello World API Performance Benchmark (Go, Node, Python, Rust)</a>
-                                </div>
-                            </span>
-                        </div>
-                        <ul class="highlights">
-                            <li>Measure latency, RPS and CPU & memory utilization for a hello world api in various languages</li>
-                        </ul>
-                        <div class="sectionLine"></div>
-                    </div>
-                    <div class="jobBlock">
-                        <div class="blockHeader">
-                            <span class="title">
-                                <div>
-                                    <a href="https://karnwong.me/posts/2024/10/calling-c-from-go-python-and-rust-benchmark/">Calling C from Go, Python and Rust benchmark</a>
-                                </div>
-                            </span>
-                        </div>
-                        <ul class="highlights">
-                            <li>Measure overheads incurred from using C FFI in various languages</li>
-                        </ul>
-                        <div class="sectionLine"></div>
-                    </div>
-                    <div class="jobBlock">
-                        <div class="blockHeader">
-                            <span class="title">
-                                <div>
-                                    <a href="https://www.karnwong.me/posts/2023/09/spark-on-kubernetes/">Spark on Kubernetes</a>
-                                </div>
-                            </span>
-                        </div>
-                        <ul class="highlights">
-                            <li>Run spark jobs on kubernetes, which can be used both locally and on production environment</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="sectionLine"></div>
 
 
-            <div id="volunteer" class="sectionBlock">
-                <div class="sectionName">
-                    <span>VOLUNTEERING</span>
-                </div>
-                <div class="sectionContent">
-                    <div class="blockHeader">
-                        <span class="title">DevOps, SRE &amp; Infrastructure Discord
-                            - Frequent Contributor</span>
-                        <span class="date">
-                            2021 - Present
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="sectionLine"></div>
+                          <ul>
+                            <li><p>Design, write and optimize most of the infrastructure, platform, pipelines (ci/cd + data) and app workloads for 5 products</p></li>
+                          </ul>
 
-            <div id="certBlock" class="sectionBlock">
-                <div class="sectionName">
-                    <span>CERTIFICATES</span>
-                </div>
-                <div class="sectionContent">
-                    <div class="jobBlock">
-                        <div class="blockHeader">
-                            <span class="title">
-                                <a href="https://www.credly.com/badges/1daf754b-899c-49a4-ba42-70979d8fc9d1/public_url">Google Cloud Professional Data Engineer</a>
-                            </span>
-                        </div>
-                        <span>Google Cloud Platform</span>
-                        <div class="sectionLine"></div>
-                    </div>
-                    <div class="jobBlock">
-                        <div class="blockHeader">
-                            <span class="title">
-                                <a href="https://www.credly.com/badges/cef04301-0db4-4bc6-8e69-8a186aa534c3">HashiCorp Ambassador 2024</a>
-                            </span>
-                        </div>
-                        <span>HashiCorp</span>
-                        <div class="sectionLine"></div>
-                    </div>
-                    <div class="jobBlock">
-                        <div class="blockHeader">
-                            <span class="title">
-                                <a href="https://aws.amazon.com/developer/community/community-builders/community-builders-directory/?cb-cards.sort-by&#x3D;item.additionalFields.cbName&amp;cb-cards.sort-order&#x3D;asc&amp;awsf.builder-category&#x3D;*all&amp;awsf.location&#x3D;*all&amp;awsf.year&#x3D;*all&amp;cb-cards.q&#x3D;karn%2Bwong&amp;cb-cards.q_operator&#x3D;AND">AWS Community Builder 2024</a>
-                            </span>
-                        </div>
-                        <span>AWS</span>
-                        <div class="sectionLine"></div>
-                    </div>
-                    <div class="jobBlock">
-                        <div class="blockHeader">
-                            <span class="title">
-                                <a href="https://www.credly.com/badges/0e07c3db-19c2-4ade-bb6c-66df4929fc5c/public_url">AWS Certified Solutions Architect – Associate</a>
-                            </span>
-                        </div>
-                        <span>AWS</span>
-                        <div class="sectionLine"></div>
-                    </div>
-                    <div class="jobBlock">
-                        <div class="blockHeader">
-                            <span class="title">
-                                <a href="https://www.credly.com/badges/a474b598-df0d-453f-8958-3181b6392f61/public_url">Google Cloud Professional Cloud Architect</a>
-                            </span>
-                        </div>
-                        <span>Google Cloud Platform</span>
-                    </div>
-                </div>
-            </div>
-            <div class="sectionLine"></div>
-
-
-            <div id="education" class="sectionBlock">
-                <div class="sectionName">
-                    <span>EDUCATION</span>
-                </div>
-                <div class="sectionContent">
-                    <div class="educationBlock">
-                        <span class="title">
-                            Rangsit University
-                        </span>
-                        <span class="date">
-                            2015 - 2018
-                        </span>
-                        <div class="">
-                            Bachelor  - Information and Communication Technology
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="sectionLine"></div>
-
-
-            <div id="interests" class="sectionBlock">
-                <div class="sectionName">
-                    <span>INTERESTS</span>
-                </div>
-                <div class="sectionContent">
-                    <span class="name">Humanities</span>
-                    <span class="keywords">
-                        <em>[
-                            Anthropology
-                            ,
-                            Linguistics
-                            ,
-                            Psychology
-                            ,
-                            Sociology
-
-                            ]</em></span>
-                    <span>, </span>
-                    <span class="name">Music</span>
-                    <span class="keywords">
-                        <em>[
-                            Symphonic Heavy Metal
-                            ,
-                            Power Metal
-                            ,
-                            Folk Metal
-                            ,
-                            Classical Crossover
-                            ,
-                            Operatic Pop
-
-                            ]</em></span>
-                    <span>, </span>
-                    <span class="name">Technology</span>
-                    <span class="keywords">
-                        <em>[
-                            Platform Engineering
-                            ,
-                            DevX
-                            ,
-                            Kubernetes
-                            ,
-                            DevOps / DataOps / MLOps
-                            ,
-                            Scaling &amp; Optimization
-
-                            ]</em></span>
+                      </div>
 
                 </div>
-                <div class="sectionLine"></div>
-            </div>
+              </article>
+
         </div>
-    </body>
-</html>
+      </section>
+
+      <section id="volunteer">
+        <h3>Volunteer</h3>
+        <div class="stack">
+
+              <article>
+                <header>
+                  <h4>DevOps, SRE & Infrastructure Discord</h4>
+                  <div class="meta">
+                    <strong>Frequent Contributor</strong>
+                    <div><time-duration><time datetime="2021">Jan 2021</time> – Present</time-duration></div>
+                  </div>
+                </header>
+
+
+              </article>
+
+        </div>
+      </section>
+
+      <section id="education">
+        <h3>Education</h3>
+        <div class="stack">
+
+              <article>
+                <header>
+                  <h4>Rangsit University</h4>
+                  <div class="meta">
+                    <strong>Information and Communication Technology</strong>
+                    <div><time-duration><time datetime="2015">Jan 2015</time> – <time datetime="2018">Jan 2018</time></time-duration></div>
+                  </div>
+                </header>
+                <p>Bachelor</p>
+
+              </article>
+
+        </div>
+      </section>
+
+
+      <section id="projects">
+        <h3>Projects</h3>
+        <div class="stack">
+
+              <article>
+                <header>
+                  <h4><a href="https://github.com/kahnwong/self-hosted/">self-hosted</a></h4>
+                  <div class="meta">
+                    <div>
+
+
+                    </div>
+                     <div>devops</div>
+                  </div>
+                </header>
+
+
+                  <ul>
+                    <li><p>Alternative / self-hosted version for popular subscription services: Netflix, Spotify, LastPass, Trello, Dropbox, NordVPN, etc</p></li><li><p>Workloads are managed via Docker Compose and Helm</p></li><li><p>Terraform for managing Cloudflare and Kubernetes</p></li><li><p>Caddy for reverse-proxy</p></li><li><p>SSO via Authentik</p></li>
+                  </ul>
+
+
+                  <ul class="tag-list">
+                    <li>docker</li><li>kubernetes</li><li>helm</li><li>terraform</li><li>sso</li>
+                  </ul>
+
+              </article>
+
+              <article>
+                <header>
+                  <h4><a href="https://docs.karnwong.me/">docs</a></h4>
+                  <div class="meta">
+                    <div>
+
+
+                    </div>
+                     <div>devops</div>
+                  </div>
+                </header>
+
+
+                  <ul>
+                    <li><p>Personal documentation website on various topics</p></li>
+                  </ul>
+
+
+                  <ul class="tag-list">
+                    <li>documentation</li><li>knowledge base</li><li>vitepress</li>
+                  </ul>
+
+              </article>
+
+              <article>
+                <header>
+                  <h4><a href="https://www.karnwong.me/posts/2022/12/cross-platform-package-env-management-with-nix/">nix</a></h4>
+                  <div class="meta">
+                    <div>
+
+
+                    </div>
+                     <div>devops</div>
+                  </div>
+                </header>
+
+
+                  <ul>
+                    <li><p>A cross-platform setup script that works with both Linux and Mac</p></li>
+                  </ul>
+
+
+                  <ul class="tag-list">
+                    <li>Nix</li><li>environment</li><li>dotfiles</li><li>package manager</li>
+                  </ul>
+
+              </article>
+
+              <article>
+                <header>
+                  <h4><a href="https://github.com/kahnwong/pgconn">pgconn</a></h4>
+                  <div class="meta">
+                    <div>
+
+
+                    </div>
+                     <div>devops</div>
+                  </div>
+                </header>
+
+
+                  <ul>
+                    <li><p>pgcli wrapper to connect to PostgreSQL database specified in db.yaml. Proxy/tunnel connection is automatically created and killed when pgcli is exited</p></li>
+                  </ul>
+
+
+                  <ul class="tag-list">
+                    <li>postgres</li><li>ssh tunneling</li><li>cli</li>
+                  </ul>
+
+              </article>
+
+              <article>
+                <header>
+                  <h4><a href="https://karnwong.me/posts/2024/09/hello-world-api-performance-benchmark-go-node-python-rust/">Hello World API Performance Benchmark (Go, Node, Python, Rust)</a></h4>
+                  <div class="meta">
+                    <div>
+
+
+                    </div>
+                     <div>benchmark</div>
+                  </div>
+                </header>
+
+
+                  <ul>
+                    <li><p>Measure latency, RPS and CPU &amp; memory utilization for a hello world api in various languages</p></li>
+                  </ul>
+
+
+                  <ul class="tag-list">
+                    <li>go</li><li>node</li><li>python</li><li>rust</li>
+                  </ul>
+
+              </article>
+
+              <article>
+                <header>
+                  <h4><a href="https://karnwong.me/posts/2024/10/calling-c-from-go-python-and-rust-benchmark/">Calling C from Go, Python and Rust benchmark</a></h4>
+                  <div class="meta">
+                    <div>
+
+
+                    </div>
+                     <div>benchmark</div>
+                  </div>
+                </header>
+
+
+                  <ul>
+                    <li><p>Measure overheads incurred from using C FFI in various languages</p></li>
+                  </ul>
+
+
+                  <ul class="tag-list">
+                    <li>c</li><li>go</li><li>python</li><li>rust</li>
+                  </ul>
+
+              </article>
+
+              <article>
+                <header>
+                  <h4><a href="https://www.karnwong.me/posts/2023/09/spark-on-kubernetes/">Spark on Kubernetes</a></h4>
+                  <div class="meta">
+                    <div>
+
+
+                    </div>
+                     <div>data</div>
+                  </div>
+                </header>
+
+
+                  <ul>
+                    <li><p>Run spark jobs on kubernetes, which can be used both locally and on production environment</p></li>
+                  </ul>
+
+
+                  <ul class="tag-list">
+                    <li>spark</li><li>kubernetes</li><li>minio</li><li>finops</li><li>devex</li>
+                  </ul>
+
+              </article>
+
+        </div>
+      </section>
+
+      <section id="certificates">
+        <h3>Certificates</h3>
+        <div class="stack">
+
+              <article>
+                <header>
+                  <h4><a href="https://www.credly.com/badges/1daf754b-899c-49a4-ba42-70979d8fc9d1/public_url">Google Cloud Professional Data Engineer</a></h4>
+                  <div class="meta">
+                    <div>Issued by <strong>Google Cloud Platform</strong></div> <time datetime="2024">Jan 2024</time>
+                  </div>
+                </header>
+              </article>
+
+              <article>
+                <header>
+                  <h4><a href="https://www.credly.com/badges/cef04301-0db4-4bc6-8e69-8a186aa534c3">HashiCorp Ambassador 2024</a></h4>
+                  <div class="meta">
+                    <div>Issued by <strong>HashiCorp</strong></div> <time datetime="2024">Jan 2024</time>
+                  </div>
+                </header>
+              </article>
+
+              <article>
+                <header>
+                  <h4><a href="https://aws.amazon.com/developer/community/community-builders/community-builders-directory/?cb-cards.sort-by=item.additionalFields.cbName&cb-cards.sort-order=asc&awsf.builder-category=*all&awsf.location=*all&awsf.year=*all&cb-cards.q=karn%2Bwong&cb-cards.q_operator=AND">AWS Community Builder 2024</a></h4>
+                  <div class="meta">
+                    <div>Issued by <strong>AWS</strong></div> <time datetime="2024">Jan 2024</time>
+                  </div>
+                </header>
+              </article>
+
+              <article>
+                <header>
+                  <h4><a href="https://www.credly.com/badges/0e07c3db-19c2-4ade-bb6c-66df4929fc5c/public_url">AWS Certified Solutions Architect – Associate</a></h4>
+                  <div class="meta">
+                    <div>Issued by <strong>AWS</strong></div> <time datetime="2023">Jan 2023</time>
+                  </div>
+                </header>
+              </article>
+
+              <article>
+                <header>
+                  <h4><a href="https://www.credly.com/badges/a474b598-df0d-453f-8958-3181b6392f61/public_url">Google Cloud Professional Cloud Architect</a></h4>
+                  <div class="meta">
+                    <div>Issued by <strong>Google Cloud Platform</strong></div> <time datetime="2022">Jan 2022</time>
+                  </div>
+                </header>
+              </article>
+
+        </div>
+      </section>
+
+
+      <section id="skills">
+        <h3>Skills</h3>
+        <div class="grid-list">
+
+              <div>
+                <h4>Languages</h4>
+
+                  <ul class="tag-list">
+                    <li>Bash</li><li>Go</li><li>HCL</li><li>Python</li><li>Rust</li>
+                  </ul>
+
+              </div>
+
+              <div>
+                <h4>Cloud Native</h4>
+
+                  <ul class="tag-list">
+                    <li>Docker</li><li>Kubernetes</li><li>Helm</li><li>K3S</li><li>Harbor</li><li>Grafana</li><li>Prometheus</li><li>Minio</li><li>MLflow</li>
+                  </ul>
+
+              </div>
+
+              <div>
+                <h4>DevOps</h4>
+
+                  <ul class="tag-list">
+                    <li>Caddy</li><li>Terraform</li><li>GitHub Actions</li><li>Proxmox</li><li>Authentik</li><li>Infracost</li><li>New Relic</li>
+                  </ul>
+
+              </div>
+
+              <div>
+                <h4>Cloud</h4>
+
+                  <ul class="tag-list">
+                    <li>AWS</li><li>GCP</li><li>Digital Ocean</li><li>Cloudflare</li><li>Vercel</li>
+                  </ul>
+
+              </div>
+
+        </div>
+      </section>
+
+
+      <section id="interests">
+        <h3>Interests</h3>
+        <div class="grid-list">
+
+              <div>
+                <h4>Humanities</h4>
+
+                  <ul class="tag-list">
+                    <li>Anthropology</li><li>Linguistics</li><li>Psychology</li><li>Sociology</li>
+                  </ul>
+
+              </div>
+
+              <div>
+                <h4>Music</h4>
+
+                  <ul class="tag-list">
+                    <li>Symphonic Heavy Metal</li><li>Power Metal</li><li>Folk Metal</li><li>Classical Crossover</li><li>Operatic Pop</li>
+                  </ul>
+
+              </div>
+
+              <div>
+                <h4>Technology</h4>
+
+                  <ul class="tag-list">
+                    <li>Platform Engineering</li><li>DevX</li><li>Kubernetes</li><li>DevOps / DataOps / MLOps</li><li>Scaling & Optimization</li>
+                  </ul>
+
+              </div>
+
+        </div>
+      </section>
+
+      </body>
+    </html>
