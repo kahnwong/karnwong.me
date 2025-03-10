@@ -1,5 +1,5 @@
 +++
-title = "Native Implementation vs Wasm for Go, Python and Rust Benchmark"
+title = "Native implementation vs WASM for Go, Python and Rust benchmark"
 date = "2024-12-04"
 path = "/posts/2024/12/native-implementation-vs-wasm-for-go-python-and-rust-benchmark"
 
