@@ -4,7 +4,7 @@ go 1.23
 
 require (
 	github.com/charmbracelet/huh v0.6.0
-	github.com/pelletier/go-toml v1.9.5
+	github.com/pelletier/go-toml/v2 v2.2.3
 )
 
 require (
