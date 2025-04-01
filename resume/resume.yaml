@@ -41,10 +41,10 @@ education:
     startDate: "2015"
     endDate: "2018"
 certificates:
-  - name: HashiCorp Ambassador 2024
-    date: "2024"
+  - name: HashiCorp Ambassador 2025
+    date: "2025"
     issuer: HashiCorp
-    url: https://www.credly.com/badges/cef04301-0db4-4bc6-8e69-8a186aa534c3
+    url: https://www.credly.com/badges/acf5e145-700f-4955-afe2-f14a8d0341e1/public_url
   - name: AWS Community Builder 2024
     date: "2024"
     issuer: AWS
