@@ -19,7 +19,7 @@ shouldn't be necessary. You can either:
 
 1. Implement this feature as a separate api, and have your website call it - but this would add more overhead to your
    setup
-2. write this function in Go, and compile it into wasm and call it in your frontend code
+2. Write this function in Go, and compile it into wasm and call it in your frontend code
 
 There are bleeding edge use cases for wasm as well, namely utilizing CDN to serve wasm binaries in lieu of maintaining
 multi-region infrastructure. The future is interesting.
