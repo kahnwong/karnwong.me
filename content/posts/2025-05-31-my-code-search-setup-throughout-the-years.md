@@ -4,7 +4,7 @@ date = '2025-05-31'
 path = '/posts/2025/05/my-code-search-setup-throughout-the-years'
 
 [taxonomies]
-categories = ['platform']
+categories = ['platform-engineering']
 tags = []
 +++
 
