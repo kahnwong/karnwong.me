@@ -12,7 +12,7 @@ comment = false
 reaction = false
 +++
 
-I'm a principal engineer working on cloud automation and optimization.
+I'm a systems engineer by background, these days I dabble in a little of everything.
 
 If you want to schedule a call, either to talk about stuff or possible collaborations, [book a meeting](https://cal.com/karn-wong-uuhbtm/).
 

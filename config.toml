@@ -36,7 +36,7 @@ anchors = "on"
 
 name = "Karn Wong"
 id = "kahnwong"
-bio = "Principal Cloud Engineer | HashiCorp Ambassador"
+bio = "Independent Consultant | HashiCorp Ambassador"
 avatar = "img/avatar.webp"
 
 display_id = true
