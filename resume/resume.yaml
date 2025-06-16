@@ -1,6 +1,6 @@
 basics:
   name: Karn Wong
-  label: "Principal Cloud Engineer | HashiCorp Ambassador"
+  label: "Independent Consultant | HashiCorp Ambassador"
   email: karn@karnwong.me
   phone: ""
   website: https://karnwong.me
@@ -12,10 +12,18 @@ basics:
       username: karnsiree-w-7b535b202
       url: https://www.linkedin.com/in/karnsiree-w-7b535b202/
 work:
+  - name: "Freelance"
+    position: Independent Consultant
+    startDate: 2025-06-19
+    highlights:
+      - Infra / DevOps / Data Engineering / MLOps / Architecture consulting & training
   - name: MFEC
     position: Cloud Automation and Optimization Consultant
     website: https://www.mfec.co.th/
     startDate: 2025-03-03
+    endDate: 2025-06-18
+    highlights:
+      - Reduce manual & routine workloads via automation
   - name: Data Cafe Company Limited
     position: Platform Team Lead
     website: https://www.datacafethailand.com/
@@ -45,11 +53,11 @@ certificates:
     date: "2025"
     issuer: HashiCorp
     url: https://www.credly.com/badges/acf5e145-700f-4955-afe2-f14a8d0341e1/public_url
-  - name: AWS Community Builder 2024
-    date: "2024"
+  - name: AWS Community Builder 2025
+    date: "2025"
     issuer: AWS
     url: https://aws.amazon.com/developer/community/community-builders/community-builders-directory/?cb-cards.sort-by=item.additionalFields.cbName&cb-cards.sort-order=asc&awsf.builder-category=*all&awsf.location=*all&awsf.year=*all&cb-cards.q=karn%2Bwong&cb-cards.q_operator=AND
-  - name: AWS Certified Solutions Architect – Associate
+  - name: AWS Certified Solutions Architect Associate
     date: "2023"
     issuer: AWS
     url: https://www.credly.com/badges/0e07c3db-19c2-4ade-bb6c-66df4929fc5c/public_url
@@ -57,6 +65,15 @@ certificates:
     date: "2022"
     issuer: Google Cloud Platform
     url: https://www.credly.com/badges/a474b598-df0d-453f-8958-3181b6392f61/public_url
+  - name: Google Cloud Professional Data Engineer
+    date: "2024"
+    issuer: Google Cloud Platform
+    url: https://www.credly.com/badges/1daf754b-899c-49a4-ba42-70979d8fc9d1/public_url
+publications:
+  - name: Using Classification Technique for Customer Relationship Management based on Thai Social Media Data
+    publisher: ICCAE
+    releaseDate: 2019-02-01
+    website: https://doi.org/10.1145/3313991.3314010
 projects:
   # ---------------- devops ----------------
   - name: self-hosted
@@ -107,6 +124,18 @@ projects:
       #    endDate: 2023-08-31
     type: devops
     url: https://github.com/kahnwong/pgconn
+    # ---------------- benchmarks ----------------
+  - name: Dataframe Frameworks Showdown
+    highlights:
+      - Benchmark performance between duckdb, polars and spark. In addition to runtime, RAM usage is also provided
+    keywords:
+      - duckdb
+      - polars
+      - spark
+      - dataframe
+      - data engineering
+    type: data
+    url: https://www.karnwong.me/posts/2023/04/duckdb-vs-polars-vs-spark/
   - name: Hello World API Performance Benchmark (Go, Node, Python, Rust)
     highlights:
       - Measure latency, RPS and CPU & memory utilization for a hello world api in various languages
@@ -152,6 +181,18 @@ volunteer:
   - organization: DevOps, SRE & Infrastructure Discord
     position: Frequent Contributor
     startDate: "2021"
+  - organization: Data Engineer Thailand
+    position: Frequent Contributor
+    startDate: "2024"
+  - organization: Data Engineer Cafe
+    position: Frequent Contributor
+    startDate: "2022"
+  - organization: Data Engineering Discord
+    position: Moderator & Frequent Contributor
+    startDate: "2020"
+  - organization: Data Science DiscordAdd
+    position: Frequent Contributor
+    startDate: "2021"
 skills:
   - name: Languages
     keywords:
@@ -171,6 +212,12 @@ skills:
       - Prometheus
       - Minio
       - MLflow
+  - name: Databases
+    keywords:
+      - Postgres
+      - MongoDB
+      - BigQuery
+      - DuckDB
   - name: DevOps
     keywords:
       - Caddy
@@ -187,3 +234,26 @@ skills:
       - Digital Ocean
       - Cloudflare
       - Vercel
+  - name: Data / ML
+    keywords:
+      - Apache Parquet
+      - Apache Spark
+      - Polars
+      - Apache Iceberg
+      - Dagster
+      - Ray
+      - Scikit-learn
+      - DVC
+  - name: GIS
+    keywords:
+      - Apache Sedona
+      - PostGIS
+      - H3
+      - QGIS
+      - Folium
+      - Leaflet
+  - name: Domain
+    keywords:
+      - Real Estate
+      - Geospatial
+      - NLP
