@@ -23,9 +23,8 @@ jobs:
         with:
           submodules: true
       # ---------- build ----------
-      - uses: DeterminateSystems/nix-installer-action@main
-      - uses: DeterminateSystems/flakehub-cache-action@main
-      - uses: DeterminateSystems/flake-checker-action@main
+      - uses: DeterminateSystems/determinate-nix-action@v3
+      - uses: DeterminateSystems/magic-nix-cache-action@main
       - name: Install zola
         run: nix profile install nixpkgs#zola
       - name: Build zola
